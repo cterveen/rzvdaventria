@@ -4,8 +4,11 @@ Daventria Drupal 10.x Theme help - Datatypen
 
 ## Beschrijving
 
-Een overzicht van de instellingen voor inhoudstypen, woordenlijsten en automatische aliassen voor het
-daventria thema.
+Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenlijsten, automatische aliassen en views voor het
+daventria thema. Dit document bevat de volgende inhoudstypen:
+
+- Nieuws
+- Pagina
 
 De inhoudstypen kunnen worden aangemaakt in Admin > Structuur > Inhoudstypen (admin/structure/types).
 
@@ -31,7 +34,7 @@ tags op te kunnen slaan.
 #### Inhoudstype
 
 - Naam: Nieuws
-- Systeemnaam: Nieuws
+- Systeemnaam: nieuws
 - Beschrijving: Nieuws betreffen de nieuwsberichten die op de site te lezen zijn.
 - Label van het titelveld: Titel
 - Voorbeeldweergave voor indienen: optioneel
@@ -106,14 +109,7 @@ bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veil
 - Tags: 102
 - Bijlage: 103
 - Taal: Uitgeschakeld
-- Aangepaste weergave-instellingen:
-  - Afdrukken: Nee
-  - RSS: Nee
-  - Search index: Nee
-  - Teaser: Ja
-  - Token: Nee
-  - Volledige inhoud: Nee
-  - Zoekresultaten uitlichten-invoer: Nee
+- Aangepaste weergave-instellingen: Teaser
  
 #### Toegangsrechten
 
@@ -128,7 +124,6 @@ bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veil
 - Ingeschakeld: Ja
 - Pad-patroon: nieuws/\[node:created:custom:d-m-Y\]/\[node:title\]
 - Inhoudstype: Nieuws
-- Ingeschakeld: Ja
 
 #### Automatische alias Tags
 
@@ -138,5 +133,67 @@ bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veil
 - Ingeschakeld: Ja
 - Pad-patroon: tag/[term:name]
 - Woordenlijst: Nieuws
+
+## Pagina
+
+#### Inhoudstype
+
+- Naam: Pagina
+- Systeemnaam: pagina
+- Beschrijving: Een pagina bevat vaste inhoud.
+- Label van het titelveld: Titel
+- Voorbeeldweergave voor indienen: optioneel
+- Uitleg of indienrichtlijnen: Elke pagina heeft een vaste url waar veelal vanuit het menu
+naar wordt gelinkt.
+- Publicatieopties: Gepubliceerd, Nieuwe rivisie aanmaken
+- Taalinstellingen: Standaardtaal van de site (Dutch)
+- Weergave-instellingen: -geen-
+- Menu-instellingen: Hoofdnavigie
+
+#### Velden
+
+- Body
+   - Label: Body
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: Vul hier de tekst van de pagina in. Gebruik bij plakken altijd plakken zonder
+opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
+   - Verplicht veld: Nee
+   - Toegestane tekstopmaken: Platte tekst
+   - Samenvatting invoeren: Nee
+   - Samenvatting vereisen: Nee
+   - Standaardwaarde instellen: Nee
+   - Samenvatting: -geen-
+   - Body: -geen-
+
+ #### Formulierweergave beheren
+
+ - Titel: -5
+ - Taal: 20
+ - Geschreven door: 11
+ - Aangemaakt op: 12
+ - Aangeraden op de voorpagina: hidden
+ - Vastgeplakt boven aan de lijst: hidden
+ - URL-alias: 10
+ - Gepubliceerd: 5
+ - Body: -4
+
+#### Weergave beheren
+
+- Links: 100
+- Body: 101
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: -geen-
+ 
+#### Toegangsrechten
+
+  - Anonieme gebruiker: geen
+  - Geverifieerde gebruiker: geen
+
+#### Automatische alias Pagina
+
+- Patroontype: Inhoud
+- Label: Nieuws
+- ID: nieuwsalias
 - Ingeschakeld: Ja
-  
+- Pad-patroon: \[node:title\]
+- Inhoudstype: Pagina
