@@ -12,7 +12,9 @@ Dit document beschrijft de volgende bloktypen:
 
 Dit document beschrijft de volgende blokken:
 
+- Adres, contact- en bankgegevens
 - Branding van de website
+- Sociale media
 - Webcam
 - Weer en waterstanden
 
@@ -62,6 +64,32 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 - Anonieme gebruiker: -geen-
 - Geverifieerde gebruiker: -geen-
   
+## Adres, contact- en bankgegevens.
+
+#### Blok bewerken
+
+- Body: -zie onder-
+- Blokbeschrijving: Adres, contact- en bankgegevens
+
+#### Blok instellen
+
+- Titel: Adres, contact- en bankgegevens
+- Systeemnaam: olivero_adrescontactenbankgegevens
+- Titel weergeven: Nee
+- Zichtbaarheid: Geen beperking
+- Gebied: Zijbalk, 4
+
+#### Body
+
+    Roei- en Zeilvereniging Daventria
+    
+    Rembrandtkade 197
+    7412 HL Deventer
+    0570-618441
+    info@daventria.com
+    
+    NL86 INGB 0000 8044 45
+    t.n.v. R&ZV Daventria
 
 ## Branding van de website
 
@@ -80,6 +108,21 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 
 Zie ook instellingen.md
 
+## Sociale media
+
+#### Blok bewerken
+
+- Body: [FB] [X] [LI] [RSS]
+- Blokbeschrijving: Iconen Sociale media & RSS
+
+#### Blok instellen
+
+- Titel: Iconen Sociale media & RSS
+- Systeemnaam: olivero_iconensocialemediarss
+- Titel weergeven: Nee
+- Zichtbaarheid: Geen beperking
+- Gebied: Zijbalk, 3
+
 ## Webcam
 
 #### Blok bewerken
@@ -93,7 +136,7 @@ Zie ook instellingen.md
 - Systeemnaam: olivero_webcammetlinknaarweerpagina
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk
+- Gebied: Zijbalk, 2
 
 ## Weer en waterstanden
 
@@ -108,4 +151,4 @@ Zie ook instellingen.md
 - Systeemnaam: olivero_weerenwaterstanden
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk
+- Gebied: Zijbalk, 1
