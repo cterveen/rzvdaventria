@@ -31,15 +31,8 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
   - https://www.drupal.org/project/pathauto
 - Token: nodig voor Pathauto.
   - https://www.drupal.org/project/token
-- Superfish: drop down menu.
-  - https://www.drupal.org/project/superfish
   
 ## Eigen modules
-
-- BookExportRTF: om het Gele Boekje te downloaden
-  - https://github.com/cterveen/bookexportrtf-9.x
-- BookIndex: voor de index van het Gele Boekje
-  - https://github.com/cterveen/bookindex-9.x
 
 ## Core datatypen
 
@@ -49,10 +42,3 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 - Link
 
 ## Libraries
-
-- Simple HTML DOM: voor BookExportRTF en BookIndex
-  - https://sourceforge.net/projects/simplehtmldom/
-  - libraries/simple_html_dom/
-- Schepp's CSS-Parser: voor BookExportRTF
-  - https://github.com/Schepp/CSS-Parser
-  - libraries/schepp-css-parser/
