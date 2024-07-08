@@ -6,13 +6,20 @@ Daventria Drupal 10.x Theme
 
 A Drupal 10.x Theme for the Daventria website. The Theme is being developed as a theme for the new website.
 
-The project can be considered Alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch. Internationalisation and localisation is not available.
+The project can be considered pre-alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch. Internationalisation and localisation are not available.
 
 Further development is intended.
 
 ## Installation
 
-Copy all files to your Drupal/themes/Daventria folder
+Configure a minimal Drupal system according to the documents in help. The recommended order is:
+
+- modules.md
+- instellingen.md
+- inhoudstypen.md
+- blokken.md
+
+Copy all files to the  themes/Daventria folder
 
 Enable the theme
 
@@ -23,6 +30,7 @@ Help for configuration of modules, data types, content types, views etc. is avai
 ## Credits
 
 Written by Christiaan ter Veen https://www.rork.nl/
+Design by Niels den Boer https://hetvormburo.nl/
 
 ## License
 
