@@ -4,9 +4,9 @@ Daventria Drupal 10.x Theme help - Datatypen
 
 ## Beschrijving
 
-Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenlijsten, automatische aliassen en views voor het
-daventria thema. Dit document bevat de volgende inhoudstypen:
+Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenlijsten, automatische aliassen en views voor het daventria thema. Dit document bevat de volgende inhoudstypen:
 
+- Activiteit
 - Nieuws
 - Pagina
 
@@ -14,16 +14,158 @@ De inhoudstypen kunnen worden aangemaakt in Admin > Structuur > Inhoudstypen (ad
 
 Een woordenlijst kan worden aangemaakt in Admin > Structuur > Taxonomie (admin/structure/taxonomy).
 
-Het installen van de automatische alias gaat via Admin > Instellingen > URL-aliassen > Patronen
-(admin/config/search/path/patterns). Na het aanmaken moet de het patroon bewerkt worden om de resterende
-velden in te vullen.
+Het installen van de automatische alias gaat via Admin > Instellingen > URL-aliassen > Patronen (admin/config/search/path/patterns). Na het aanmaken moet de het patroon bewerkt worden om de resterende velden in te vullen.
+
+## Activiteit
+
+#### Inhoudstype
+
+- Naam: Activiteit
+- Systeemnaam: activiteit
+- Beschrijving: Activiteiten betreffen zaken die in de agenda worden weergegeven.
+- Label van het titelveld: Titel
+- Voorbeeldweergave voor indienen: optioneel
+- Uitleg of indienrichtlijnen: Een activiteit bestaat meestal uit een begin- en eventueel einddatum, een begin- en eventueel eindtijdstip en een of meerdere links met aanvullende info of het inschrijfformulier. Het is niet nodig om de activiteit in de body uitgebreid te beschrijven.
+- Publicatieopties: Gepubliceerd
+- Taalinstellingen: Standaardtaal van de site (Dutch)
+- Weergave-instellingen: -geen-
+- Menu-instellingen: -geen-
+
+#### Velden
+
+- Body
+   - Label: Body
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: Vul hier de tekst van het nieuwsbericht in. Gebruik bij plakken altijd plakken zonder
+opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
+   - Verplicht veld: Nee
+   - Toegestane tekstopmaken: Platte tekst
+   - Samenvatting invoeren: Nee
+   - Samenvatting vereisen: Nee
+   - Standaardwaarde instellen: Nee
+   - Samenvatting: -geen-
+   - Body: -geen-
+- Begindatum
+   - Label: Begindatum
+   - Systeemnaam: field_begindatum
+   - Veldtype: Datum en tijd, Datum
+   - Data type: Alleen datum
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: Vul de begindatum in.
+   - Verplicht veld: Ja
+   - Standaardwaarde instellen: Nee
+- Einddatum
+   - Label: Einddatum
+   - Systeemnaam: field_einddatum
+   - Veldtype: Datum en tijd, Datum
+   - Data type: Alleen datum
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: Als een activiteit meerdere dagen duurt vul dan hier een einddatum in. De activiteit wordt eenmalig weergegeven met begin- en einddatum en blijft staan tot en met de einddatum.
+   - Verplicht veld: Nee
+   - Standaardwaarde instellen: Nee
+- Begintijd
+  - Label: Begintijd
+  - Systeemnaam: field_begintijd
+  - Veldtype: Datum en tijd, Tijdstip
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: De tijd waarop de activiteit begint.
+  - Verplicht veld: Nee
+  - Standaardwaarde instellen: Nee
+- Eindtijd
+  - Label: Eindtijd
+  - Systeemnaam: field_eindtijd
+  - Veldtype: Datum en tijd, Tijdstip
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: De tijd waarop de activiteit eindigd.
+  - Verplicht veld: Nee
+  - Standaardwaarde instellen: Nee
+- Locatie
+  - Label: Locatie
+  - Systeemnaam: field_locatie
+  - Veldtype: Platte tekst, tekst (plat)
+  - Maximum lengte: 255
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: Adres of bijvoorbeeld ruimte op de roeivereniging waar de activiteit plaatsvind of men zich kan melden.
+  - Verplicht veld: Nee
+  - Standaardwaarde instellen: Nee
+- Meer informatie
+  - Label: Meer informatie
+  - Systeemnaam: field_meer_informatie
+  - Veldtype: Link
+  - Aantal waarden: Beperkt, 2
+  - Helptekst: Een of twee links met meer informatie. Bijvoorbeeld naar een aankondiging of website van de organisatie.
+  - Verplicht veld: Nee
+  - Toegestaan linktype: Interne en externe links
+  - Linktekst toestaan: Optioneel
+  - Standaard waarde instellen: Nee
+- Inschrijven
+  - Label: Inschrijven
+  - Systeemnaam: field_inschrijven
+  - Veldtype: Link
+  - Aantal waarden: Beperkt, 1
+  - Helptekst: Een link waar men zich in kan schrijven. Voor links naar Mijn Daventria gebruik de omschrijving "Mijn Daventria", voor een formulier "Formulier" en voor email gebruik de omschrijving "E-mail" en de link "mailto:<adres>".
+  - Verplicht veld: Nee
+  - Toegestaan linktype: Interne en externe links
+  - Linktekst toestaan: Optioneel
+  - Standaard waarde instellen: Nee
+ 
+#### Formulierweergave
+
+- Titel: -11
+- Taal: 20
+- Geschreven door: 11
+- Aangemaakt op: 12
+- Aangeraden op de voorpagina: Uitgeschakeld
+- Vastgeplakt boven aan de lijst: Uitgeschakeld
+- URL-alias: 10
+- Gepubliceerd: 5
+- Body: -3
+- Begindatum: -10
+- Einddatum: -9
+- Begintijd: -8
+- Eindtijd: -7
+- Locatie: -6
+- Meer informatie: -4
+- Inschrijven: -5
+
+#### Weergave
+
+- Links: 99
+- Titel: -10
+- Body: 107
+- BeginDatum: 100
+- Einddatum: 101
+- Begintijd: 102
+- Eindtijd: 103
+- Locatie: 104
+- Meer informatie: 105
+- Inschrijven: 106
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: -geen-
+
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+
+#### Automatische alias Activiteit
+
+- Patroontype: Inhoud
+- Label: Activiteit
+- ID: activiteitalias
+- Ingeschakeld: Ja
+- Pad-patroon: agenda/\[node:field_datum:start_date\]/\[node:title\]
+- Inhoudstype: Activiteit
+
+#### Opmerkingen
+
+Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit lijkt onvoldoende flexibel met niet ingevulde waarden. Vermoedelijk zijn losse velden voor begindatum, einddatum, begintijd en eindtijd flexibeler. 
 
 ## Nieuws
 
 #### Woordenlijst
 
-Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden aangemaakt om de
-tags op te kunnen slaan. 
+Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden aangemaakt om de tags op te kunnen slaan. 
 
 - Naam: Nieuws
 - Systeemnaam: nieuwstags
@@ -113,8 +255,8 @@ bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veil
  
 #### Toegangsrechten
 
-  - Anonieme gebruiker: geen
-  - Geverifieerde gebruiker: geen
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
 
 #### Automatische alias Nieuws
 
@@ -186,8 +328,8 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
  
 #### Toegangsrechten
 
-  - Anonieme gebruiker: geen
-  - Geverifieerde gebruiker: geen
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
 
 #### Automatische alias Pagina
 
