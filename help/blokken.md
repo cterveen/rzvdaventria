@@ -13,6 +13,7 @@ Dit document beschrijft de volgende bloktypen:
 Dit document beschrijft de volgende blokken:
 
 - Adres, contact- en bankgegevens
+- Agenda
 - Branding van de website
 - Sociale media
 - Webcam
@@ -77,7 +78,7 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 - Systeemnaam: olivero_adrescontactenbankgegevens
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 4
+- Gebied: Zijbalk, 5
 
 #### Body
 
@@ -90,6 +91,15 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
     
     NL86 INGB 0000 8044 45
     t.n.v. R&ZV Daventria
+
+## Agenda
+
+- Titel weergeven: Ja
+- Items per blok: 5 (standaardinstelling)
+- Titel overschrijven: Nee
+- Zichtbaarheid: -geen-
+- Systeemnaam: olivero_views_block__activiteiten_block_1
+- Gebied: Zijbalk, 3
 
 ## Branding van de website
 
@@ -121,7 +131,7 @@ Zie ook instellingen.md
 - Systeemnaam: olivero_iconensocialemediarss
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 3
+- Gebied: Zijbalk, 4
 
 ## Webcam
 
