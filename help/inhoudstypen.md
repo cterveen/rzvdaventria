@@ -16,6 +16,8 @@ Een woordenlijst kan worden aangemaakt in Admin > Structuur > Taxonomie (admin/s
 
 Het installen van de automatische alias gaat via Admin > Instellingen > URL-aliassen > Patronen (admin/config/search/path/patterns). Na het aanmaken moet de het patroon bewerkt worden om de resterende velden in te vullen.
 
+Het aanmaken van overzichten gaat via Admin > Structuur > Overzichten (admin/structure/views)
+
 ## Activiteit
 
 #### Inhoudstype
@@ -156,6 +158,75 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Ingeschakeld: Ja
 - Pad-patroon: agenda/\[node:field_datum:start_date\]/\[node:title\]
 - Inhoudstype: Activiteit
+
+#### Overzicht: agenda
+
+- Instellingen
+  - Overzichtsnaam: activiteiten
+  - Beschrijving: Nee
+  - Weergeven: Inhoud, Activiteit, Ongesorteerd
+  - Een pagina aanmaken: Nee
+  - Een blok aanmaken: Ja
+  - Bloktitel: Agenda
+  - Weergaveformaat: Tabel
+  - Items per blok: 5
+  - Paginering gebruiken: nee
+- Weergaven
+  - Naam voor weergave: Agenda
+  - Beheer-omschrijving: De agenda op de voorpagina.
+  - Velden
+    - Inhoud: Einddatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Ja
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: d M
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: -geen-
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: -geen-
+    - Inhoud: Begindatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Nee
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: d M
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: Ja, zie onder
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: -geen-
+    - Inhoud: Titel(titel)
+  - Filtercriteria
+    - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
+    - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
+    - Inhoud: Begindatum (>=today), Groep 2 (OF)
+    - Inhoud: Einddatum (>=today), Groep 2 (OF)
+  - Sorteercriteria
+      - Begindatum
+        - De sortering voor bezoekers zichtbaar maken: Nee
+        - Volgorde: oplopend
+        - Nauwkeurigheid: Dag
+        - Beheertitel: -geen-
+  - Bloknaam: Agenda
+  - Blokcategorie: Lijsten (Overzichten)
+  - Afwijkende instellingen: Items per pagina
+  - Toegang: Toegangsrechten
+  - Kop: -geen-
+  - Voet: -geen
+  - Gedrag bij ontbreken resultaten: -geen-
+  - Paginering:
+    - Een bepaald aantal items weergeven: 5 items
+    - 'Meer' link: Nee
+    - Linkweergave: geen
+
+Twig code voor herschrijven Begindatum
+
+    {{ field_begindatum }}
+    {% if field_einddatum %}
+     - {{ field_einddatum }}
+    {% endif %}
+
+
 
 #### Opmerkingen
 
