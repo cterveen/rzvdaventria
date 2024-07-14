@@ -6,7 +6,7 @@ Daventria Drupal 10.x Theme
 
 A Drupal 10.x Theme for the Daventria website. The Theme is being developed as a theme for the new website.
 
-The project can be considered pre-alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch. Internationalisation and localisation are not available.
+The project can be considered pre-alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch, although some of the supportive scripts are in English. Internationalisation and localisation are not available.
 
 Further development is intended.
 
@@ -14,18 +14,19 @@ Further development is intended.
 
 Configure a minimal Drupal system according to the documents in help. The recommended order is:
 
+- webcam_en_weer.md
 - modules.md
 - instellingen.md
 - inhoudstypen.md
 - blokken.md
 
-Copy all files to the  themes/Daventria folder
+Copy all files to the Drupal main folder
 
 Enable the theme
 
 ## Use
 
-Help for configuration of modules, data types, content types, views etc. is available in themes/help
+Help for configuration of modules, data types, content types, views etc. is available in /help
 
 ## Credits
 
