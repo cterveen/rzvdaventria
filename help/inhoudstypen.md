@@ -7,6 +7,7 @@ Daventria Drupal 10.x Theme help - Datatypen
 Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenlijsten, automatische aliassen en views voor het daventria thema. Dit document bevat de volgende inhoudstypen:
 
 - Activiteit
+- Hub
 - Nieuws
 - Pagina
 
@@ -17,6 +18,8 @@ Een woordenlijst kan worden aangemaakt in Admin > Structuur > Taxonomie (admin/s
 Het installen van de automatische alias gaat via Admin > Instellingen > URL-aliassen > Patronen (admin/config/search/path/patterns). Na het aanmaken moet de het patroon bewerkt worden om de resterende velden in te vullen.
 
 Het aanmaken van overzichten gaat via Admin > Structuur > Overzichten (admin/structure/views)
+
+Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/structure/media)
 
 ## Activiteit
 
@@ -226,11 +229,152 @@ Twig code voor herschrijven Begindatum
      - {{ field_einddatum }}
     {% endif %}
 
-
-
 #### Opmerkingen
 
 Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit lijkt onvoldoende flexibel met niet ingevulde waarden. Vermoedelijk zijn losse velden voor begindatum, einddatum, begintijd en eindtijd flexibeler. 
+
+## Hub
+
+#### Mediatype
+
+- Naam: Hub
+- Systeemnaam: media_hub
+- Beschrijving: Een afbeelding in die voor een hub gebruikt wordt.
+- Mediabron: Afbeelding
+- Veldtoewijzing: - Veld overslaan -
+- Publicatieopties: Gepubliceerd
+
+#### Inhoudstype
+
+- Naam: Hub
+- Systeemnaam: hub
+- Beschrijving: Een hub is een plaatje dat boven de inhoud van sommige pagina's getoond wordt om gebruikers snel door te kunnen laten klikken. Per pagina worden twee hubs getoond, maar er kunnen meer hubs gemaakt worden zodat deze worden afgewisseld.
+- Label van het titelveld: Titel
+- Voorbeeldweergave voor indienen: optioneel
+- Uitleg of indienrichtlijnen: De eerste twee gepubliceerd hubs worden op de geselecteerde pagina weergegeven.
+- Publicatieopties: Gepubliceerd
+- Taalinstellingen: Standaardtaal van de site (Dutch)
+- Weergave-instellingen: -geen-
+- Menu-instellingen: -geen-
+
+#### Velden
+
+- Afbeelding
+   - Label: Afbeelding
+   - Systeemnaam: field_afbeelding
+   - Veldtype: Media
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: Upload een afbeelding van ###x## pixels.
+   - Verplicht veld: Ja
+   - Referentiemethode: standaard
+   - Mediatype: Hub
+   - Sorteren op: - Geen -
+   - Toegestane tekstopmaken: Platte tekst
+   - Samenvatting invoeren: Nee
+   - Samenvatting vereisen: Nee
+   - Standaardwaarde instellen: Nee
+   - Samenvatting: -geen-
+   - Body: -geen-
+- Pagina
+  - Label: Pagina
+  - Systeemnaam: field_pagina
+  - Type: Referentie, Inhoud
+  - Itemtype om naar te verwijzen: Inhoud
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: De pagina waarop de hub moet worden weergegeven.
+  - Verplicht veld: Nee
+  - Referentie-methode: Standaard
+  - Inhoudstype: Pagina
+  - Sorteren op: - Geen -
+  - Standaardwaarde instellen: Nee
+- Volgorde
+  - Label: Volgorde
+  - Veldtype: Getal, Getal
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: De volgorde waarin hubs op een pagina worden getoond.
+  - Verplicht veld: Nee
+  - Minimum: -geen-
+  - Maximum: -geen-
+  - Voorvoegsel: -geen-
+  - Standaardwaarde instellen: Nee
+ 
+#### Formulierweergave
+
+- Titel: -5
+ - Taal: 20
+ - Geschreven door: 11
+ - Aangemaakt op: 12
+ - Aangeraden op de voorpagina: uitgeschakeld
+ - Vastgeplakt boven aan de lijst: uitgeschakeld
+ - URL-alias: uitgeschakeld
+ - Gepubliceerd: 5
+ - Afbeelding: -2
+ - Pagina -4
+ - Volgorde -3
+
+#### Weergave
+
+- Links: 100
+- Afbeelding: 103
+- Pagina: 101
+- Volgorde: 102
+- Taal: Uitgeschakeld
+
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+
+#### Overzicht: hub
+
+- Overzichtnaam: hub
+- Systeemnaam: hub
+- Beschrijving: Geeft de 'hubs' weer op de pagina
+- Weergeven: Inhoud
+- Van het type: Hub
+- Gesorteerd volgens: Ongesorteerd
+- Een pagina maken: Nee
+- Een blok aanmaken: Ja
+- Bloktitel: Hub
+- Weergaveformaat: Onopgemaakte lijst
+- Van: Velden
+- Items per blok: 2
+- Paginering gebruiken: Nee
+- Naam voor weergave: Hub
+- Beheer-weergave: Geeft de 'hubs' weer op de pagina
+- Velden: 
+  - Inhoud: titel
+    - Een label aanmaken: Nee
+    - Uitsluiten van weergave: Nee
+    - Opmaakhulpmiddel: Label
+    - Stijlinstellingen: Standaardklassen toevoegen
+    - Resulten van herschrijven: Nee
+    - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
+    - Beheertitel: -geen-
+  - Inhoud: hub:afbeelding
+    - Een label aanmaken: Nee
+    - Uitsluiten van weergave: Nee
+    - Opmaakhulpmiddel: Label
+    - Label linkt naar gerefereerde entitieit: Nee
+    - Stijlinstellingen: Standaardklassen toevoegen
+    - Resulten van herschrijven: Nee
+    - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
+    - Beheertitel: -geen-
+ - Sorteercriteria
+   - Volgorde
+     - Sortering zichtbaarmaken: Nee
+     - Volgorde: oplopend sorteren
+  - Contextuele filter
+    - Filter: Pagina (field_pagina)
+    - Wanneer de fiterwaarde NIET beschikbaar is: Overzicht verbergen
+    - Wanneer de filterwaarde WEL beschikbaar is:
+    - Validatiecriteria opgeven: Ja
+    - Validatiemiddel: URL-alias
+    - Valideren of de gebruiker toegang heeft tot URL-alias: Nee
+    - Meerdere argumenten: Enkele ID
+    - Te ondernemen actie als de filterwaarde ongeldig is: Overzicht verbergen
+    - Beheertitel: -geen-
+    - Meer: -geen-
 
 ## Nieuws
 
