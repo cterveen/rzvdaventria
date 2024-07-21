@@ -354,7 +354,7 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
   - Inhoud: hub:afbeelding
     - Een label aanmaken: Nee
     - Uitsluiten van weergave: Nee
-    - Opmaakhulpmiddel: Label
+    - Opmaakhulpmiddel: Weergeven entiteit
     - Label linkt naar gerefereerde entitieit: Nee
     - Stijlinstellingen: Standaardklassen toevoegen
     - Resulten van herschrijven: Nee
@@ -366,8 +366,8 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
      - Volgorde: oplopend sorteren
   - Contextuele filter
     - Filter: Pagina (field_pagina)
-    - Wanneer de fiterwaarde NIET beschikbaar is: Overzicht verbergen
-    - Wanneer de filterwaarde WEL beschikbaar is:
+    - Wanneer de fiterwaarde NIET beschikbaar is: Standaardwaarde opgeven, Inhoud-ID uit de URL
+    - Wanneer de filterwaarde WEL beschikbaar is: -geen-
     - Validatiecriteria opgeven: Ja
     - Validatiemiddel: URL-alias
     - Valideren of de gebruiker toegang heeft tot URL-alias: Nee
