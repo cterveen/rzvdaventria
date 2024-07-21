@@ -15,6 +15,7 @@ Dit document beschrijft de volgende blokken:
 - Adres, contact- en bankgegevens
 - Agenda
 - Branding van de website
+- Hub
 - Sociale media
 - Webcam
 - Weer en waterstanden
@@ -117,6 +118,15 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 - Gebied: Kop
 
 Zie ook instellingen.md
+
+## Hub
+
+- Titel weergeven: Nee
+- Items per blok: 2 (standaardinstelling)
+- Titel overschrijven: Nee
+- Zichtbaarheid: -geen-
+- Systeemnaam: olivero_views_block__hub_block_1
+- Gebied: Boven inhoud, -10
 
 ## Sociale media
 
