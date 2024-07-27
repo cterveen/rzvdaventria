@@ -6,7 +6,7 @@ Daventria Drupal 10.x Theme
 
 A Drupal 10.x Theme for the Daventria website. The Theme is being developed as a theme for the new website.
 
-The project can be considered pre-alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch, although some of the supportive scripts are in English. Internationalisation and localisation are not available.
+The project can be considered pre-alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch, although some of the bug reports and supportive scripts are in English. Internationalisation and localisation are not available.
 
 Further development is intended.
 
@@ -20,9 +20,10 @@ Configure a minimal Drupal system according to the documents in help. The recomm
 - inhoudstypen.md
 - blokken.md
 
-Copy all files to the Drupal main folder
+Copy all files to the Drupal main folder.
+Go to Admin > Appearance (admin/appearance).
+Find the rzvdaventria theme and click install and make default.
 
-Enable the theme
 
 ## Use
 
