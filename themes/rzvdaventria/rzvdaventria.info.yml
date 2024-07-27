@@ -1,0 +1,24 @@
+name: rzvdaventria
+type: theme
+'base theme': stable9
+starterkit: true
+libraries:
+  - rzvdaventria/base
+  - rzvdaventria/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - rzvdaventria/user
+  core/drupal.dropbutton:
+    - rzvdaventria/dropbutton
+  core/drupal.dialog:
+    - rzvdaventria/dialog
+  file/drupal.file:
+    - rzvdaventria/file
+  core/drupal.progress:
+    - rzvdaventria/progress
+version: 10.2.6
+project: drupal
+datestamp: 1714597793
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.6'
