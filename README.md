@@ -20,8 +20,8 @@ Configure a minimal Drupal system according to the documents in help. The recomm
 - inhoudstypen.md
 - blokken.md
 
-Copy all files to the Drupal main folder.
-Go to Admin > Appearance (admin/appearance).
+Copy all files to the Drupal main folder.  
+Go to Admin > Appearance (admin/appearance).  
 Find the rzvdaventria theme and click install and make default.
 
 
@@ -31,7 +31,7 @@ Help for configuration of modules, data types, content types, views etc. is avai
 
 ## Credits
 
-Written by Christiaan ter Veen https://www.rork.nl/
+Written by Christiaan ter Veen https://www.rork.nl/  
 Design by Niels den Boer https://hetvormburo.nl/
 
 ## License
