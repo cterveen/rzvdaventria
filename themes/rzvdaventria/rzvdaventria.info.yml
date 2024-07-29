@@ -1,7 +1,8 @@
 name: rzvdaventria
 type: theme
+description: 'Theme voor R&ZV Daventria.'
 'base theme': stable9
-starterkit: true
+starterkit: false
 libraries:
   - rzvdaventria/base
   - rzvdaventria/messages
@@ -17,6 +18,14 @@ libraries-extend:
     - rzvdaventria/file
   core/drupal.progress:
     - rzvdaventria/progress
+regions:
+  header: 'Header'
+  wheather: 'Weer'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
 version: 10.2.6
 project: drupal
 datestamp: 1714597793
