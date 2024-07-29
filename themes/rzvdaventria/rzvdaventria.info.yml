@@ -20,7 +20,7 @@ libraries-extend:
     - rzvdaventria/progress
 regions:
   header: 'Header'
-  wheather: 'Weer'
+  weather: 'Weer'
   content: 'Content'
   sidebar: 'Sidebar'
   footer: 'Footer'
