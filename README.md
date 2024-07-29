@@ -35,7 +35,7 @@ Help for configuration of modules, data types, content types, views etc. is avai
 Written by Christiaan ter Veen https://www.rork.nl/  
 Design by Niels den Boer https://hetvormburo.nl/
 
-Drupal base theme: Starterkit / Stable9
+Drupal base theme: Starterkit / Stable9  
 Favicon: derivative of Wikimedia commons: https://commons.wikimedia.org/wiki/File:Daventriablad.jpg
 
 ## License
