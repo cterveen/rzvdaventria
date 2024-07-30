@@ -24,6 +24,16 @@ De volgende regio's zijn beschikbaar:
 
 Naast deze regio's zijn ook page_top en page_bottom gedefinieerd, deze zijn noodzakelijk voor diverse modules.
 
+## CSS structuur
+
+Drupal gebruikt een SMACCS structuur voor de CSS files. In de standaard thema's worden de verschillende stijlelementen over veel verschillende bestanden verdeeld, welke vervolgens bij het laden van de pagina worden samengevoegd. Omdat samenvoegen niet goed lijkt te werken maakt het rzvdaventria thema gebruik van een minimale SMACCS structuur:
+
+- css/base.css bevat de stijlelementen voor basis HTML elementen
+- css/layout.css bevat de stijlelementen voor het plaatsen van de regios en van blokken
+- css/components.css bevat de stijlelementen van alle overige elementen, inclusief de plaatsing van elementen in blokken
+
+Vanuit het basisthema zijn nog de nodige bestanden aanwezig in css/components, deze zullen ter zijner tijd worden samengevoegd met css/components.css.
+
 ## Beheerthema
 
 The rzvdaventria thema is niet geoptimaliseerd voor het beheergedeelte en de basis is niet echt bruikbaar. Daarom is het beter het core-thema Claro te kiezen. 
