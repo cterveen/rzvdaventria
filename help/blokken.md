@@ -15,16 +15,29 @@ Dit document beschrijft de volgende blokken:
 - Adres, contact- en bankgegevens
 - Agenda
 - Branding van de website
+- Gebouwd met Drupal
+- Hoofdnavigatie
 - Hub
+- Paginatitel
+- Primaire beheersacties
+- Primaire inhoud van de pagina
+- Primaire tabs
+- Secundaire tabs
 - Sociale media
+- Statusberichten
 - Webcam
 - Weer en waterstanden
+- Zoekformulier (breed)
 
-Voordat blokken kunnen worden aangemaakt moet een bloktype worden ingesteld. Dit gaat via Beheer > Structuur > Bloktypes (/admin/structure/block-content)
+Blokken in de categoriën Inhoudsblok en Lijsten (Overzichten) moeten worden aangemaakt, de overige categoriën zijn onderdeel van het systeem. Voordat de inhoudsblokken kunnen worden aangemaakt moet een bloktype worden ingesteld.
 
-Het aanmaken van nieuwe blokken gaat via Beheer > Inhoud > Blokken (/admin/content/block)
+Instellen van bloktypen gaat via Beheer > Structuur > Bloktypes (admin/structure/block-content).
 
-Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/structure/block)
+Het aanmaken van nieuwe blokken in de categorie Inhoudsblok gaat via Beheer > Inhoud > Blokken (admin/content/block).
+
+Het aanmaken van nieuwe blokken in de categorie Lijsten (Overzichten) gaat via Beheer > Structuur > Overzichten (admin/structure/views) 
+
+Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/structure/block).
 
 ## Standaard blok
 
@@ -68,6 +81,12 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
   
 ## Adres, contact- en bankgegevens.
 
+#### Blokindeling
+
+- Categorie: Inhoudsblok
+- Gebied: Kop
+- Gewicht: 0
+
 #### Blok bewerken
 
 - Body: -zie onder-
@@ -76,10 +95,10 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 #### Blok instellen
 
 - Titel: Adres, contact- en bankgegevens
-- Systeemnaam: olivero_adrescontactenbankgegevens
+- Systeemnaam: rzvdaventria_adrescontactenbankgegevens
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 5
+- Gebied: Zijbalk, 4
 
 #### Body
 
@@ -95,14 +114,28 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 
 ## Agenda
 
+#### Blokindeling
+
+- Categorie: Lijsten (Overzichten)
+- Gebied: Zijbalk
+- Gewicht: 3
+
+#### Blok instellen
+
 - Titel weergeven: Ja
 - Items per blok: 5 (standaardinstelling)
 - Titel overschrijven: Nee
 - Zichtbaarheid: -geen-
-- Systeemnaam: olivero_views_block__activiteiten_block_1
+- Systeemnaam: rzvdaventria_views_block__activiteiten_block_1
 - Gebied: Zijbalk, 3
 
 ## Branding van de website
+
+#### Blokindeling
+
+- Categorie: System
+- Gebied: Kop
+- Gewicht: 0
 
 #### Blok instellen
 
@@ -114,21 +147,83 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (/admin/stru
 - Rollen: -geen-
 - Inhoudstype: -geen-
 - Woordenlijst: -geen-
-- Systeemnaam: olivero_site_branding
+- Systeemnaam: rzvdaventria_site_branding
 - Gebied: Kop
 
 Zie ook instellingen.md
 
+## Hoofdnavigatie
+
+#### Blokindeling
+
+- Categorie: Menu's
+- Gebied: Kop
+- Gewicht: 2
+
+## Gebouwd met Drupal
+
+#### Blokindeling
+
+- Categorie: System
+- Gebied: Voet
+- Gewicht: 0
+
 ## Hub
+
+#### Blokindeling
+
+- Categorie: Lijsten (Overzichten)
+- Gebied: Inhoud
+- Gewicht: 0
+
+#### Blok instellen
 
 - Titel weergeven: Nee
 - Items per blok: 2 (standaardinstelling)
 - Titel overschrijven: Nee
 - Zichtbaarheid: -geen-
-- Systeemnaam: olivero_views_block__hub_block_1
-- Gebied: Boven inhoud, -10
+- Systeemnaam: rzvdaventria_views_block__hub_block_1
+- Gebied: Boven inhoud, 0
+
+## Primaire beheersacties
+
+#### Blokindeling
+
+- Categorie: core
+- Gebied: Inhoud
+- Gewicht: -10
+
+## Primaire inhoud van de pagina
+
+#### Blokindeling
+
+- Categorie: System
+- Gebied: Inhoud
+- Gewicht: -4
+
+## Primaire tabs
+
+#### Blokindeling
+
+- Categorie: core
+- Gebied: Inhoud
+- Gewicht: -5
+
+## Secundaire tabs
+
+#### Blokindeling
+
+- Categorie: core
+- Gebied: Inhoud
+- Gewicht: -4
 
 ## Sociale media
+
+#### Blokindeling
+
+- Categorie: Inhoudsblok
+- Gebied: Zijbalk
+- Gewicht: 3
 
 #### Blok bewerken
 
@@ -138,12 +233,26 @@ Zie ook instellingen.md
 #### Blok instellen
 
 - Titel: Iconen Sociale media & RSS
-- Systeemnaam: olivero_iconensocialemediarss
+- Systeemnaam: rzvdaventria_iconensocialemediarss
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 4
+- Gebied: Zijbalk, 3
+
+## Statusberichten
+
+#### Blokindeling
+
+- Categorie: System
+- Gebied: Inhoud
+- Gewicht: -9
 
 ## Webcam
+
+#### Blokindeling
+
+- Categorie: Inhoudsblok
+- Gebied: Zijbalk
+- Gewicht: 1
 
 #### Blok bewerken
 
@@ -153,12 +262,18 @@ Zie ook instellingen.md
 #### Blok instellen
 
 - Titel: Webcam met link naar weerpagina
-- Systeemnaam: olivero_webcammetlinknaarweerpagina
+- Systeemnaam: rzvdaventria_webcammetlinknaarweerpagina
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 2
+- Gebied: Zijbalk, 1
 
 ## Weer en waterstanden
+
+#### Blokindeling
+
+- Categorie: Inhoudsblok
+- Gebied: Weer
+- Gewicht: 0
 
 #### Blok bewerken
 
@@ -168,7 +283,17 @@ Zie ook instellingen.md
 #### Blok instellen
 
 - Titel: Webcam met link naar weerpagina
-- Systeemnaam: olivero_weerenwaterstanden
+- Systeemnaam: rzvdaventria_weerenwaterstanden
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
 - Gebied: Zijbalk, 1
+
+## Zoekformulier (breed)
+
+#### Blokindeling
+
+- Formulieren
+- Gebied: Kop
+- Gewicht: 1
+
+Het gewicht van het zoekformulier is lager dan dat van hoofdnavigatie. Met de layout wordt de volgorde van deze elementen omgedraaid.
