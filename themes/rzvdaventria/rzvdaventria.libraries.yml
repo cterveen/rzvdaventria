@@ -34,8 +34,6 @@ base:
         weight: -10
       css/components/links.css:
         weight: -10
-      css/components/menu.css:
-        weight: -10
       css/components/more-link.css:
         weight: -10
       css/components/pager.css:
