@@ -296,4 +296,5 @@ Zie ook instellingen.md
 - Gebied: Kop
 - Gewicht: 1
 
-Het gewicht van het zoekformulier is lager dan dat van hoofdnavigatie. Met de layout wordt de volgorde van deze elementen omgedraaid.
+Het gewicht van het zoekformulier is lager dan dat van hoofdnavigatie. Voor de brede lay-out maakt dit niet uit, maar bij de lange layout wordt het zoekformulier hierdoor
+rechts van het menu geplaatst.
