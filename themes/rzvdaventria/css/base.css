@@ -3,3 +3,10 @@
  * Styles for basic html element styling
  */
  
+ body {
+  background-image: url("/~internetcie/themes/rzvdaventria/images/background/tweezonder-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1920px;
+ }
+ 

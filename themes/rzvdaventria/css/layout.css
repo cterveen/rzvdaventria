@@ -5,3 +5,79 @@
  * This mainly concerns the placement of regions and blocks.
  */
  
+ /**
+ * Container
+ *
+ * In wide view max 1200 px wide, in long view full page wide.
+ */
+ 
+.layout-container {
+  width: 1200px;	
+}
+
+/**
+ * Region placement
+ *
+ * region-header: on top at full container width.
+ * region-weather: in wide view in the right sidebar in front of the banner. In
+ *   long view above the main contentin front of the banner.
+ * region content: in wide view in the left to the sidebar partially in front
+ *   of the banner. In long view full container width below the banner.
+ * region-sidebar: in wide view right of the main content below the main banner.
+ *   In long view below the content at full container width.
+ * region-footer: at the bottom at full container width.
+ */
+ 
+.region-header {
+  height: 80px;
+  width: 100%;
+}
+
+.region-weather {
+  height: 120px;
+  width: 360px;
+  float: right;
+  margin-top: 280px;
+}
+
+.region-content {
+  height: 400px;
+  width: 840px;
+  float: left;
+  margin-top: 280px;
+}
+
+.region-sidebar {
+  width: 360px;
+  float: left;
+ }
+   
+.region-footer {
+  height: 240px;
+  width: 100%;
+  clear: both;
+}
+
+/**
+ * Block placement
+ *
+ * Header
+ *   Site branding: left
+ *   Main menu: right of site branding
+ *   Search box: right
+ */
+ 
+ #block-rzvdaventria-site-branding {
+  width: 200px;
+  float: left;
+ }
+ 
+ #block-rzvdaventria-main-menu {
+  float: left;
+ }
+  
+ #block-rzvdaventria-search-form-wide {
+  width: 220px;
+  float: right;
+ }
+ 
