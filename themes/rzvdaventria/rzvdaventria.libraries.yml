@@ -44,8 +44,6 @@ base:
         weight: -10
       css/components/tablesort.css:
         weight: -10
-      css/components/tabs.css:
-        weight: -10
       css/components/textarea.css:
         weight: -10
       css/components/ui-dialog.css:
