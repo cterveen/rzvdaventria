@@ -36,8 +36,6 @@ Vanuit het basisthema zijn nog de nodige bestanden aanwezig in css/components, d
 
 ## Responsiveness
 
-> Ontwerp, nog niet geïmplementeerd
-
 Gegevens van de gebruikte resoluties voor de website zijn niet beschikbaar. Maar op basis van de gegevens van statcounter kan de breedte van het scherm worden ingedeeld op drie resoluties:
 
 - Mobiel: 360 - 430 pixels
@@ -51,12 +49,12 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
   - Weer boven Inhoud
   - Zijbalk onder Inhoud
     - Elementen Zijbalk onder elkaar
-- Tablet (staand, 600-1000px)
+- Tablet (staand, 600-960px)
   - Menu ingeklapt
   - Weer boven inhoud
   - Zijbalk onder Inhoud
     - Webcam, sociale media en adres naast de agenda
-- Desktop (>1000px)
+- Desktop (>960px)
   - Menu uitgeklapt
   - Weer rechts van inhoud
   - Zijbalk rechts van inhoud
