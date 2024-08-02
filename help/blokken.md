@@ -174,7 +174,7 @@ Zie ook instellingen.md
 
 - Categorie: Lijsten (Overzichten)
 - Gebied: Inhoud
-- Gewicht: 0
+- Gewicht: -8
 
 #### Blok instellen
 
@@ -191,7 +191,7 @@ Zie ook instellingen.md
 
 - Categorie: core
 - Gebied: Inhoud
-- Gewicht: -10
+- Gewicht: -7
 
 ## Primaire inhoud van de pagina
 
@@ -244,7 +244,7 @@ Zie ook instellingen.md
 
 - Categorie: System
 - Gebied: Inhoud
-- Gewicht: -9
+- Gewicht: -6
 
 ## Webcam
 
