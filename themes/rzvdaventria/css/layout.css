@@ -12,7 +12,7 @@
  */
  
 .layout-container {
-  width: 1200px;	
+  max-width: 1200px;	
 }
 
 /**
@@ -41,8 +41,8 @@
 }
 
 .region-content {
-  height: 400px;
-  width: 840px;
+  min-height: 400px;
+  width: calc(100% - 360px);
   float: left;
   margin-top: 280px;
 }
@@ -59,6 +59,23 @@
 }
 
 /**
+ * Tablet and phone
+ */
+ 
+ @media all and (max-width: 960px) {
+    .region-content {
+       width: 100%;
+	   margin-top: 0px;
+	}
+	
+	.region-sidebar {
+	   width: 100%;	
+	}
+ }
+ 
+ 
+
+/**
  * Block placement
  *
  * Header
@@ -66,18 +83,63 @@
  *   Main menu: right of site branding
  *   Search box: right
  */
- 
- #block-rzvdaventria-site-branding {
+
+#block-rzvdaventria-site-branding {
   width: 200px;
   float: left;
- }
- 
- #block-rzvdaventria-main-menu {
+}
+
+#block-rzvdaventria-main-menu {
   float: left;
- }
-  
- #block-rzvdaventria-search-form-wide {
+}
+ 
+#block-rzvdaventria-search-form-wide {
   width: 220px;
   float: right;
- }
+}
+
+/**
+ * Tablet
+ */
+
+@media all and (min-width: 600px) and (max-width: 960px) {
+  #block-rzvdaventria-webcammetlinknaarweerpagina {
+	width: 50%;
+    float: right;
+  }
+  
+  #block-rzvdaventria-views-block-activiteiten-block-1 {
+    width: 50%;
+	float: left;
+  }
+  
+  #block-rzvdaventria-iconensocialmediarss {
+	width: 50%;
+    float: right;
+  }
+  
+  #block-rzvdaventria-adrescontactenbankgegevens {
+	width: 50%;
+    float: right;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #block-rzvdaventria-webcammetlinknaarweerpagina {
+	width: 100%;
+  }
+  
+  #block-rzvdaventria-views-block-activiteiten-block-1 {
+    width: 100%;
+  }
+  
+  #block-rzvdaventria-iconensocialmediarss {
+	width: 100%;
+  }
+  
+  #block-rzvdaventria-adrescontactenbankgegevens {
+	width: 100%;
+    float: right;
+  }
+}
  
