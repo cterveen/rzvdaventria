@@ -16,11 +16,11 @@ Het thema is gemaakt met behulp van starterkit en daarna aangepast. Drupal kent 
 
 De volgende regio's zijn beschikbaar:
 
-- Kop: logo, naam, menu, zoekbalk
-- Weer: weer-iconen
-- Inhoud: Inhoud
-- Zijbalk: Webcam, agenda, sociale media en adres
-- Voet: Slottekst
+- Kop (header): logo, naam, menu, zoekbalk
+- Weer (weather): weer-iconen
+- Inhoud (content): Inhoud
+- Zijbalk (sidebar): Webcam, agenda, sociale media en adres
+- Voet (footer): Slottekst
 
 Naast deze regio's zijn ook page_top en page_bottom gedefinieerd, deze zijn noodzakelijk voor diverse modules.
 
@@ -33,6 +33,34 @@ Drupal gebruikt een SMACCS structuur voor de CSS files. In de standaard thema's 
 - css/components.css bevat de stijlelementen van alle overige elementen, inclusief de plaatsing van elementen in blokken
 
 Vanuit het basisthema zijn nog de nodige bestanden aanwezig in css/components, deze zullen ter zijner tijd worden samengevoegd met css/components.css.
+
+## Responsiveness
+
+> Ontwerp, nog niet geïmplementeerd
+
+Gegevens van de gebruikte resoluties voor de website zijn niet beschikbaar. Maar op basis van de gegevens van statcounter kan de breedte van het scherm worden ingedeeld op drie resoluties:
+
+- Mobiel: 360 - 430 pixels
+- Tablet (staand): 768 - 810 pixels
+- Desktop: 1280 - 2560 pixels
+
+Op basis hiervan worden de regio's en blokken als volgt geplaatst:
+
+- Mobiel (<600px) :
+  - Menu ingeklapt
+  - Weer boven Inhoud
+  - Zijbalk onder Inhoud
+    - Elementen Zijbalk onder elkaar
+- Tablet (staand, 600-1000px)
+  - Menu ingeklapt
+  - Weer boven inhoud
+  - Zijbalk onder Inhoud
+    - Webcam, sociale media en adres naast de agenda
+- Desktop (>1000px)
+  - Menu uitgeklapt
+  - Weer rechts van inhoud
+  - Zijbalk rechts van inhoud
+    - Elementen onder elkaar
 
 ## Beheerthema
 
