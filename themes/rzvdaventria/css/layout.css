@@ -31,6 +31,7 @@
 .region-header {
   height: 80px;
   width: 100%;
+  background-color: rgb(255,215,0);
 }
 
 .region-weather {
@@ -56,6 +57,7 @@
   height: 240px;
   width: 100%;
   clear: both;
+  background-color: rgb(41,41,41);
 }
 
 /**
@@ -73,8 +75,6 @@
 	}
  }
  
- 
-
 /**
  * Block placement
  *
@@ -123,6 +123,10 @@
     float: right;
   }
 }
+
+/**
+ * Phone
+ */
 
 @media all and (max-width: 599px) {
   #block-rzvdaventria-webcammetlinknaarweerpagina {

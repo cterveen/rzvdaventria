@@ -47,3 +47,66 @@ ul.menu {
 ul.menu a.is-active {
   color: #000;
 }
+
+/**
+ * Region content
+ *
+ * The content region partially floats above the background image in desktop and tablet
+ * mode. The background should be white, except for the hub for which images will float
+ * above the header.
+ */
+
+#block-rzvdaventria_primary_admin_actions {
+  background-color: white;
+}
+
+#block-rzvdavenria-messages {
+  background-color: white;
+}
+
+#block-rzvdaventria-primary-local-tasks {
+  background-color: white;
+}
+
+#block-rzvdaventria-secondary-local-tasks {
+  background-color: white;
+}
+
+#block-rzvdaventria-page-title {
+  background-color: white;
+}
+
+#block-rzvdaventria-content {
+  background-color: white;
+}
+
+/* block-rzvdaventria-primary-local-tasks */
+
+div.tabs {
+  margin: 1em 0;
+}
+ul.tabs {
+  margin: 0;
+  padding: 0 0 0.5em;
+  list-style: none;
+}
+.tabs > li {
+  display: inline-block;
+  margin-right: 0.3em; /* LTR */
+}
+[dir="rtl"] .tabs > li {
+  margin-right: 0;
+  margin-left: 0.3em;
+}
+.tabs a {
+  display: block;
+  padding: 0.2em 1em;
+  text-decoration: none;
+}
+.tabs a.is-active {
+  background-color: #eee;
+}
+.tabs a:focus,
+.tabs a:hover {
+  background-color: #f5f5f5;
+}
