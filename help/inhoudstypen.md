@@ -194,7 +194,7 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
       - Opmaakhupmiddel: aangepast
       - Tijdzone overschrijven: - Niets geselecteerd -
       - Datum-/tijdnotatie: d M
-      - Stijlinstellingen: -geen-
+      - Stijlinstellingen: Standaardklassen toevoegen
       - Resultaten herschijven: Ja, zie onder
       - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
       - Beheertitel: -geen-
