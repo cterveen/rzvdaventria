@@ -183,21 +183,41 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
       - Uitsluiten van weergave: Ja
       - Opmaakhupmiddel: aangepast
       - Tijdzone overschrijven: - Niets geselecteerd -
-      - Datum-/tijdnotatie: d M
+      - Datum-/tijdnotatie: d
       - Stijlinstellingen: -geen-
       - Resultaten herschijven: -geen-
       - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
-      - Beheertitel: -geen-
+      - Beheertitel: Einddatum (dag)
+    - Inhoud: Einddatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Ja
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: M
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: -geen-
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Einddatum (maand)
     - Inhoud: Begindatum
       - Een label aanmaken: Nee
       - Uitsluiten van weergave: Nee
       - Opmaakhupmiddel: aangepast
       - Tijdzone overschrijven: - Niets geselecteerd -
-      - Datum-/tijdnotatie: d M
+      - Datum-/tijdnotatie: d
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: -geen-
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Begindatum (dag)
+    - Inhoud: Begindatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Nee
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: d
       - Stijlinstellingen: Standaardklassen toevoegen
       - Resultaten herschijven: Ja, zie onder
       - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
-      - Beheertitel: -geen-
+      - Beheertitel: Begindatum (maand)
     - Inhoud: Titel(titel)
   - Filtercriteria
     - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
@@ -221,13 +241,19 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
     - Een bepaald aantal items weergeven: 5 items
     - 'Meer' link: Nee
     - Linkweergave: geen
+   
+Twig code voor het herschrijven van begindatum (maand), de exacte naam van de variable kan afwijken.
 
-Twig code voor herschrijven Begindatum
-
-    {{ field_begindatum }}
-    {% if field_einddatum %}
-     - {{ field_einddatum }}
-    {% endif %}
+```
+{{ field_begindatum }}
+{% if field_einddatum and field_begindatum_1 == field_einddatum_2  %}
+ - {{ field_einddatum }} {{ field_einddatum_2 }}
+{% elseif field_einddatum %}
+ {{ field_begindatum_1 }} - {{ field_einddatum }} {{ field_einddatum_2 }}
+{% else %}
+ {{ field_begindatum_1 }}
+{% endif %}
+```
 
 #### Opmerkingen
 
