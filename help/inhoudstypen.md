@@ -462,12 +462,20 @@ bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veil
 #### Weergave beheren
 
 - Links: 100
-- Body: 101
-- Tags: 102
-- Bijlage: 103
+- Body: 101, Label: verborgen
+- Tags: 102, Label: verborgen
+- Bijlage: 103, Label: boven
 - Taal: Uitgeschakeld
 - Aangepaste weergave-instellingen: Teaser
- 
+
+#### Weergave beheren: teaser
+- Body: 100
+- Links: 101
+- Tags: uitgeschakeld
+- Bijlage: uitgeschakeld
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: Teaser
+
 #### Toegangsrechten
 
 - Anonieme gebruiker: geen
