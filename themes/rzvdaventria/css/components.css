@@ -190,3 +190,31 @@ ul.tabs {
   text-align: left;
   padding: 0px 10px; 
 }
+
+.view-activiteiten table {
+  width: 95%;	
+}
+
+.views-field-field-begindatum {
+  height: 28px;
+  width: 100px;
+  padding: 0px 5px;
+  background-color: rgb(205,205,205);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.views-field-title {
+  height: 28px;
+  width: calc(100% - 125px);
+  padding-left: 5px;
+  background-color: rgb(255,215,0)	
+}
+
+.views-field-title a,
+.views-field-title a:visited,
+.views-field-title a:hover,
+.views-field-title a:visited:hover,
+.views-field-title a:active {
+  color: black;
+}
