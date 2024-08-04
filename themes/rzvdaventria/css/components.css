@@ -80,6 +80,29 @@ ul.menu a.is-active {
   background-color: white;
 }
 
+/* block-rzvdaventria-views-block-hub-block-1 */
+
+#block-rzvdaventria-views-block-hub-block-1 {
+  /* Prevent background from next block from crawling over background img */
+  height: 120px;
+}
+
+#block-rzvdaventria-views-block-hub-block-1 .views-row {
+  width: calc(50% - 34px);
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;   
+}
+
+#block-rzvdaventria-views-block-hub-block-1 img {
+  display: block;
+  height: auto;	
+  width: calc(100%);	
+}
+
 /* block-rzvdaventria-primary-local-tasks */
 
 div.tabs {
