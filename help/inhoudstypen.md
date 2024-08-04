@@ -401,6 +401,7 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
     - Te ondernemen actie als de filterwaarde ongeldig is: Overzicht verbergen
     - Beheertitel: -geen-
     - Meer: -geen-
+ - Blok verbergen als het overzicht leeg is: Ja
 
 ## Nieuws
 
