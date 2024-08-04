@@ -342,20 +342,20 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
 - Paginering gebruiken: Nee
 - Naam voor weergave: Hub
 - Beheer-weergave: Geeft de 'hubs' weer op de pagina
-- Velden: 
-  - Inhoud: titel
-    - Een label aanmaken: Nee
-    - Uitsluiten van weergave: Nee
-    - Opmaakhulpmiddel: Label
-    - Stijlinstellingen: Standaardklassen toevoegen
-    - Resulten van herschrijven: Nee
-    - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
-    - Beheertitel: -geen-
+- Velden:
   - Inhoud: hub:afbeelding
     - Een label aanmaken: Nee
     - Uitsluiten van weergave: Nee
     - Opmaakhulpmiddel: Weergeven entiteit
     - Label linkt naar gerefereerde entitieit: Nee
+    - Stijlinstellingen: Standaardklassen toevoegen
+    - Resulten van herschrijven: Nee
+    - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
+    - Beheertitel: -geen-
+  - Inhoud: titel
+    - Een label aanmaken: Nee
+    - Uitsluiten van weergave: Nee
+    - Opmaakhulpmiddel: Label
     - Stijlinstellingen: Standaardklassen toevoegen
     - Resulten van herschrijven: Nee
     - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
