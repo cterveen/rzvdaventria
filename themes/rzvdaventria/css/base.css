@@ -29,3 +29,13 @@ p {
   padding: 16px 10px;
   text-align: left;
 }
+
+a,
+a:visited,
+a:hover,
+a:visited:hover,
+a:active {
+  color: #03a2ff;
+  font-weight: bold;
+  text-decoration: none;  
+}

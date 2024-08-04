@@ -10,8 +10,28 @@
  * Site branding
  */
  
+ #block-rzvdaventria-site-branding {
+  text-align: left;
+ }
+ 
 .site-logo {
   float: left;
+  margin: 14px;
+}
+
+.site-name {
+  height: 100%;
+  font: 28px Tahoma bold;
+  margin: 28px 0px;
+  vertical-align: middle;
+}
+
+.site-name a,
+.site-name a:visited,
+.site-name a:hover,
+.site-name a:visited:hover,
+.site-name a:active {
+  color: black;
 }
 
 /**
@@ -79,6 +99,36 @@ ul.menu a.is-active {
 #block-rzvdaventria-content {
   background-color: white;
 }
+
+/* nieuws teaser */
+
+.view-frontpage h2 a,
+.view-frontpage h2 a:visited,
+.view-frontpage h2 a:hover,
+.view-frontpage h2 a:visited:hover,
+.view-frontpage h2 a:active {
+  color: black;
+}
+
+.view-frontpage .file--name-body {
+  text-align: justify;	
+}
+
+.view-frontpage .node__links {
+  text-align: right;
+}
+
+/* nieuws */
+.node--type-nieuws p {
+  text-align: justify;	
+}
+
+.node--type-nieuws .field--name-field-tags .field__item {
+  float: left;
+  margin-left: 10px;
+}
+
+
 
 /* block-rzvdaventria-views-block-hub-block-1 */
 
