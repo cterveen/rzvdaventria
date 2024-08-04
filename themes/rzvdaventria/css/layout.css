@@ -90,7 +90,7 @@
  */
 
 #block-rzvdaventria-site-branding {
-  width: 300px;
+  width: 340px;
   float: left;
 }
 
@@ -117,8 +117,7 @@
     width: 50%;
 	float: left;
   }
-  
-  #block-rzvdaventria-iconensocialmediarss {
+  #block-rzvdaventria-iconensocialemediarss {
 	width: 50%;
     float: right;
   }
@@ -142,13 +141,12 @@
     width: 100%;
   }
   
-  #block-rzvdaventria-iconensocialmediarss {
+  #block-rzvdaventria-iconensocialemediarss {
 	width: 100%;
   }
   
   #block-rzvdaventria-adrescontactenbankgegevens {
 	width: 100%;
-    float: right;
   }
 }
  
