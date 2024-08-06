@@ -65,6 +65,20 @@ ul.menu a.is-active {
 }
 
 /**
+ * Region weer
+ */
+ 
+ /* block-rzvdaventria-weerenwaterstanden */
+ 
+#block-rzvdaventria-weerenwaterstanden .text-formatted p {
+  padding: 0px;	
+}
+
+#block-rzvdaventria-weerenwaterstanden .text-formatted img {
+  margin: 10px 0px 0px 10px;
+}
+
+/**
  * Region content
  *
  * The content region partially floats above the background image in desktop and tablet
@@ -124,8 +138,6 @@ ul.menu a.is-active {
   margin-left: 10px;
 }
 
-
-
 /* block-rzvdaventria-views-block-hub-block-1 */
 
 #block-rzvdaventria-views-block-hub-block-1 {
@@ -183,6 +195,12 @@ ul.tabs {
 /**
  * Region sidebar
  */
+
+/* block-rzvdaventria-webcammetlinknaarweerpagina*/
+
+#block-rzvdaventria-webcammetlinknaarweerpagina .text-formatted img {
+  width: 95%;	
+}
  
 /* block-rzvdaventria-views-block-activiteiten-block-1 */
 
