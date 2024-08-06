@@ -55,9 +55,9 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 - Body
   - Label: Body
   - Toegestaan aantal waarden: Beperkt, 1
-  - Helptekst: De tekst die in het blok moet worden weergegeven. Opmaak en afbeeldingen zijn momenteel niet mogelijk.
+  - Helptekst: De tekst of afbeeldingen die in het blok wordt weergegeven. Het gebruik van HTML is mogelijk.
   - Verplicht veld: Nee
-  - Toegestane tekstopmaken: Platte tekst
+  - Toegestane tekstopmaken: HTML
   - Samenvatting invoeren: Nee
   - Samenvatting vereisen: Nee
   - Standaardwaarde instellen: Nee
@@ -227,8 +227,19 @@ Zie ook instellingen.md
 
 #### Blok bewerken
 
-- Body: [FB] [X] [LI] [RSS]
+- Body: - zie onder -
 - Blokbeschrijving: Iconen Sociale media & RSS
+
+**Body**
+
+```
+<p>
+    <img src="/~internetcie/themes/rzvdaventria/images/icons/facebook.png" width="26" height="26">
+    <img src="/~internetcie/themes/rzvdaventria/images/icons/twitter.png" width="26" height="26">
+    <img src="/~internetcie/themes/rzvdaventria/images/icons/linkedin.png" width="26" height="26">
+    <img src="/~internetcie/themes/rzvdaventria/images/icons/rss.png" width="26" height="26">
+</p>
+```
 
 #### Blok instellen
 
@@ -256,8 +267,16 @@ Zie ook instellingen.md
 
 #### Blok bewerken
 
-- Body: [webcam]
+- Body: - zie onder -
 - Blokbeschrijving: Webcam met link naar weerpagina
+
+**Body:**
+
+```
+<p>
+    <img src="/~internetcie/webcam/webcam_jachthaven.jpg" width="640" height="368">
+</p>
+```
 
 #### Blok instellen
 
@@ -277,8 +296,18 @@ Zie ook instellingen.md
 
 #### Blok bewerken
 
-- Body: [temp][waterhoogte][weer]
+- Body: - zie onder -
 - Blokbeschrijving: Weer en waterstanden
+
+**Body:**
+
+```
+<p>
+   <img src="/~internetcie/webcam/temp_achter.gif" width="100" height="100">
+   <img src="/~internetcie/webcam/IJsselpeil.gif" width="100" height="100">
+   <img src="/~internetcie/webcam/wind.png" width="100" height="100">
+</p>
+```
 
 #### Blok instellen
 
