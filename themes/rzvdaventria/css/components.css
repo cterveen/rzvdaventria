@@ -89,6 +89,11 @@ ul.menu a.is-active {
  * mode. The background should be white, except for the hub for which images will float
  * above the header.
  */
+ 
+#block-rzvdaventria_messages {
+  padding: 10px 10px 10px 18px;
+  background-color: white;  
+}
 
 #block-rzvdaventria_primary_admin_actions {
   background-color: white;
