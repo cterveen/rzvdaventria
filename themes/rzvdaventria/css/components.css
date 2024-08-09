@@ -7,6 +7,10 @@
  */
 
 /**
+ * Region header
+ */
+
+/**
  * Site branding
  */
  
@@ -65,7 +69,7 @@ ul.menu a.is-active {
 }
 
 /**
- * Region weer
+ * Region weather
  */
  
  /* block-rzvdaventria-weerenwaterstanden */
@@ -160,6 +164,22 @@ ul.menu a.is-active {
   height: auto;	
   width: calc(100%);	
 }
+
+#block-rzvdaventria-views-block-hub-block-1 .field-content {
+  padding-top: 5px;
+  text-align: center;
+}
+
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:visited,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:hover,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:visited:hover,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:active  {
+  color: black;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
 
 /* block-rzvdaventria-primary-local-tasks */
 
