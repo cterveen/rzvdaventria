@@ -301,6 +301,15 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
    - Standaardwaarde instellen: Nee
    - Samenvatting: -geen-
    - Body: -geen-
+- Link
+  - Label: Link
+  - Systeemnaam: field_pagina
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: De pagina waarnaar gelinkt wordt. De linktekst wordt onder de afbeelding weergegeven.
+  - Verplicht veld: Ja
+  - Toegestaan linktype: Interne en externe links
+  - Linktekst toestaan: Verplicht
+  - Standaardwaarde instellen: Nee
 - Pagina
   - Label: Pagina
   - Systeemnaam: field_pagina
@@ -341,9 +350,10 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
 #### Weergave
 
 - Links: 100
-- Afbeelding: 103
 - Pagina: 101
 - Volgorde: 102
+- Afbeelding: 103
+- Link: 104
 - Taal: Uitgeschakeld
 
 #### Toegangsrechten
@@ -369,19 +379,39 @@ Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit l
 - Naam voor weergave: Hub
 - Beheer-weergave: Geeft de 'hubs' weer op de pagina
 - Velden:
+  - Inhoud: link [verborgen]
+    - Een label aanmaken: Nee
+    - Uitsluiten van weergave: Nee
+    - Kolom gebruikt voor kliksortering: uri
+    - Opmaakhulpmiddel: Link
+    - Lengte linktekst inkorten: 80
+    - Alleen url: Ja
+    - rel="nofollow" aan links toevoegen: Nee
+    - Link in nieuw venster openen: Nee
+    - Stijlinstellingen: Standaardklassen toevoegen
+    - Resulten van herschrijven: Nee
+    - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
+    - Beheertitel: -geen-
   - Inhoud: hub:afbeelding
     - Een label aanmaken: Nee
     - Uitsluiten van weergave: Nee
     - Opmaakhulpmiddel: Weergeven entiteit
     - Label linkt naar gerefereerde entitieit: Nee
     - Stijlinstellingen: Standaardklassen toevoegen
-    - Resulten van herschrijven: Nee
+    - Resulten van herschrijven:
+      - Dit veld als een link weergeven: Ja
+      - Linkpad: {{ field_link_1 }}
     - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
     - Beheertitel: -geen-
-  - Inhoud: titel
+  - Inhoud: link
     - Een label aanmaken: Nee
     - Uitsluiten van weergave: Nee
-    - Opmaakhulpmiddel: Label
+    - Kolom gebruikt voor kliksortering: uri
+    - Opmaakhulpmiddel: Link
+    - Lengte linktekst inkorten: 80
+    - Alleen url: Nee
+    - rel="nofollow" aan links toevoegen: Nee
+    - Link in nieuw venster openen: Nee
     - Stijlinstellingen: Standaardklassen toevoegen
     - Resulten van herschrijven: Nee
     - Gedrag bij ontbreken van resultaten: Verberg indien leeg, Niet herschrijven indien leeg
