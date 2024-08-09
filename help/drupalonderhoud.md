@@ -18,7 +18,7 @@ In veel gevallen zal het updaten van het systeem en de modules gelijktijdig word
 
 1. Download de nieuwe Drupal versie van de website: https://www.drupal.org/project/drupal
 2. Maak een back-up van de bestanden en database
-3. Ga naar Beheer > Instellingen > Ontwikkelingen > Onderhoudsmodus (/admin/config/development/maintenance)
+3. Ga naar Beheer > Instellingen > Ontwikkeling > Onderhoudsmodus (/admin/config/development/maintenance)
 4. Zet de website in Onderhoudsmodus
 5. Verwijder alle mappen en bestanden in de hoofdmap **met uitzondering van** de volgende mappen:
      - /libararies
@@ -27,9 +27,13 @@ In veel gevallen zal het updaten van het systeem en de modules gelijktijdig word
      - /sites
      - /themes
      - /webcam
+     - /.htaccess*
+     - /robots.txt*
 6. Upload alle mappen en bestanden van de gedownloade Drupal versie, met uitzondering van de onder 4 genoemde mappen.
 7. Ga naar /update.php en volg de instructies
 8. Haal de website uit Onderhoudsmodus
+
+* .htaccess en robots.txt zijn configuratiebestanden waarin zowel Drupal als eigen instellingen zijn opgenomen. Vergelijk de bestanden met de bestanden in de nieuwe versie en neem waar nodig instellingen over.
 
 ## Upgraden Drupal
 
