@@ -31,6 +31,8 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
   - https://www.drupal.org/project/pathauto
 - Token: nodig voor Pathauto.
   - https://www.drupal.org/project/token
+- Superfish
+  - https://www.drupal.org/project/superfish
   
 ## Eigen modules
 
@@ -42,3 +44,8 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 - Link
 
 ## Libraries
+
+- Drupal Superfish
+  - https://github.com/LOBsTerr/drupal-superfish/releases
+  - Opslaan in /libaries/drupal-superfish
+  - Nodig voor de Superfish module
