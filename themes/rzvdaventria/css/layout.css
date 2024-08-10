@@ -94,8 +94,12 @@
   float: left;
 }
 
-#block-rzvdaventria-main-menu {
+#block-rzvdaventria-hoofdnavigatie {
   float: left;
+}
+
+.block-superfish {
+  width: auto;
 }
  
 #block-rzvdaventria-search-form-wide {
