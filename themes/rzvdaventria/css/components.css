@@ -20,10 +20,8 @@
 }
 
 .site-name {
-  height: 100%;
   font: 28px Tahoma bold;
   margin: 28px 0px;
-  vertical-align: middle;
 }
 
 .site-name a,
@@ -35,8 +33,25 @@
 }
 
 /**
- * Menu
+ * Hoofdnavigatie
  */
+ 
+#block-rzvdaventria-hoofdnavigatie {
+  font: 28px Tahoma bold;
+  margin: 28px 0px;
+}
+
+#block-rzvdaventria-hoofdnavigatie a,
+#block-rzvdaventria-hoofdnavigatie a:visited,
+#block-rzvdaventria-hoofdnavigatie a:hover,
+#block-rzvdaventria-hoofdnavigatie a:visited:hover,
+#block-rzvdaventria-hoofdnavigatie a:active {
+  color: black;
+}
+
+ul.sf-menu a {
+  padding: 0px 0px 0px 15px;
+}
 
 ul.menu {
   margin-left: 1em; /* LTR */
