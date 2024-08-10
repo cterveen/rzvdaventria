@@ -158,7 +158,36 @@ Zie ook instellingen.md
 
 - Categorie: Menu's
 - Gebied: Kop
+- Categorie: Superfish
 - Gewicht: 2
+
+#### Blok instellen
+
+- Titel: Hoofdnavigatie
+- Systeemnaam: rzvdavenria_hoofdnavigatie
+- Titel weergeven: Nee
+- Menuniveaus
+  - Initieel zichtbaarheidsniveau: 1
+  - Aantal te tonen niveaus: Onbeperkt
+  - Alle menulinks tonen: Nee
+- Blokinstellingen
+  - Menutype: Horizontal (single row)
+  - Stijl: Geen
+  - Add arrows to parent menus: ja
+  - Drop shadows: ja
+  - Slide-in effect: Verticaal
+- Superfish plugins
+  - jQuiry Suppostition: Ja
+  - jQuiry hoverIntent: Ja
+- sf-Touchscreen:
+  - sf-Touchscreen: Enable jQuery sf-Touchscreen plugin for this menu depending on the user's Web browser user agent
+  - Select behaviour: Hiding the sub-menu on the second tap, adding cloned parent links to the top of sub-menus as well. (Standaard)
+  - User agent settings: Use the pre-defined lists of the user agents.
+- sfSmallscreen:
+  - sfSmallscreen: Enable jQuiry sf-Smallscreen plugin for this menu depending on the user's Web browser window width. (Standaard)
+  - Window width settings: 600 pixels
+  - Selecteer een type: Convert the menu to an accordion menu.
+  - Accordion title: Menu
 
 ## Gebouwd met Drupal
 
@@ -323,7 +352,7 @@ Zie ook instellingen.md
 
 - Formulieren
 - Gebied: Kop
-- Gewicht: 1
+- Gewicht: 2
 
 Het gewicht van het zoekformulier is lager dan dat van hoofdnavigatie. Voor de brede lay-out maakt dit niet uit, maar bij de lange layout wordt het zoekformulier hierdoor
 rechts van het menu geplaatst.
