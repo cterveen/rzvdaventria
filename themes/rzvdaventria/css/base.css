@@ -2,15 +2,18 @@
  * @file
  * Default styles for basic html element styling
  */
- 
- body {
+
+/**
+ * Desktop and tablet
+ */
+
+body {
   background-image: url("/~internetcie/themes/rzvdaventria/images/background/tweezonder-wide.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 1920px;
- }
- 
- 
+}
+
 h1 {
   font-size: 2em;
   margin: 0px;
@@ -35,4 +38,17 @@ a:active {
   color: #03a2ff;
   font-weight: bold;
   text-decoration: none;  
+}
+
+/**
+ * Phone
+ */
+
+@media all and (max-width: 599px) {
+  body {
+    background-image: url("/~internetcie/themes/rzvdaventria/images/background/skiff-phone.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 600px;
+  }
 }

@@ -69,17 +69,36 @@
  * Tablet and phone
  */
  
- @media all and (max-width: 960px) {
-    .region-content {
-       width: 100%;
-	   margin-top: 0px;
-	}
+@media all and (min-width: 600px) and (max-width: 960px) {
+  .region-content {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .region-sidebar {
+    width: 100%;	
+  }
 	
-	.region-sidebar {
-	   width: 100%;	
-	}
- }
- 
+  .region-weather {
+    text-align: right;
+  }
+}
+
+@media all and (max-width: 599px) {
+  .region-content {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .region-sidebar {
+    width: 100%;	
+  }
+	
+  .region-weather {
+	margin-top: 40px;
+    text-align: right;
+  }
+}
 /**
  * Block placement
  *
@@ -137,6 +156,11 @@
  */
 
 @media all and (max-width: 599px) {
+  /* Temporarily remove search field, it's not placed correctly due to overflow */
+  #block-rzvdaventria-search-form-wide {
+	display: none;
+  }
+
   #block-rzvdaventria-webcammetlinknaarweerpagina {
 	width: 100%;
   }
