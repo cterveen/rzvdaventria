@@ -16,12 +16,18 @@
  
 .site-logo {
   float: left;
-  margin: 14px;
+  margin: 14px 0px 0px 14px;
 }
 
 .site-name {
-  font: 28px Tahoma bold;
+  font: 16px Tahoma bold;
   margin: 28px 0px;
+}
+
+@media all and (min-width: 600px) {
+  .site-name {
+    display: none;
+  }
 }
 
 .site-name a,
@@ -37,8 +43,8 @@
  */
  
 #block-rzvdaventria-hoofdnavigatie {
-  font: 28px Tahoma bold;
-  margin: 28px 0px;
+  font: 16px Tahoma bold;
+  margin: 0px;
 }
 
 #block-rzvdaventria-hoofdnavigatie a,
@@ -49,9 +55,32 @@
   color: black;
 }
 
-ul.sf-menu a {
-  padding: 0px 0px 0px 15px;
+.sf-accordion-toggle a {
+  padding: 30px 14px 34px 0px;
+  float: right;
 }
+
+ul.sf-menu .sf-with-ul,
+ul.sf-menu a.sf-depth-1 {
+  padding: 30px 0px 34px 14px;
+}
+
+ul.sf-menu a.sf-depth-2 {
+  padding: 20px 0px 24px 14px;
+}
+
+ul.sf-menu li:hover > ul,
+ul.sf-menu li.sfHover > ul {
+  left: 0;
+  top: 80px;
+  background-color: rgb(255,215,0)
+}
+
+.sf-sub-indicator {
+  display: none;	
+}
+
+/* css/compontents/menu.css */
 
 ul.menu {
   margin-left: 1em; /* LTR */

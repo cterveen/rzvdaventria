@@ -109,7 +109,7 @@
  */
 
 #block-rzvdaventria-site-branding {
-  width: 340px;
+  width: 116px;
   float: left;
 }
 
@@ -160,7 +160,15 @@
   #block-rzvdaventria-search-form-wide {
 	display: none;
   }
-
+  
+  #block-rzvdaventria-site-branding {
+    width: 226px;
+  }
+  
+  #block-rzvdaventria-hoofdnavigatie {
+    float: right;
+  }
+  
   #block-rzvdaventria-webcammetlinknaarweerpagina {
 	width: 100%;
   }
