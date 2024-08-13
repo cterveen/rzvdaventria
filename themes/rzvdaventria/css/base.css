@@ -10,7 +10,7 @@
 body {
   background-image: url("/~internetcie/themes/rzvdaventria/images/background/tweezonder-wide.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top var(--drupal-displace-offset-top, 0px);
   background-size: 1920px;
 }
 
@@ -48,7 +48,7 @@ a:active {
   body {
     background-image: url("/~internetcie/themes/rzvdaventria/images/background/skiff-phone.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center top var(--drupal-displace-offset-top, 0px);
     background-size: 600px;
   }
 }
