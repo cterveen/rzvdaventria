@@ -152,6 +152,14 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 
 Zie ook instellingen.md
 
+## Gebouwd met Drupal
+
+#### Blokindeling
+
+- Categorie: System
+- Gebied: Voet
+- Gewicht: 0
+
 ## Hoofdnavigatie
 
 #### Blokindeling
@@ -173,7 +181,7 @@ Zie ook instellingen.md
 - Blokinstellingen
   - Menutype: Horizontal (single row)
   - Stijl: Geen
-  - Add arrows to parent menus: ja
+  - Add arrows to parent menus: nee
   - Drop shadows: ja
   - Slide-in effect: Verticaal
 - Superfish plugins
@@ -187,15 +195,8 @@ Zie ook instellingen.md
   - sfSmallscreen: Enable jQuiry sf-Smallscreen plugin for this menu depending on the user's Web browser window width. (Standaard)
   - Window width settings: 600 pixels
   - Selecteer een type: Convert the menu to an accordion menu.
-  - Accordion title: Menu
-
-## Gebouwd met Drupal
-
-#### Blokindeling
-
-- Categorie: System
-- Gebied: Voet
-- Gewicht: 0
+  - Accordion menu title: Menu
+  - Accordion button type: Use parent menu items as buttons
 
 ## Hub
 
