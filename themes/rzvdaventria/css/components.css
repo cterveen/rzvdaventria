@@ -75,7 +75,8 @@ ul.sf-menu li.sfHover > ul {
 
 /* accordion menu */
 .sf-accordion-toggle a {
-  padding: 30px 14px 31px 0px;
+  font-size: 48px;
+  padding: 12px 14px 12px 0px;
   float: right;
 }
 
