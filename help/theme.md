@@ -60,6 +60,20 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
   - Zijbalk rechts van inhoud
     - Elementen onder elkaar
 
+## Lettertype en kleuren
+
+#### Lettertypen
+
+Nog te bepalen.
+
+#### Kleuren
+
+- Geel: rgb (255, 215, 0)
+- Grijs (licht): rgb(205,205,205)
+- Grijs (donker: rgb(41,41,41)
+- Wit: white
+- Zwart: black
+
 ## Beheerthema
 
 The rzvdaventria thema is niet geoptimaliseerd voor het beheergedeelte en de basis is niet echt bruikbaar. Daarom is het beter het core-thema Claro te kiezen. 
