@@ -195,7 +195,7 @@ Zie ook instellingen.md
   - sfSmallscreen: Enable jQuiry sf-Smallscreen plugin for this menu depending on the user's Web browser window width. (Standaard)
   - Window width settings: 600 pixels
   - Selecteer een type: Convert the menu to an accordion menu.
-  - Accordion menu title: Menu
+  - Accordion menu title: &#x2261;
   - Accordion button type: Use parent menu items as buttons
 
 ## Hub
