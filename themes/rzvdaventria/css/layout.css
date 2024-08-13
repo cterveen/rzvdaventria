@@ -65,9 +65,7 @@
   text-align: left;
 }
 
-/**
- * Tablet and phone
- */
+/* Tablet */
  
 @media all and (min-width: 600px) and (max-width: 960px) {
   .region-content {
@@ -84,6 +82,8 @@
   }
 }
 
+/* phone */
+
 @media all and (max-width: 599px) {
   .region-content {
     width: 100%;
@@ -95,7 +95,7 @@
   }
 	
   .region-weather {
-	margin-top: 40px;
+	margin-top: 80px;
     text-align: right;
   }
 }
@@ -131,6 +131,10 @@
  */
 
 @media all and (min-width: 600px) and (max-width: 960px) {
+  #block-rzvdaventria-views-block-hub-block-1 {
+    margin-top: 10px;
+  }
+  
   #block-rzvdaventria-webcammetlinknaarweerpagina {
 	width: 50%;
     float: right;
@@ -161,6 +165,10 @@
 	display: none;
   }
   
+  #block-rzvdaventria-views-block-hub-block-1 {
+    margin-top: 10px;
+  }
+  
   #block-rzvdaventria-site-branding {
     width: 226px;
   }
@@ -185,4 +193,3 @@
 	width: 100%;
   }
 }
- 
