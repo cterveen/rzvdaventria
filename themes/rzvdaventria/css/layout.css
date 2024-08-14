@@ -122,7 +122,6 @@
 }
  
 #block-rzvdaventria-search-form-wide {
-  width: 220px;
   float: right;
 }
 
@@ -160,11 +159,6 @@
  */
 
 @media all and (max-width: 599px) {
-  /* Temporarily remove search field, it's not placed correctly due to overflow */
-  #block-rzvdaventria-search-form-wide {
-	display: none;
-  }
-  
   #block-rzvdaventria-views-block-hub-block-1 {
     margin-top: 10px;
   }
@@ -193,3 +187,4 @@
 	width: 100%;
   }
 }
+ 
