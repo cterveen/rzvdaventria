@@ -22,8 +22,6 @@ base:
         weight: -10
       css/components/field.css:
         weight: -10
-      css/components/form.css:
-        weight: -10
       css/components/icons.css:
         weight: -10
       css/components/inline-form.css:
