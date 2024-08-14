@@ -8,7 +8,7 @@
  */
 
 body {
-  background-image: url("/~internetcie/themes/rzvdaventria/images/background/tweezonder-wide.jpg");
+  background-image: url("../images/background/tweezonder-wide.jpg");
   background-repeat: no-repeat;
   background-position: center top var(--drupal-displace-offset-top, 0px);
   background-size: 1920px;
@@ -46,9 +46,9 @@ a:active {
 
 @media all and (max-width: 599px) {
   body {
-    background-image: url("/~internetcie/themes/rzvdaventria/images/background/skiff-phone.jpg");
+    background-image: url("../images/background/skiff-phone.jpg");
     background-repeat: no-repeat;
-    background-position: center top var(--drupal-displace-offset-top, 0px);
+    background-position: center top calc(80px + var(--drupal-displace-offset-top, 0px));
     background-size: 600px;
   }
 }
