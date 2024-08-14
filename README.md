@@ -6,7 +6,7 @@ Daventria Drupal 10.x Theme
 
 A Drupal 10.x Theme for the Daventria website. The Theme is being developed as a theme for the new website.
 
-The project can be considered pre-alpha. It's currently a work in progress mostly consisting of documentation. Core language is Dutch, although some of the bug reports, files and supportive scripts are in English. Internationalisation and localisation are not available.
+The project can be considered alph. All of the components are available or described but it needs refining. The core language for the documentation is Dutch. Some of the bug reports, and most of the programming will be in English though. Internationalisation and localisation are not available.
 
 Further development is intended.
 
@@ -17,6 +17,7 @@ Copy all files to the Drupal main folder.
 Go to Admin > Appearance (admin/appearance).  
 Find the rzvdaventria theme and click install and make default.  
 Select Claro as Administration theme.
+Flush the cache (Admin > Configuration > Development > Performance (/admin/config/development/performance)
 
 Configure the Drupal system according to the documents in help. The recommended order is:
 
@@ -25,6 +26,18 @@ Configure the Drupal system according to the documents in help. The recommended 
 - instellingen.md
 - inhoudstypen.md
 - blokken.md
+
+## Update
+
+Remove the following directories:
+
+- help
+- themes/rzvdaventria
+- webcam
+
+Copy all files to the Drupal main folder.
+Flush the cache (Admin > Configuration > Development > Performance (/admin/config/development/performance)
+
 
 ## Use
 
