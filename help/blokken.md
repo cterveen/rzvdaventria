@@ -353,7 +353,7 @@ Zie ook instellingen.md
 
 - Formulieren
 - Gebied: Kop
-- Gewicht: 2
+- Gewicht: 1
 
 Het gewicht van het zoekformulier is lager dan dat van hoofdnavigatie. Voor de brede lay-out maakt dit niet uit, maar bij de lange layout wordt het zoekformulier hierdoor
 rechts van het menu geplaatst.
