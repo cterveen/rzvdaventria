@@ -76,7 +76,7 @@ ul.sf-menu li.sfHover > ul {
 /* accordion menu */
 .sf-accordion-toggle a {
   font-size: 48px;
-  padding: 12px 14px 12px 0px;
+  padding: 12px 14px 0px 0px;
   float: right;
 }
 
@@ -126,7 +126,21 @@ ul.menu a.is-active {
   color: #000;
 }
 
-/* search */
+/* #block-rzvdaventria-search-form-wide */
+
+#block-rzvdaventria-search-form-wide ul.sf-menu {
+  padding: 28px 14px 0px 0px;	
+}
+
+#block-rzvdaventria-search-form-wide ul.sf-menu li:hover > ul,
+#block-rzvdaventria-search-form-wide ul.sf-menu li.sfHover > ul {
+  top: 52px;
+  left: -206px;
+  height: 20px;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  width: 242px;
+}
 
 /**
  * Region weather
@@ -258,7 +272,6 @@ ul.menu a.is-active {
   font-size: 1.25em;
   font-weight: normal;
 }
-
 
 /* block-rzvdaventria-primary-local-tasks */
 
