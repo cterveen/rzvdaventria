@@ -97,6 +97,10 @@ search-results:
   css:
     component:
       css/components/search-results.css: {  }
+search-wide:
+  version: VERSION
+  js:
+    js/search.js: {}
 user:
   version: VERSION
   css:
