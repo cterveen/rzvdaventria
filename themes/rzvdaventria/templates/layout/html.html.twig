@@ -51,5 +51,10 @@
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token }}">
+	<script>
+	  jQuery(document).ready(function() {
+		jQuery('ul.sf-menu').superfish();
+	  });
+    </script>
   </body>
 </html>
