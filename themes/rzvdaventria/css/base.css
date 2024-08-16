@@ -3,9 +3,7 @@
  * Default styles for basic html element styling
  */
 
-/**
- * Desktop and tablet
- */
+/* Desktop and tablet */
 
 body {
   background-image: url("../images/background/tweezonder-wide.jpg");
@@ -15,19 +13,22 @@ body {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0px;
-  padding:  22px 10px;  
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0.2rem;
 }
- 
+
 h2 {
-  margin: 0px;
-  padding: 20px 10px;  
+  font-size: 1.2rem;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
 }
 
 p {
-  margin: 0px;
-  padding: 16px 10px;
+  margin: 0;
+  padding-bottom: 0.8rem;
 }
 
 a,
@@ -35,14 +36,11 @@ a:visited,
 a:hover,
 a:visited:hover,
 a:active {
-  color: #03a2ff;
-  font-weight: bold;
-  text-decoration: none;  
+  color: black;
+  text-decoration: none;
 }
 
-/**
- * Phone
- */
+/* Phone */
 
 @media all and (max-width: 599px) {
   body {
