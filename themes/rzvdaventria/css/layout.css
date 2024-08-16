@@ -7,32 +7,41 @@
  
  /**
  * Container
- *
- * In wide view max 1200 px wide, in long view full page wide.
  */
- 
+
 .layout-container {
-  max-width: 1200px;	
+  max-width: 1200px;
+  margin-left: max(calc(50% - 600px), 0px);
 }
 
 /**
  * Region placement
  *
- * region-header: on top at full container width.
- * region-weather: in wide view in the right sidebar in front of the banner. In
- *   long view above the main contentin front of the banner.
- * region content: in wide view in the left to the sidebar partially in front
- *   of the banner. In long view full container width below the banner.
- * region-sidebar: in wide view right of the main content below the main banner.
- *   In long view below the content at full container width.
- * region-footer: at the bottom at full container width.
+ * region-header:
+ *   - all views: on top and full container width
+ *
+ * region-weather:
+ *   - desktop view: right sidebar in front of the banner.
+ *   - tablet & phone view: above content in front of the banner.
+ *
+ * region content:
+ *   - desktop view: left of the sidebar, partially in front of the banner.
+ *   - tablet & phone view: full container width below the banner.
+ *
+ * region-sidebar:
+ *   - desktop view: right of the main content below the main banner.
+ *   - tablet & phone view: full container width below the content.
+ *
+ * region-footer:
+ *   - all views: at the bottom at full container width.
  */
  
+ /* Desktop  (default) */
+
 .region-header {
   height: 80px;
   width: 100%;
   background-color: rgb(255,215,0);
-  text-align: left;
 }
 
 .region-weather {
@@ -40,7 +49,6 @@
   width: 360px;
   float: right;
   margin-top: 280px;
-  text-align: left;
 }
 
 .region-content {
@@ -48,21 +56,18 @@
   width: calc(100% - 360px);
   float: left;
   margin-top: 280px;
-  text-align: left;
 }
 
 .region-sidebar {
   width: 360px;
   float: left;
-  text-align: left;
  }
-   
+
 .region-footer {
   height: 240px;
   width: 100%;
   clear: both;
   background-color: rgb(41,41,41);
-  text-align: left;
 }
 
 /* Tablet */
@@ -74,15 +79,15 @@
   }
 
   .region-sidebar {
-    width: 100%;	
+    width: 100%;
   }
-	
+
   .region-weather {
     text-align: right;
   }
 }
 
-/* phone */
+/* Phone */
 
 @media all and (max-width: 599px) {
   .region-content {
@@ -91,100 +96,83 @@
   }
 
   .region-sidebar {
-    width: 100%;	
+    width: 100%;
   }
-	
+
   .region-weather {
-	margin-top: 120px;
+    margin-top: 120px;
     text-align: right;
   }
 }
+
 /**
  * Block placement
- *
- * Header
- *   Site branding: left
- *   Main menu: right of site branding
- *   Search box: right
  */
 
-#block-rzvdaventria-site-branding {
+/* Desktop (default) */
+
+
+.block-system-branding-block {
   width: 116px;
   float: left;
 }
 
-#block-rzvdaventria-hoofdnavigatie {
-  float: left;
-}
-
 .block-superfish {
+  float: left;
   width: auto;
 }
- 
-#block-rzvdaventria-search-form-wide {
+
+.block-search {
   float: right;
 }
 
-/**
- * Tablet
- */
+.region-sidebar .block {
+  padding: 10px;
+}
+
+/* Tablet */
 
 @media all and (min-width: 600px) and (max-width: 960px) {
-  #block-rzvdaventria-views-block-hub-block-1 {
+  .block-views-blockhub-block-1 {
     margin-top: 10px;
   }
-  
+
   #block-rzvdaventria-webcammetlinknaarweerpagina {
-	width: 50%;
+    width: calc(50% - 20px);
     float: right;
   }
-  
+
   #block-rzvdaventria-views-block-activiteiten-block-1 {
-    width: 50%;
-	float: left;
+    width: calc(50% - 20px);
+    float: left;
   }
   #block-rzvdaventria-iconensocialemediarss {
-	width: 50%;
+    width: calc(50% - 20px);
     float: right;
   }
-  
+
   #block-rzvdaventria-adrescontactenbankgegevens {
-	width: 50%;
+    width: calc(50% - 20px);
     float: right;
   }
 }
 
-/**
- * Phone
- */
+/* Phone */
 
 @media all and (max-width: 599px) {
-  #block-rzvdaventria-views-block-hub-block-1 {
+  .block-views-blockhub-block-1 {
     margin-top: 10px;
   }
-  
-  #block-rzvdaventria-site-branding {
+
+  .block-system-branding-block {
     width: 226px;
   }
-  
-  #block-rzvdaventria-hoofdnavigatie {
+
+  .block-superfish {
     float: right;
   }
-  
-  #block-rzvdaventria-webcammetlinknaarweerpagina {
-	width: 100%;
-  }
-  
-  #block-rzvdaventria-views-block-activiteiten-block-1 {
+
+  .region-sidebar .block {
     width: 100%;
   }
-  
-  #block-rzvdaventria-iconensocialemediarss {
-	width: 100%;
-  }
-  
-  #block-rzvdaventria-adrescontactenbankgegevens {
-	width: 100%;
-  }
 }
- 
