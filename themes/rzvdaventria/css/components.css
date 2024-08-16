@@ -87,11 +87,11 @@ ul.sf-menu.sf-accordion.sf-expanded {
   float: none;
   top: calc(80px + var(--drupal-displace-offset-top, 0px)) !important;
   background-color: rgb(255,215,0);
-  z-index: 499;  
+  z-index: 499;
 }
 
 ul.sf-menu.sf-accordion .sf-depth-2 {
-  background-color: rgb(205,205,205);	
+  background-color: rgb(205,205,205);
 }
 
 /* css/compontents/menu.css */
@@ -129,7 +129,7 @@ ul.menu a.is-active {
 /* #block-rzvdaventria-search-form-wide */
 
 #block-rzvdaventria-search-form-wide ul.sf-menu {
-  padding: 28px 14px 0px 0px;	
+  padding: 28px 14px 0px 0px;
 }
 
 #block-rzvdaventria-search-form-wide ul.sf-menu li:hover > ul,
@@ -149,7 +149,7 @@ ul.menu a.is-active {
  /* block-rzvdaventria-weerenwaterstanden */
  
 #block-rzvdaventria-weerenwaterstanden .text-formatted p {
-  padding: 0px;	
+  padding: 0px;
 }
 
 #block-rzvdaventria-weerenwaterstanden .text-formatted img {
@@ -165,22 +165,22 @@ ul.menu a.is-active {
 @media all and (max-width: 599px) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
     margin: 70px 10px 0px 0px;
-	height: 40px;
-	width: 40px;
+    height: 40px;
+    width: 40px;
   }
 }
 
 /**
  * Region content
  *
- * The content region partially floats above the background image in desktop and tablet
- * mode. The background should be white, except for the hub for which images will float
- * above the header.
+ * The content region partially floats above the background image in desktop
+ * and tablet mode. The background should be white, except for the hub for
+ * which images will float above the header.
  */
  
 #block-rzvdaventria_messages {
   padding: 10px 10px 10px 18px;
-  background-color: white;  
+  background-color: white;
 }
 
 #block-rzvdaventria_primary_admin_actions {
@@ -218,7 +218,7 @@ ul.menu a.is-active {
 }
 
 .view-frontpage .file--name-body {
-  text-align: justify;	
+  text-align: justify;
 }
 
 .view-frontpage .node__links {
@@ -227,7 +227,7 @@ ul.menu a.is-active {
 
 /* nieuws */
 .node--type-nieuws p {
-  text-align: justify;	
+  text-align: justify;
 }
 
 .node--type-nieuws .field--name-field-tags .field__item {
@@ -249,13 +249,13 @@ ul.menu a.is-active {
   margin-left: 10px;
   padding: 10px;
   background-color: white;
-  border: 1px solid black;   
+  border: 1px solid black;
 }
 
 #block-rzvdaventria-views-block-hub-block-1 img {
   display: block;
   height: auto;	
-  width: calc(100%);	
+  width: calc(100%);
 }
 
 #block-rzvdaventria-views-block-hub-block-1 .field-content {
@@ -413,18 +413,17 @@ abbr.ajax-changed {
 /* block-rzvdaventria-webcammetlinknaarweerpagina*/
 
 #block-rzvdaventria-webcammetlinknaarweerpagina .text-formatted img {
-  width: 95%;	
+  width: 95%;
 }
  
 /* block-rzvdaventria-views-block-activiteiten-block-1 */
 
 .view-activiteiten {
-  text-align: left;
-  padding: 0px 10px; 
+  padding: 0px 10px;
 }
 
 .view-activiteiten table {
-  width: 95%;	
+  width: 95%;
 }
 
 .view-activiteiten .views-field-field-begindatum-1 {
@@ -440,7 +439,7 @@ abbr.ajax-changed {
   height: 28px;
   width: calc(100% - 125px);
   padding-left: 5px;
-  background-color: rgb(255,215,0)	
+  background-color: rgb(255,215,0)
 }
 
 .view-activiteiten .views-field-title a,
