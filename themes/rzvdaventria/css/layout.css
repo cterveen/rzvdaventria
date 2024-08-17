@@ -106,11 +106,10 @@
 }
 
 /**
- * Block placement
+ * Blocks
  */
 
 /* Desktop (default) */
-
 
 .block-system-branding-block {
   width: 116px;
@@ -126,8 +125,13 @@
   float: right;
 }
 
+.region-content .block {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .region-sidebar .block {
-  padding: 10px;
+  padding: 1rem;
 }
 
 /* Tablet */
@@ -138,22 +142,24 @@
   }
 
   #block-rzvdaventria-webcammetlinknaarweerpagina {
-    width: calc(50% - 20px);
+    width: calc(50% - 2rem);
     float: right;
   }
 
   #block-rzvdaventria-views-block-activiteiten-block-1 {
-    width: calc(50% - 20px);
+    width: calc(50% - 2rem);
     float: left;
   }
   #block-rzvdaventria-iconensocialemediarss {
-    width: calc(50% - 20px);
+    width: calc(50% - 2rem);
     float: right;
+    clear: right;
   }
 
   #block-rzvdaventria-adrescontactenbankgegevens {
-    width: calc(50% - 20px);
+    width: calc(50% - 2rem);
     float: right;
+    clear: right;
   }
 }
 
@@ -173,6 +179,6 @@
   }
 
   .region-sidebar .block {
-    width: 100%;
+    width: calc(100% - 2rem);
   }
 }
