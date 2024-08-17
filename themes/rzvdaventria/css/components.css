@@ -273,7 +273,8 @@ ul.menu a.is-active {
   font-weight: normal;
 }
 
-/* block-rzvdaventria-primary-local-tasks */
+/* include components/tabs.css */
+/* #block-rzvdaventria-primary-local-tasks */
 
 div.tabs {
   margin: 1em 0;
@@ -304,7 +305,7 @@ ul.tabs {
   background-color: rgb(205,205,205);
 }
 
-/* components/form.css */
+/* include components/form.css */
 
 form .field-multiple-table {
   margin: 0;
@@ -412,18 +413,14 @@ abbr.ajax-changed {
 
 /* block-rzvdaventria-webcammetlinknaarweerpagina*/
 
-#block-rzvdaventria-webcammetlinknaarweerpagina .text-formatted img {
-  width: 95%;
+#block-rzvdaventria-webcammetlinknaarweerpagina img {
+  width: 100%;
 }
  
 /* block-rzvdaventria-views-block-activiteiten-block-1 */
 
-.view-activiteiten {
-  padding: 0px 10px;
-}
-
 .view-activiteiten table {
-  width: 95%;
+  width: 100%;
 }
 
 .view-activiteiten .views-field-field-begindatum-1 {
@@ -437,7 +434,7 @@ abbr.ajax-changed {
 
 .view-activiteiten .views-field-title {
   height: 28px;
-  width: calc(100% - 125px);
+  width: auto;
   padding-left: 5px;
   background-color: rgb(255,215,0)
 }
