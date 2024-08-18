@@ -580,7 +580,7 @@ naar wordt gelinkt.
    - Helptekst: Vul hier de tekst van de pagina in. Gebruik bij plakken altijd plakken zonder
 opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
    - Verplicht veld: Nee
-   - Toegestane tekstopmaken: Platte tekst
+   - Toegestane tekstopmaken: HTML
    - Samenvatting invoeren: Nee
    - Samenvatting vereisen: Nee
    - Standaardwaarde instellen: Nee
