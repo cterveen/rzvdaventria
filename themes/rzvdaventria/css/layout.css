@@ -45,10 +45,12 @@
 }
 
 .region-weather {
-  height: 120px;
-  width: 360px;
+  height: 80px;
+  width: calc(360px - 2rem);
   float: right;
   margin-top: 280px;
+  padding: calc(40px - 0.5rem) 1rem 0.5rem 1rem;
+  vertical-align: bottom;
 }
 
 .region-content {
@@ -77,7 +79,7 @@
     width: 100%;
     margin-top: 0px;
   }
-
+  
   .region-sidebar {
     width: 100%;
   }
@@ -90,6 +92,11 @@
 /* Phone */
 
 @media all and (max-width: 599px) {
+
+  .region-weather {
+    padding: calc(80px - 0.5rem) 1rem 0.5rem 1rem;
+  }
+
   .region-content {
     width: 100%;
     margin-top: 0px;
@@ -100,6 +107,7 @@
   }
 
   .region-weather {
+    height: 40px;
     margin-top: 120px;
     text-align: right;
   }
