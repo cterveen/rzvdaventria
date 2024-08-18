@@ -145,26 +145,26 @@ ul.menu a.is-active {
 /**
  * Region weather
  */
- 
+
  /* block-rzvdaventria-weerenwaterstanden */
- 
-#block-rzvdaventria-weerenwaterstanden .text-formatted p {
-  padding: 0px;
-}
 
 #block-rzvdaventria-weerenwaterstanden .text-formatted img {
-  margin: 30px 0px 0px 10px;
+  padding-right: 10px;
 }
 
+/* Tablet */
 @media all and (min-width: 600px) and (max-width: 960px) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
-    margin: 30px 10px 0px 0px;
+    text-align: right;
+    padding-left: 10px;
   }
 }
 
+/* Phone */
 @media all and (max-width: 599px) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
-    margin: 70px 10px 0px 0px;
+    text-align: right;
+    padding-left: 10px;
     height: 40px;
     width: 40px;
   }
@@ -205,6 +205,10 @@ ul.menu a.is-active {
 
 #block-rzvdaventria-content {
   background-color: white;
+}
+
+#block-rzvdaventria-content p {
+  padding-bottom: 0.8rem;
 }
 
 /* nieuws teaser */
@@ -418,6 +422,10 @@ abbr.ajax-changed {
 }
  
 /* block-rzvdaventria-views-block-activiteiten-block-1 */
+
+.block-views-blockactiviteiten-block-1 h2 {
+  padding-left: 3px;
+}
 
 .view-activiteiten table {
   width: 100%;
