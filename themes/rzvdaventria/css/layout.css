@@ -46,7 +46,7 @@
 
 .region-weather {
   height: 80px;
-  width: calc(360px - 2rem);
+  width: 20.5rem;
   float: right;
   margin-top: 280px;
   padding: calc(40px - 0.5rem) 1rem 0.5rem 1rem;
@@ -55,26 +55,33 @@
 
 .region-content {
   min-height: 400px;
-  width: calc(100% - 360px);
+  width: calc(100% - 22.5rem);
   float: left;
   margin-top: 280px;
 }
 
 .region-sidebar {
-  width: 360px;
+  width: 22.5rem;
   float: left;
  }
 
 .region-footer {
-  height: 240px;
+  height: 10rem;
   width: 100%;
   clear: both;
   background-color: rgb(41,41,41);
 }
 
 /* Tablet */
- 
-@media all and (min-width: 600px) and (max-width: 960px) {
+
+/* The background image still changes at 600px */
+@media all and (min-width: 600px) and (max-width: 60rem) {
+  .region-weather {
+    text-align: right;
+  }
+}
+
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
   .region-content {
     width: 100%;
     margin-top: 0px;
@@ -83,19 +90,20 @@
   .region-sidebar {
     width: 100%;
   }
-
-  .region-weather {
-    text-align: right;
-  }
 }
 
 /* Phone */
 
 @media all and (max-width: 599px) {
-
   .region-weather {
     padding: calc(80px - 0.5rem) 1rem 0.5rem 1rem;
+    height: 40px;
+    margin-top: 120px;
+    text-align: right;
   }
+}
+
+@media all and (max-width: 37.5rem) {
 
   .region-content {
     width: 100%;
@@ -104,12 +112,6 @@
 
   .region-sidebar {
     width: 100%;
-  }
-
-  .region-weather {
-    height: 40px;
-    margin-top: 120px;
-    text-align: right;
   }
 }
 
@@ -144,7 +146,7 @@
 
 /* Tablet */
 
-@media all and (min-width: 600px) and (max-width: 960px) {
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
   .block-views-blockhub-block-1 {
     margin-top: 10px;
   }
@@ -173,7 +175,7 @@
 
 /* Phone */
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 37.5rem) {
   .block-views-blockhub-block-1 {
     margin-top: 10px;
   }
