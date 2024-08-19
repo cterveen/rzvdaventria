@@ -36,29 +36,33 @@ Vanuit het basisthema zijn nog de nodige bestanden aanwezig in css/components, d
 
 ## Responsiveness
 
-Gegevens van de gebruikte resoluties voor de website zijn niet beschikbaar. Maar op basis van de gegevens van statcounter kan de breedte van het scherm worden ingedeeld op drie resoluties:
+Gegevens van de gebruikte resoluties voor de eigen website zijn niet beschikbaar. Maar op basis van de gegevens van statcounter kan de breedte van het scherm worden ingedeeld op drie resoluties:
 
 - Mobiel: 360 - 430 pixels
 - Tablet (staand): 768 - 810 pixels
 - Desktop: 1280 - 2560 pixels
 
+Voor de responsiveness wordt gebruik gemaakt van de eenheid rem. Standaard is 1rem ongeveer 16px, maar een rem groeit mee met de standaard lettergrootte van de browser. Als een bezoeker behoefteheeft aan een groter lettertype kan die de standaard lettergrootte aanpassen naar bijvoorbeld 24px. Door de breedte van de zijbalk in rem te definiëren groeit deze mee met de instellingen van de bezoeker en blijft de tekst leesbaar. Dit betekend echter ook dat de zijbalk eerder naar onder moet worden geplaatst zodat deze niet teveel ruimte van de inhoud in gaat nemen. Door de eenheid rem te gebruiken voor de responsiveness past de site zich goed aan bij grotere of kleinere lettergrootte's.
+
 Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 
-- Mobiel (<600px) :
+- Mobiel (<37.5rem) :
   - Menu ingeklapt
   - Weer boven Inhoud
   - Zijbalk onder Inhoud
     - Elementen Zijbalk onder elkaar
-- Tablet (staand, 600-960px)
+- Tablet (staand, 37.5-60rem)
   - Menu ingeklapt
   - Weer boven inhoud
   - Zijbalk onder Inhoud
     - Webcam, sociale media en adres naast de agenda
-- Desktop (>960px)
+- Desktop (>60rem)
   - Menu uitgeklapt
   - Weer rechts van inhoud
   - Zijbalk rechts van inhoud
     - Elementen onder elkaar
+   
+De grootte van de achtergrondafbeelding is op het moment nog vastgelegd in pixels om niet teveel van de schermruimte in te nemen. Daardoor is een deel van de afkapwaarden voor de mobiele versie nog in pixels gedefineerd. Mogelijk wordt dit nog aangepast.
 
 ## Lettertype en kleuren
 
