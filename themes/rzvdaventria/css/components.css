@@ -14,12 +14,19 @@
  
 .site-logo {
   float: left;
-  margin: 14px 0px 0px 14px;
+  padding: max(calc(40px - 1.5rem), 10px) 16px;
+  height: 3rem;
+  max-height: 60px;
+}
+
+.site-logo img {
+  height: min(3rem, 60px);
+  width: auto;
 }
 
 .site-name {
-  font: 16px Tahoma bold;
-  margin: 28px 0px;
+  font: 1rem Tahoma bold;
+  padding: calc(40px - 0.5rem) 0px;
 }
 
 @media all and (min-width: 37.5rem) {
@@ -28,34 +35,18 @@
   }
 }
 
-.site-name a,
-.site-name a:visited,
-.site-name a:hover,
-.site-name a:visited:hover,
-.site-name a:active {
-  color: black;
-}
-
 /* Hoofdnavigatie */
  
 #block-rzvdaventria-hoofdnavigatie {
-  font: 16px Tahoma bold;
+  font: 1rem Tahoma bold;
   margin: 0px;
-}
-
-#block-rzvdaventria-hoofdnavigatie a,
-#block-rzvdaventria-hoofdnavigatie a:visited,
-#block-rzvdaventria-hoofdnavigatie a:hover,
-#block-rzvdaventria-hoofdnavigatie a:visited:hover,
-#block-rzvdaventria-hoofdnavigatie a:active {
-  color: black;
 }
 
 /* broad menu */
 
 ul.sf-menu .sf-with-ul,
 ul.sf-menu a.sf-depth-1 {
-  padding: 30px 0px 34px 14px;
+  padding: calc(40px - 0.5rem) 0px calc(40px - 0.5rem) 14px;
 }
 
 ul.sf-menu a.sf-depth-2 {
@@ -129,17 +120,24 @@ ul.menu a.is-active {
 /* #block-rzvdaventria-search-form-wide */
 
 #block-rzvdaventria-search-form-wide ul.sf-menu {
-  padding: 28px 14px 0px 0px;
+  padding: max(calc(40px - 1rem), 10px) 1rem;
+  height: 2rem;
+  max-height: 60px;
+}
+
+#block-rzvdaventria-search-form-wide li,
+#block-rzvdaventria-search-form-wide svg {
+  height: min(2rem, 60px);
+  width: auto;
 }
 
 #block-rzvdaventria-search-form-wide ul.sf-menu li:hover > ul,
 #block-rzvdaventria-search-form-wide ul.sf-menu li.sfHover > ul {
-  top: 52px;
-  left: -206px;
-  height: 20px;
+  top: min(calc(1rem + 40px), 70px);
+  left: calc(min(calc(2rem * 0.957), 60px) + 16px - 17rem);
   text-align: center;
-  padding: 30px 0px 30px 0px;
-  width: 242px;
+  padding: 1rem;
+  width: 15rem;
 }
 
 /**
