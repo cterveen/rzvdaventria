@@ -128,7 +128,7 @@
 
 .block-superfish {
   float: left;
-  width: auto;
+  width: calc(min(100%, 1200px) - 32px - 2 * min(3rem, 60px) - 32px - min(2rem, 60px));
 }
 
 .block-search {
@@ -180,15 +180,18 @@
     margin-top: 10px;
   }
 
+  .region-sidebar .block {
+    width: calc(100% - 2rem);
+  }
+}
+
+@media all and (max-width: 600px) {
   .block-system-branding-block {
     width: 12.5rem;
   }
 
   .block-superfish {
     float: right;
-  }
-
-  .region-sidebar .block {
-    width: calc(100% - 2rem);
+    width: 2rem;
   }
 }
