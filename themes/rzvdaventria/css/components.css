@@ -2,25 +2,52 @@
  * @file
  * Styles for compontents
  * 
- * This includes the style of blocks and placement of elements within the
- * block. For placement of the block itself see css/layout.css
+ * This concern everything within a region.
+ *
+ * Breakpoints:
+ * - < 60 rem (~ 960px)
+ *   - all regions below each other
+ *   - sidebar compontents in double column
+ * - < 46.2 rem (~ 740px)
+ *   - main menu in double row
+ * - < 37.5 rem (~600px)
+ *   - sidebar compontents below each other
+ * - < 600px
+ *   - smaller background image
+ *   - main menu collapses
+ *   - site name visible
  */
 
 /**
  * Region header
+ *
+ * Components
+ * - Site branding
+ * - Main menu
+ * - Search
  */
 
 /* Site branding */
- 
+
+.block-system-branding-block {
+  width: 116px;
+  float: left;
+}
+
+@media all and (max-width: 599px) {
+  .block-system-branding-block {
+    width: calc(118px + 7.5rem);
+  }
+}
+
 .site-logo {
   float: left;
-  padding: max(calc(40px - 1.5rem), 10px) 16px;
-  height: 3rem;
-  max-height: 60px;
+  padding: 16px;
+  height: 48px;
 }
 
 .site-logo img {
-  height: min(3rem, 60px);
+  height: 48px;
   width: auto;
 }
 
@@ -29,7 +56,6 @@
   padding: calc(40px - 0.5rem) 0px;
 }
 
-/* hide site with wide menu */
 @media all and (min-width: 600px) {
   .site-name {
     display: none;
@@ -37,13 +63,25 @@
 }
 
 /* Hoofdnavigatie */
- 
+
+#block-rzvdaventria-hoofdnavigatie {
+  float: left;
+  width: calc(min(100%, 1200px) - 192px);
+}
+
+@media all and (max-width: 599px) {
+  #block-rzvdaventria-hoofdnavigatie {
+    float: right;
+    width: 2rem;
+  }
+}
+
 #block-rzvdaventria-hoofdnavigatie {
   font: 1rem Tahoma bold;
   margin: 0px;
 }
 
-/* broad menu */
+/* Broad menu */
 
 ul.sf-menu .sf-with-ul,
 ul.sf-menu a.sf-depth-1 {
@@ -80,10 +118,10 @@ ul.sf-menu a.sf-depth-2 {
 
 /* accordion menu */
 .sf-accordion-toggle a {
-  height: 2rem;
-  padding: calc(40px - 1rem) 14px calc(40px - 1rem) 0px;
+  height: 56px;
+  padding: 12px 14px 12px 0px;
   float: right;
-  font-size: 2rem;
+  font-size: 56px;
 }
 
 ul.sf-menu.sf-accordion.sf-expanded {
@@ -134,21 +172,27 @@ ul.menu a.is-active {
 
 /* #block-rzvdaventria-search-form-wide */
 
+#block-rzvdaventria-search-form-wide {
+  float: right;
+}
+
+/* search icon */
 #block-rzvdaventria-search-form-wide ul.sf-menu {
-  padding: max(calc(40px - 1rem), 10px) 16px;
-  height: min(2rem, 60px);
+  padding: 24px 16px;
+  height: 32px;
 }
 
 #block-rzvdaventria-search-form-wide li,
 #block-rzvdaventria-search-form-wide svg {
-  height: min(2rem, 60px);
+  height: 32px;
   width: auto;
 }
 
+/* search box */
 #block-rzvdaventria-search-form-wide ul.sf-menu li:hover > ul,
 #block-rzvdaventria-search-form-wide ul.sf-menu li.sfHover > ul {
-  top: min(calc(1rem + 40px), 70px);
-  left: calc(min(calc(2rem * 0.957), 57.4px) + 16px - 17rem);
+  top: 56px;
+  left: calc(47px - 17rem);
   text-align: center;
   padding: 1rem;
   width: 15rem;
@@ -215,12 +259,23 @@ ul.menu a.is-active {
   background-color: white;
 }
 
+/* Content */
+
 #block-rzvdaventria-content {
   background-color: white;
 }
 
 #block-rzvdaventria-content p {
   padding-bottom: 0.8rem;
+}
+
+#block-rzvdaventria-content a,
+#block-rzvdaventria-content a:visited,
+#block-rzvdaventria-content a:hover,
+#block-rzvdaventria-content a:visited:hover,
+#block-rzvdaventria-content a:active {
+  color: rgb(3, 162, 255);
+  font-weight: bold;
 }
 
 /* nieuws teaser */
@@ -256,6 +311,12 @@ ul.menu a.is-active {
 #block-rzvdaventria-views-block-hub-block-1 {
   /* Prevent background from next block from crawling over background img */
   height: 120px;
+}
+
+@media all and (max-width: 60rem) {
+  .block-views-blockhub-block-1 {
+    margin-top: 10px;
+  }
 }
 
 #block-rzvdaventria-views-block-hub-block-1 .views-row {
@@ -398,7 +459,7 @@ label.option {
   content: "";
   vertical-align: super;
   /* Use a background image to prevent screen readers from announcing the text. */
-  background-image: url(../../images/icons/required.svg);
+  background-image: url(../images/icons/required.svg);
   background-repeat: no-repeat;
   background-size: 6px 6px;
 }
@@ -432,8 +493,22 @@ abbr.ajax-changed {
 #block-rzvdaventria-webcammetlinknaarweerpagina img {
   width: 100%;
 }
+
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
+  #block-rzvdaventria-webcammetlinknaarweerpagina {
+    width: calc(50% - 2rem);
+    float: right;
+  }
+}
  
 /* block-rzvdaventria-views-block-activiteiten-block-1 */
+
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
+  #block-rzvdaventria-views-block-activiteiten-block-1 {
+    width: calc(50% - 2rem);
+    float: left;
+  }
+}
 
 .block-views-blockactiviteiten-block-1 h2 {
   padding-left: 3px;
@@ -465,4 +540,28 @@ abbr.ajax-changed {
 .view-activiteiten .views-field-title a:visited:hover,
 .view-activiteiten .views-field-title a:active {
   color: black;
+}
+
+/* block-rzvdaventria-iconensocialemediarss */
+
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
+  #block-rzvdaventria-iconensocialemediarss {
+    width: calc(50% - 2rem);
+    float: right;
+    clear: right;
+  }
+}
+
+/* #block-rzvdaventria-adrescontactenbankgegevens */
+
+#block-rzvdaventria-adrescontactenbankgegevens p {
+  padding-bottom: 0.8rem;
+}
+
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
+  #block-rzvdaventria-adrescontactenbankgegevens {
+    width: calc(50% - 2rem);
+    float: right;
+    clear: right;
+  }
 }
