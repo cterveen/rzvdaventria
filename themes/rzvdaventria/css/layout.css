@@ -52,13 +52,13 @@
   vertical-align: bottom;
 }
 
-@media all and (min-width: 600px) and (max-width: 60rem) {
+@media all and (min-width: 599.5px) and (max-width: 60rem) {
   .region-weather {
     text-align: right;
   }
 }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 599.5px) {
   .region-weather {
     padding: calc(80px - 0.5rem) 1rem 0.5rem 1rem;
     height: 40px;
