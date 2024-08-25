@@ -34,7 +34,7 @@
   float: left;
 }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 599.5px) {
   .block-system-branding-block {
     width: calc(118px + 7.5rem);
   }
@@ -44,6 +44,17 @@
   float: left;
   padding: 16px;
   height: 48px;
+}
+
+@media all and (max-width: 15.2rem) {
+  /* remove logo with font-size 32px */
+  .block-system-branding-block {
+    width: calc(7rem);
+  }
+
+  .site-logo {
+    display: none;
+  }
 }
 
 .site-logo img {
@@ -56,7 +67,7 @@
   padding: calc(40px - 0.5rem) 0px;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 599.5px) {
   .site-name {
     display: none;
   }
@@ -66,10 +77,10 @@
 
 #block-rzvdaventria-hoofdnavigatie {
   float: left;
-  width: calc(min(100%, 1200px) - 192px);
+  width: calc(100% - 186px);
 }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 599.5px) {
   #block-rzvdaventria-hoofdnavigatie {
     float: right;
     width: 2rem;
@@ -100,7 +111,7 @@ ul.sf-menu a.sf-depth-2 {
 }
 
 /* Double row */
-@media all and (min-width: 600px) and (max-width: 46.2rem) {
+@media all and (min-width: 599.5px) and (max-width: min(45.85rem, 1200px)) {
   ul.sf-menu .sf-with-ul,
   ul.sf-menu a.sf-depth-1 {
     padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 0px;
@@ -209,7 +220,7 @@ ul.menu a.is-active {
 }
 
 /* Tablet */
-@media all and (min-width: 600px) and (max-width: 60rem) {
+@media all and (min-width: 599.5px) and (max-width: 60rem) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
     text-align: right;
     padding-left: 10px;
@@ -217,7 +228,7 @@ ul.menu a.is-active {
 }
 
 /* Phone */
-@media all and (max-width: 599px) {
+@media all and (max-width: 599.5px) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
     text-align: right;
     padding-left: 10px;
@@ -266,6 +277,7 @@ ul.menu a.is-active {
 }
 
 #block-rzvdaventria-content p {
+  text-align: justify;
   padding-bottom: 0.8rem;
 }
 
@@ -288,19 +300,11 @@ ul.menu a.is-active {
   color: black;
 }
 
-.view-frontpage .file--name-body {
-  text-align: justify;
-}
-
 .view-frontpage .node__links {
   text-align: right;
 }
 
 /* nieuws */
-.node--type-nieuws p {
-  text-align: justify;
-}
-
 .node--type-nieuws .field--name-field-tags .field__item {
   float: left;
   margin-left: 10px;
