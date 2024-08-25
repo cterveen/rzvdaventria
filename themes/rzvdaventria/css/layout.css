@@ -2,47 +2,46 @@
  * @file
  * Styles for layout.
  *
- * This mainly concerns the placement of regions and blocks.
+ * This concerns the container and the regions.
+ *
+ * Breakpoints:
+ * - < 60 rem (~ 960px)
+ *   - all regions below each other
+ *   - sidebar compontents in double column
+ * - < 46.2 rem (~ 740px)
+ *   - main menu in double row
+ * - < 37.5 rem (~600px)
+ *   - sidebar compontents below each other
+ * - < 600px
+ *   - smaller background image
+ *   - main menu collapses
+ *   - site name visible
  */
  
- /**
- * Container
- */
-
 .layout-container {
   max-width: 1200px;
   margin-left: max(calc(50% - 600px), 0px);
 }
 
-/**
- * Region placement
- *
+ /**
  * region-header:
  *   - all views: on top and full container width
- *
- * region-weather:
- *   - desktop view: right sidebar in front of the banner.
- *   - tablet & phone view: above content in front of the banner.
- *
- * region content:
- *   - desktop view: left of the sidebar, partially in front of the banner.
- *   - tablet & phone view: full container width below the banner.
- *
- * region-sidebar:
- *   - desktop view: right of the main content below the main banner.
- *   - tablet & phone view: full container width below the content.
- *
- * region-footer:
- *   - all views: at the bottom at full container width.
  */
- 
- /* Desktop  (default) */
 
 .region-header {
   height: 80px;
   width: 100%;
   background-color: rgb(255,215,0);
 }
+
+/**
+ * region-weather:
+ *   - desktop view: right sidebar in front of the banner.
+ *   - tablet & phone view: above content in front of the banner.
+ *
+ * Note that the phone view will switch with the smaller background image,
+ * therefore the breakpoint is defined in pixels.
+ */
 
 .region-weather {
   height: 80px;
@@ -53,46 +52,11 @@
   vertical-align: bottom;
 }
 
-.region-content {
-  min-height: 400px;
-  width: calc(100% - 22.5rem);
-  float: left;
-  margin-top: 280px;
-}
-
-.region-sidebar {
-  width: 22.5rem;
-  float: left;
- }
-
-.region-footer {
-  height: 10rem;
-  width: 100%;
-  clear: both;
-  background-color: rgb(41,41,41);
-}
-
-/* Tablet */
-
-/* The background image still changes at 600px */
 @media all and (min-width: 600px) and (max-width: 60rem) {
   .region-weather {
     text-align: right;
   }
 }
-
-@media all and (min-width: 37.5rem) and (max-width: 60rem) {
-  .region-content {
-    width: 100%;
-    margin-top: 0px;
-  }
-  
-  .region-sidebar {
-    width: 100%;
-  }
-}
-
-/* Phone */
 
 @media all and (max-width: 599px) {
   .region-weather {
@@ -103,36 +67,24 @@
   }
 }
 
-@media all and (max-width: 37.5rem) {
+/**
+ * region content:
+ *   - desktop view: left of the sidebar, partially in front of the banner.
+ *   - tablet & phone view: full container width below the banner.
+ */
 
+.region-content {
+  min-height: 400px;
+  width: calc(100% - 22.5rem);
+  float: left;
+  margin-top: 280px;
+}
+
+@media all and (max-width: 60rem) {
   .region-content {
     width: 100%;
     margin-top: 0px;
   }
-
-  .region-sidebar {
-    width: 100%;
-  }
-}
-
-/**
- * Blocks
- */
-
-/* Desktop (default) */
-
-.block-system-branding-block {
-  width: 116px;
-  float: left;
-}
-
-.block-superfish {
-  float: left;
-  width: calc(min(100%, 1200px) - 32px - 2 * min(3rem, 60px) - 32px - min(2rem, 60px));
-}
-
-.block-search {
-  float: right;
 }
 
 .region-content .block {
@@ -140,58 +92,41 @@
   padding-right: 1rem;
 }
 
+/**
+ * region-sidebar:
+ *   - desktop view: right of the main content below the main banner.
+ *   - tablet & phone view: full container width below the content.
+ */
+
+.region-sidebar {
+  width: 22.5rem;
+  float: left;
+ }
+
+@media all and  (max-width: 60rem) {
+  .region-sidebar {
+    width: 100%;
+  }
+}
+
 .region-sidebar .block {
   padding: 1rem;
 }
 
-/* Tablet */
-
-@media all and (min-width: 37.5rem) and (max-width: 60rem) {
-  .block-views-blockhub-block-1 {
-    margin-top: 10px;
-  }
-
-  #block-rzvdaventria-webcammetlinknaarweerpagina {
-    width: calc(50% - 2rem);
-    float: right;
-  }
-
-  #block-rzvdaventria-views-block-activiteiten-block-1 {
-    width: calc(50% - 2rem);
-    float: left;
-  }
-  #block-rzvdaventria-iconensocialemediarss {
-    width: calc(50% - 2rem);
-    float: right;
-    clear: right;
-  }
-
-  #block-rzvdaventria-adrescontactenbankgegevens {
-    width: calc(50% - 2rem);
-    float: right;
-    clear: right;
-  }
-}
-
-/* Phone */
-
 @media all and (max-width: 37.5rem) {
-  .block-views-blockhub-block-1 {
-    margin-top: 10px;
-  }
-
   .region-sidebar .block {
     width: calc(100% - 2rem);
   }
 }
 
-@media all and (max-width: 600px) {
-  .block-system-branding-block {
-    width: 12.5rem;
-  }
+/**
+ * region-footer:
+ *   - all views: at the bottom at full container width.
+ */
 
-  .block-superfish {
-    float: right;
-    width: 2rem;
-  }
+.region-footer {
+  height: 10rem;
+  width: 100%;
+  clear: both;
+  background-color: rgb(41,41,41);
 }
