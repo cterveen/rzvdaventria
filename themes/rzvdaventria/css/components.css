@@ -27,7 +27,7 @@
  * - Search
  */
 
-/* Site branding */
+/* components/side-branding */
 
 .block-system-branding-block {
   width: 116px;
@@ -73,7 +73,7 @@
   }
 }
 
-/* Hoofdnavigatie */
+/* components/superfish-main */
 
 #block-rzvdaventria-hoofdnavigatie {
   float: left;
@@ -149,7 +149,7 @@ ul.sf-menu.sf-accordion .sf-depth-2 {
   background-color: rgb(205,205,205);
 }
 
-/* css/compontents/menu.css */
+/* include compontents/menu.css */
 
 ul.menu {
   margin-left: 1em; /* LTR */
@@ -181,7 +181,7 @@ ul.menu a.is-active {
   color: #000;
 }
 
-/* #block-rzvdaventria-search-form-wide */
+/* components/search */
 
 #block-rzvdaventria-search-form-wide {
   float: right;
@@ -211,9 +211,12 @@ ul.menu a.is-active {
 
 /**
  * Region weather
+ *
+ * Components
+ * - weather
  */
 
- /* block-rzvdaventria-weerenwaterstanden */
+ /* components/weather */
 
 #block-rzvdaventria-weerenwaterstanden .text-formatted img {
   padding-right: 10px;
@@ -240,24 +243,30 @@ ul.menu a.is-active {
 /**
  * Region content
  *
- * The content region partially floats above the background image in desktop
- * and tablet mode. The background should be white, except for the hub for
- * which images will float above the header.
+ * Components
+ * - messages
+ * - administration 
+ * - primary local tasks
+ * - primary secondary local tasks
+ * - page title
+ * - content
+ * - hub
  */
- 
+
+/* components/messages */
+
 #block-rzvdaventria_messages {
   padding: 10px 10px 10px 18px;
   background-color: white;
 }
 
+/* components/admin-actions */
+
 #block-rzvdaventria_primary_admin_actions {
   background-color: white;
 }
 
-#block-rzvdavenria-messages {
-  background-color: white;
-}
-
+/* components/local-tasks */
 #block-rzvdaventria-primary-local-tasks {
   background-color: white;
 }
@@ -266,14 +275,17 @@ ul.menu a.is-active {
   background-color: white;
 }
 
+/* components/page-title */
+
 #block-rzvdaventria-page-title {
   background-color: white;
 }
 
-/* Content */
+/* components/content */
 
 #block-rzvdaventria-content {
   background-color: white;
+  min-height: 120px;
 }
 
 #block-rzvdaventria-content p {
@@ -310,7 +322,7 @@ ul.menu a.is-active {
   margin-left: 10px;
 }
 
-/* block-rzvdaventria-views-block-hub-block-1 */
+/* components/block-hub */
 
 #block-rzvdaventria-views-block-hub-block-1 {
   /* Prevent background from next block from crawling over background img */
@@ -484,15 +496,21 @@ abbr.ajax-changed {
   height: 14px;
   content: "";
   vertical-align: sub;
-  background: url(../../images/icons/error.svg) no-repeat;
+  background: url(../images/icons/error.svg) no-repeat;
   background-size: contain;
 }
 
 /**
  * Region sidebar
+ *
+ * Components
+ * - Webcam
+ * - Activiteiten
+ * - Social media
+ * - Adress
  */
 
-/* block-rzvdaventria-webcammetlinknaarweerpagina*/
+/* components/block-webcam */
 
 #block-rzvdaventria-webcammetlinknaarweerpagina img {
   width: 100%;
@@ -505,7 +523,7 @@ abbr.ajax-changed {
   }
 }
  
-/* block-rzvdaventria-views-block-activiteiten-block-1 */
+/* components/block-activiteiten */
 
 @media all and (min-width: 37.5rem) and (max-width: 60rem) {
   #block-rzvdaventria-views-block-activiteiten-block-1 {
@@ -546,7 +564,7 @@ abbr.ajax-changed {
   color: black;
 }
 
-/* block-rzvdaventria-iconensocialemediarss */
+/* components/block-social-media */
 
 @media all and (min-width: 37.5rem) and (max-width: 60rem) {
   #block-rzvdaventria-iconensocialemediarss {
@@ -556,7 +574,7 @@ abbr.ajax-changed {
   }
 }
 
-/* #block-rzvdaventria-adrescontactenbankgegevens */
+/* components/block-address */
 
 #block-rzvdaventria-adrescontactenbankgegevens p {
   padding-bottom: 0.8rem;
