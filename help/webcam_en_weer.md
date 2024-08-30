@@ -8,6 +8,55 @@ Hier worden de aanvullende gegevens die op de website weer worden gegeven beschr
 
 ## Weer en waterstand
 
-De temperatuur wordt aan de achterkant van het botenhuis gemeten door een Raspberry Pi met temperatuursensor. Op de Raspberry Pi draait een script dat elke minuut de temperatuur afleest en hier een plaatje van maakt. Tevens wordt elke 3 uur de waterstand in Deventer uitgelezen van rws.nl en wordt ook hier een plaatje van gemaakt.
+De temperatuur wordt aan de achterkant van het botenhuis gemeten door een Raspberry Pi met temperatuursensor. Op de Raspberry Pi draait een script dat elke minuut de temperatuur afleest. Tevens wordt elke uur de waterstand in Deventer uitgelezen van rws.nl. Op dit moment wordt van deze gegevens een plaatje gemaakt en geupload. Deze werkwijze gaat veranderen waarbij de gegevens in een json-bestand worden vastgelegd en geupload.
 
-De bestandsnamen van deze plaatjes zijn respecievelijk temp_achter.gif en IJsselpeil.gif. Beide plaatjes worden elke minuut geupload naar /webcam. Beide plaatjes worden op de site getoond via het script /webcam/weerdata.php met daarbij de naam van het plaatje in de parameter image. Het script controleert of het plaatje bestaat en niet ouder is dan 1 uur. Als dat het geval is wordt het plaatje getoond, anders wordt een plaatje dat een error weergeeft getoond.
+Het json-bestand is als volgt samengesteld:
+
+- Naam: weerdata.json
+- Locatie: /webcam/data
+- Metingen:
+  - temperatuur
+  - ijsselpeil
+  - windkracht
+- Per meting een object met:
+  - label: de nette naam van de meting
+  - value: de waarde (Engelse notatie)
+  - unit: de eenheid voor de meting
+  - caption: een extra toevoeging, bijvoorbeeld "vorst" of "hoogwater"
+  - timestamp: de tijd waarop de meting heeft plaatsgevonden in lokale tijd, maar zonder tijdszoneaanduiding
+  - expires: de tijd, in UTC, waarop de meting niet meer geldig wordt.
+
+Het json-bestand wordt gebruikt om zowel het plaatje met de meetgegevens te maken als de alt-tekst en titel. Het plaatje wordt gemaakt in php, de alt-tekst en titel in JavaScript. Omdat JavaScript in de browser draait en alles omzet naar lokale tijd of UTC wordt de timestamp zonder tijdszoneaanduiding gegeven en expires in UTC. De berekeningen worden door het script op de Raspberry Pi zodat deze maar op één plek te hoeven worden aangepast, dat script doet dus ook een groot deel van de datavalidatie.
+
+#### Voorbeeld weerdata.json
+
+De samenstelling van weerdata.json is al volgt:
+
+````
+{
+  "temperatuur": {
+    "label": "Temperatuur",
+    "value": 12,
+    "unit" : "°C",
+    "caption": "",
+    "timestamp": "2024-08-29 15:30:00",
+    "expires": "2024-08-29 14:30:00 UTC"
+  },
+  "ijsselpeil": {
+    "label": "IJsselpeil",
+    "value": 4.13,
+    "unit": "m",
+    "caption": "",
+    "timestamp": "2024-08-29 15:30:00",
+    "expires": "2024-08-29 19:30:00 UTC"
+  },
+  "windkracht": {
+    "label": "Windkracht",
+    "value": 2,
+    "unit": "bft",
+    "caption": "",
+    "timestamp": "2024-08-29 15:30:00",
+    "expires": "2024-08-29 14:30:00 UTC"
+  }
+}
+````
