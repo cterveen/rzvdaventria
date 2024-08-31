@@ -4,23 +4,23 @@
     "value": 12,
     "unit" : "°C",
     "caption": "",
-    "timestamp": "2024-08-29 15:30:00",
-    "expires": "2024-08-29 14:30:00 UTC"
+    "timestamp": "15:30",
+    "expires": "2025-08-29 14:30:00 UTC"
   },
   "ijsselpeil": {
     "label": "IJsselpeil",
     "value": 4.13,
     "unit": "m",
     "caption": "",
-    "timestamp": "2024-08-29 15:30:00",
-    "expires": "2024-08-29 19:30:00 UTC"
+    "timestamp": "15:30",
+    "expires": "2025-08-29 19:30:00 UTC"
   },
   "windkracht": {
     "label": "Windkracht",
     "value": 2,
     "unit": "bft",
     "caption": "",
-    "timestamp": "2024-08-29 15:30:00",
-    "expires": "2024-08-29 14:30:00 UTC"
+    "timestamp": "15:30",
+    "expires": "2025-08-29 14:30:00 UTC"
   }
 }
