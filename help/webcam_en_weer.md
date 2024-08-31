@@ -16,15 +16,24 @@ Het json-bestand is als volgt samengesteld:
 - Locatie: /webcam/data
 - Metingen:
   - temperatuur
+    - meting: temperatuursensor achterkant botenhuis
+    - interval: 1 minuut
   - ijsselpeil
+    - meting: rijkswaterstaat
+    - interval: 60 minuten
   - windkracht
+    - meting: nog te regelen
+    - interval: 1 minuut
 - Per meting een object met:
   - label: de nette naam van de meting
   - value: de waarde (Engelse notatie)
   - unit: de eenheid voor de meting
   - caption: een extra toevoeging, bijvoorbeeld "vorst" of "hoogwater"
-  - timestamp: de tijd waarop de meting heeft plaatsgevonden in lokale tijd, maar zonder tijdszoneaanduiding
+  - timestamp: de tijd waarop de meting heeft plaatsgevonden in lokale tijd format hh:mm
   - expires: de tijd, in UTC, waarop de meting niet meer geldig wordt.
+    - temperatuur: meting + 1 uur
+    - ijsselpeil + 4 uur
+    - windkracht: meting + 1 uur
 
 Het json-bestand wordt gebruikt om zowel het plaatje met de meetgegevens te maken als de alt-tekst en titel. Het plaatje wordt gemaakt in php, de alt-tekst en titel in JavaScript. Omdat JavaScript in de browser draait en alles omzet naar lokale tijd of UTC wordt de timestamp zonder tijdszoneaanduiding gegeven en expires in UTC. De berekeningen worden door het script op de Raspberry Pi zodat deze maar op één plek te hoeven worden aangepast, dat script doet dus ook een groot deel van de datavalidatie.
 
@@ -39,24 +48,24 @@ De samenstelling van weerdata.json is al volgt:
     "value": 12,
     "unit" : "°C",
     "caption": "",
-    "timestamp": "2024-08-29 15:30:00",
-    "expires": "2024-08-29 14:30:00 UTC"
+    "timestamp": "15:30",
+    "expires": "2025-08-29 14:30:00 UTC"
   },
   "ijsselpeil": {
     "label": "IJsselpeil",
     "value": 4.13,
     "unit": "m",
     "caption": "",
-    "timestamp": "2024-08-29 15:30:00",
-    "expires": "2024-08-29 19:30:00 UTC"
+    "timestamp": "15:30",
+    "expires": "2025-08-29 19:30:00 UTC"
   },
   "windkracht": {
     "label": "Windkracht",
     "value": 2,
     "unit": "bft",
     "caption": "",
-    "timestamp": "2024-08-29 15:30:00",
-    "expires": "2024-08-29 14:30:00 UTC"
+    "timestamp": "15:30",
+    "expires": "2025-08-29 14:30:00 UTC"
   }
 }
 ````
