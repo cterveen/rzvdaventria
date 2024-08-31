@@ -11,39 +11,63 @@
 # --------------------------------------------------------------------
 
 # Basedir
-$dir = './';
+$data_file = './data/weerdata.json';
 
 # Size (px)
-$size = 100;
+$size = 80;
 
-# Number of blocks in a row/column for the error
-$error_blocks = 9;
+# Font
+$font = "./arial.ttf";
+// $font = "c:/windows/fonts/arial.ttf";
+
+# Font size for the value
+$value_fontsize = round($size/3/1.333);
+
+# Font size for the unit
+$unit_fontsize = round($value_fontsize/2);
+
+# Font size for the timestamp
+$time_fontsize = 8;
 
 # Error
 $error = 0;
 
+# Error blocks
+$error_blocks = 9;
+
+# Define data object
+$data = (object) array();
+
 # --------------------------------------------------------------------
-# Get and validate $image
+# Load the data
 # --------------------------------------------------------------------
 
-if (!isset($_GET['image'])) {
-  $image = NULL;
+if (!file_exists($data_file)) {
+  $error = 1;
 }
 else {
-  $image = $_GET['image'];
+  $data = json_decode(file_get_contents($data_file));
 }
 
-$image = str_replace(array("/", ".."), "", $image); // Prevent abuse
+# --------------------------------------------------------------------
+# Get and validate $measure
+# --------------------------------------------------------------------
 
-if ($image == NULL) {
+if (!isset($_GET['meting'])) {
+  $meassure = NULL;
+}
+else {
+  $meassure = $_GET['meting'];
+}
+
+if ($meassure == NULL) {
   $error = 1;
 }
-elseif (!file_exists($dir . $image)) {
+elseif (!isset($data->{$meassure})) {
   $error = 1;
 }
-elseif ((time() - filectime($dir . $image))/60/60 > 1) {
-  # image uploaded more than an hour ago
-  $error = 1;	
+elseif (time() > strtotime($data->{$meassure}->{"expires"})) {
+  $error = 1;
 }
 
 # --------------------------------------------------------------------
@@ -51,82 +75,92 @@ elseif ((time() - filectime($dir . $image))/60/60 > 1) {
 # --------------------------------------------------------------------
 
 if ($error == 0) {
-  # Load image from file
-  $extension = strtolower(substr($image, strrpos($image, ".") + 1));
+  # Make the image
+  $value = $data->{$meassure};
+  $filename = $meassure . ".jpg";
 
-  switch ($extension) {
-    case 'jpg':
-    case 'jpeg':
-        $background = imagecreatefromjpeg($dir . $image);
-        break;
-    case 'png':
-        $background = imagecreatefrompng($dir . $image);
-        break;
-    case 'gif':
-        $background = imagecreatefromgif($dir . $image);
-        break;
-    default:
-        die("Image is of unsupported type.");
-  }
+  // Define image and colors
+  $img = imagecreate($size, $size);
+  $black = imagecolorallocate($img, 0, 0, 0);
+  $yellow = imagecolorallocate($img, 255, 215, 0);
+  imagefill($img, 0, 0, $yellow);
+
+  # Draw value
+  $unit_size = getSize($unit_fontsize, $font, " " . $value->{"unit"});
+  $value_size = getSize($value_fontsize, $font, $value->{"value"});
+  $value_x = imagesx($img)/2 - ($value_size[0] + $unit_size[0])/2;
+  $value_y = imagesy($img)/2 + $value_size[1]/2;
+  imagettftext($img, $value_fontsize, 0, $value_x, $value_y, $black, $font, $value->{"value"});
+
+  # Draw unit
+  $unit_x = $value_x + $value_size[0];
+  $unit_y = imagesy($img)/2 - $value_size[1]/2 + $unit_size[1];
+  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $black, $font, " " . $value->{"unit"});
+
+  # Draw timestamp
+  $time_size = getSize($time_fontsize, $font, $value->{"timestamp"});
+  $time_x = imagesx($img) - 10 - $time_size[0];
+  $time_y = imagesy($img) - 10;
+  imagettftext($img, $time_fontsize, 0, $time_x, $time_y, $black, $font, $value->{"timestamp"});
 }
 else {
   # Load the error immage
-  
-    # Get unit and timestamp	
-  switch($image) {
-	case "temp_achter.gif":
-	  $image = sprintf("error_temp%02d.jpg", rand(1,25));
-	  break;
-	case "IJsselpeil.gif":
-	  $image = sprintf("error_peil%02d.jpg", rand(1,25));
-	  break;
-	default:
-	  $image = "fubar";
+  switch($meassure) {
+    case "temperatuur":
+      $error_image = sprintf("error_temperatuur%02d.jpg", rand(1,25));
+      break;
+    case "ijsselpeil":
+      $error_image = sprintf("error_ijsselpeil%02d.jpg", rand(1,25));
+      break;
+    default:
+      $error_image = "fubar";
   }
-  
-  if (file_exists($dir . "error/" . $image)) {
-    $background = imagecreatefromjpeg($dir . "error/" . $image);
+
+  if (file_exists("./error/" . $error_image)) {
+    $img = imagecreatefromjpeg($dir . "error/" . $error_image);
+    $filename = $error_image;
   }
   else {
-    // something happened, draw something
-	
+    // something unexpected happened, draw something unexpected
+    $filename = "error.jpg";
+
     # Create image and pallette
-    $background = imagecreate($size, $size);
-    $black = imagecolorallocate($background, 0, 0, 0);
-    $yellow = imagecolorallocate($background, 255, 215, 0);
-  
+    $img = imagecreate($size, $size);
+    $black = imagecolorallocate($img, 0, 0, 0);
+    $yellow = imagecolorallocate($img, 255, 215, 0);
+
     # Calculate size, x and y.
     $error_size = round($size / 1.5);
     $error_size = $error_size - $error_size % $error_blocks;
     $block_size = $error_size / $error_blocks;
-  
+
     $value_size = array($error_size, $error_size);
-  
-    $value_x = round(imagesx($background)/2 - $value_size[0]/2);
-    $value_y = round(imagesy($background)/2 + $value_size[1]/2);
-  
+
+    $value_x = round(imagesx($img)/2 - $value_size[0]/2);
+    $value_y = round(imagesy($img)/2 + $value_size[1]/2);
+
     # Add some randomness
-	$left_hand = 27;
-	$right_hand = 53;
-	if (rand(0,1)) {
-	  $left_hand = 45;
-	}
-	if (rand(0,1)) {
-	  $right_hand = 35;  
-	}
+    $left_hand = 27;
+    $right_hand = 53;
+    if (rand(0,1)) {
+      $left_hand = 45;
+    }
+    if (rand(0,1)) {
+      $right_hand = 35;  
+    }
 
     # Draw
-	imagefill($background, 0, 0, $yellow);
+    imagefill($img, 0, 0, $yellow);
  
     for ($i = 0; $i <= ($error_blocks*$error_blocks)-1; $i++) {
-	  $x0 = $value_x + ($i%$error_blocks) * $block_size;
+      $x0 = $value_x + ($i%$error_blocks) * $block_size;
       $y0 = $value_y - $error_size + floor($i/$error_blocks) * $block_size;
       $x1 = $x0 + $block_size;
-	  $y1 = $y0 + $block_size;
-	  	
+      $y1 = $y0 + $block_size;
+
       if ($i == 21 || $i == 23  || ($i >= 29 && $i <= 33) || $i == 37 || $i == 38 || $i == 40 | $i == 42 || $i ==43 || ($i >= 47 && $i <= 51) || $i == 57 || $i == 59 || $i == 65 || $i == 66 || $i == 68 || $i == 69 || $i == $left_hand || $i == $right_hand) {
-        imagepolygon($background, array($x0, $y0, $x0, $y1, $x1, $y1, $x1, $y0), 4, $black);
-	    imagefill($background, $x0+1, $y0+1, $black);
+        imagepolygon($img, array($x0, $y0, $x0, $y1, $x1, $y1, $x1, $y0), 4, $black);
+        imagefill($img, $x0+1, $y0+1, $black);
       }
     }
   }
@@ -137,14 +171,14 @@ else {
 # --------------------------------------------------------------------
 
 header("Content-type: image/jpeg");
-header("Content-Disposition: filename=" . $image);
-imagejpeg($background);
+header("Content-Disposition: filename=" . $filename);
+imagejpeg($img);
 
 # --------------------------------------------------------------------
 # Clean
 # --------------------------------------------------------------------
  
-imagedestroy($background);
+imagedestroy($img);
 
 # --------------------------------------------------------------------
 # Functions
