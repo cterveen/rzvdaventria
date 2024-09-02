@@ -63,7 +63,8 @@
 }
 
 .site-name {
-  font: 1rem Tahoma bold;
+  font-size: 1rem;
+  font-weight: bold;
   padding: calc(40px - 0.5rem) 0px;
 }
 
@@ -88,7 +89,8 @@
 }
 
 #block-rzvdaventria-hoofdnavigatie {
-  font: 1rem Tahoma bold;
+  font-size: 1rem;
+  font-weight: bold;
   margin: 0px;
 }
 
