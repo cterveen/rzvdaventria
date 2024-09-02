@@ -30,8 +30,8 @@
 /* components/side-branding */
 
 .block-system-branding-block {
-  width: 116px;
   float: left;
+  width: 116px;
 }
 
 @media all and (max-width: 599.5px) {
@@ -63,9 +63,9 @@
 }
 
 .site-name {
+  padding: calc(40px - 0.5rem) 0px;
   font-size: 1rem;
   font-weight: bold;
-  padding: calc(40px - 0.5rem) 0px;
 }
 
 @media all and (min-width: 599.5px) {
@@ -89,9 +89,9 @@
 }
 
 #block-rzvdaventria-hoofdnavigatie {
+  margin: 0px;
   font-size: 1rem;
   font-weight: bold;
-  margin: 0px;
 }
 
 /* Broad menu */
@@ -286,8 +286,10 @@ ul.menu a.is-active {
 /* components/content */
 
 #block-rzvdaventria-content {
-  background-color: white;
   min-height: 120px;
+  background-color: white;
+  color: #444;
+  line-height: 1.6;
 }
 
 #block-rzvdaventria-content p {
