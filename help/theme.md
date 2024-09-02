@@ -70,12 +70,22 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 
 #### Lettertypen
 
-Nog te bepalen.
+- Lettertype: Lato
+- Lettergrootten:
+  - 1 rem: standaard
+  - 1.2 rem: header 2
+  - 1.5 rem: header 1
+- Varianten: Bold, Italic, Bold-Italic
+- Kleuren:
+  - Zwart: standaard
+  - Grijs (middel): hoofdtekst
+  - Lichtblauw: links in hoofdtekst
 
 #### Kleuren
 
 - Geel: rgb (255, 215, 0)
 - Grijs (licht): rgb(205,205,205)
+- Grijs (middel): rgb(68, 68, 68)
 - Grijs (donker): rgb(41,41,41)
 - Lichtblauw: rgb(3, 162, 255)
 - Wit: white
