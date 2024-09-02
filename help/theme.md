@@ -48,19 +48,19 @@ Gegevens van de gebruikte resoluties voor de eigen website zijn niet beschikbaar
 
 Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 
-- Mobiel (<37.5rem of 600 pixels) :
+- Mobiel (<37.5 rem of 600 pixels) :
   - Menu ingeklapt
   - Kleine achtergrondafbeelding
   - Weer boven Inhoud
   - Zijbalk onder Inhoud
     - Elementen Zijbalk onder elkaar
-- Tablet (staand, 37.5 rem of 600 pixels - 60rem)
+- Tablet (staand, 37.5 rem of 600 pixels - 60 rem)
   - Menu uitgeklapt (<46.2 rem, dubbele rij)
   - Grote achtergrondafbeelding
   - Weer boven inhoud
   - Zijbalk onder Inhoud
     - Webcam, sociale media en adres naast de agenda
-- Desktop (>60rem)
+- Desktop (>60 rem)
   - Menu uitgeklapt
   - Weer rechts van inhoud
   - Zijbalk rechts van inhoud
@@ -93,7 +93,7 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 
 ## Beheerthema
 
-The rzvdaventria thema is niet geoptimaliseerd voor het beheergedeelte en de basis is niet echt bruikbaar. Daarom is het beter het core-thema Claro te kiezen. 
+Het rzvdaventria thema is niet geoptimaliseerd voor het beheergedeelte en de basis is niet echt bruikbaar. Daarom is het beter het core-thema Claro te kiezen. 
 
 ## Gedeïnstalleerde thema's
 
