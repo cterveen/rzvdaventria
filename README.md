@@ -49,7 +49,8 @@ Design by Niels den Boer https://hetvormburo.nl/
 
 Drupal base theme: Starterkit / Stable9  
 Search icon: Olivero https://www.drupal.org/project/olivero  
-Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg
+Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
+Font: Lato https://www.latofonts.com/
 
 ## License
 
