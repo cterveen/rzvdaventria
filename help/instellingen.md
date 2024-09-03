@@ -31,7 +31,7 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 - Tekst-editor: CKEditor 5
 - Werkbalkinstelling: Heading, Bold, Italic, Underline, Subscript, Superscript, Divider,  Bulleted list, Numbered list, Indent, Outdent, Divider, Link, Image, Table, Divider, Source
 - Koppen: Heading 2, Heading 3
-- Source editing: - geen -
+- Source editing: \<img id title\>
 - Lijst: - alles -
 - Afbeelding: afbeelding-uploads inschakelen
 - Uploadmap: afbeeldingen
@@ -42,7 +42,6 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
   - Afbeeldingen uitlijnen, 0
   - Zet regeleindes om naar HTML, 0
   - URLs naar links omzetten, 0
-  - Afbeeldingen tot deze site beperken, 9 
   - Incorrecte en afgekapte HTML corrigeren, 10
   - Maximale lengte van de linktekst: 72 tekens
 
