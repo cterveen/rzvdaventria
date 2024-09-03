@@ -72,13 +72,18 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 
 - Lettertype: Lato
 - Lettergrootten:
+  - 0.8 rem: adresblok zijbalk
   - 1 rem: standaard
   - 1.2 rem: header 2
   - 1.5 rem: header 1
 - Varianten: Bold, Italic, Bold-Italic
+- Regelhoogte:
+  - 1: standaard
+  - 1.4: adresblok zijbalk
+  - 1.6: hoofdtekst
 - Kleuren:
   - Zwart: standaard
-  - Grijs (middel): hoofdtekst
+  - Grijs (middel): hoofdtekst, adresblok zijbalk
   - Lichtblauw: links in hoofdtekst
 
 #### Kleuren
