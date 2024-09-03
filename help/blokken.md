@@ -23,7 +23,6 @@ Dit document beschrijft de volgende blokken:
 - Primaire inhoud van de pagina
 - Primaire tabs
 - Secundaire tabs
-- Sociale media
 - Statusberichten
 - Webcam
 - Weer en waterstanden
@@ -84,8 +83,8 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 #### Blokindeling
 
 - Categorie: Inhoudsblok
-- Gebied: Kop
-- Gewicht: 0
+- Gebied: Zijbalk
+- Gewicht: 3
 
 #### Blok bewerken
 
@@ -98,7 +97,7 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 - Systeemnaam: rzvdaventria_adrescontactenbankgegevens
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 4
+- Gebied: Zijbalk, 3
 
 #### Body
 
@@ -246,38 +245,6 @@ Zie ook instellingen.md
 - Categorie: core
 - Gebied: Inhoud
 - Gewicht: -4
-
-## Sociale media
-
-#### Blokindeling
-
-- Categorie: Inhoudsblok
-- Gebied: Zijbalk
-- Gewicht: 3
-
-#### Blok bewerken
-
-- Body: - zie onder -
-- Blokbeschrijving: Iconen Sociale media & RSS
-
-**Body**
-
-```
-<p>
-    <img src="/~internetcie/themes/rzvdaventria/images/icons/facebook.png" width="26" height="26">
-    <img src="/~internetcie/themes/rzvdaventria/images/icons/twitter.png" width="26" height="26">
-    <img src="/~internetcie/themes/rzvdaventria/images/icons/linkedin.png" width="26" height="26">
-    <img src="/~internetcie/themes/rzvdaventria/images/icons/rss.png" width="26" height="26">
-</p>
-```
-
-#### Blok instellen
-
-- Titel: Iconen Sociale media & RSS
-- Systeemnaam: rzvdaventria_iconensocialemediarss
-- Titel weergeven: Nee
-- Zichtbaarheid: Geen beperking
-- Gebied: Zijbalk, 3
 
 ## Statusberichten
 
