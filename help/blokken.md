@@ -101,15 +101,21 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 
 #### Body
 
-    Roei- en Zeilvereniging Daventria
-    
-    Rembrandtkade 197
-    7412 HL Deventer
-    0570-618441
-    info@daventria.com
-    
-    NL86 INGB 0000 8044 45
-    t.n.v. R&ZV Daventria
+````
+<p>
+    <strong>Roei- en Zeilvereniging Daventria</strong>
+</p>
+<p>
+    Rembrandtkade 197<br>
+    7412 HL Deventer<br>
+    0570-618441<br>
+    <a href="mailto:info@daventria.com">info@daventria.com</a>
+</p>
+<p>
+    NL86 INGB 0000 8044 45<br>
+    t.n.v. R&amp;ZV Daventria
+</p>
+````
 
 ## Agenda
 
@@ -299,11 +305,9 @@ Zie ook instellingen.md
 **Body:**
 
 ```
-<p>
-   <img src="/~internetcie/webcam/temp_achter.gif" width="100" height="100">
-   <img src="/~internetcie/webcam/IJsselpeil.gif" width="100" height="100">
-   <img src="/~internetcie/webcam/wind.png" width="100" height="100">
-</p>
+<img src="/~internetcie/webcam/weerdata.php?meting=temperatuur" width="80" height="80">
+<img src="/~internetcie/webcam/weerdata.php?meting=ijsselpeil" width="80" height="80">
+<img src="/~internetcie/webcam/weerdata.php?meting=windkracht" width="80" height="80">
 ```
 
 #### Blok instellen
