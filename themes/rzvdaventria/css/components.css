@@ -113,7 +113,7 @@ ul.sf-menu a.sf-depth-2 {
 }
 
 /* Double row */
-@media all and (min-width: 599.5px) and (max-width: min(45.85rem, 1200px)) {
+@media all and (min-width: 599.5px) and (max-width: min(48.1rem, 1200px)) {
   ul.sf-menu .sf-with-ul,
   ul.sf-menu a.sf-depth-1 {
     padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 0px;
@@ -510,7 +510,6 @@ abbr.ajax-changed {
  * Components
  * - Webcam
  * - Activiteiten
- * - Social media
  * - Adress
  */
 
@@ -546,7 +545,7 @@ abbr.ajax-changed {
 
 .view-activiteiten .views-field-field-begindatum-1 {
   height: 1.75rem;
-  width: 6.5rem;
+  width: 7rem;
   padding: 0 0.25rem;
   background-color: rgb(205,205,205);
   text-align: right;
@@ -568,20 +567,13 @@ abbr.ajax-changed {
   color: black;
 }
 
-/* components/block-social-media */
-
-@media all and (min-width: 37.5rem) and (max-width: 60rem) {
-  #block-rzvdaventria-iconensocialemediarss {
-    width: calc(50% - 2rem);
-    float: right;
-    clear: right;
-  }
-}
-
 /* components/block-address */
 
 #block-rzvdaventria-adrescontactenbankgegevens p {
   padding-bottom: 0.8rem;
+  color: rgb(64, 64, 64);
+  font-size: 0.8em;
+  line-height: 1.4;
 }
 
 @media all and (min-width: 37.5rem) and (max-width: 60rem) {
