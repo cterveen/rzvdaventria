@@ -80,17 +80,24 @@
   margin-top: 280px;
 }
 
+.region-content .block {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @media all and (max-width: 60rem) {
   .region-content {
     width: 100%;
     margin-top: 0px;
   }
+
+  .region-content .block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
-.region-content .block {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+
 
 /**
  * region-sidebar:
@@ -101,7 +108,11 @@
 .region-sidebar {
   width: 22.5rem;
   float: left;
- }
+}
+
+.region-sidebar .block {
+  padding: 1rem;
+}
 
 @media all and  (max-width: 60rem) {
   .region-sidebar {
@@ -109,13 +120,10 @@
   }
 }
 
-.region-sidebar .block {
-  padding: 1rem;
-}
-
 @media all and (max-width: 37.5rem) {
   .region-sidebar .block {
-    width: calc(100% - 2rem);
+    width: calc(100% - 20px);
+    padding: 1rem 10px;
   }
 }
 
