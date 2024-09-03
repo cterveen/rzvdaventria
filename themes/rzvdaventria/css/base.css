@@ -13,7 +13,8 @@ body {
   background-repeat: no-repeat;
   background-position: center top var(--drupal-displace-offset-top, 0px);
   background-size: 1920px;
-  font-family: "LatoLatinWeb";  
+  font-family: "LatoLatinWeb";
+  line-height: 1;
 }
 
 @media all and (max-width: 599.5px) {
