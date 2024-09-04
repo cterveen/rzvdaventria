@@ -44,9 +44,9 @@
  */
 
 .region-weather {
+  float: right;
   height: 80px;
   width: 20.5rem;
-  float: right;
   margin-top: 280px;
   padding: calc(40px - 0.5rem) 1rem 0.5rem 1rem;
   vertical-align: bottom;
@@ -74,9 +74,9 @@
  */
 
 .region-content {
+  float: left;
   min-height: 400px;
   width: calc(100% - 22.5rem);
-  float: left;
   margin-top: 280px;
 }
 
@@ -106,8 +106,8 @@
  */
 
 .region-sidebar {
-  width: 22.5rem;
   float: left;
+  width: 22.5rem;
 }
 
 .region-sidebar .block {
@@ -133,8 +133,27 @@
  */
 
 .region-footer {
-  height: 10rem;
+  height: 21rem;
   width: 100%;
   clear: both;
   background-color: rgb(41,41,41);
+  color: rgb(205,205,205);
+}
+
+@media all and  (max-width: 60rem) {
+  .region-footer {
+  height: 32rem;
+  }
+}
+
+.region-footer .block {
+  background-color: rgb(41,41,41);
+}
+
+.region-footer a,
+.region-footer a:visited,
+.region-footer a:hover,
+.region-footer a:visited:hover,
+.region-footer a:active {
+  color: rgb(205,205,205);
 }
