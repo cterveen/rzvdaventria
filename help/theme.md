@@ -84,6 +84,8 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 - Kleuren:
   - Zwart: standaard
   - Grijs (middel): hoofdtekst, adresblok zijbalk
+  - Grijs (licht): voet
+  - Wit: voet hoover
   - Lichtblauw: links in hoofdtekst
 
 #### Kleuren
@@ -91,6 +93,7 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 - Geel: rgb (255, 215, 0)
 - Grijs (licht): rgb(205,205,205)
 - Grijs (middel): rgb(68, 68, 68)
+- Grijs (donker-hoover): rgb(54, 54, 54)
 - Grijs (donker): rgb(41,41,41)
 - Lichtblauw: rgb(3, 162, 255)
 - Wit: white
