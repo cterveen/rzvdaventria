@@ -14,26 +14,38 @@ Het json-bestand is als volgt samengesteld:
 
 - Naam: weerdata.json
 - Locatie: /webcam/data
-- Metingen:
-  - temperatuur
-    - meting: temperatuursensor achterkant botenhuis
-    - interval: 1 minuut
-  - ijsselpeil
-    - meting: rijkswaterstaat
-    - interval: 60 minuten
-  - windkracht
-    - meting: nog te regelen
-    - interval: 1 minuut
 - Per meting een object met:
   - label: de nette naam van de meting
   - value: de waarde (Engelse notatie)
   - unit: de eenheid voor de meting
-  - caption: een extra toevoeging, bijvoorbeeld "vorst" of "hoogwater"
+  - caption: een onderschift voor de conditie, bijvoorbeeld "vorst" of "hoogwater"
   - timestamp: de tijd waarop de meting heeft plaatsgevonden in lokale tijd format hh:mm
-  - expires: de tijd, in UTC, waarop de meting niet meer geldig wordt.
-    - temperatuur: meting + 1 uur
-    - ijsselpeil + 4 uur
-    - windkracht: meting + 1 uur
+  - expires: de tijd, in UTC, waarna de meting niet meer geldig is.
+- Metingen:
+  - temperatuur
+    - meting: huidige meting temperatuursensor achterkant botenhuis
+    - interval: 1 minuut
+    - eenheid: graden Celsius
+    - nauwkeurigheid: geheel getal
+      - -0,5 ≤ temperatuur < 0 wordt -0
+    - onderschrift:
+      - temperatuur < 0°C: vorst
+    - verloopt: na 1 uur
+  - ijsselpeil
+    - meting: rijkswaterstaat
+    - interval: 60 minuten
+    - eenheid: meter
+    - nauwkeurigheid: twee decimalen
+    - onderschrift:
+      - ijsselpeil ≥ 4,85 hoogwater
+      - ijsselpeil ≤ 1,35 laagwater
+    - verloopt: na 4 uur
+  - windkracht
+    - meting: mediaan van de laatste 10 metingen met 1 minuut interval  
+    - interval: 1 minuut
+    - eenheid: beaufort
+    - nauwkeurigheid: geheel getal
+    - verloopt: na 1 uur
 
 Het json-bestand wordt gebruikt om zowel het plaatje met de meetgegevens te maken als de alt-tekst en titel. Het plaatje wordt gemaakt in php, de alt-tekst en titel in JavaScript. Omdat JavaScript in de browser draait en alles omzet naar lokale tijd of UTC wordt de timestamp zonder tijdszoneaanduiding gegeven en expires in UTC. De berekeningen worden door het script op de Raspberry Pi zodat deze maar op één plek te hoeven worden aangepast, dat script doet dus ook een groot deel van de datavalidatie.
 
