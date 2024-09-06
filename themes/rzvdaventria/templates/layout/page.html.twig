@@ -64,10 +64,14 @@
 
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
 </div>{# /.layout-container #}
+
+{% if page.footer %}
+  <footer role="contentinfo">
+    <div class="layout-footer">
+      <div class="layout-container">
+        {{ page.footer }}
+      </div>{# /.layout-container #}
+    <div>{# /.layout-footer #}
+  </footer>
+{% endif %}
