@@ -14,6 +14,7 @@ body {
   background-position: center top var(--drupal-displace-offset-top, 0px);
   background-size: 1920px;
   font-family: "LatoLatinWeb";
+  font-size: 1.1rem;
   line-height: 1;
 }
 
@@ -30,21 +31,21 @@ h1 {
   margin: 0;
   padding-top: 1.5rem;
   padding-bottom: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h2 {
   margin: 0;
   padding-top: 1rem;
   padding-bottom: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 h3 {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 p {
