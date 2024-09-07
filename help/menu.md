@@ -122,7 +122,7 @@ De hoofdnavigatie bevat de volgende links:
 
 ## Voetmenu
 
-Het voetmenu is het menu onderaan de website.
+Het voetmenu is het menu onderaan de website. Dit menu is opgebouwd uit vier losse menu's om de responsiveness te vergemakkelijken.
 
 Het voetmenu bevat de volgende links:
 
