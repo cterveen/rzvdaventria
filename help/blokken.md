@@ -14,10 +14,14 @@ Dit document beschrijft de volgende blokken:
 
 - Adres, contact- en bankgegevens
 - Agenda
+- Archief
 - Branding van de website
+- Contact
+- Documenten
 - Gebouwd met Drupal
 - Hoofdnavigatie
 - Hub
+- Lid worden
 - Paginatitel
 - Primaire beheersacties
 - Primaire inhoud van de pagina
@@ -134,6 +138,14 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 - Systeemnaam: rzvdaventria_views_block__activiteiten_block_1
 - Gebied: Zijbalk, 3
 
+## Archief
+
+#### Blokindeling
+
+- Categorie: Menu
+- Gebied: Voet
+- Gewicht: 1
+
 ## Branding van de website
 
 #### Blokindeling
@@ -157,6 +169,22 @@ Instellen van de blokken gaat via Beheer > Structuur > Blokindeling (admin/struc
 
 Zie ook instellingen.md
 
+## Contact
+
+#### Blokindeling
+
+- Categorie: Menu
+- Gebied: Voet
+- Gewicht: 3
+
+## Documenten
+
+#### Blokindeling
+
+- Categorie: Menu
+- Gebied: Voet
+- Gewicht: 2
+
 ## Gebouwd met Drupal
 
 #### Blokindeling
@@ -169,9 +197,8 @@ Zie ook instellingen.md
 
 #### Blokindeling
 
-- Categorie: Menu's
-- Gebied: Kop
 - Categorie: Superfish
+- Gebied: Kop
 - Gewicht: 2
 
 #### Blok instellen
@@ -219,6 +246,14 @@ Zie ook instellingen.md
 - Zichtbaarheid: -geen-
 - Systeemnaam: rzvdaventria_views_block__hub_block_1
 - Gebied: Boven inhoud, 0
+
+## Lid worden
+
+#### Blokindeling
+
+- Categorie: Menu
+- Gebied: Voet
+- Gewicht: 4
 
 ## Primaire beheersacties
 
