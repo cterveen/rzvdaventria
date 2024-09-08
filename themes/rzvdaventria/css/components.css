@@ -24,7 +24,7 @@
  * Components
  * - Site branding
  * - Main menu
- * - Search
+ * - Quicknav
  */
 
 /* components/site-branding */
@@ -78,7 +78,7 @@
 
 #block-rzvdaventria-hoofdnavigatie {
   float: left;
-  width: calc(100% - 186px);
+  width: calc(100% - 116px - 128px);
 }
 
 @media all and (max-width: 599.5px) {
@@ -153,32 +153,18 @@ ul.sf-menu.sf-accordion .sf-depth-2 {
   background-color: rgb(205,205,205);
 }
 
-/* components/search */
+/* components/Quicknav */
 
-#block-rzvdaventria-search-form-wide {
+#block-rzvdaventria-quicknav {
   float: right;
+  width: 128px;
 }
 
-/* search icon */
-#block-rzvdaventria-search-form-wide ul.sf-menu {
+#block-rzvdaventria-quicknav a {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
   padding: 24px 16px;
-  height: 32px;
-}
-
-#block-rzvdaventria-search-form-wide li,
-#block-rzvdaventria-search-form-wide svg {
-  height: 32px;
-  width: auto;
-}
-
-/* search box */
-#block-rzvdaventria-search-form-wide ul.sf-menu li:hover > ul,
-#block-rzvdaventria-search-form-wide ul.sf-menu li.sfHover > ul {
-  top: 56px;
-  left: calc(47px - 17rem);
-  text-align: center;
-  padding: 1rem;
-  width: 15rem;
 }
 
 /**
