@@ -1,11 +1,13 @@
 base:
   version: VERSION
   css:
-    component:
+    base:
       css/base.css:
         weight: -20
+    layout:
       css/layout.css:
         weight: -20
+    component:
       css/components.css:
         weight: -20
       css/components/action-links.css:
@@ -46,6 +48,12 @@ base:
         weight: -10
       css/components/ui-dialog.css:
         weight: -10
+  js:
+    js/weather.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
 dialog:
   version: VERSION
   css:
