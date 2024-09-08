@@ -26,11 +26,11 @@ Dit document beschrijft de volgende blokken:
 - Primaire beheersacties
 - Primaire inhoud van de pagina
 - Primaire tabs
+- Quicknav
 - Secundaire tabs
 - Statusberichten
 - Webcam
 - Weer en waterstanden
-- Zoekformulier (breed)
 
 Blokken in de categoriën Inhoudsblok en Lijsten (Overzichten) moeten worden aangemaakt, de overige categoriën zijn onderdeel van het systeem. Voordat de inhoudsblokken kunnen worden aangemaakt moet een bloktype worden ingesteld.
 
@@ -279,6 +279,37 @@ Zie ook instellingen.md
 - Gebied: Inhoud
 - Gewicht: -5
 
+## Quicknav
+
+#### Blokindeling
+
+- Formulieren
+- Gebied: Kop
+- Gewicht: 1
+
+Het gewicht van quicknav is lager dan dat van hoofdnavigatie. Voor de brede lay-out maakt dit niet uit, maar bij de lange layout wordt het zoekformulier hierdoor
+rechts van het menu geplaatst.
+
+#### Blok bewerken
+
+- Body: -zie onder-
+- Blokbeschrijving: Adres, contact- en bankgegevens
+
+#### Blok instellen
+
+- Titel: Quicknav
+- Systeemnaam: rzvdaventria_quicknav
+- Titel weergeven: Nee
+- Zichtbaarheid: Geen beperking
+- Gebied: Kop, 1
+
+#### Body
+
+````
+<a href="https://rzvdaventria-site.e-captain.nl/afschrijfsysteem"><img src="/~internetcie/themes/rzvdaventria/images/icons/afschrijven.png" alt="Afschrijfsysteem" width="32" height="32" title="Afschrijfsysteem"></a>
+<a href="/~internetcie/search/node"><img src="/~internetcie/themes/rzvdaventria/images/icons/search.png" alt="Zoeken" width="31" height="32" title="Zoeken"></a>
+````
+
 ## Secundaire tabs
 
 #### Blokindeling
@@ -354,14 +385,3 @@ De alternatieve tekst van deze afbeeldingen wordt door middel van Javascript toe
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
 - Gebied: Zijbalk, 1
-
-## Zoekformulier (breed)
-
-#### Blokindeling
-
-- Formulieren
-- Gebied: Kop
-- Gewicht: 1
-
-Het gewicht van het zoekformulier is lager dan dat van hoofdnavigatie. Voor de brede lay-out maakt dit niet uit, maar bij de lange layout wordt het zoekformulier hierdoor
-rechts van het menu geplaatst.
