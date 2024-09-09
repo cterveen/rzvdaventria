@@ -50,6 +50,7 @@ base:
         weight: -10
   js:
     js/weather.js: {}
+    js/menu-main.js: {}
   dependencies:
     - core/drupal
     - core/jquery
