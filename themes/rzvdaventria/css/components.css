@@ -8,8 +8,6 @@
  * - < 60 rem (~ 960px)
  *   - all regions below each other
  *   - sidebar compontents in double column
- * - < 46.2 rem (~ 740px)
- *   - main menu in double row
  * - < 37.5 rem (~600px)
  *   - sidebar compontents below each other
  * - < 600px
@@ -115,16 +113,13 @@ ul.sf-menu a.sf-depth-2 {
 }
 
 /* Double row */
-@media all and (min-width: 599.5px) and (max-width: min(48.1rem, 1200px)) {
-  ul.sf-menu .sf-with-ul,
-  ul.sf-menu a.sf-depth-1 {
-    padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 0px;
-  }
+ul.sf-menu a.sf-depth-1.is-double {
+  padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 14px;
+}
 
-  ul.sf-menu li:hover > ul,
-  ul.sf-menu li.sfHover > ul {
-    top: 40px;
-  }
+ul.sf-menu li.is-double:hover > ul,
+ul.sf-menu li.is-double.sfHover > ul {
+  top: 40px;
 }
 
 .sf-sub-indicator {
