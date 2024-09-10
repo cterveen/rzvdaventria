@@ -4,24 +4,25 @@
  */
 (() => {
   (function ($, Drupal, once) {
-    Drupal.behaviors.myModuleBehavior = {
+    Drupal.behaviors.rzvdaventriaWeatherBehavior = {
       attach: function (context, settings) {
         once('alt-weather', '#block-rzvdaventria-weerenwaterstanden').forEach(function (element) {
           $.getJSON( "http://192.168.2.6/~internetcie/webcam/data/weerdata.json", function( data ) {
             $.each( data, function ( key, val ) {
-              var timestamp = new String( val.timestamp );
-              var value = new String( val.value );
-                  value = value.replace(".", ",");
+              let timestamp = new String( val.timestamp );
+              let value = new String( val.value );
+              let now = new Date ();
+              let expires = new Date( Date.parse( val.expires ) );
+              let label = "";
+              let id = "#" + key;
 
-              var now = new Date ();
-              var expires = new Date( Date.parse( val.expires ) );
               if (now > expires ) {
                 value = "X";
                 timestamp = "--:--";
               }
 
-              var label = val.label + ": " + value + val.unit + " (" + timestamp + "u)";
-              var id = "#" + key;
+              value = value.replace(".", ",");
+              label = val.label + ": " + value + val.unit + " (" + timestamp + "u)";
 
               $( id ).attr( "alt", label );
             });
