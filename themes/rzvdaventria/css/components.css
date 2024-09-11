@@ -44,10 +44,10 @@
   height: 48px;
 }
 
-@media all and (max-width: 15.2rem) {
-  /* remove logo with font-size 32px */
+@media all and (max-width: 420px) {
   .block-system-branding-block {
-    width: calc(7rem);
+    padding-left: 16px;
+    width: calc(7.5rem);
   }
 
   .site-logo {
@@ -94,12 +94,14 @@
 
 /* Broad menu */
 
-ul.sf-menu .sf-with-ul,
-ul.sf-menu a.sf-depth-1 {
+/* top level button */
+ul.sf-menu.sf-horizontal .sf-with-ul,
+ul.sf-menu.sf-horizontal a.sf-depth-1 {
   list-style: none outside;
   padding: calc(40px - 0.5rem) 14px calc(40px - 0.5rem) 14px;
 }
 
+/* drop down menu container */
 ul.sf-menu li:hover > ul,
 ul.sf-menu li.sfHover > ul {
   left: 0;
@@ -107,12 +109,17 @@ ul.sf-menu li.sfHover > ul {
   background-color: rgb(255,215,0)
 }
 
+/* drop down menu line */
 ul.sf-menu a.sf-depth-2 {
+  padding: 16px 0px 16px 48px;
   list-style: none outside;
-  padding: 20px 0px 24px 14px;
 }
 
-/* Double row */
+ul.sf-menu a.sf-depth-2:hover {
+  background-color: rgb(245, 205, 0);
+}
+
+/* state is-double */
 ul.sf-menu a.sf-depth-1.is-double {
   padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 14px;
 }
@@ -122,11 +129,19 @@ ul.sf-menu li.is-double.sfHover > ul {
   top: 40px;
 }
 
-.sf-sub-indicator {
+/* sub menu indicator */
+ul.sf-menu .sf-sub-indicator {
+  display: inline-block;
+  right: auto;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+ul.sf-menu.sf-horizontal .sf-sub-indicator {
   display: none;
 }
 
-/* accordion menu */
+/* accordion menu icon */
 .sf-accordion-toggle a {
   height: 56px;
   padding: 12px 14px 12px 0px;
@@ -134,18 +149,33 @@ ul.sf-menu li.is-double.sfHover > ul {
   font-size: 56px;
 }
 
+/* accordion menu container */
 ul.sf-menu.sf-accordion.sf-expanded {
   position: absolute;
-  left: calc(100% - 200px) !important;
-  width: 200px;
+  left: 0 !important;
+  width: 100%;
   float: none;
   top: calc(80px + var(--drupal-displace-offset-top, 0px)) !important;
   background-color: rgb(255,215,0);
   z-index: 499;
 }
 
-ul.sf-menu.sf-accordion .sf-depth-2 {
+ul.sf-menu.sf-accordion .sf-with-ul,
+ul.sf-menu.sf-accordion a.sf-depth-1 {
+  list-style: none outside;
+  padding: calc(24px - 0.5rem) 0 calc(24px - 0.5rem) 32px;
+}
+
+/* accordion sub-menu link */
+ul.sf-has-clone-parent .sf-clone-parent a.sf-depth-1,
+ul.sf-menu.sf-accordion a.sf-depth-2 {
+  padding: calc(24px - 0.5rem) 0 calc(24px - 0.5rem) 64px;
   background-color: rgb(205,205,205);
+}
+
+ul.sf-has-clone-parent .sf-clone-parent a.sf-depth-1:hover,
+ul.sf-menu.sf-accordion a.sf-depth-2:hover {
+  background-color: rgb(195,195,195);
 }
 
 /* components/Quicknav */
@@ -221,8 +251,8 @@ ul.sf-menu.sf-accordion .sf-depth-2 {
 }
 
 #block-rzvdaventria-content p {
-  text-align: justify;
   padding-bottom: 0.8rem;
+  text-wrap: pretty;
 }
 
 #block-rzvdaventria-content a,
