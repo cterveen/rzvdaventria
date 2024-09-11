@@ -278,6 +278,10 @@ ul.sf-menu.sf-accordion a.sf-depth-2:hover {
   text-align: right;
 }
 
+.view-frontpage .views-row {
+  border-bottom: 3px solid rgb(205, 205, 205)
+}
+
 /* nieuws */
 .node--type-nieuws .field--name-field-tags .field__item {
   float: left;
@@ -563,8 +567,11 @@ abbr.ajax-changed {
 }
 
 .region-footer .block-menu h2 {
+  margin-top: 24px;
   padding: 0.5rem 0px;
   border-bottom: 1px solid rgb(68, 68, 68);
+  border-top: 1px solid rgb(68, 68, 68);
+  color: rgb(255, 215, 0);
   font-size: 1rem;
 }
 
@@ -580,7 +587,7 @@ abbr.ajax-changed {
 
 .region-footer .block-menu li.menu-item a {
   display: block;
-  padding: 0.5rem 0px;
+  padding: 0.5rem;
   border-bottom: 1px solid rgb(68, 68, 68);
   font-size: 1rem;
 }
