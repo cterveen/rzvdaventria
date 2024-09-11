@@ -213,8 +213,8 @@ Zie ook instellingen.md
 - Blokinstellingen
   - Menutype: Horizontal (single row)
   - Stijl: Geen
-  - Add arrows to parent menus: nee
-  - Drop shadows: ja
+  - Add arrows to parent menus: Ja
+  - Drop shadows: Ja
   - Slide-in effect: Verticaal
 - Superfish plugins
   - jQuiry Suppostition: Ja
@@ -228,7 +228,9 @@ Zie ook instellingen.md
   - Window width settings: 600 pixels
   - Selecteer een type: Convert the menu to an accordion menu.
   - Accordion menu title: &#x2261;
-  - Accordion button type: Use parent menu items as buttons
+  - Accordion button type: Use parent menu items as buttons, add cloned parent links to sub-menus as well. (Standaard)
+- Supersubs
+  - Enable Supersubs for this menu: Nee
 
 ## Hub
 
