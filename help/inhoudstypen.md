@@ -455,7 +455,8 @@ Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden 
 - Uitleg of indienrichtlijnen: Nieuws wordt op de voorpagina en in het archief weergegeven.
 - Publicatieopties: Gepubliceerd, Aangeraden op de voorpagina.
 - Taalinstellingen: Standaardtaal van de site (Dutch)
-- Weergave-instellingen: -geen-
+- Weergave-instellingen:
+  - Auteur en datum tonen: Ja
 - Menu-instellingen: -geen-
 
 #### Velden
