@@ -92,10 +92,12 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
 #### Kleuren
 
 - Geel: rgb (255, 215, 0)
+- Geel (hoover): rgb(245, 205, 0)
 - Grijs (licht): rgb(205,205,205)
+- Grijs (licht-hoover): rgb(195,195,195)
 - Grijs (middel): rgb(68, 68, 68)
-- Grijs (donker-hoover): rgb(54, 54, 54)
 - Grijs (donker): rgb(41,41,41)
+- Grijs (donker-hoover): rgb(54, 54, 54)
 - Lichtblauw: rgb(3, 162, 255)
 - Wit: white
 - Zwart: black
@@ -107,3 +109,20 @@ Het rzvdaventria thema is niet geoptimaliseerd voor het beheergedeelte en de bas
 ## Gedeïnstalleerde thema's
 
 De core-thema's Olivero en Stark kunnen worden gedeïnstalleerd.
+
+## Testen
+
+Voor het testen van het thema kunnen de volgende instellingen worden gebruikt:
+
+- Schermbreedte:
+  - 360px
+  - 430px
+  - 768px
+  - 800px
+  - 810px
+  - 1280px
+  - 1920px
+- Lettergrootte:
+  - 16px
+  - 24px
+  - 32px
