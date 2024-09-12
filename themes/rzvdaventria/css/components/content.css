@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Style for the content block
+ */
+
+#block-rzvdaventria-content {
+  min-height: 120px;
+  color: #444;
+  line-height: 1.6;
+}
+
+#block-rzvdaventria-content p {
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+#block-rzvdaventria-content a,
+#block-rzvdaventria-content a:visited,
+#block-rzvdaventria-content a:hover,
+#block-rzvdaventria-content a:visited:hover,
+#block-rzvdaventria-content a:active {
+  color: rgb(3, 162, 255);
+  font-weight: bold;
+}
+
+/* nieuws teaser */
+.view-frontpage h2 a,
+.view-frontpage h2 a:visited,
+.view-frontpage h2 a:hover,
+.view-frontpage h2 a:visited:hover,
+.view-frontpage h2 a:active {
+  color: black;
+}
+
+.view-frontpage .node__links {
+  text-align: right;
+}
+
+.view-frontpage .views-row {
+  border-bottom: 3px solid rgb(205, 205, 205)
+}
+
+/* nieuws */
+.node--type-nieuws .field--name-field-tags .field__item {
+  float: left;
+  margin-left: 10px;
+}

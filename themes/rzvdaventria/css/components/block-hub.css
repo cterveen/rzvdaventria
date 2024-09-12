@@ -1,0 +1,46 @@
+/**
+ * @file
+ * Styles for the hub block
+ */
+ 
+#block-rzvdaventria-views-block-hub-block-1 {
+  /* Prevent background from next block from crawling over background img */
+  height: 120px;
+}
+
+@media all and (max-width: 60rem) {
+  .block-views-blockhub-block-1 {
+    margin-top: 10px;
+  }
+}
+
+#block-rzvdaventria-views-block-hub-block-1 .views-row {
+  width: calc(50% - 34px);
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#block-rzvdaventria-views-block-hub-block-1 img {
+  display: block;
+  height: auto;	
+  width: 100%;
+}
+
+#block-rzvdaventria-views-block-hub-block-1 .field-content {
+  padding-top: 5px;
+  text-align: center;
+}
+
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:visited,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:hover,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:visited:hover,
+#block-rzvdaventria-views-block-hub-block-1 .views-field-field-link a:active  {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: normal;
+}

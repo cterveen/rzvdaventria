@@ -1,0 +1,108 @@
+/**
+ * @file
+ * Style for the main menu
+ */
+
+#block-rzvdaventria-hoofdnavigatie {
+  float: left;
+  width: calc(100% - 116px - 128px);
+}
+
+@media all and (max-width: 599.5px) {
+  #block-rzvdaventria-hoofdnavigatie {
+    float: right;
+    width: 2rem;
+  }
+}
+
+#block-rzvdaventria-hoofdnavigatie {
+  margin: 0px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Broad menu */
+
+/* top level button */
+ul.sf-menu.sf-horizontal .sf-with-ul,
+ul.sf-menu.sf-horizontal a.sf-depth-1 {
+  list-style: none outside;
+  padding: calc(40px - 0.5rem) 14px calc(40px - 0.5rem) 14px;
+}
+
+/* drop down menu container */
+ul.sf-menu li:hover > ul,
+ul.sf-menu li.sfHover > ul {
+  left: 0;
+  top: 80px;
+  background-color: rgb(255,215,0)
+}
+
+/* drop down menu line */
+ul.sf-menu a.sf-depth-2 {
+  padding: 16px 0px 16px 48px;
+  list-style: none outside;
+}
+
+ul.sf-menu a.sf-depth-2:hover {
+  background-color: rgb(245, 205, 0);
+}
+
+/* state is-double */
+ul.sf-menu a.sf-depth-1.is-double {
+  padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 14px;
+}
+
+ul.sf-menu li.is-double:hover > ul,
+ul.sf-menu li.is-double.sfHover > ul {
+  top: 40px;
+}
+
+/* sub menu indicator */
+ul.sf-menu .sf-sub-indicator {
+  display: inline-block;
+  right: auto;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+ul.sf-menu.sf-horizontal .sf-sub-indicator {
+  display: none;
+}
+
+/* accordion menu icon */
+.sf-accordion-toggle a {
+  height: 56px;
+  padding: 12px 14px 12px 0px;
+  float: right;
+  font-size: 56px;
+}
+
+/* accordion menu container */
+ul.sf-menu.sf-accordion.sf-expanded {
+  position: absolute;
+  left: 0 !important;
+  width: 100%;
+  float: none;
+  top: calc(80px + var(--drupal-displace-offset-top, 0px)) !important;
+  background-color: rgb(255,215,0);
+  z-index: 499;
+}
+
+ul.sf-menu.sf-accordion .sf-with-ul,
+ul.sf-menu.sf-accordion a.sf-depth-1 {
+  list-style: none outside;
+  padding: calc(24px - 0.5rem) 0 calc(24px - 0.5rem) 32px;
+}
+
+/* accordion sub-menu link */
+ul.sf-has-clone-parent .sf-clone-parent a.sf-depth-1,
+ul.sf-menu.sf-accordion a.sf-depth-2 {
+  padding: calc(24px - 0.5rem) 0 calc(24px - 0.5rem) 64px;
+  background-color: rgb(205,205,205);
+}
+
+ul.sf-has-clone-parent .sf-clone-parent a.sf-depth-1:hover,
+ul.sf-menu.sf-accordion a.sf-depth-2:hover {
+  background-color: rgb(195,195,195);
+}

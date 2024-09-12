@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Style for the quicknav block
+ */
+
+#block-rzvdaventria-quicknav {
+  float: right;
+  width: 128px;
+}
+
+#block-rzvdaventria-quicknav a {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  padding: 24px 16px;
+}

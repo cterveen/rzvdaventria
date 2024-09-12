@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Style for the weather block
+ */
+
+#block-rzvdaventria-weerenwaterstanden .text-formatted img {
+  padding-right: 10px;
+}
+
+/* Tablet */
+@media all and (min-width: 599.5px) and (max-width: 60rem) {
+  #block-rzvdaventria-weerenwaterstanden .text-formatted img {
+    text-align: right;
+    padding-left: 10px;
+  }
+}
+
+/* Phone */
+@media all and (max-width: 599.5px) {
+  #block-rzvdaventria-weerenwaterstanden .text-formatted img {
+    text-align: right;
+    padding-left: 10px;
+    height: 60px;
+    width: 60px;
+  }
+}
