@@ -1,0 +1,67 @@
+/**
+ * @file
+ * Default styles for basic html element styling
+ *
+ * Breakpoints:
+ * - < 600px
+ *   - smaller background image
+ *   - main menu collapses
+ *   - site name visible
+ */
+
+body {
+  background-color: white;
+  background-image: url("../../images/background/tweezonder-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center top var(--drupal-displace-offset-top, 0px);
+  background-size: 1920px;
+  font-family: "LatoLatinWeb";
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media all and (max-width: 599.5px) {
+  body {
+    background-image: url("../../images/background/skiff-phone.jpg");
+    background-repeat: no-repeat;
+    background-position: center top calc(80px + var(--drupal-displace-offset-top, 0px));
+    background-size: 600px;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.7rem;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.3rem;
+  text-wrap: balance;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.1rem;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:visited:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
