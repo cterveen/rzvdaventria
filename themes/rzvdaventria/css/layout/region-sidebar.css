@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Style for the sidebar region
+ */
+
+.region-sidebar {
+  float: left;
+  width: 22.5rem;
+}
+
+.region-sidebar .block {
+  padding: 1rem;
+}
+
+@media all and  (max-width: 60rem) {
+  .region-sidebar {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 37.5rem) {
+  .region-sidebar .block {
+    width: calc(100% - 20px);
+    padding: 1rem 10px;
+  }
+}

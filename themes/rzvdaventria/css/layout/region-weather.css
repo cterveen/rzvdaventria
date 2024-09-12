@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Style for the weather region
+ *
+ * Breakpoints:
+ * - < 60 rem (~ 960px)
+ *   - all regions below each other
+ *   - sidebar compontents in double column
+ * - < 37.5 rem (~600px)
+ *   - sidebar compontents below each other
+ * - < 600px
+ *   - smaller background image
+ *   - main menu collapses
+ */
+
+.region-weather {
+  float: right;
+  height: 80px;
+  width: 20.5rem;
+  margin-top: 280px;
+  padding: calc(40px - 0.5rem) 1rem 0.5rem 1rem;
+  vertical-align: bottom;
+}
+
+@media all and (min-width: 599.5px) and (max-width: 60rem) {
+  .region-weather {
+    text-align: right;
+  }
+}
+
+@media all and (max-width: 599.5px) {
+  .region-weather {
+    padding: calc(80px - 0.5rem) 1rem 0.5rem 1rem;
+    height: 60px;
+    margin-top: 100px;
+    text-align: right;
+  }
+}

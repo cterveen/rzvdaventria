@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Style for header region
+ *
+ * Responsiveness:
+ *   - all views: on top and full container width
+ */
+
+.region-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(255,215,0);
+}
