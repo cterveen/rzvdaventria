@@ -7,17 +7,23 @@
  */
 
 .region-footer {
-  width: 100%;
   clear: both;
+  width: calc(100% - 48px);
+  padding: 8px 8px 8px 40px;
   color: rgb(205,205,205);
 }
 
 .region-footer .block {
   background-color: rgb(41,41,41);
-  padding: 10px;
+  padding: 8px;
 }
 
 @media all and (max-width: 60rem) {
+  .region-footer {
+    width: 100%;
+    padding: 0;
+  }
+
   .region-footer .block {
     padding: 10px 32px;
   }
