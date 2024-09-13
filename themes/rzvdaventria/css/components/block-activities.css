@@ -5,7 +5,6 @@
 
 @media all and (min-width: 37.5rem) and (max-width: 60rem) {
   #block-rzvdaventria-views-block-activiteiten-block-1 {
-    width: calc(50% - 2rem);
     float: left;
   }
 }

@@ -12,7 +12,6 @@
 
 @media all and (min-width: 37.5rem) and (max-width: 60rem) {
   #block-rzvdaventria-adrescontactenbankgegevens {
-    width: calc(50% - 2rem);
     float: right;
     clear: right;
   }

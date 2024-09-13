@@ -4,14 +4,15 @@
  */
 
 #block-rzvdaventria-weerenwaterstanden .text-formatted img {
-  padding-right: 10px;
+  padding-right: 16px;
 }
 
 /* Tablet */
 @media all and (min-width: 599.5px) and (max-width: 60rem) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
+    padding-left: 16px;
+    padding-right: 0;
     text-align: right;
-    padding-left: 10px;
   }
 }
 
@@ -19,7 +20,8 @@
 @media all and (max-width: 599.5px) {
   #block-rzvdaventria-weerenwaterstanden .text-formatted img {
     text-align: right;
-    padding-left: 10px;
+    padding-left: 12px;
+    padding-right: 0;
     height: 60px;
     width: 60px;
   }

@@ -5,12 +5,18 @@
 
 .block-system-powered-by-block {
   float: left;
-  width: 100%;
+  width: calc(100%-20px);
   clear: both;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   font-size: 0.9rem;
+}
+
+@media all and (max-width: 60rem) {
+  .block-system-powered-by-block {
+    width: calc(100% - 64px);
+  }
 }
 
 .block-system-powered-by-block a {
