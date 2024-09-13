@@ -14,13 +14,17 @@ Het thema is gemaakt met behulp van starterkit en daarna aangepast. Drupal kent 
 
 ## CSS structuur
 
-Drupal gebruikt een SMACCS structuur voor de CSS files. In de standaard thema's worden de verschillende stijlelementen over veel verschillende bestanden verdeeld, welke vervolgens bij het laden van de pagina worden samengevoegd. Omdat samenvoegen niet goed lijkt te werken maakt het rzvdaventria thema gebruik van een minimale SMACCS structuur:
+Drupal gebruikt een SMACCS structuur voor de CSS files. In de standaard thema's worden de verschillende stijlelementen over veel verschillende bestanden verdeeld, welke vervolgens bij het laden van de pagina worden samengevoegd. In rzvdaventria.libraries.yml kan het gewicht (weight) van het bestand worden aangegeven. Voor het gewicht kunnen getallen van -50 tot 50 worden gebruikt, een bestand met een lager gewicht wordt eerder geladen.
 
-- css/base.css bevat de stijlelementen voor basis HTML elementen
-- css/layout.css bevat de stijlelementen voor het plaatsen van de regios en van blokken
-- css/components.css bevat de stijlelementen van alle overige elementen, inclusief de plaatsing van elementen in blokken
-
-Vanuit het basisthema zijn nog de nodige bestanden aanwezig in css/components, deze zullen ter zijner tijd worden samengevoegd met css/components.css.
+- css/base/*.css bevat de stijlelementen voor basis HTML elementen en fonts
+  - gewicht: -20
+- css/layout/*.css bevat de stijlelementen voor de regios en gedeelde stijlelementen voor blokken binnen regio's.
+  - gewicht: -19
+- css/components/*.css bevat de stijlelementen van alle overige elementen, inclusief de plaatsing van elementen in blokken
+  - gewicht blok niveau: -15
+  - gewicht menu niveau: -13
+  - gewicht content: -12
+  - gewicht onderdelen: -10
 
 ## Regio's
 
@@ -36,7 +40,7 @@ Naast deze regio's zijn ook page_top en page_bottom gedefinieerd, deze zijn nood
 
 ## Responsiveness
 
-Met responsiveness wordt de layout van de site op verschillende schermgrootte en bij verschillende lettergrootte bedoeld. Voor de responsiveness wordt voornamelijk gebruik gemaakt van de eenheid rem. Standaard is 1rem ongeveer 16px, maar een rem groeit mee met de standaard lettergrootte van de browser. Als een bezoeker behoefteheeft aan een groter lettertype kan die de standaard lettergrootte aanpassen naar bijvoorbeld 24px. Door de breedte van de zijbalk in rem te definiëren groeit deze mee met de instellingen van de bezoeker en blijft de tekst leesbaar. Dit betekend echter ook dat de zijbalk eerder naar onder moet worden geplaatst zodat deze niet teveel ruimte van de inhoud in gaat nemen. Door de eenheid rem te gebruiken voor de responsiveness past de site zich goed aan bij grotere of kleinere lettergrootte's.
+Met responsiveness wordt de layout van de site op verschillende schermgrootte en bij verschillende lettergrootte bedoeld. Voor de responsiveness wordt voornamelijk gebruik gemaakt van de eenheid rem. Standaard is 1rem ongeveer 16px, maar een rem groeit mee met de standaard lettergrootte van de browser. Als een bezoeker behoefte heeft aan een groter lettertype kan die de standaard lettergrootte aanpassen naar bijvoorbeld 24px. Door de breedte van de zijbalk in rem te definiëren groeit deze mee met de instellingen van de bezoeker en blijft de tekst leesbaar. Dit betekend echter ook dat de zijbalk eerder naar onder moet worden geplaatst zodat deze niet teveel ruimte van de inhoud in gaat nemen. Door de eenheid rem te gebruiken voor de responsiveness past de site zich goed aan bij grotere of kleinere lettergrootte's.
 
 Uitzonderingen zijn het menu en de achtergrondafbeelding. De afkapwaarde van het menu kan alleen in pixels worden ingesteld, waardoor de menubalk zich ook bij een pebaald aantal pixels aanpast. De afbeelding schaalt niet mee met de lettergrootte en dus is een afkapwaarde in pixels logischer.
 
@@ -55,7 +59,7 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
   - Zijbalk onder Inhoud
     - Elementen Zijbalk onder elkaar
 - Tablet (staand, 37.5 rem of 600 pixels - 60 rem)
-  - Menu uitgeklapt (<46.2 rem, dubbele rij)
+  - Menu uitgeklapt (indien nodig dubbele rij)
   - Grote achtergrondafbeelding
   - Weer boven inhoud
   - Zijbalk onder Inhoud
@@ -65,6 +69,16 @@ Op basis hiervan worden de regio's en blokken als volgt geplaatst:
   - Weer rechts van inhoud
   - Zijbalk rechts van inhoud
     - Elementen onder elkaar
+   
+#### Responsiveness menu
+
+De responsiveness van het menu wordt niet via CSS geregeld. Het menu kent drie standen:
+
+- Horizontaal enkele rij
+- Horizontaal dubbele rij
+- Accordeonmenu
+
+De overgang van een enkele rij naar een dubbele rij gebeurd in JavaScript (js/menu-main.js) en gebeurd als de hoofditems niet meer naast elkaar in de menubalk passen. Dat kan als het scherm te smal wordt of als het lettertype groter wordt. Bij een groter lettertype en smal scherm vormen zich soms drie rijen waardoor de lay-out vervormt. Hier moet nog een oplossing voor komen. In de mobiel-omgeving wordt het menu ingeklapt tot een accordeonmenu, dit gebeurd bij een schermbreedte van 600 pixels en kan worden ingesteld bij de instellingen van het superfish blok.
 
 ## Lettertype en kleuren
 
@@ -109,6 +123,13 @@ Het rzvdaventria thema is niet geoptimaliseerd voor het beheergedeelte en de bas
 ## Gedeïnstalleerde thema's
 
 De core-thema's Olivero en Stark kunnen worden gedeïnstalleerd.
+
+## Gebruikte standaarden
+
+- Accessibility: https://www.drupal.org/docs/7/creating-accessible-themes/accessibility-principles
+- CSS: https://www.drupal.org/docs/develop/standards/css/css-coding-standards
+- Javascript: https://www.drupal.org/node/172169
+- Twig Template namen: https://www.drupal.org/docs/develop/theming-drupal/twig-in-drupal/twig-template-naming-conventions
 
 ## Testen
 
