@@ -9,18 +9,23 @@
 }
 
 .region-sidebar .block {
-  padding: 1rem;
+  padding: 16px;
 }
 
-@media all and  (max-width: 60rem) {
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
   .region-sidebar {
     width: 100%;
+  }
+
+  .region-sidebar .block {
+    width: calc(50% - 64px);
+    padding: 16px 32px;
   }
 }
 
 @media all and (max-width: 37.5rem) {
   .region-sidebar .block {
-    width: calc(100% - 20px);
-    padding: 1rem 10px;
+    width: calc(100% - 64px);
+    padding: 16px 32px;
   }
 }
