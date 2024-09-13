@@ -5,7 +5,7 @@
 
 .block-system-powered-by-block {
   float: left;
-  width: calc(100%-20px);
+  width: calc(100% - 20px);
   clear: both;
   padding-top: 1rem;
   padding-bottom: 1rem;
