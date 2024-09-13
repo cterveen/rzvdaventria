@@ -5,7 +5,7 @@
 
 .region-footer .block-menu {
   float: left;
-  width: calc(25% - 20px);
+  width: calc(25% - 16px);
 }
 
 @media all and (min-width: 37.5rem) and (max-width: 60rem) {

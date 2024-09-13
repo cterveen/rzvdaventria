@@ -3,19 +3,19 @@
  * Styles for the powered-by block
  */
 
-.block-system-powered-by-block {
+.region-footer .block-system-powered-by-block {
   float: left;
-  width: calc(100% - 20px);
+  width: calc(100% - 96px);
   clear: both;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0px 1rem 40px;
   text-align: center;
   font-size: 0.9rem;
 }
 
 @media all and (max-width: 60rem) {
-  .block-system-powered-by-block {
-    width: calc(100% - 64px);
+  .region-footer .block-system-powered-by-block {
+    width: 100%;
+    padding: 1rem 0px;
   }
 }
 
