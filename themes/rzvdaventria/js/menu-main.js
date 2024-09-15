@@ -9,7 +9,7 @@
         once('double-menu', '#block-rzvdaventria-hoofdnavigatie').forEach(function (element) {
           rzvdaventriaMainMenuIsDouble()
 
-          $( window ).on( "resize", function() {
+          $(window).on("resize", function() {
             rzvdaventriaMainMenuIsDouble()
           });
 
@@ -26,24 +26,24 @@
            * @returns {boolean} state is-double
            */
           function rzvdaventriaMainMenuIsDouble() {
-            let barWidth = $( "#block-rzvdaventria-hoofdnavigatie" ).innerWidth();
+            let barWidth = $("#block-rzvdaventria-hoofdnavigatie").innerWidth();
             let menuWidth = 0;
 
             // State shouldn't be is-double in accordeon menu.
-            if ($( ".layout-container" ).outerWidth() < 600) {
-              $( ".sf-depth-1" ).removeClass("is-double");
+            if ($(".layout-container").outerWidth() < 600) {
+              $(".sf-depth-1").removeClass("is-double");
               return false;
             }
 
-            $( "li.sf-depth-1" ).each(function( index ) {
-              menuWidth = menuWidth + $( this ).outerWidth();
+            $("li.sf-depth-1").each(function(index) {
+              menuWidth = menuWidth + $(this).outerWidth();
             });
             if (barWidth < menuWidth) {
-              $( ".sf-depth-1" ).addClass("is-double");
+              $(".sf-depth-1").addClass("is-double");
               return true;
             }
             else {
-              $( ".sf-depth-1" ).removeClass("is-double");
+              $(".sf-depth-1").removeClass("is-double");
               return false;
             }
           }
