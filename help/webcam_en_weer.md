@@ -58,7 +58,7 @@ De samenstelling van weerdata.json is al volgt:
   "temperatuur": {
     "label": "Temperatuur",
     "value": "12",
-    "unit" : "°C",
+    "unit": "°C",
     "caption": "",
     "timestamp": "15:30",
     "expires": "2025-08-29 14:30:00 UTC"
