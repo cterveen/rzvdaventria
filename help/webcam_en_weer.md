@@ -16,7 +16,7 @@ Het json-bestand is als volgt samengesteld:
 - Locatie: /webcam/data
 - Per meting een object met:
   - label: de nette naam van de meting
-  - value: de waarde (Engelse notatie)
+  - value: de waarde als string (Nederlandse notatie)
   - unit: de eenheid voor de meting
   - caption: een onderschift voor de conditie, bijvoorbeeld "vorst" of "hoogwater"
   - timestamp: de tijd waarop de meting heeft plaatsgevonden in lokale tijd format hh:mm
@@ -57,7 +57,7 @@ De samenstelling van weerdata.json is al volgt:
 {
   "temperatuur": {
     "label": "Temperatuur",
-    "value": 12,
+    "value": "12",
     "unit" : "°C",
     "caption": "",
     "timestamp": "15:30",
@@ -65,7 +65,7 @@ De samenstelling van weerdata.json is al volgt:
   },
   "ijsselpeil": {
     "label": "IJsselpeil",
-    "value": 4.13,
+    "value": "4,13",
     "unit": "m",
     "caption": "",
     "timestamp": "15:30",
@@ -73,7 +73,7 @@ De samenstelling van weerdata.json is al volgt:
   },
   "windkracht": {
     "label": "Windkracht",
-    "value": 2,
+    "value": "2",
     "unit": "bft",
     "caption": "",
     "timestamp": "15:30",
