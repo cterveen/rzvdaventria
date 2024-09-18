@@ -6,14 +6,30 @@ Daventria Drupal 10.x Theme help - instellingen
 
 Deze pagina bevat de algemene instellingen voor het daventria thema. Alleen de gewijzigde instellingen worden hierin beschreven. Dit betreft:
 
-- Instellingen
+- Personen
+  - Accountinstellingen
+- Systeem
   - Basis site-instellingen
-- Thema instellingen
-  -  Olivero
+- Inhoud samenstellen
+  - Tekstopmaak en editors
 
 Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 
-## Instellingen
+## Personen
+
+#### Accountinstellingen
+
+- Anonieme gebruikers
+  - Naam: Anoniem
+- Registratie en annulering
+  - Wie mag accounts aanmaken?: Enkel beheerders
+  - E-mailverficatie verplichten: ja
+  - Wachtwoordsterkteindicator inschakelen: ja
+  - Bij het opheffen vn een gebruikersaccount: Het account uitschakelen en de inhoud behouden
+- E-mailadres kennisgeving: internetcie@daventria.com
+- E-mails: -standaard instellingen-
+
+## Systeem
 
 #### Basis site-instellingen
 
@@ -23,6 +39,8 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 - Standaardvoorpagina: /user/login
 - Standaard 403-pagina: -geen-
 - Standaard 404-pagina: -geen-
+
+## Inhoud Samenstellen
 
 #### Tekstopmaak en editors
 
@@ -44,13 +62,3 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
   - URLs naar links omzetten, 0
   - Incorrecte en afgekapte HTML corrigeren, 10
   - Maximale lengte van de linktekst: 72 tekens
-
-## Thema instellingen
-
-#### Olivero
-
-- Paginaelementweergave: Snelkoppelingspictogram
-- Logo: logo.png
-- Favicon: gebruik favicon van het thema
-- Mobiele menu inschakkelen op alle breedtes: nee
-- Primaire branding-kleur: #1b9ae4
