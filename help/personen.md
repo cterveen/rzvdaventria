@@ -109,17 +109,60 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
   - Interface-tekst vertalen
 - Language: -geen-
 - Media:
-  - Toegangg tot media-overzicht
+  - Hub: Nieuwe media aanmaken
+  - Hub: Alle media verwijderen
+  - Hub: Eigen media verwijderen
+  - Hub: Alle media bewereken
+  - Hub: Alle media-rivisie pagina's bekijken
+  - Toegang tot media-overzicht
   - Media bekijken
   - Media beheren
   - Media toevoegen
+  - Hub verwijderen: Meida revisies verwijderen
   - Alle media verwijderen
   - Eigen media verwijderen
+  - Hub herstellen: Media-revisies herstellen
   - Alle media bewerken
   - Eigen media bewerken
   - Alle mediarevisies bekijken
   - Eigen ongepubliceerde media bekijken
 - Node:
+  - Activiteit: Nieuwe inhoud aanmaken
+  - Hub: Nieuwe inhoud aanmaken
+  - Nieuws:  Nieuwe inhoud aanmaken
+  - Pagina:  Nieuwe inhoud aanmaken
+  - Activiteit: Alle inhoud verwijderen
+  - Hub: Alle inhoud verwijderen
+  - Nieuws: Alle inhoud verwijderen
+  - Pagina: Alle inhoud verwijderen
+  - Activiteit: Eigen inhoud verwijderen
+  - Hub: Eigen inhoud verwijderen
+  - Nieuws: Eigen inhoud verwijderen
+  - Pagina: Eigen inhoud verwijderen
+  - Activiteit: Revisies verwijderen
+  - Hub: Revisies verwijderen
+  - Nieuws: Revisies verwijderen
+  - Pagina: Revisies verwijderen
+  - Activiteit: Alle inhoud bewerken
+  - Hub: Alle inhoud bewerken
+  - Nieuws: Alle inhoud bewerken
+  - Pagina: Alle inhoud bewerken
+  - Activiteit: Eigen inhoud bewerken
+  - Hub: Eigen inhoud bewerken
+  - Nieuws: Eigen inhoud bewerken
+  - Pagina: Eigen inhoud bewerken
+  - Activiteit: Revisies bekijken
+  - Hub: Revisies bekijken
+  - Nieuws: Revisies bekijken
+  - Pagina: Revisies bekijken
+  - Activiteit: Revisies terugzetten
+  - Hub: Revisies terugzetten
+  - Nieuws: Revisies terugzetten
+  - Pagina: Revisies terugzetten
+  - Activiteit: Revisies bekijken
+  - Hub: Revisies bekijken
+  - Nieuws: Revisies bekijken
+  - Pagina: Revisies bekijken
   - Naar de inhoudsoverzichtspagina gaan
   - Inhoud beheren
   - Gepubliceerde inhoud bekijken
@@ -132,6 +175,7 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
   - Zoeken gebruiken
 - System:
   - Adminster menus and menu links
+  - Gebruik de beheerpagina's
   - Beheerthema gebruiken
 - Taxonomy:
   - Toegang tot de taxonomiewoordenlijst overzichtspagina
