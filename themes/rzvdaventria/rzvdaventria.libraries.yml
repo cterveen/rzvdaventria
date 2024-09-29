@@ -86,6 +86,9 @@ base:
         weight: -10
       css/components/ui-dialog.css:
         weight: -10
+    theme:
+      css/theme/toolbar.icons.theme.css:
+        weight: -10
   js:
     js/weather.js: {}
     js/menu-main.js: {}
