@@ -31,14 +31,14 @@
         <strong>{{ errors }}</strong>
       </div>
     {% endif %}
-    {%- if description -%}
-      <div class="details-description">{{ description }}</div>
-    {%- endif -%}
     {%- if children -%}
       {{ children }}
     {%- endif -%}
     {%- if value -%}
       {{ value }}
+    {%- endif -%}
+    {%- if description -%}
+      <div class="details-description">{{ description }}</div>
     {%- endif -%}
   </div>
 </details>
