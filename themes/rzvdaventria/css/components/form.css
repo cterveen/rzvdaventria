@@ -29,17 +29,24 @@ form .field-add-more-submit {
  */
 .form-item,
 .form-actions {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+th.field-label {
+  text-align: left;
 }
 tr.odd .form-item,
 tr.even .form-item {
-  margin-top: 0;
-  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .form-composite > .fieldset-wrapper > .description,
 .form-item .description {
-  font-size: 0.85em;
+  font-size: 0.95em;
+}
+label {
+  display: block;
+  font-weight: bold;
 }
 label.option {
   display: inline;
@@ -55,8 +62,8 @@ label.option {
 }
 .form-checkboxes .form-item,
 .form-radios .form-item {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 .form-type-radio .description,
 .form-type-checkbox .description {
@@ -64,8 +71,8 @@ label.option {
 }
 [dir="rtl"] .form-type-radio .description,
 [dir="rtl"] .form-type-checkbox .description {
-  margin-right: 2.4em;
-  margin-left: 0;
+  padding-right: 2.4em;
+  padding-left: 0;
 }
 .marker {
   color: #e00;
@@ -74,7 +81,7 @@ label.option {
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin: 0 0.3em;
+  padding: 0 0.3em;
   content: "";
   vertical-align: super;
   /* Use a background image to prevent screen readers from announcing the text. */
@@ -101,4 +108,9 @@ abbr.ajax-changed {
   vertical-align: sub;
   background: url(../../images/icons/error.svg) no-repeat;
   background-size: contain;
+}
+
+/* field-bijlage */
+summary {
+  font-weight: bold;
 }
