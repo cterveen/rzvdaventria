@@ -22,66 +22,71 @@ Het beheermenu is een speciaal menu voor beheerders, deze wordt als aparte balk 
 
 Het beheermenu bevat de volgende links:
 
-- Beheer
-  - Inhoud
-  - Structuur
-    - Blokindeling
-    - Bloktypes
-    - Boeken
-    - Inhoudstypen
-    - Mediatypes
-    - Menu's
-    - Overzichten
-    - Taxonomie
-    - Weergavemodi
-      - Formuliermodi
-      - Weergavemodi
-  - Uiterlijk
-  - Uitbreiding
-  - Instellingen
-    - Personen
-      - Accountinstellingen
-    - Systeem
-      - Basis site-instellingen
-      - Cron
-    - Gebruikersinterface
-    - Inhoud samenstellen
-      - Tekstopmaak en editors
-    - Media
-      - Afbeeldingsstijlen
-      - Bestandssysteem
-      - Media-instellingen
-      - Mediabibliotheek-instellingen
-      - Beeldverwerkingstoolkit
-    - Ontwikkeling
-      - Prestaties
-      - Ontwikkel-instellingen
-      - Logberichten en fout-meldingen
-      - Onderhoudsmodus
-    - Zoeken en metadata
-      - Zoekpagina's
-      - URL-aliassen
-    - Regio en taal
-      - Landinstellingen
-      - Datum- en tijdnotaties
-      - Talen
-      - Taal van de inhoud
-      - Gebruikersinterfacevertaling
-    - Webservices
-      - RSS-publicatie
-      - Menu Linksetinstellingen
-    -  Workflow
-  -  Personen
-  -  Rapporten
-    - Statusrapportage
-    - Beschikbare updates
-    - Recente logberichten
-    - Beschikbare nieuwe vertalingen
-    - Meest populaire trefwoorden
-    - Meest voorkomende 'geen toegang'-fouten
-    - Meest voorkomende 'pagina niet gevonden'-fouten
-    - Overzicht van velden
-    - Views-plugins
+- Beheer /admin
+  - Inhoud aanmaken /node/add 
+    - Activiteit aanmaken /node/add/activiteit
+    - Hub aanmaken /node/add/hub
+    - Nieuws aanmaken /node/add/nieuws
+    - Pagina aanmaken /node/add/pagina
+  - Inhoud /admin/content
+  - Structuur /admin/structure
+    - Blokindeling /admin/structure/block
+    - Bloktypes /admin/structure/block-content
+    - Boeken /admin/structure/book
+    - Inhoudstypen /admin/structure/types
+    - Mediatypes /admin/structure/media
+    - Menu's /admin/structure/menu
+    - Overzichten /admin/structure/views
+    - Taxonomie /admin/structure/taxonomy
+    - Weergavemodi /admin/structure/display-modes
+      - Formuliermodi /admin/structure/display-modes/form
+      - Weergavemodi /admin/structure/display-modes/view
+  - Uiterlijk /admin/appearance
+  - Uitbreiding /admin/modules
+  - Instellingen /admin/config
+    - Personen /admin/config/people
+      - Accountinstellingen /admin/config/people/accounts
+    - Systeem /admin/config/system
+      - Basis site-instellingen /admin/config/system/site-information
+      - Cron /admin/config/system/cron
+    - Gebruikersinterface /admin/config/user-interface
+    - Inhoud samenstellen /admin/config/content
+      - Tekstopmaak en editors /admin/config/content/formats
+    - Media /admin/config/media
+      - Afbeeldingsstijlen /admin/config/media/image-styles
+      - Bestandssysteem /admin/config/media/file-system
+      - Media-instellingen /admin/config/media/media-settings
+      - Mediabibliotheek-instellingen /admin/config/media/media-library
+      - Beeldverwerkingstoolkit /admin/config/media/image-toolkit
+    - Ontwikkeling /admin/config/development
+      - Prestaties /admin/config/development/performance
+      - Ontwikkel-instellingen /admin/config/development/settings
+      - Logberichten en fout-meldingen /admin/config/development/logging
+      - Onderhoudsmodus /admin/config/development/maintenance
+    - Zoeken en metadata /admin/config/search
+      - Zoekpagina's /admin/config/search/pages
+      - URL-aliassen /admin/config/search/path
+    - Regio en taal /admin/config/regional
+      - Landinstellingen /admin/config/regional/settings
+      - Datum- en tijdnotaties /admin/config/regional/date-time
+      - Talen /admin/config/regional/language
+      - Taal van de inhoud /admin/config/regional/content-language
+      - Gebruikersinterfacevertaling /admin/config/regional/translate
+    - Webservices /admin/config/services
+      - RSS-publicatie /admin/config/services/rss-publishing
+      - Menu Linksetinstellingen /admin/config/services/linkset
+    -  Workflow /admin/config/workflow
+  -  Personen /admin/reports
+  -  Rapporten /admin/reports
+    - Statusrapportage /admin/reports/status
+    - Beschikbare updates /admin/reports/updates
+    - Recente logberichten /admin/reports/dblog
+    - Beschikbare nieuwe vertalingen /admin/reports/translations
+    - Meest populaire trefwoorden /admin/reports/search
+    - Meest voorkomende 'geen toegang'-fouten /admin/reports/access-denied
+    - Meest voorkomende 'pagina niet gevonden'-fouten /admin/reports/page-not-found
+    - Overzicht van velden /admin/reports/fields
+    - Views-plugins /admin/reports/views-plugins
 
 ## Hoofdnavigatie
 
