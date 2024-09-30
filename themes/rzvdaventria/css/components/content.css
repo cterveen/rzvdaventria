@@ -13,13 +13,6 @@
   text-wrap: pretty;
 }
 
-#block-rzvdaventria-content ol,
-#block-rzvdaventria-content ul {
-  margin: 0;
-  padding-bottom: 0.8rem;
-  text-wrap: pretty;
-}
-
 #block-rzvdaventria-content a,
 #block-rzvdaventria-content a:visited,
 #block-rzvdaventria-content a:hover,
@@ -59,4 +52,12 @@
 .node--type-nieuws .field--name-field-tags .field__item {
   float: left;
   margin-left: 10px;
+}
+
+/* body */
+.field--name-body ol,
+.field--name-body ul {
+  margin: 0;
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
 }
