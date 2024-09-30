@@ -464,10 +464,9 @@ Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden 
 - Body
    - Label: Body
    - Toegestane aantal waarden: Beperkt, 1
-   - Helptekst: Vul hier de tekst van het nieuwsbericht in. Gebruik bij plakken altijd plakken zonder
-opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
+   - Helptekst: - zie onder -
    - Verplicht veld: Nee
-   - Toegestane tekstopmaken: Platte tekst
+   - Toegestane tekstopmaken: HTML
    - Samenvatting invoeren: Nee
    - Samenvatting vereisen: Nee
    - Standaardwaarde instellen: Nee
@@ -479,8 +478,7 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
   - Type: Referentie
   - Referentie: Taxonomieterm
   - Toegestane aantal waarden: Onbeperkt
-  - Helptekst: Voeg een of meerdere termen toe om nieuws te kunnen groeperen. Standaard termen zijn
-bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veiligheid, Wedstrijdroeien.
+  - Helptekst: - zie onder -
   - Verplicht veld: Nee
   - Referentiemethode: Standaard
   - Woordenlijst: Nieuws
@@ -498,12 +496,38 @@ bijvoorbeeld In Memoriam, Jeugd en Junioren, Marathonroeien, Midweekroeien, Veil
   - Toegestaan aantal waarden: Onbeperkt
   - Helptekst: Bijlagen kunnen onderaan het nieuwsbericht worden gedownload.
   - Verplicht veld: Nee
-  - Toegestane bestandsextensies: txt doc docx odf xls xlsx odx pdf
+  - Toegestane bestandsextensies: doc, docx, jpg, jpeg, odf, ods, odx, pdf, png, txt, xls, xlsx
   - Map: bijlagen
   - Maximumgrootte per upload: -geen-
   - Veld omschrijving inschakelen: Nee
 
- #### Formulierweergave beheren
+#### Helptekst Body ####
+
+````
+<ul>
+<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
+<li>Vervang paragraafeinden door een enkele enter</li>
+<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+</ul>
+````
+
+#### Helptekst Tags ####
+
+````
+<p>Tags worden gebruikt om vergelijkbaar nieuws te kunnen selecteren.</p>
+<p>Standaard termen zijn bijvoorbeeld:
+<ul>
+<li>In Memoriam</li>
+<li>Jeugd en Junioren</li>
+<li>Marathonroeien</li>
+<li>Midweekroeien</li>
+<li>Veiligheid</li>
+<li>Wedstrijdroeien</li>
+</ul>
+</p>
+````
+
+#### Formulierweergave beheren
 
  - Titel: -5
  - Taal: 20
