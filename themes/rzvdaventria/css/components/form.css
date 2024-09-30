@@ -6,22 +6,37 @@
 form .field-multiple-table {
   margin: 0;
 }
+
 form .field-multiple-table .field-multiple-drag {
   width: 30px;
   padding-right: 0; /* LTR */
 }
-[dir="rtl"] form .field-multiple-table .field-multiple-drag {
-  padding-left: 0;
-}
+
 form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   padding-right: 0.5em; /* LTR */
 }
-[dir="rtl"] form .field-multiple-table .field-multiple-drag .tabledrag-handle {
-  padding-right: 0;
-  padding-left: 0.5em;
-}
+
 form .field-add-more-submit {
   margin: 0.5em 0 0;
+}
+
+/**
+ * Labels, descriptions, help texts
+ */
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+th.field-label {
+  text-align: left;
+}
+
+.form-composite > .fieldset-wrapper > .description,
+.form-item .description,
+.details-description {
+  font-size: 0.9rem;
 }
 
 /**
@@ -32,26 +47,18 @@ form .field-add-more-submit {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-th.field-label {
-  text-align: left;
-}
+
 tr.odd .form-item,
 tr.even .form-item {
   padding-top: 0;
   padding-bottom: 0;
 }
-.form-composite > .fieldset-wrapper > .description,
-.form-item .description {
-  font-size: 0.95em;
-}
-label {
-  display: block;
-  font-weight: bold;
-}
+
 label.option {
   display: inline;
   font-weight: normal;
 }
+
 .form-composite > legend,
 .label {
   display: inline;
@@ -60,23 +67,22 @@ label.option {
   font-size: inherit;
   font-weight: bold;
 }
+
 .form-checkboxes .form-item,
 .form-radios .form-item {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
 }
+
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em; /* LTR */
 }
-[dir="rtl"] .form-type-radio .description,
-[dir="rtl"] .form-type-checkbox .description {
-  padding-right: 2.4em;
-  padding-left: 0;
-}
+
 .marker {
   color: #e00;
 }
+
 .form-required::after {
   display: inline-block;
   width: 6px;
@@ -89,10 +95,12 @@ label.option {
   background-repeat: no-repeat;
   background-size: 6px 6px;
 }
+
 abbr.tabledrag-changed,
 abbr.ajax-changed {
   border-bottom: none;
 }
+
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
