@@ -4,12 +4,18 @@
  */
 
 #block-rzvdaventria-content {
-  min-height: 120px;
   color: #444;
   line-height: 1.6;
 }
 
 #block-rzvdaventria-content p {
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+#block-rzvdaventria-content ol,
+#block-rzvdaventria-content ul {
+  margin: 0;
   padding-bottom: 0.8rem;
   text-wrap: pretty;
 }
@@ -24,6 +30,10 @@
 }
 
 /* nieuws teaser */
+.view-frontpage h2 {
+  padding-bottom: 0;
+}
+
 .view-frontpage h2 a,
 .view-frontpage h2 a:visited,
 .view-frontpage h2 a:hover,
@@ -32,12 +42,17 @@
   color: black;
 }
 
-.view-frontpage .node__links {
-  text-align: right;
+.node__submitted {
+  font-size: 0.9rem;
+  padding-bottom: 0.8rem;
 }
 
 .view-frontpage .views-row {
   border-bottom: 3px solid rgb(205, 205, 205)
+}
+
+.view-frontpage .node__links {
+  text-align: right;
 }
 
 /* nieuws */
