@@ -3,22 +3,22 @@ base:
   css:
     base:
       css/base/base.css:
-        weight: -20
+        weight: -19
       css/base/fonts.css:
-        weight: -20
+        weight: -19
     layout:
       css/layout/layout.css:
-        weight: -19
+        weight: -18
       css/layout/region-header.css:
-        weight: -19
+        weight: -18
       css/layout/region-weather.css:
-        weight: -19
+        weight: -18
       css/layout/region-content.css:
-        weight: -19
+        weight: -18
       css/layout/region-sidebar.css:
-        weight: -19
+        weight: -18
       css/layout/region-footer.css:
-        weight: -19
+        weight: -18
     component:
       css/components/action-links.css:
         weight: -10
