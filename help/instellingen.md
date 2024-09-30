@@ -12,6 +12,8 @@ Deze pagina bevat de algemene instellingen voor het daventria thema. Alleen de g
   - Basis site-instellingen
 - Inhoud samenstellen
   - Tekstopmaak en editors
+- Regio en taal
+  - Datum- en tijdnotaties
 
 Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 
@@ -62,3 +64,20 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
   - URLs naar links omzetten, 0
   - Incorrecte en afgekapte HTML corrigeren, 10
   - Maximale lengte van de linktekst: 72 tekens
+
+## Regio en taal
+
+#### Datum- en tijdnotaties
+
+- Standaarddatum - kort
+  - Name: Standaarddatum - kort
+  - Opmaakstring: d-m-Y - H:i
+  - Taal: Dutch
+- Standaarddatum - lang
+  - Name: Standaarddatum - lang
+  - Opmaakstring: l, j F, Y - H:i
+  - Taal: Dutch
+- Standaarddatum - middel
+  - Name: Standaarddatum - middel
+  - Opmaakstring: D, d-m-Y - H:i
+  - Taal: Dutch
