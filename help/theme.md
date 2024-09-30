@@ -17,9 +17,9 @@ Het thema is gemaakt met behulp van starterkit en daarna aangepast. Drupal kent 
 Drupal gebruikt een SMACCS structuur voor de CSS files. In de standaard thema's worden de verschillende stijlelementen over veel verschillende bestanden verdeeld, welke vervolgens bij het laden van de pagina worden samengevoegd. In rzvdaventria.libraries.yml kan het gewicht (weight) van het bestand worden aangegeven. Voor het gewicht kunnen getallen van -50 tot 50 worden gebruikt, een bestand met een lager gewicht wordt eerder geladen.
 
 - css/base/*.css bevat de stijlelementen voor basis HTML elementen en fonts
-  - gewicht: -20
-- css/layout/*.css bevat de stijlelementen voor de regios en gedeelde stijlelementen voor blokken binnen regio's.
   - gewicht: -19
+- css/layout/*.css bevat de stijlelementen voor de regios en gedeelde stijlelementen voor blokken binnen regio's.
+  - gewicht: -18
 - css/components/*.css bevat de stijlelementen van alle overige elementen, inclusief de plaatsing van elementen in blokken
   - gewicht blok niveau: -15
   - gewicht menu niveau: -13
