@@ -69,13 +69,21 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 
 #### Datum- en tijdnotaties
 
+- Agenda - datum
+  - Name: Agenda - datum
+  - Opmaakstring: l j F Y
+  - Taal: Dutch
+- Agenda - tijd
+  - Name: Agenda - tijd
+  - Opmaakstring: H:i
+  - Taal: Dutch
 - Standaarddatum - kort
   - Name: Standaarddatum - kort
   - Opmaakstring: d-m-Y - H:i
   - Taal: Dutch
 - Standaarddatum - lang
   - Name: Standaarddatum - lang
-  - Opmaakstring: l, j F, Y - H:i
+  - Opmaakstring: l j F Y - H:i
   - Taal: Dutch
 - Standaarddatum - middel
   - Name: Standaarddatum - middel
