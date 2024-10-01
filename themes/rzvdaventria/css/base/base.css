@@ -70,3 +70,7 @@ a:active {
   color: black;
   text-decoration: none;
 }
+
+input[type=text] {
+  max-width: 100%;
+}
