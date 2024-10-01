@@ -659,7 +659,7 @@ naar wordt gelinkt.
 - Body
    - Label: Body
    - Toegestane aantal waarden: Beperkt, 1
-   - Helptekst: Vul hier de tekst van de pagina in. Gebruik bij plakken altijd plakken zonder
+   - Helptekst: -zie onder-
 opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
    - Verplicht veld: Nee
    - Toegestane tekstopmaken: HTML
@@ -668,6 +668,16 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
    - Standaardwaarde instellen: Nee
    - Samenvatting: -geen-
    - Body: -geen-
+ 
+#### Helptekst body
+
+````
+<ul>
+<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
+<li>Vervang paragraafeinden door een enkele enter</li>
+<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+</ul>
+````
 
  #### Formulierweergave beheren
 
