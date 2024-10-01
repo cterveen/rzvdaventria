@@ -1,6 +1,9 @@
 /**
  * @file
  * Visual styles for form components.
+ *
+ * Please note that style for the body textarea is added to contents.css to
+ * have the same style on the page and FCKEditor.
  */
 
 form .field-multiple-table {
