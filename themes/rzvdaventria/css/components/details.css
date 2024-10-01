@@ -12,7 +12,7 @@ details {
   border: 1px solid #ccc;
 }
 details > .details-wrapper {
-  padding: 0.5em 1.5em;
+  padding: 0 1.5em;
 }
 /* @todo Regression: The summary of noncollapsible details are no longer
      vertically aligned with the .details-wrapper in browsers without native
