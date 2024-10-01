@@ -41,10 +41,9 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
 - Body
    - Label: Body
    - Toegestane aantal waarden: Beperkt, 1
-   - Helptekst: Vul hier de tekst van het nieuwsbericht in. Gebruik bij plakken altijd plakken zonder
-opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
+   - Helptekst: -zie onder-
    - Verplicht veld: Nee
-   - Toegestane tekstopmaken: Platte tekst
+   - Toegestane tekstopmaken: HTML
    - Samenvatting invoeren: Nee
    - Samenvatting vereisen: Nee
    - Standaardwaarde instellen: Nee
@@ -71,7 +70,7 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Begintijd
   - Label: Begintijd
   - Systeemnaam: field_begintijd
-  - Veldtype: Datum en tijd, Tijdstip
+  - Veldtype: Datum en tijd, Datum
   - Toegestane aantal waarden: Beperkt, 1
   - Helptekst: De tijd waarop de activiteit begint.
   - Verplicht veld: Nee
@@ -93,14 +92,24 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
   - Helptekst: Adres of bijvoorbeeld ruimte op de roeivereniging waar de activiteit plaatsvind of men zich kan melden.
   - Verplicht veld: Nee
   - Standaardwaarde instellen: Nee
-- Meer informatie
-  - Label: Meer informatie
-  - Systeemnaam: field_meer_informatie
+- Interne link
+  - Label: Interne link
+  - Systeemnaam: field_interne_link
   - Veldtype: Link
-  - Aantal waarden: Beperkt, 2
-  - Helptekst: Een of twee links met meer informatie. Bijvoorbeeld naar een aankondiging of website van de organisatie.
+  - Aantal waarden: Beperkt, 1
+  - Helptekst: -zie onder-
   - Verplicht veld: Nee
-  - Toegestaan linktype: Interne en externe links
+  - Toegestaan linktype: Alleen interne links
+  - Linktekst toestaan: Optioneel
+  - Standaard waarde instellen: Nee
+- Externe link
+  - Label: Interne link
+  - Systeemnaam: field_externe_link
+  - Veldtype: Link
+  - Aantal waarden: Beperkt, 1
+  - Helptekst: -zie onder-
+  - Verplicht veld: Nee
+  - Toegestaan linktype: Alleen externe links
   - Linktekst toestaan: Optioneel
   - Standaard waarde instellen: Nee
 - Inschrijven
@@ -108,43 +117,91 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
   - Systeemnaam: field_inschrijven
   - Veldtype: Link
   - Aantal waarden: Beperkt, 1
-  - Helptekst: Een link waar men zich in kan schrijven. Voor links naar Mijn Daventria gebruik de omschrijving "Mijn Daventria", voor een formulier "Formulier" en voor email gebruik de omschrijving "E-mail" en de link "mailto:<adres>".
+  - Helptekst: -zie onder-
   - Verplicht veld: Nee
   - Toegestaan linktype: Interne en externe links
   - Linktekst toestaan: Optioneel
   - Standaard waarde instellen: Nee
  
+
+#### Helptekst body
+
+````
+<ul>
+<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
+<li>Vervang paragraafeinden door een enkele enter</li>
+<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+</ul>
+````
+
+#### Helptekst inschrijven
+
+````
+<ul>
+<li>Gebruik dit veld voor links waar deelnemers zich in kunnen schrijven.</li>
+<li>Voor links naar Mijn Daventria gebruik de linktekst "Mijn Daventria"</li>
+<li>Voor een inschrijfformulier gebruik de linktekst "Inschrijfformulier"</li>
+<li>Voor een e-mailadres gebruik de link "mailto:<adres>" en de omschrijving "E-mail".</li>
+</ul>
+````
+
+#### Helptekst externe link
+
+````
+<ul>
+<li>Gebruik dit veld om een link naar andere websites toe te voegen, bijvoorbeeld naar de website van een wedstrijd.</li>
+<li>Als linktekst het domein van de website gebruiken.</li>
+</ul>
+````
+
+#### Helptekst interne link
+
+````
+<ul>
+<li>Gebruik dit veld om een link te maken naar een informatiepagina of aankondiging op onze eigen website.</li>
+<li>Als linktekst de naam van de pagina of "Aankondiging" gebruiken.</li>
+</ul>
+````
+ 
 #### Formulierweergave
 
 - Titel: -11
-- Taal: 20
-- Geschreven door: 11
-- Aangemaakt op: 12
-- Aangeraden op de voorpagina: Uitgeschakeld
-- Vastgeplakt boven aan de lijst: Uitgeschakeld
-- URL-alias: 10
-- Gepubliceerd: 5
-- Body: -3
 - Begindatum: -10
 - Einddatum: -9
 - Begintijd: -8
 - Eindtijd: -7
 - Locatie: -6
-- Meer informatie: -4
 - Inschrijven: -5
+- Interne link: -4
+- Externe link -3
+- Body: -2
+- Gepubliceerd: 5
+- URL-alias: 10
+- Geschreven door: 11
+- Aangemaakt op: 12
+- Taal: 20
+- Aangeraden op de voorpagina: Uitgeschakeld
+- Vastgeplakt boven aan de lijst: Uitgeschakeld
 
 #### Weergave
 
 - Links: 99
 - Titel: -10
-- Body: 107
 - BeginDatum: 100
+  - Datumnotatie: Agenda - datum
 - Einddatum: 101
+  - Datumnotatie: Agenda - datum
 - Begintijd: 102
+  - Datumnotatie: Agenda - tijd
+  - Datumnotatie tooltip: Agenda - tijd
 - Eindtijd: 103
+  - Datumnotatie: Agenda - tijd
+  - Datumnotatie tooltip: Agenda - tijd
 - Locatie: 104
-- Meer informatie: 105
 - Inschrijven: 106
+- Interne link: 107
+- Externe link: 108
+- Body: 109
 - Taal: Uitgeschakeld
 - Aangepaste weergave-instellingen: -geen-
 
@@ -246,10 +303,10 @@ Twig code voor het herschrijven van begindatum (maand), de exacte naam van de va
 
 ```
 {{ field_begindatum }}
-{% if field_einddatum and field_begindatum_1 == field_einddatum_2  %}
- - {{ field_einddatum }} {{ field_einddatum_2 }}
+{% if field_einddatum and field_begindatum_1 == field_einddatum_1  %}
+ - {{ field_einddatum }} {{ field_einddatum_1 }}
 {% elseif field_einddatum %}
- {{ field_begindatum_1 }} - {{ field_einddatum }} {{ field_einddatum_2 }}
+ {{ field_begindatum_1 }} - {{ field_einddatum }} {{ field_einddatum_1 }}
 {% else %}
  {{ field_begindatum_1 }}
 {% endif %}
