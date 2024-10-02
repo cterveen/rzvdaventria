@@ -3,6 +3,73 @@
  * Visual styles for nodes.
  */
 
+/**
+ * General
+ *
+ * All style regarding .node__content should be copied to the selector
+ * .form-item-body-0-value so the style in the FCKEditor is the same as on the
+ * page.
+ */
+
 .node--unpublished {
   background-color: #fff4f4;
+}
+
+.node__content p {
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+.node__content ol,
+.node__content ul {
+  margin: 0;
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+.node__content a,
+.node__content a:visited,
+.node__content a:hover,
+.node__content a:visited:hover,
+.node__content a:active {
+  color: rgb(3, 162, 255);
+  font-weight: bold;
+}
+
+.node__content td,
+.node__content th {
+  padding-right: 1rem;
+  text-align: left;
+}
+
+/* nieuws teaser */
+.view-frontpage h2 {
+  padding-bottom: 0;
+}
+
+.view-frontpage h2 a,
+.view-frontpage h2 a:visited,
+.view-frontpage h2 a:hover,
+.view-frontpage h2 a:visited:hover,
+.view-frontpage h2 a:active {
+  color: black;
+}
+
+.node__submitted {
+  font-size: 0.9rem;
+  padding-bottom: 0.8rem;
+}
+
+.view-frontpage .views-row {
+  border-bottom: 3px solid rgb(205, 205, 205)
+}
+
+.view-frontpage .node__links {
+  text-align: right;
+}
+
+/* nieuws */
+.node--type-nieuws .field--name-field-tags .field__item {
+  float: left;
+  margin-left: 10px;
 }
