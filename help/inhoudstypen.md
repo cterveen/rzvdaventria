@@ -128,6 +128,7 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
 
 ````
 <ul>
+<li>De body kan eventueel gebruikt worden voor extra informatie, in de meeste gevallen is een link naar de aankonding of infopagina voldoende.</li>
 <li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
 <li>Vervang paragraafeinden door een enkele enter</li>
 <li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
@@ -185,24 +186,43 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
 
 #### Weergave
 
-- Links: 99
-- Titel: -10
-- BeginDatum: 100
+- Links:
+  - Gewicht: 99
+- Begindatum:
+  - Gewicht: 100
+  - Label: Inline
   - Datumnotatie: Agenda - datum
-- Einddatum: 101
+- Einddatum:
+  - Gewicht: 101
+  - Label: Inline
   - Datumnotatie: Agenda - datum
-- Begintijd: 102
+- Begintijd:
+  - Gewicht: 102
+  - Label: Inline
   - Datumnotatie: Agenda - tijd
   - Datumnotatie tooltip: Agenda - tijd
-- Eindtijd: 103
+- Eindtijd:
+  - Gewicht: 103
+  - Label: Inline
   - Datumnotatie: Agenda - tijd
   - Datumnotatie tooltip: Agenda - tijd
-- Locatie: 104
-- Inschrijven: 106
-- Interne link: 107
-- Externe link: 108
-- Body: 109
-- Taal: Uitgeschakeld
+- Locatie:
+  - Gewicht: 104
+  - Label: Boven
+- Inschrijven:
+  - Gewicht: 106
+  - Label: Inline
+- Meer informatie:
+  - Gewicht: 107
+  - Label: Inline
+- Website:
+  - Gewicht: 108
+  - Label: Inline
+- Body:
+  - Gewicht: 109
+  - Label: - Verborgen -
+- Taal:
+  - Gebied: Uitgeschakeld
 - Aangepaste weergave-instellingen: -geen-
 
 #### Toegangsrechten
