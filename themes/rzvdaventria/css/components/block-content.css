@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Visual styles for the content block
+ */
+
+#block-rzvdaventria-content {
+  color: #444;
+  line-height: 1.6;
+}
