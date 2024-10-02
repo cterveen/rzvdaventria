@@ -1,9 +1,6 @@
 /**
  * @file
  * Visual styles for form components.
- *
- * Please note that style for the body textarea is added to contents.css to
- * have the same style on the page and FCKEditor.
  */
 
 form .field-multiple-table {
@@ -41,6 +38,39 @@ th.field-label {
 .form-item .description,
 .details-description {
   font-size: 0.9rem;
+}
+
+/**
+ * Body textarea
+ *
+ * These are a copy of the styles for .node__content to keep the style in
+ * FCKEditor the same as the page lay-out.
+ */
+
+.form-item-body-0-value p {
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+.form-item-body-0-value ol,
+.form-item-body-0-value ul {
+  margin: 0;
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+.form-item-body-0-value a,
+.form-item-body-0-value a:visited,
+.form-item-body-0-value a:visited:hover,
+.form-item-body-0-value a.active {
+  color: rgb(3, 162, 255);
+  font-weight: bold;
+}
+
+.form-item-body-0-value td,
+.form-item-body-0-value th {
+  padding-right: 1rem;
+  text-align: left;
 }
 
 /**
