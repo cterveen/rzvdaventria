@@ -92,8 +92,8 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
   - Helptekst: Adres of bijvoorbeeld ruimte op de roeivereniging waar de activiteit plaatsvind of men zich kan melden.
   - Verplicht veld: Nee
   - Standaardwaarde instellen: Nee
-- Interne link
-  - Label: Interne link
+- Meer informatie
+  - Label: Meer informatie
   - Systeemnaam: field_interne_link
   - Veldtype: Link
   - Aantal waarden: Beperkt, 1
@@ -102,8 +102,8 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
   - Toegestaan linktype: Alleen interne links
   - Linktekst toestaan: Optioneel
   - Standaard waarde instellen: Nee
-- Externe link
-  - Label: Interne link
+- Website
+  - Label: Website
   - Systeemnaam: field_externe_link
   - Veldtype: Link
   - Aantal waarden: Beperkt, 1
@@ -208,7 +208,7 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
   - Datumnotatie tooltip: Agenda - tijd
 - Locatie:
   - Gewicht: 104
-  - Label: Boven
+  - Label: Inline
 - Inschrijven:
   - Gewicht: 106
   - Label: Inline
