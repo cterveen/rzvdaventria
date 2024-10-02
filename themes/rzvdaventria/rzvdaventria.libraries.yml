@@ -26,6 +26,8 @@ base:
         weight: -15
       css/components/block-address.css:
         weight: -15
+      css/components/block-content.css:
+        weight: -15
       css/components/block-hub.css:
         weight: -15
       css/components/block-messages.css:
@@ -46,8 +48,6 @@ base:
         weight: -10
       css/components/container-inline.css:
         weight: -10
-      css/components/content.css:
-        weight: -12
       css/components/details.css:
         weight: -10
       css/components/exposed-filters.css:
