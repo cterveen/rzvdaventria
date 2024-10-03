@@ -7,3 +7,47 @@
   color: #444;
   line-height: 1.6;
 }
+
+/* Jaarkalender */
+#block-rzvdaventria-content .view-activiteiten h3 {
+  float: left;
+  clear: left;
+  width: 50%;
+  background-color: rgb(255,215,0);
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 6px 1rem;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+@media all and (max-width: 37.5rem) {
+  #block-rzvdaventria-content .view-activiteiten h3 {
+    width: calc(100% - 32px);
+  }
+}
+
+#block-rzvdaventria-content .views-field-field-begindatum-1 {
+  float: left;
+  clear: left;
+  width: 6rem;
+  text-align: right;
+}
+
+@media all and (max-width: 37.5rem) {
+  #block-rzvdaventria-content .views-field-field-begindatum-1 {
+    text-align: left;
+  }
+}
+
+#block-rzvdaventria-content .views-field-title {
+  float: left;
+  padding-left: 1rem;
+}
+
+@media all and (max-width: 37.5rem) {
+  #block-rzvdaventria-content .views-field-title {
+    clear: left;
+    padding-left: 0;
+  }
+}
