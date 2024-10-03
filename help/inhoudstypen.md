@@ -124,7 +124,7 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
   - Standaard waarde instellen: Nee
  
 
-#### Helptekst body
+Helptekst body:
 
 ````
 <ul>
@@ -135,7 +135,7 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
 </ul>
 ````
 
-#### Helptekst inschrijven
+Helptekst inschrijven:
 
 ````
 <ul>
@@ -146,7 +146,7 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
 </ul>
 ````
 
-#### Helptekst externe link
+Helptekst externe link:
 
 ````
 <ul>
@@ -155,7 +155,7 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
 </ul>
 ````
 
-#### Helptekst interne link
+Helptekst interne link:
 
 ````
 <ul>
@@ -318,8 +318,8 @@ Mediatypen kunnen worden aangemaakt via Admin > Structuur > Mediatypes (admin/st
     - Een bepaald aantal items weergeven: 5 items
     - 'Meer' link: Nee
     - Linkweergave: geen
-   
-Twig code voor het herschrijven van begindatum (maand), de exacte naam van de variable kan afwijken.
+
+Twig code voor het herschrijven van begindatum (maand), de exacte namen van de variabelen kunnen afwijken.
 
 ```
 {{ field_begindatum }}
@@ -332,9 +332,100 @@ Twig code voor het herschrijven van begindatum (maand), de exacte naam van de va
 {% endif %}
 ```
 
+#### Overzicht jaarkalender
+
+- Naam voor weergave: Jaarkalender
+- Opmaak: Onopgemaakte lijst
+  - Instellingen
+    - Groepeerveld nr 1: Maand
+    - Views-rijklassen toevoegen: ja
+- Weergeven: Velden
+  - Instellingen
+    - Levert standaard veldwrapper-elementen: ja
+    - Inline-velden: -geen-
+    - Scheidingsteken: -geen-
+ - Velden
+    - Inhoud: Einddatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Ja
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: d
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: -geen-
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Einddatum (dag)
+    - Inhoud: Einddatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Ja
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: M
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: -geen-
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Einddatum (maand)
+    - Inhoud: Begindatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Nee
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: d
+      - Stijlinstellingen: -geen-
+      - Resultaten herschijven: -geen-
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Begindatum (dag)
+    - Inhoud: Begindatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Nee
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: d
+      - Stijlinstellingen: Standaardklassen toevoegen
+      - Resultaten herschijven: Ja, zie onder
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Begindatum (maand)
+    - Inhoud: Titel(titel)
+    - Inhoud: Begindatum
+      - Een label aanmaken: Nee
+      - Uitsluiten van weergave: Ja
+      - Opmaakhupmiddel: aangepast
+      - Tijdzone overschrijven: - Niets geselecteerd -
+      - Datum-/tijdnotatie: F
+      - Stijlinstellingen: Standaardklassen toevoegen
+      - Resultaten herschijven: Nee
+      - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
+      - Beheertitel: Begindatum (maand)
+   - Filtercriteria
+      - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
+      - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
+      - Inhoud: Begindatum (>=1 jan ), Groep 2 (EN)
+      - Inhoud: Begindatum (>=31 dec), Groep 2
+    - (OF)
+      - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
+      - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
+      - Inhoud: Einddatum (>=1 jan ), Groep 2 (EN)
+      - Inhoud: Einddatum (>=31 dec), Groep 2
+   - Sorteercriteria
+     - Inhoud: Befindatum (oplopend)
+  - Pagnina-instellingen
+    - Pad: /agenda
+    - Menu: Geen menu
+     
+Twig code voor het herschrijven van begindatum (maand), de exacte namen van de variabelen kunnen afwijken.
+
+````
+{{ field_begindatum }}
+{% if field_einddatum and field_begindatum_1 == field_einddatum_1  %}
+ - {{ field_einddatum }}
+{% elseif field_einddatum %}
+- {{ field_einddatum }} {{ field_einddatum_1 }}
+{% endif %}
+````
+
 #### Opmerkingen
 
-Onderzocht is of Datum en tijd, Datumbereik handig is om te gebruiken maar dit lijkt onvoldoende flexibel met niet ingevulde waarden. Vermoedelijk zijn losse velden voor begindatum, einddatum, begintijd en eindtijd flexibeler. 
+Voor zowel begindatum, einddatum, begintijd en eindtijd worden het veldtype "Datum en tijd, Datum" gebruikt. De twee andere veldtypen ("Datum en tijd, Datumbereik" en "Datum en tijd, tijd") slaan indien leeg de huidige datum en tijd op. Gebruik van losse velden maakt het invoeren van de gegevens flexibeler. Via de opmaak wordt alleen de datum of de tijd weergegeven.
 
 ## Hub
 
