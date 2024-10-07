@@ -8,7 +8,6 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 
 ## Core modules
 
-- Book: inhoudstype boek voor het Gele Boekje.
 - Block content: Om blokken aan te kunnen maken.
 - Breakpoint: nodig voor toolbar.
 - CKEditor5: WYSIWYG editor
