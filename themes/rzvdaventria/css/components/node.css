@@ -42,17 +42,21 @@
   text-align: left;
 }
 
-/* nieuws teaser */
-.view-frontpage h2 {
+/* teasers */
+.node--view-mode-teaser {
+  border-bottom: 3px solid rgb(205, 205, 205)
+}
+
+.node--view-mode-teaser h2 {
   padding-bottom: 0;
 }
 
-.view-frontpage h2 a,
-.view-frontpage h2 a:visited,
-.view-frontpage h2 a:hover,
-.view-frontpage h2 a:visited:hover,
-.view-frontpage h2 a:active {
-  color: black;
+.node--view-mode-teaser h2 a,
+.node--view-mode-teaser h2 a:visited,
+.node--view-mode-teaser h2 a:hover,
+.node--view-mode-teaser h2 a:visited:hover,
+.node--view-mode-teaser h2 a:active {
+  color: rgb(3, 162, 255);
 }
 
 .node__submitted {
@@ -60,11 +64,7 @@
   padding-bottom: 0.8rem;
 }
 
-.view-frontpage .views-row {
-  border-bottom: 3px solid rgb(205, 205, 205)
-}
-
-.view-frontpage .node__links {
+.node--view-mode-teaser .node__links {
   text-align: right;
 }
 
