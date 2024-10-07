@@ -749,6 +749,26 @@ Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden 
 - Pad-patroon: tag/[term:name]
 - Woordenlijst: Nieuws
 
+#### Overzicht Nieuws - teasers
+
+- Naam voor weergave: Nieuws - teasers
+- Opmaak: Onopgemaakte lijst
+- Weergeven: Inhoud | Teaser
+ - Velden: -geen-
+   - Filtercriteria
+      - Inhoud: Gepubliceerd (= Ja), Standaardgroep (EN)
+      - Inhoud: Inhoudstype (= Nieuws), Standaardgroep (EN)
+      - Inhoud: Aangeraden op de voorpagina (= Ja), Standaardgroep (OF)
+      - Inhoud: Gepubliceerd (=ja), Groep 2 (OF)
+      - Inhoud: Inhoud: Vastgeplakt bovenaan de lijst (= Ja)
+   - Sorteercriteria
+     - Inhoud: Vastgeplakt bovenaan de lijst (aflopend)
+     - Inhoud: Aangemaakt op (aflopend)
+  - Pagnina-instellingen
+    - Pad: /home
+    - Menu: Geen menu
+    - Beheerthema: Nee
+
 ## Pagina
 
 #### Inhoudstype
