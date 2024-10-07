@@ -38,7 +38,7 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 - Naam van de website: R&ZV Daventria
 - Slogan: -geen-
 - E-mailadres: internetcie@daventria.com
-- Standaardvoorpagina: /user/login
+- Standaardvoorpagina: /home
 - Standaard 403-pagina: -geen-
 - Standaard 404-pagina: -geen-
 
