@@ -24,7 +24,7 @@ body {
   body {
     background-image: url("../../images/background/skiff-phone.jpg");
     background-repeat: no-repeat;
-    background-position: center top calc(80px + var(--drupal-displace-offset-top, 0px));
+    background-position: center top calc(60px + var(--drupal-displace-offset-top, 0px));
     background-size: 600px;
   }
 }
