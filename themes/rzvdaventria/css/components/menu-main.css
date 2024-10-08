@@ -6,19 +6,16 @@
 #block-rzvdaventria-hoofdnavigatie {
   float: left;
   width: calc(100% - 116px - 128px);
+  margin: 0px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 @media all and (max-width: 599.5px) {
   #block-rzvdaventria-hoofdnavigatie {
     float: right;
-    width: 2rem;
+    width: 36px;
   }
-}
-
-#block-rzvdaventria-hoofdnavigatie {
-  margin: 0px;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 /* Broad menu */
@@ -73,9 +70,9 @@ ul.sf-menu.sf-horizontal .sf-sub-indicator {
 /* accordion menu icon */
 .sf-accordion-toggle a {
   height: 56px;
-  padding: 12px 14px 12px 0px;
+  padding: 8px 0px 6px 2px;
   float: right;
-  font-size: 56px;
+  font-size: 42px;
 }
 
 /* accordion menu container */
@@ -84,7 +81,7 @@ ul.sf-menu.sf-accordion.sf-expanded {
   left: 0 !important;
   width: 100%;
   float: none;
-  top: calc(80px + var(--drupal-displace-offset-top, 0px)) !important;
+  top: calc(60px + var(--drupal-displace-offset-top, 0px)) !important;
   background-color: rgb(255,215,0);
   z-index: 499;
 }
