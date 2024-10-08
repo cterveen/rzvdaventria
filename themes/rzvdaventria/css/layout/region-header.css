@@ -8,6 +8,13 @@
 
 .region-header {
   height: 80px;
-  width: 100%;
+  width: calc(100% - 64px);
+  padding: 0px 32px;
   background-color: rgb(255,215,0);
+}
+
+@media all and (max-width: 599.5px) {
+  .region-header {
+    height: 60px;
+  }
 }
