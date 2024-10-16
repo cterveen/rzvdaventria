@@ -88,12 +88,16 @@ base:
         weight: -10
       css/components/vertical-tabs.css:
         weight: -10
+      css/components/weather.css:
+        weight: -10
     theme:
       css/theme/toolbar.icons.theme.css:
         weight: -10
   js:
-    js/weather.js: {}
+    js/plotly/plotly.js: {}
+    js/block-weather.js: {}
     js/menu-main.js: {}
+    js/page-weather.js: {}
   dependencies:
     - core/drupal
     - core/jquery
