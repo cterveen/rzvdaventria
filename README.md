@@ -48,9 +48,10 @@ Written by Christiaan ter Veen https://www.rork.nl/
 Design by Niels den Boer https://hetvormburo.nl/
 
 Drupal base theme: Starterkit / Stable9  
+Font: Lato https://www.latofonts.com/  
+Graphs: Plotly https://plotly.com/  
 Search icon: Olivero https://www.drupal.org/project/olivero  
 Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
-Font: Lato https://www.latofonts.com/
 
 ## License
 
