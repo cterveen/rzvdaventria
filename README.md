@@ -49,7 +49,7 @@ Design by Niels den Boer https://hetvormburo.nl/
 
 Drupal base theme: Starterkit / Stable9  
 Font: Lato https://www.latofonts.com/  
-Graphs: Plotly https://plotly.com/  
+Graphs: Plotly JavaScript library https://plotly.com/javascript/  
 Search icon: Olivero https://www.drupal.org/project/olivero  
 Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
 
