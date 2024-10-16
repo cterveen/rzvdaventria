@@ -51,7 +51,7 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 - Tekst-editor: CKEditor 5
 - Werkbalkinstelling: Heading, Bold, Italic, Underline, Subscript, Superscript, Divider,  Bulleted list, Numbered list, Indent, Outdent, Divider, Link, Image, Table, Divider, Source
 - Koppen: Heading 2, Heading 3
-- Source editing: \<img id title\> \<iframe height src width\> \<script src\> \<noscript\> \<div id class\>
+- Source editing: \<img id title\> \<iframe height src width\> \<script src\> \<noscript\> \<div id class\> \<span id class\>
 - Lijst: - alles -
 - Afbeelding: afbeelding-uploads inschakelen
 - Uploadmap: afbeeldingen
