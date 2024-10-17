@@ -15,16 +15,16 @@
             let xmax = new Date(now.getTime() + 2*24*60*60*1000);
             let xrange = Array(xmin, xmax);
             let now_x = Array(now, now);
-            let lastObservation = new Date(data.gemeten.tijdstip[data.gemeten.tijdstip.length-1]);
-            let months = Array("jan", "feb", "mar", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec");
+            let lastValue = data.gemeten.waarde[data.gemeten.waarde.length-1]
+            let lastTimestamp = new Date(data.gemeten.tijdstip[data.gemeten.tijdstip.length-1]);
+            let element = document.getElementById('rzvdaventria-graph-watertemperatuur');
 
             yrange[0] -= 1;
             yrange[1] += 1;
 
-            $( "#caption-watertemperatuur" ).html( "Laatste meting: " + data.gemeten.waarde[data.gemeten.waarde.length-1] + data.unit + " (" + lastObservation.getDate() + " " + months[lastObservation.getMonth()] + " " + lastObservation.getHours() + ":" + (lastObservation.getMinutes() < 10 ? 0 : "") + lastObservation.getMinutes() + ")");
+            $( "#caption-watertemperatuur" ).html(rzvdaventriaWaterdataCaption(lastValue, data.unit, lastTimestamp));
 
-            WATERTEMPERATUUR = document.getElementById('rzvdaventria-graph-watertemperatuur');
-            Plotly.newPlot(WATERTEMPERATUUR,
+            Plotly.newPlot(element,
               data = [
                 {
                   x: data.gemeten.tijdstip,
@@ -70,21 +70,30 @@
               }
             );
           });
-
-          function rzvdaventriaMinMax(array) {
-            let min = array[0];
-            let max = array[0];
-            array.forEach(function(item, index) {
-              if (item < min) {
-                min = item;
-              }
-              if (item > max) {
-                max = item;
-              }
-            });
-            return Array(min, max);
-          }
         });
+
+        function rzvdaventriaMinMax(array) {
+          let min = array[0];
+          let max = array[0];
+          array.forEach(function(item, index) {
+            if (item < min) {
+              min = item;
+            }
+            if (item > max) {
+              max = item;
+            }
+          });
+          return Array(min, max);
+        }
+
+        function rzvdaventriaWaterdataCaption(value, unit, date) {
+          let months = Array("jan", "feb", "mar", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec");
+          let timestamp = date.getDate() + " " + months[date.getMonth()] + " " + date.getHours() + ":" + (date.getMinutes() < 10 ? 0 : "") + date.getMinutes();
+
+          value = value.toString().replace(/\./, ",");
+
+          return "Laatste meting: <strong>" + value + unit + "</strong> (" + timestamp + ")";
+        }
       }
     };
   })(jQuery, Drupal, once);
