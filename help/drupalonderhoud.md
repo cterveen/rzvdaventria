@@ -38,7 +38,22 @@ In veel gevallen zal het updaten van het systeem en de modules gelijktijdig word
 
 ## Upgraden Drupal
 
-Nog te doen.
+Eigenlijk wordt het afgeraden om Drupal handmatig te upgraden en is hier ook geen handleiding voor. Dit kan via composer worden gedaan als er toegang is tot de commandline (voor zover ik weet is dat er niet). Het is lastig na te gaan of de update volledig is gelukt. Wellicht is het verstandig om /sites/default/*settings.php en /sites/default/*services.yml tussen de versies te vergelijken
+
+1. Controleer of alle gebruikte modules en thema's de nieuwe Drupal versie ondersteunen
+   - Zie de lijst onder modules
+2. Controleer of er core-modules worden gebruikt die in de nieuwe versie niet worden ondersteund
+   - Deze staan onder Beheer > Uitbreiding (/admin/modules) aangemerkt als (Deprecated)
+   - Vaak kunnen deze modules worden vervangen door een nieuwe Drupal module
+3. Geef schrijfrechten aan de volgende map en bestanden:
+   - /sites/default (777)
+   - /sites/default/*settings.php (666)
+   - /sites/default/*services.yml (666)
+4. Voer de stappen onder Updaten uit
+5. Verwijder schrijfrechten van de volgende map en bestanden:
+   - /sites/default (755)
+   - /sites/default/*settings.php (644)
+   - /sites/default/*services.yml (644)
 
 ## Updaten modules (automatisch)
 
