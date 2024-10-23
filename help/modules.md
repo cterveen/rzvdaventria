@@ -48,3 +48,17 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
   - https://github.com/LOBsTerr/drupal-superfish/releases
   - Opslaan in /libaries/drupal-superfish
   - Nodig voor de Superfish module
+- Lato fonts
+  - https://www.latofonts.com/
+  - Onderdeel van het thema
+  - Opslaan in /thems/rzvdavenria/fonts/Lato
+    - LatoLatin-Bold.woff2
+    - LatoLatin-BoldItalic.woff2
+    - LatoLatin-Italic.woff2
+    - LatoLatin-Regular.woff2
+  - Font voor de website
+- Plotly
+  - https://plotly.com/javascript/
+  - Onderdeel van het thema
+  - Opslaan in /themes/rzvdaventria/js/plotly/
+  - Nodig voor de weergrafieken
