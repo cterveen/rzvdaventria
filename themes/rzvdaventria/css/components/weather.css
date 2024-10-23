@@ -3,6 +3,17 @@
  * Visual styles for weather elements
  */
 
+.webcam {
+  width: calc(50% - 1ch);
+  height: auto;
+}
+
+@media all and (max-width: 37.5rem) {
+  .webcam {
+    width: 100%;
+  }
+}
+
 .weather-source {
   font-size: 0.9rem;
 }
