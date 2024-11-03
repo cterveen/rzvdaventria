@@ -128,34 +128,42 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
   - Eigen ongepubliceerde media bekijken
 - Node:
   - Activiteit: Nieuwe inhoud aanmaken
+  - Boekpagina: Nieuwe inhoud aanmaken
   - Hub: Nieuwe inhoud aanmaken
   - Nieuws:  Nieuwe inhoud aanmaken
   - Pagina:  Nieuwe inhoud aanmaken
   - Activiteit: Alle inhoud verwijderen
+  - Boekpagina: Alle inhoud verwijderen
   - Hub: Alle inhoud verwijderen
   - Nieuws: Alle inhoud verwijderen
   - Pagina: Alle inhoud verwijderen
   - Activiteit: Eigen inhoud verwijderen
+  - Boekpagina: Eigen inhoud verwijderen
   - Hub: Eigen inhoud verwijderen
   - Nieuws: Eigen inhoud verwijderen
   - Pagina: Eigen inhoud verwijderen
   - Activiteit: Revisies verwijderen
+  - Boekpagina: Revisies verwijderen
   - Hub: Revisies verwijderen
   - Nieuws: Revisies verwijderen
   - Pagina: Revisies verwijderen
   - Activiteit: Alle inhoud bewerken
+  - Boekpagina: Alle inhoud bewerken
   - Hub: Alle inhoud bewerken
   - Nieuws: Alle inhoud bewerken
   - Pagina: Alle inhoud bewerken
   - Activiteit: Eigen inhoud bewerken
+  - Boekpagina: Eigen inhoud bewerken
   - Hub: Eigen inhoud bewerken
   - Nieuws: Eigen inhoud bewerken
   - Pagina: Eigen inhoud bewerken
   - Activiteit: Revisies bekijken
+  - Boekpagina: Revisies bekijken
   - Hub: Revisies bekijken
   - Nieuws: Revisies bekijken
   - Pagina: Revisies bekijken
   - Activiteit: Revisies terugzetten
+  - Boekpagina: Revisies terugzetten
   - Hub: Revisies terugzetten
   - Nieuws: Revisies terugzetten
   - Pagina: Revisies terugzetten
