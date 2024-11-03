@@ -26,6 +26,8 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 
 ## Drupal modules
 
+- Book: Boekstuctuur voor het Gele Boekje
+  - https://www.drupal.org/project/book
 - Pathauto: automatisch aanmaken van alliassen voor nieuwe inhoud.
   - https://www.drupal.org/project/pathauto
 - Token: nodig voor Pathauto.
