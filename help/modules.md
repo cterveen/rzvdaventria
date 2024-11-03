@@ -13,6 +13,7 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 - CKEditor5: WYSIWYG editor
 - Custum menu links: nodig voor Menu UI
 - Field UI: beheer van velden van inhoudstypen
+- Help
 - Media: beheer van afbeeldingen etc.
 - Media libarary: Beheer van afbeeldingen etc.
 - Menu UI: aanpassen van menu's.
