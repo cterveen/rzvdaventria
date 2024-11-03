@@ -7,6 +7,7 @@ Daventria Drupal 10.x Theme help - Datatypen
 Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenlijsten, automatische aliassen en views voor het daventria thema. Dit document bevat de volgende inhoudstypen:
 
 - Activiteit
+- Boekpagina
 - Hub
 - Nieuws
 - Pagina
@@ -427,6 +428,78 @@ Twig code voor het herschrijven van begindatum (maand), de exacte namen van de v
 
 Voor zowel begindatum, einddatum, begintijd en eindtijd worden het veldtype "Datum en tijd, Datum" gebruikt. De twee andere veldtypen ("Datum en tijd, Datumbereik" en "Datum en tijd, tijd") slaan indien leeg de huidige datum en tijd op. Gebruik van losse velden maakt het invoeren van de gegevens flexibeler. Via de opmaak wordt alleen de datum of de tijd weergegeven.
 
+
+## Boekpagina
+
+#### Inhoudstype
+- Naam: Boekpagina
+- Beschrijving: \<em\>Boeken\</em\> hebben een hiërarchische navigatie. Vaak gebruikt voor het aanmaken van handboeken of lesmateriaal.
+- Instellingen van inzendingsformulier
+  - Label van het titelveld: Titel
+  - Voorbeeldweergave voor indien: Optioneel
+  - Uitleg of indienrichtlijnen: -geen-
+- Publicatie-opties:
+  - Gepubliceerd: ja
+  - Aangeraden op voorpagina: nee
+  - Vastgeplakt bovenaan de lijst: nee
+  - Nieuwe revisie aanmaken: ja
+- Taalinstellingen:
+  - Standaardtaal: Standaardtaal van de site (Dutch)
+  - Toon de taalselector op de aanmaken- en bewerkpagina: Nee
+- Weergave-instellingen
+  - Auter en datum tonen: nee
+- Menu-instellingen
+  - Beschikbare menu's: Hoofdnavigatie
+  - Standaard bovenliggende link: <main>
+
+#### Velden
+
+- Inhoud
+  - Label: Inhoud
+  - Veldopslag: Beperkt, 1
+  - Helptext: -zie onder-
+  - Verplicht veld: nee
+  - Toegestane tekstopmaken: HTML
+  - Samenvatting invoeren: Nee
+  - Samenvatting vereisen: Nee
+  - Standaardwaarde instellen: Nee
+
+Helptekst Inhoud:
+````
+<ul>
+<li>De inhoud van de pagina.</li>
+<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
+<li>Vervang paragraafeinden door een enkele enter</li>
+<li>Gebruik kop 2 of kop 3 voor tussenkoppen</li>
+<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+</ul>
+````
+
+#### Formulierweergave
+
+- Titel: -5
+- Taal: 20
+- Geschreven door: 11
+- Aangemaakt op: 12
+- Aangeraden op de voorpagina: uitgeschakeld
+- Vastgeplakt boven aan de lijst: uitgeschakeld
+- Inhoud: -4
+- URL-alias: 13
+- Gepubliceerd: 5
+
+#### Weergave
+
+- Inhoud: 100
+- Links: 101
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: -geen-
+
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+- Redacteur: -alle-
+
 ## Hub
 
 #### Mediatype
@@ -504,16 +577,16 @@ Voor zowel begindatum, einddatum, begintijd en eindtijd worden het veldtype "Dat
 #### Formulierweergave
 
 - Titel: -5
- - Taal: 20
- - Geschreven door: 11
- - Aangemaakt op: 12
- - Aangeraden op de voorpagina: uitgeschakeld
- - Vastgeplakt boven aan de lijst: uitgeschakeld
- - URL-alias: uitgeschakeld
- - Gepubliceerd: 5
- - Afbeelding: -2
- - Pagina -4
- - Volgorde -3
+- Taal: 20
+- Geschreven door: 11
+- Aangemaakt op: 12
+- Aangeraden op de voorpagina: uitgeschakeld
+- Vastgeplakt boven aan de lijst: uitgeschakeld
+- URL-alias: uitgeschakeld
+- Gepubliceerd: 5
+- Afbeelding: -2
+- Pagina -4
+- Volgorde -3
 
 #### Weergave
 
