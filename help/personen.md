@@ -42,7 +42,8 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
 
 - Block: -geen-
 - Block Content: -geen-
-- Book: -controleren in Drupal 11-
+- Book:
+  - Boeken printervriendelijk weergeven
 - Field UI: -geen-
 - File: -geen-
 - Filter: -geen-
@@ -68,7 +69,11 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
 
 - Block: -geen-
 - Block Content: -geen-
-- Book: -controleren in Drupal 11-
+- Book:
+  - Inhoud en sub-pagina's aan boeken toevoegen en de hiërarchie beheren.
+  - Boekstructuren beheren
+  - Nieuwe boeken aanmaken
+  - Boeken printervriendelijk weergeven
 - Field UI: -geen-
 - File: -geen-
 - Filter: -geen-
