@@ -47,6 +47,7 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
 - Field UI: -geen-
 - File: -geen-
 - Filter: -geen-
+- Help: -geen-
 - Image: -geen-
 - Interface Translation: -geen-
 - Language: -geen-
@@ -77,6 +78,7 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
 - Field UI: -geen-
 - File: -geen-
 - Filter: -geen-
+- Help: -geen-
 - Image: -geen-
 - Interface Translation: -geen-
 - Language: -geen-
@@ -109,6 +111,8 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
   - Eigen bestanden verwijderen
 - Filter:
   - Gebuik de tekstopmaak HTML
+- Help
+  - Helppagina's gebruiken
 - Image: -geen-
 - Interface Translation:
   - Interface-tekst vertalen
