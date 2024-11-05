@@ -96,31 +96,33 @@ De hoofdnavigatie is het drop-down menu in de kop voor de gebruikers.
 De hoofdnavigatie bevat de volgende links:
 
 - R&ZV Daventria
-  - Events
+  - Vereniging
   - Agenda
   - Weer
-  - Historie
-  - Veiligheid
   - Gele boekje
   - Commissies
+  - Roeikleding
   - Vloot
+  - Verenigingsblad Bellnote
   - Contact
+- Veiligheid
+  - Roeiverbod
+  - Risicokaart
+  - Vertrouwenscontactpersoon
+  - Inzet Hoevercat
 - Roeisport
   - Beginners
   - Jeugd
   - Midweekroeien
   - Wedstrijd
   - Marathon
-- IJsselregatta
-  - Inschrijven
-  - Uitslagen
-  - Foto's
 - Bedrijfsroeien
   - Inschrijven
   - Uitslagen
   - Foto's
 - Clinics
-- Lid worden
+ - ...
+- Lidmaatschap
   - Beginner
   - Gevorderde
   - Introducees
