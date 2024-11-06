@@ -97,12 +97,13 @@ De hoofdnavigatie bevat de volgende links:
 
 - R&ZV Daventria
   - Vereniging
+  - Bestuur & commissies
   - Agenda
+  - DavO
   - Weer
-  - Gele boekje
-  - Commissies
   - Roeikleding
   - Vloot
+  - Gele boekje
   - Verenigingsblad Bellnote
   - Contact
 - Veiligheid
@@ -112,21 +113,24 @@ De hoofdnavigatie bevat de volgende links:
   - Inzet Hoevercat
 - Roeisport
   - Beginners
-  - Jeugd
+  - Jeugdroeien
   - Midweekroeien
-  - Wedstrijd
-  - Marathon
+  - Wedstrijdroeien
+  - Marathonroeien
+- Lidmaatschap
+  - Info lidmaatschap
+  - Info beginnerscursus
+  - Info zij-instromers
+  - Aanmelden (Mijn Daventria)
+  - Bezoekers & introducées
+  - Toegang botenhuis
 - Bedrijfsroeien
+  - Info Bedrijfsroeien
   - Inschrijven
   - Uitslagen
   - Foto's
 - Clinics
- - ...
-- Lidmaatschap
-  - Beginner
-  - Gevorderde
-  - Introducees
-  - Afmelden
+ - Info clinics
 
 ## Voetmenu
 
@@ -144,13 +148,9 @@ Het voetmenu bevat de volgende links:
   - Statuten en reglementen
   - Documenten & formulieren
   - Ledenlijst
-- Lid worden
-  - Info lidmaatschap
-  - Info beginnerscursus
-  - Info zij-instromers
-  - Aanmelden (Mijn Daventria)
-  - Bezoekers & introducées
-  - Toegang botenhuis
+- Op het web
+  - Mijn Daventria
+  - Facebook
 - Contact
   - Adresgegevens
   - Contactformulier
