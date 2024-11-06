@@ -101,27 +101,27 @@ Het json-bestand is als volgt samengesteld:
 - Per meting een object met:
   - label: de nette naam van de meting
   - unit: de eenheid voor de meting
-  - gemeten: een object met de gemeten waarden:
+  - historie: een object met de gemeten waarden:
     - waarde: een array met de meetresultaten
     - tijdstip: een array met de tijdstippen van de metingen
-  - voorspeld: een object met de gemeten waarden:
+  - verwacht: een object met de gemeten waarden:
     - waarde: een array met de meetresultaten
     - tijdstip: een array met de tijdstippen van de metingen
 - Metingen:
   - Watertemperatuur Driel Boven
     - Bestandsnaam: watertemperatuur_driel_boven.json
-    - gemeten: ja
-    - voorspeld: nee
+    - historie: ja
+    - verwacht: nee
 - Metingen:
   - Waterhoogte Deventer
     - Bestandsnaam: ijsselpeil_deventer.json
-    - gemeten: ja
-    - voorspeld: ja
+    - historie: ja
+    - verwacht: ja
 - Metingen:
   - Watertemperatuur Driel Boven
     - Bestandsnaam: rijnpeil_lobith.json
-    - gemeten: ja
-    - voorspeld: ja
+    - historie: ja
+    - verwacht: ja
 
 #### Voorbeeld ijsselpeil_deventer.json
 
@@ -129,7 +129,7 @@ Het json-bestand is als volgt samengesteld:
 {
   "label": "IJsselpeil Deventer",
   "unit": "m",
-  "gemeten": {
+  "historie": {
     "waarde": [
       4.02,
       4.02,
@@ -227,7 +227,7 @@ Het json-bestand is als volgt samengesteld:
       "2024-10-18T18:00:00.000+01:00"
     ]
   },
-  "voorspeld": {
+  "verwacht": {
     "waarde": [
       3.79,
       3.79,
