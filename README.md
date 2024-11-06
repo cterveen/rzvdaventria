@@ -60,4 +60,4 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Lato is redistributed under the SIL Open Font License 1.1
 
-Plotly Javascript library is redistributed under the MIT License
+Plotly JavaScript library is redistributed under the MIT License
