@@ -16,14 +16,14 @@
       attach: function (context, settings) {
         once('graph-watertemperatuur', '#rzvdaventria-graph-watertemperatuur').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/watertemperatuur_drielboven.json", function(data) {
-            let yrange = rzvdaventriaMinMax(data.gemeten.waarde);
+            let yrange = rzvdaventriaMinMax(data.historie.waarde);
             let now = new Date();
             let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
             let xmin = new Date(now.getTime() - 7*24*60*60*1000);
             let xmax = new Date(now.getTime() + 2*24*60*60*1000);
             let xrange = Array(xmin, xmax);
-            let lastValue = data.gemeten.waarde[data.gemeten.waarde.length-1];
-            let lastTimestamp = new Date(data.gemeten.tijdstip[data.gemeten.tijdstip.length-1]);
+            let lastValue = data.historie.waarde[data.historie.waarde.length-1];
+            let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-watertemperatuur');
             let plotdata = Array();
             let layout = {};
@@ -33,8 +33,8 @@
 
             plotdata = [
               {
-                x: data.gemeten.tijdstip,
-                y: data.gemeten.waarde
+                x: data.historie.tijdstip,
+                y: data.historie.waarde
               },
               {
                 x: [now, now],
@@ -68,14 +68,14 @@
 
         once('graph-ijsselpeil', '#rzvdaventria-graph-ijsselpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/ijsselpeil_deventer.json", function(data) {
-            let yrange = rzvdaventriaMinMax(data.gemeten.waarde);
+            let yrange = rzvdaventriaMinMax(data.historie.waarde);
             let now = new Date();
             let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
             let xmin = new Date(now.getTime() - 7*24*60*60*1000);
             let xmax = new Date(now.getTime() + 2*24*60*60*1000);
             let xrange = Array(xmin, xmax);
-            let lastValue = data.gemeten.waarde[data.gemeten.waarde.length-1];
-            let lastTimestamp = new Date(data.gemeten.tijdstip[data.gemeten.tijdstip.length-1]);
+            let lastValue = data.historie.waarde[data.historie.waarde.length-1];
+            let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-ijsselpeil');
             let plotdata = Array();
             let layout = {};
@@ -85,12 +85,12 @@
 
             plotdata = [
               {
-                x: data.gemeten.tijdstip,
-                y: data.gemeten.waarde
+                x: data.historie.tijdstip,
+                y: data.historie.waarde
               },
               {
-                x: data.voorspeld.tijdstip,
-                y: data.voorspeld.waarde
+                x: data.verwacht.tijdstip,
+                y: data.verwacht.waarde
               },
               {
                 x: [now, now],
@@ -124,14 +124,14 @@
 
         once('graph-ijsselpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/rijnpeil_lobith.json", function(data) {
-            let yrange = rzvdaventriaMinMax(data.gemeten.waarde);
+            let yrange = rzvdaventriaMinMax(data.historie.waarde);
             let now = new Date();
             let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
             let xmin = new Date(now.getTime() - 7*24*60*60*1000);
             let xmax = new Date(now.getTime() + 2*24*60*60*1000);
             let xrange = Array(xmin, xmax);
-            let lastValue = data.gemeten.waarde[data.gemeten.waarde.length-1];
-            let lastTimestamp = new Date(data.gemeten.tijdstip[data.gemeten.tijdstip.length-1]);
+            let lastValue = data.historie.waarde[data.historie.waarde.length-1];
+            let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-rijnpeil');
             let plotdata = Array();
             let layout = {};
@@ -141,12 +141,12 @@
 
             plotdata = [
               {
-                x: data.gemeten.tijdstip,
-                y: data.gemeten.waarde
+                x: data.historie.tijdstip,
+                y: data.historie.waarde
               },
               {
-                x: data.voorspeld.tijdstip,
-                y: data.voorspeld.waarde
+                x: data.verwacht.tijdstip,
+                y: data.verwacht.waarde
               },
               {
                 x: [now, now],
