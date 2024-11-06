@@ -55,4 +55,9 @@ Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File
 
 ## License
 
-To be decided, but consider it free to use, modify and distribute.
+rzvdaventria is licensed under the GNU General Public License, version 2 or later. That means you are free to download, reuse, modify, and distribute any orignial files in this repository under the terms of either the GPL version 2 or version 3, and to run this module in combination with any code with any license that is compatible with either versions 2 or 3.
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+Lato is redistributed under the SIL Open Font License 1.1
+
+Plotly Javascript library is redistributed under the MIT License
