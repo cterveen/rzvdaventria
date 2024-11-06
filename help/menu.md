@@ -130,7 +130,7 @@ De hoofdnavigatie bevat de volgende links:
   - Uitslagen
   - Foto's
 - Clinics
- - Info clinics
+  - Info clinics
 
 ## Voetmenu
 
