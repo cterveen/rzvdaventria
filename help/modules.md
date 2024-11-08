@@ -29,6 +29,8 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 
 - Book: Boekstuctuur voor het Gele Boekje
   - https://www.drupal.org/project/book
+- Book Export RTF
+  - https://github.com/cterveen/bookexportrtf-9.x
 - Pathauto: automatisch aanmaken van alliassen voor nieuwe inhoud.
   - https://www.drupal.org/project/pathauto
 - Token: nodig voor Pathauto.
@@ -60,6 +62,14 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
     - LatoLatin-Italic.woff2
     - LatoLatin-Regular.woff2
   - Font voor de website
+- Schepp's CSS Parser
+  - https://github.com/Schepp/CSS-Parser
+  - parser.php opslaan in /libraries/schepp-css-parser
+  - Nodig voor bookexportrtf
+- Simple HTML DOM
+  - https://simplehtmldom.sourceforge.io/
+  - simple_html_dom.php opslaan in /libraries/simple_html_dom
+  - Nodig voor bookexportrtf
 - Plotly
   - https://plotly.com/javascript/
   - Onderdeel van het thema
