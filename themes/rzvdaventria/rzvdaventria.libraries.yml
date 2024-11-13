@@ -42,6 +42,8 @@ base:
         weight: -15
       css/components/block-webcam.css:
         weight: -15
+      css/components/bookindex.css:
+        weight: -15
       css/components/breadcrumb.css:
         weight: -10
       css/components/button.css:
