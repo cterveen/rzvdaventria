@@ -1,9 +1,12 @@
 {#
 /**
  * @file
- * Default theme implementation to navigate books.
+ * Custom theme implementation to navigate books.
  *
  * Presented under nodes that are a part of book outlines.
+ *
+ * Source: Drupal book module
+ * Addapted: removed h2, added classes
  *
  * Available variables:
  * - tree: The immediate children of the current node rendered as an unordered
@@ -34,19 +37,19 @@
   <nav role="navigation" aria-labelledby="book-label-{{ book_id }}">
     {{ tree }}
     {% if has_links %}
-      <ul>
+      <ul class="book--pager">
       {% if prev_url %}
-        <li>
+        <li class="book--pager book--pager-previous">
           <a href="{{ prev_url }}" rel="prev" title="{{ 'Go to previous page'|t }}"><b>{{ '‹'|t }}</b> {{ prev_title }}</a>
         </li>
       {% endif %}
       {% if parent_url %}
-        <li>
+        <li class="book--pager book--pager-up">
           <a href="{{ parent_url }}" title="{{ 'Go to parent page'|t }}">{{ 'Up'|t }}</a>
         </li>
       {% endif %}
       {% if next_url %}
-        <li>
+        <li class="book--pager book--pager-next">
           <a href="{{ next_url }}" rel="next" title="{{ 'Go to next page'|t }}">{{ next_title }} <b>{{ '›'|t }}</b></a>
         </li>
       {% endif %}
