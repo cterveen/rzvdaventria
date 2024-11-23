@@ -1,6 +1,6 @@
 /**
  * @file
- * Alt-text for the weather icons
+ * Alt text and title for the weather icons
  */
 (() => {
   (function ($, Drupal, once) {
@@ -11,19 +11,27 @@
             $.each(data, function(key, val) {
               let expires = new Date(Date.parse(val.expires));
               let id = "#" + key;
-              let label = "";
+              let alt = "";
+              let title = "";
               let now = new Date ();
               let timestamp = val.timestamp;
               let value = val.value;
+              let caption = val.caption;
 
               if (now > expires) {
                 value = "X";
                 timestamp = "--:--";
               }
 
-              label = val.label + ": " + value + val.unit + " (" + timestamp + "u)";
+              alt = val.label + ": " + value + val.unit + " (" + timestamp + "u)";
+              if (caption != "") {
+                alt += " " + caption;
+              }
 
-              $(id).attr("alt", label);
+              title = val.label + " (" + timestamp + "u)";
+
+              $(id).attr("alt", alt);
+              $(id).attr("title", title);
             });
           });
         });
