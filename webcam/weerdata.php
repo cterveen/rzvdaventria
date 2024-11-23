@@ -18,7 +18,7 @@ $size = 80;
 
 # Font
 $font = "./arial.ttf";
-// $font = "c:/windows/fonts/arial.ttf";
+# $font = "c:/windows/fonts/arial.ttf";
 
 # Font size for the value
 $value_fontsize = round($size/3/1.333);
@@ -27,7 +27,7 @@ $value_fontsize = round($size/3/1.333);
 $unit_fontsize = round($value_fontsize/2);
 
 # Font size for the timestamp
-$time_fontsize = 8;
+$time_fontsize = 10;
 
 # Error
 $error = 0;
@@ -79,32 +79,39 @@ if ($error == 0) {
   $value = $data->{$meassure};
   $filename = $meassure . ".jpg";
 
-  // Define image and colors
+  # Define image and colors
   $img = imagecreate($size, $size);
   $black = imagecolorallocate($img, 0, 0, 0);
   $yellow = imagecolorallocate($img, 255, 215, 0);
-  imagefill($img, 0, 0, $yellow);
+  $red = imagecolorallocate($img, 255, 20, 0);
+
+  imagefill($img, 0, 0, $black);
+
+  $color = $yellow;
+  if ($value->{"caption"} != "") {
+    $color = $red;
+  }
 
   # Draw value
   $unit_size = getSize($unit_fontsize, $font, " " . $value->{"unit"});
   $value_size = getSize($value_fontsize, $font, $value->{"value"});
   $value_x = imagesx($img)/2 - ($value_size[0] + $unit_size[0])/2;
   $value_y = imagesy($img)/2 + $value_size[1]/2;
-  imagettftext($img, $value_fontsize, 0, $value_x, $value_y, $black, $font, $value->{"value"});
+  imagettftext($img, $value_fontsize, 0, $value_x, $value_y, $color, $font, $value->{"value"});
 
   # Draw unit
   $unit_x = $value_x + $value_size[0];
   $unit_y = imagesy($img)/2 - $value_size[1]/2 + $unit_size[1];
-  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $black, $font, " " . $value->{"unit"});
+  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $color, $font, " " . $value->{"unit"});
 
-  # Draw timestamp
-  $time_size = getSize($time_fontsize, $font, $value->{"timestamp"});
-  $time_x = imagesx($img) - 10 - $time_size[0];
+  # Draw caption
+  $time_size = getSize($time_fontsize, $font, $value->{"caption"});
+  $time_x = imagesx($img) / 2 - $time_size[0] / 2;
   $time_y = imagesy($img) - 10;
-  imagettftext($img, $time_fontsize, 0, $time_x, $time_y, $black, $font, $value->{"timestamp"});
+  imagettftext($img, $time_fontsize, 0, $time_x, $time_y, $color, $font, $value->{"caption"});
 }
 else {
-  # Load the error immage
+  # Load the error image
   switch($meassure) {
     case "temperatuur":
       $error_image = sprintf("error_temperatuur%02d.jpg", rand(1,25));
@@ -121,7 +128,7 @@ else {
     $filename = $error_image;
   }
   else {
-    // something unexpected happened, draw something unexpected
+    # Something unexpected happened, draw something unexpected
     $filename = "error.jpg";
 
     # Create image and pallette
@@ -150,7 +157,7 @@ else {
     }
 
     # Draw
-    imagefill($img, 0, 0, $yellow);
+    imagefill($img, 0, 0, $black);
  
     for ($i = 0; $i <= ($error_blocks*$error_blocks)-1; $i++) {
       $x0 = $value_x + ($i%$error_blocks) * $block_size;
@@ -159,7 +166,7 @@ else {
       $y1 = $y0 + $block_size;
 
       if ($i == 21 || $i == 23  || ($i >= 29 && $i <= 33) || $i == 37 || $i == 38 || $i == 40 | $i == 42 || $i ==43 || ($i >= 47 && $i <= 51) || $i == 57 || $i == 59 || $i == 65 || $i == 66 || $i == 68 || $i == 69 || $i == $left_hand || $i == $right_hand) {
-        imagepolygon($img, array($x0, $y0, $x0, $y1, $x1, $y1, $x1, $y0), 4, $black);
+        imagepolygon($img, array($x0, $y0, $x0, $y1, $x1, $y1, $x1, $y0), 4, $yellow);
         imagefill($img, $x0+1, $y0+1, $black);
       }
     }
