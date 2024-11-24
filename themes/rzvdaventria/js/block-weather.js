@@ -18,9 +18,10 @@
               let value = val.value;
               let caption = val.caption;
 
-              if (now > expires) {
+              if (now.getTime() > expires.getTime()) {
                 value = "X";
                 timestamp = "--:--";
+                caption = "";
               }
 
               alt = val.label + ": " + value + val.unit + " (" + timestamp + "u)";
