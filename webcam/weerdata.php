@@ -17,8 +17,8 @@ $data_file = './data/weerdata.json';
 $size = 80;
 
 # Font
-$font = "./arial.ttf";
-# $font = "c:/windows/fonts/arial.ttf";
+$font = "../themes/rzvdaventria/fonts/Lato/Lato-Black.ttf";
+
 
 # Font size for the value
 $value_fontsize = round($size/3/1.333);
@@ -71,6 +71,17 @@ elseif (time() > strtotime($data->{$meassure}->{"expires"})) {
 }
 
 # --------------------------------------------------------------------
+# Make the image canvas
+# --------------------------------------------------------------------
+
+$img = imagecreate($size, $size);
+$black = imagecolorallocate($img, 0, 0, 0);
+$yellow = imagecolorallocate($img, 255, 215, 0);
+$red = imagecolorallocate($img, 255, 20, 0);
+
+imagefill($img, 0, 0, $black);
+
+# --------------------------------------------------------------------
 # Show the image or an error image
 # --------------------------------------------------------------------
 
@@ -79,14 +90,7 @@ if ($error == 0) {
   $value = $data->{$meassure};
   $filename = $meassure . ".jpg";
 
-  # Define image and colors
-  $img = imagecreate($size, $size);
-  $black = imagecolorallocate($img, 0, 0, 0);
-  $yellow = imagecolorallocate($img, 255, 215, 0);
-  $red = imagecolorallocate($img, 255, 20, 0);
-
-  imagefill($img, 0, 0, $black);
-
+  # Define color
   $color = $yellow;
   if ($value->{"caption"} != "") {
     $color = $red;
@@ -111,30 +115,78 @@ if ($error == 0) {
   imagettftext($img, $time_fontsize, 0, $time_x, $time_y, $color, $font, $value->{"caption"});
 }
 else {
-  # Load the error image
-  switch($meassure) {
-    case "temperatuur":
-      $error_image = sprintf("error_temperatuur%02d.jpg", rand(1,25));
-      break;
-    case "ijsselpeil":
-      $error_image = sprintf("error_ijsselpeil%02d.jpg", rand(1,25));
-      break;
-    default:
-      $error_image = "fubar";
-  }
+  if ($meassure == "temperatuur" || $meassure == "ijsselpeil" || $meassure == "windkracht") {
+    # Make an error image
+    $value = $data->{$meassure};
+    $filename = $meassure . ".jpg";
+    $error_strings = [
+      "000000111101110000010001101010011010",
+      "000010010000001110001110101010111010",
+      "000010101101111111110001001010000110",
+      "000011000100000001010101100000110000",
+      "000011100100101011101111011101100111",
+      "000011111100011011101111000111111010",
+      "000100110111001000000000011101101101",
+      "000101000000010100001100110001111100",
+      "000101111000010000101001000101010000",
+      "000111100100010111100110101100001110",
+      "001011010000110111111000101001000010",
+      "001011010011001100100011001000010101",
+      "001011101011001110000100110101011100",
+      "010000001011100100001010010011010011",
+      "010001010110000000100111001101110111",
+      "010011001011010000010101100110110101",
+      "010011011010010000111100000010001100",
+      "010011101110001001101101010100111010",
+      "010100000100010111110001001111100000",
+      "011000000110011110100000000010101100",
+      "011001011111010101110111000110000001",
+      "011110100110010010011011010101001000",
+      "100011010100010111000111000011001010",
+      "100101000110111000110101001100110111",
+      "100101011001001101100000111100011011",
+      "100101110011100111000010010011011101",
+      "100110011100111011111111001001000011",
+      "101000011011101101000111100010010010",
+      "101001101101111010101010000100101101",
+      "101101101000000000111001001010011100",
+      "110100011000100001110110011110000010",
+      "111111011101111011001101011000101101",
+    ];
 
-  if (file_exists("./error/" . $error_image)) {
-    $img = imagecreatefromjpeg($dir . "error/" . $error_image);
-    $filename = $error_image;
+    $error_string = $error_strings[rand(0,array_key_last($error_strings))];
+
+    # Calculate size, x and y.
+    $error_size = 24;
+    $block_size = 4;
+
+    $value_size = array($error_size, $error_size);
+    $unit_size = getSize($unit_fontsize, $font, " " . $value->{"unit"});
+
+    $value_x = imagesx($img)/2 - ($value_size[0] + $unit_size[0])/2;
+    $value_y = imagesy($img)/2 + $value_size[1]/2;
+
+    # Draw the value
+    for ($i = 0; $i <= 35; $i++) {
+      $x0 = $value_x + ($i%6) * $block_size;
+      $y0 = $value_y - $error_size + floor($i/6) * $block_size;
+      $x1 = $x0 + $block_size;
+      $y1 = $y0 + $block_size;
+
+      if (substr($error_string, $i, 1) == 1) {
+        imagepolygon($img, array($x0, $y0, $x0, $y1, $x1, $y1, $x1, $y0), 4, $yellow);
+        imagefill($img, $x0+1, $y0+1, $yellow); 
+      }
+    }
+
+    # Draw unit
+    $unit_x = $value_x + $value_size[0];
+    $unit_y = imagesy($img)/2 - $value_size[1]/2 + $unit_size[1];
+    imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " " . $value->{"unit"});
   }
   else {
     # Something unexpected happened, draw something unexpected
     $filename = "error.jpg";
-
-    # Create image and pallette
-    $img = imagecreate($size, $size);
-    $black = imagecolorallocate($img, 0, 0, 0);
-    $yellow = imagecolorallocate($img, 255, 215, 0);
 
     # Calculate size, x and y.
     $error_size = round($size / 1.5);
@@ -156,9 +208,6 @@ else {
       $right_hand = 35;  
     }
 
-    # Draw
-    imagefill($img, 0, 0, $black);
- 
     for ($i = 0; $i <= ($error_blocks*$error_blocks)-1; $i++) {
       $x0 = $value_x + ($i%$error_blocks) * $block_size;
       $y0 = $value_y - $error_size + floor($i/$error_blocks) * $block_size;
@@ -167,7 +216,7 @@ else {
 
       if ($i == 21 || $i == 23  || ($i >= 29 && $i <= 33) || $i == 37 || $i == 38 || $i == 40 | $i == 42 || $i ==43 || ($i >= 47 && $i <= 51) || $i == 57 || $i == 59 || $i == 65 || $i == 66 || $i == 68 || $i == 69 || $i == $left_hand || $i == $right_hand) {
         imagepolygon($img, array($x0, $y0, $x0, $y1, $x1, $y1, $x1, $y0), 4, $yellow);
-        imagefill($img, $x0+1, $y0+1, $black);
+        imagefill($img, $x0+1, $y0+1, $yellow);
       }
     }
   }
