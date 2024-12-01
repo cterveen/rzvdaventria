@@ -28,6 +28,10 @@ ul.sf-menu.sf-horizontal a.sf-depth-1 {
 }
 
 /* drop down menu container */
+ul.sf-menu ul {
+  width: 18rem;
+}
+
 ul.sf-menu li:hover > ul,
 ul.sf-menu li.sfHover > ul {
   left: 0;
