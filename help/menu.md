@@ -95,42 +95,42 @@ De hoofdnavigatie is het drop-down menu in de kop voor de gebruikers.
 
 De hoofdnavigatie bevat de volgende links:
 
-- R&ZV Daventria
-  - Vereniging
-  - Bestuur & commissies
-  - Agenda
-  - DavO
-  - Weer
-  - Roeikleding
-  - Vloot
-  - Gele boekje
-  - Verenigingsblad Bellnote
-  - Contact
+- R&ZV Daventria /rzvdaventria
+  - Vereniging /rzvdaventria/vereniging
+  - Bestuur & commissies /rzvdaventria/bestuur
+  - Agenda /agenda
+  - DavO /rzvdaventria/davo
+  - Weer /weer
+  - Roeikleding /rzvdaventria/roeikleding
+  - Vloot /rzvdaventria/vloot
+  - Gele boekje /gele-boekje
+  - Verenigingsblad Bellnote /rzvdaventria/bellnote
+  - Contact /contact
 - Veiligheid
-  - Roeiverbod
-  - Risicokaart
-  - Vertrouwenscontactpersoon
-  - Inzet Hoevercat
+  - Roeiverbod /veiligheid/roeiverbod
+  - Risicokaart /veiligheid/risicokaart
+  - Vertrouwenscontactpersoon /vertrouwenscontactpersoon
+  - Inzet Hoevercat /veiligheid/hoevercat
 - Roeisport
-  - Beginners
-  - Jeugdroeien
-  - Midweekroeien
-  - Wedstrijdroeien
-  - Marathonroeien
+  - Beginners /roeisport/beginners
+  - Jeugdroeien /roeisport/jeugdroeien
+  - Midweekroeien /roeisport/midweekroeien
+  - Wedstrijdroeien /roeisport/wedstrijdroeien
+  - Marathonroeien /roeisport/marathonroeien
 - Lidmaatschap
-  - Info lidmaatschap
-  - Info beginnerscursus
-  - Info zij-instromers
-  - Aanmelden (Mijn Daventria)
-  - Bezoekers & introducées
-  - Toegang botenhuis
+  - Info lidmaatschap /lidmaatschap
+  - Info beginnerscursus /lidmaatschap/beginnerscursus
+  - Info zij-instromers /lidmaatschap/zij-instromers
+  - Aanmelden (Mijn Daventria) https://rzvdaventria-site.e-captain.nl/belangstellingsformulier
+  - Bezoekers & introducées /lidmaatschap/bezoekers
+  - Toegang botenhuis /lidmaatschap/botenhuis
 - Bedrijfsroeien
-  - Info Bedrijfsroeien
-  - Inschrijven
-  - Uitslagen
-  - Foto's
+  - Info Bedrijfsroeien /bedrijfsroeien
+  - Inschrijven /bedrijfsroeien/inschrijven
+  - Uitslagen /bedrijfsroeien/uitslagen
+  - Foto's /bedrijfsroeien/foto
 - Clinics
-  - Info clinics
+  - Info clinics /clinics
 
 ## Voetmenu
 
