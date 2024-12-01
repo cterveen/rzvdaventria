@@ -221,14 +221,14 @@ Zie ook instellingen.md
   - jQuiry hoverIntent: Ja
 - sf-Touchscreen:
   - sf-Touchscreen: Enable jQuery sf-Touchscreen plugin for this menu depending on the user's Web browser user agent
-  - Select behaviour: Hiding the sub-menu on the second tap, adding cloned parent links to the top of sub-menus as well. (Standaard)
+  - Select behaviour: Hiding the sub-menu on the second tap.
   - User agent settings: Use the pre-defined lists of the user agents.
 - sfSmallscreen:
   - sfSmallscreen: Enable jQuiry sf-Smallscreen plugin for this menu depending on the user's Web browser window width. (Standaard)
-  - Window width settings: 600 pixels
+  - Window width settings: 768 pixels
   - Selecteer een type: Convert the menu to an accordion menu.
   - Accordion menu title: &#x2261;
-  - Accordion button type: Use parent menu items as buttons, add cloned parent links to sub-menus as well. (Standaard)
+  - Accordion button type: Use parent menu items as buttons.
 - Supersubs
   - Enable Supersubs for this menu: Nee
 
