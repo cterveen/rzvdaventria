@@ -74,9 +74,17 @@ ul.sf-menu.sf-horizontal .sf-sub-indicator {
 /* accordion menu icon */
 .sf-accordion-toggle a {
   height: 56px;
-  padding: 8px 0px 6px 2px;
+  padding: 12px 0px 4px 2px;
   float: right;
-  font-size: 42px;
+  font-size: 64px;
+}
+
+@media all and (max-width: 599.5px) {
+  .sf-accordion-toggle a {
+    height: 56px;
+    padding: 8px 0px 6px 2px;
+    font-size: 42px;
+  }
 }
 
 /* accordion menu container */
