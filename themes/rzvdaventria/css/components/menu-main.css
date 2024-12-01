@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 
-@media all and (max-width: 599.5px) {
+@media all and (max-width: 767.5px) {
   #block-rzvdaventria-hoofdnavigatie {
     float: right;
     width: 36px;
