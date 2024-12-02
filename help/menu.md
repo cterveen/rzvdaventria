@@ -96,7 +96,7 @@ De hoofdnavigatie is het drop-down menu in de kop voor de gebruikers.
 De hoofdnavigatie bevat de volgende links:
 
 - R&ZV Daventria /rzvdaventria
-  - Vereniging /rzvdaventria/vereniging
+  - Vereniging /rzvdaventria
   - Bestuur & commissies /rzvdaventria/bestuur
   - Agenda /agenda
   - DavO /rzvdaventria/davo
