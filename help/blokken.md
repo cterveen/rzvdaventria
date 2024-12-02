@@ -220,7 +220,7 @@ Zie ook instellingen.md
   - jQuiry Suppostition: Ja
   - jQuiry hoverIntent: Ja
 - sf-Touchscreen:
-  - sf-Touchscreen: Enable jQuery sf-Touchscreen plugin for this menu depending on the user's Web browser user agent
+  - sf-Touchscreen: Enable jQuery sf-Touchscreen plugin for this menu.
   - Select behaviour: Hiding the sub-menu on the second tap.
   - User agent settings: Use the pre-defined lists of the user agents.
 - sfSmallscreen:
