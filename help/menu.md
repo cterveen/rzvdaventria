@@ -107,7 +107,7 @@ De hoofdnavigatie bevat de volgende links:
   - Verenigingsblad Bellnote /rzvdaventria/bellnote
   - Contact /contact
 - Veiligheid
-  - Roeiverbod /veiligheid/roeiverbod
+  - Roeiverbod /veiligheid
   - Risicokaart /veiligheid/risicokaart
   - Vertrouwenscontactpersoon /vertrouwenscontactpersoon
   - Inzet Hoevercat /veiligheid/hoevercat
@@ -119,7 +119,7 @@ De hoofdnavigatie bevat de volgende links:
   - Marathonroeien /roeisport/marathonroeien
 - Lidmaatschap
   - Info lidmaatschap /lidmaatschap
-  - Info beginnerscursus /lidmaatschap/beginnerscursus
+  - Info beginnerscursus /lidmaatschap/basiscursus
   - Info zij-instromers /lidmaatschap/zij-instromers
   - Aanmelden (Mijn Daventria) https://rzvdaventria-site.e-captain.nl/belangstellingsformulier
   - Bezoekers & introducées /lidmaatschap/bezoekers
