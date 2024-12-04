@@ -126,11 +126,11 @@ De hoofdnavigatie bevat de volgende links:
   - Toegang botenhuis /lidmaatschap/botenhuis
 - Bedrijfsroeien
   - Info Bedrijfsroeien /bedrijfsroeien
-  - Inschrijven /bedrijfsroeien/inschrijven
+  - Inschrijven https://rzvdaventria-site.e-captain.nl/bedrijfsroeien/inschrijven
   - Uitslagen /bedrijfsroeien/uitslagen
   - Foto's /bedrijfsroeien/foto
 - Clinics
-  - Info clinics /clinics
+  - Info clinics /roeiclinic
 
 ## Voetmenu
 
