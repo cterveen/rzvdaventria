@@ -297,6 +297,7 @@ Helptekst interne link:
       - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
       - Beheertitel: Begindatum (maand)
     - Inhoud: Titel(titel)
+      - Een label aanmaken: Nee
   - Filtercriteria
     - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
     - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
@@ -394,9 +395,9 @@ Twig code voor het herschrijven van begindatum (maand), de exacte namen van de v
       - Tijdzone overschrijven: - Niets geselecteerd -
       - Datum-/tijdnotatie: F
       - Stijlinstellingen: Standaardklassen toevoegen
-      - Resultaten herschijven: Nee
+      - Resultaten herschijven: ```` {{ field_begindatum_2 }} <hr>````
       - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
-      - Beheertitel: Begindatum (maand)
+      - Beheertitel: Maand
    - Filtercriteria
       - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
       - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
