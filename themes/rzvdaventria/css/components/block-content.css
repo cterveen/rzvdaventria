@@ -12,13 +12,14 @@
 #block-rzvdaventria-content .view-activiteiten h3 {
   float: left;
   clear: left;
+  margin-top: 1rem;
   width: 50%;
-  background-color: rgb(255,215,0);
-  margin: 1.5rem 0 0.5rem 0;
-  padding: 6px 1rem;
-  border: 1px solid black;
   font-size: 1.3rem;
   text-transform: capitalize;
+}
+
+#block-rzvdaventria-content .view-activiteiten hr {
+  margin-top: 0;
 }
 
 @media all and (max-width: 37.5rem) {
