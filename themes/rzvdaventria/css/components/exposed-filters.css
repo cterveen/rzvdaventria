@@ -21,9 +21,6 @@
   width: 10em;
   font-weight: normal;
 }
-[dir="rtl"] .exposed-filters .form-item label {
-  float: right;
-}
 .exposed-filters .form-select {
   width: 14em;
 }
@@ -38,9 +35,4 @@
 .exposed-filters .additional-filters {
   float: left; /* LTR */
   margin-right: 1em; /* LTR */
-}
-[dir="rtl"] .exposed-filters .additional-filters {
-  float: right;
-  margin-right: 0;
-  margin-left: 1em;
 }
