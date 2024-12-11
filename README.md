@@ -50,12 +50,13 @@ Design by Niels den Boer https://hetvormburo.nl/
 Drupal base theme: Starterkit / Stable9  
 Font: Lato https://www.latofonts.com/  
 Graphs: Plotly JavaScript library https://plotly.com/javascript/  
-Search icon: Olivero https://www.drupal.org/project/olivero  
+Reservations and search icon: Olivero https://www.drupal.org/project/olivero  
+Map(s): OpenStreetMap: https://www.openstreetmap.org/  
 Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
 
 ## License
 
-rzvdaventria is licensed under the GNU General Public License, version 2 or later. That means you are free to download, reuse, modify, and distribute any non-redistributed files in this repository under the terms of either the GPL version 2 or version 3, and to run this module in combination with any code with any license that is compatible with either versions 2 or 3.
+The rzvdaventria theme is licensed under the GNU General Public License, version 2 or later. That means you are free to download, reuse, modify, and distribute any non-redistributed files in this repository under the terms of either the GPL version 2 or version 3, and to run this module in combination with any code with any license that is compatible with either versions 2 or 3.
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Lato is redistributed under the SIL Open Font License 1.1
