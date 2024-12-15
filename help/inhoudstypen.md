@@ -468,11 +468,13 @@ Voor zowel begindatum, einddatum, begintijd en eindtijd worden het veldtype "Dat
 Helptekst Inhoud:
 ````
 <ul>
-<li>De inhoud van de pagina.</li>
+<li>Een hoofdstuk uit het Gele Boekje.</li>
+<li>Kleine tekstuele aanpassingen kunnen direct worden gemaakt, inhoudelijke wijzigingen gebeuren in overleg met het bestuur of de verantwoordelijke commissie.</li>
 <li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
 <li>Vervang paragraafeinden door een enkele enter</li>
 <li>Gebruik kop 2 of kop 3 voor tussenkoppen</li>
 <li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+<li>Termen van de index kunnen worden toegevoegd met de code <code>&lt;a name="index<i>term</i>"&gt;&lt;/a&gt;</code>. Plaats de code direct op de plaats waar deze moet komen te staan zonder extra witruimte.</li>
 </ul>
 ````
 
