@@ -241,11 +241,14 @@ imagedestroy($img);
 # --------------------------------------------------------------------
 
 function getSize($fontsize, $font, $text) {
-   $bbox = imagettfbbox($fontsize, 0, $font, $text);
-   $width = abs($bbox[2] - $bbox[0]);
-   $height = abs($bbox[1] - $bbox[5]);
-   
-   return array($width, $height);
+  // prevent the decender
+  $text = str_replace(",", ":", $text);
+
+  $bbox = imagettfbbox($fontsize, 0, $font, $text);
+  $width = abs($bbox[2] - $bbox[0]);
+  $height = abs($bbox[1] - $bbox[5]);
+
+  return array($width, $height);
 }
 
 ?>
