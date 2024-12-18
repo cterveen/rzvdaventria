@@ -49,8 +49,8 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
 - Naam: HTML
 - Rollen: -geen-
 - Tekst-editor: CKEditor 5
-- Werkbalkinstelling: Heading, Bold, Italic, Underline, Subscript, Superscript, Divider,  Bulleted list, Numbered list, Indent, Outdent, Divider, Link, Image, Table, Divider, Source
-- Koppen: Heading 2, Heading 3
+- Werkbalkinstelling: Heading, Bold, Italic, Underline, Subscript, Superscript, Divider, Blockquote, Divider,  Bulleted list, Numbered list, Indent, Outdent, Divider, Link, Image, Drupal Media, Table, Divider, Remove Format, Source
+- Koppen: Heading 2, Heading 3, Heading 4
 - Source editing: \<img id title class\> \<iframe height src width\> \<script src\> \<noscript\> \<div id class\> \<span id class\>
 - Lijst: - alles -
 - Afbeelding: afbeelding-uploads inschakelen
