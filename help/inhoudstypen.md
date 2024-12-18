@@ -761,6 +761,8 @@ Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden 
 <p>Tags worden gebruikt om vergelijkbaar nieuws te kunnen selecteren.</p>
 <p>Standaard termen zijn bijvoorbeeld:
 <ul>
+<li>Algemene Vergadering</li>
+<li>DavO</li>
 <li>In Memoriam</li>
 <li>Jeugd en Junioren</li>
 <li>Marathonroeien</li>
