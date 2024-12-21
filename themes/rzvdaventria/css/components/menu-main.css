@@ -39,9 +39,10 @@ ul.sf-menu li.sfHover > ul {
   background-color: rgb(205,205,205);
 }
 
-/* drop down menu line */
+/* drop down menu item */
 ul.sf-menu a.sf-depth-2 {
   padding: 16px 0px 16px 48px;
+  border-bottom: 1px solid rgb(164, 164, 164);
   list-style: none outside;
 }
 
