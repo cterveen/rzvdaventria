@@ -7,7 +7,7 @@
   float: left;
   width: calc(100% - 116px - 128px);
   margin: 0px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -24,7 +24,7 @@
 ul.sf-menu.sf-horizontal .sf-with-ul,
 ul.sf-menu.sf-horizontal a.sf-depth-1 {
   list-style: none outside;
-  padding: calc(40px - 0.5rem) 14px calc(40px - 0.5rem) 14px;
+  padding: calc(40px - 0.55rem) 14px calc(40px - 0.55rem) 14px;
 }
 
 /* drop down menu container */
@@ -52,7 +52,7 @@ ul.sf-menu a.sf-depth-2:hover {
 
 /* state is-double */
 ul.sf-menu a.sf-depth-1.is-double {
-  padding: calc(20px - 0.5rem) 14px calc(20px - 0.5rem) 14px;
+  padding: calc(20px - 0.55rem) 14px calc(20px - 0.55rem) 14px;
 }
 
 ul.sf-menu li.is-double:hover > ul,
@@ -102,13 +102,13 @@ ul.sf-menu.sf-accordion.sf-expanded {
 ul.sf-menu.sf-accordion .sf-with-ul,
 ul.sf-menu.sf-accordion a.sf-depth-1 {
   list-style: none outside;
-  padding: calc(24px - 0.5rem) 0 calc(24px - 0.5rem) 32px;
+  padding: calc(24px - 0.55rem) 0 calc(24px - 0.55rem) 32px;
 }
 
 /* accordion sub-menu link */
 ul.sf-has-clone-parent .sf-clone-parent a.sf-depth-1,
 ul.sf-menu.sf-accordion a.sf-depth-2 {
-  padding: calc(24px - 0.5rem) 0 calc(24px - 0.5rem) 64px;
+  padding: calc(24px - 0.55rem) 0 calc(24px - 0.55rem) 64px;
   background-color: rgb(205,205,205);
 }
 
