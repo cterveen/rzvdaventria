@@ -68,7 +68,7 @@
 
         once('graph-ijsselpeil', '#rzvdaventria-graph-ijsselpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/ijsselpeil_deventer.json", function(data) {
-            let yrange = rzvdaventriaMinMax(data.historie.waarde);
+            let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
             let now = new Date();
             let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
             let xmin = new Date(now.getTime() - 7*24*60*60*1000);
@@ -80,8 +80,8 @@
             let plotdata = Array();
             let layout = {};
 
-            yrange[0] -= 1;
-            yrange[1] += 1;
+            yrange[0] -= 50;
+            yrange[1] += 50;
 
             plotdata = [
               {
@@ -124,7 +124,7 @@
 
         once('graph-ijsselpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/rijnpeil_lobith.json", function(data) {
-            let yrange = rzvdaventriaMinMax(data.historie.waarde);
+            let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
             let now = new Date();
             let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
             let xmin = new Date(now.getTime() - 7*24*60*60*1000);
@@ -136,8 +136,8 @@
             let plotdata = Array();
             let layout = {};
 
-            yrange[0] -= 1;
-            yrange[1] += 1;
+            yrange[0] -= 50;
+            yrange[1] += 50;
 
             plotdata = [
               {
