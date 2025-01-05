@@ -39,7 +39,7 @@
         once('graph-watertemperatuur', '#rzvdaventria-graph-watertemperatuur').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/watertemperatuur_drielboven.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde);
-            let lastValue = data.historie.waarde[data.historie.waarde.length-1];
+            let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(1);
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-watertemperatuur');
             let plotdata = Array();
@@ -90,7 +90,7 @@
         once('graph-ijsselpeil', '#rzvdaventria-graph-ijsselpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/ijsselpeil_deventer.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
-            let lastValue = data.historie.waarde[data.historie.waarde.length-1];
+            let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(2);
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-ijsselpeil');
             let plotdata = Array();
@@ -147,7 +147,7 @@
         once('graph-rijnpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/rijnpeil_lobith.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
-            let lastValue = data.historie.waarde[data.historie.waarde.length-1];
+            let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(2);
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-rijnpeil');
             let plotdata = Array();
@@ -221,6 +221,7 @@
          * @return {boolean} true
          */
         function rzvdaventriaPlot(element, data, layout) {
+          layout.unit = " " + layout.unit;
           Plotly.newPlot(
             element,
             data = data,
@@ -316,7 +317,7 @@
               timestamp += (date.getMinutes() < 10 ? 0 : "");
               timestamp += date.getMinutes();
 
-          value = value.toString().replace(/\./, ",");
+          value = value.replace(/\./, ",");
 
           return "Laatste meting: <strong>" + value + " " + unit + "</strong> (" + timestamp + ")";
         }
