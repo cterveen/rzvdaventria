@@ -14,31 +14,35 @@
   (function ($, Drupal, once) {
     Drupal.behaviors.rzvdaventriaWeatherGraphsBehavior = {
       attach: function (context, settings) {
+        let now = new Date();
+        let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
+        let xmin = new Date(now.getTime() - 7*24*60*60*1000);
+        let xmax = new Date(now.getTime() + 2*24*60*60*1000);
+        let xrange = Array(xmin, xmax);
+
         once('graph-watertemperatuur', '#rzvdaventria-graph-watertemperatuur').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/watertemperatuur_drielboven.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde);
-            let now = new Date();
-            let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
-            let xmin = new Date(now.getTime() - 7*24*60*60*1000);
-            let xmax = new Date(now.getTime() + 2*24*60*60*1000);
-            let xrange = Array(xmin, xmax);
             let lastValue = data.historie.waarde[data.historie.waarde.length-1];
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-watertemperatuur');
             let plotdata = Array();
             let layout = {};
 
-            yrange[0] -= 1;
-            yrange[1] += 1;
+            yrange[0] -= 0.2;
+            yrange[1] += 0.2;
 
             plotdata = [
               {
                 x: data.historie.tijdstip,
-                y: data.historie.waarde
+                y: data.historie.waarde,
+                name: "",
+                hovertemplate: "<b>Watertemperatuur Driel Boven:</b><br>Gemeten: <b>%{y}</b><br>%{x|%a %-d %b %-H:%M}"
               },
               {
                 x: [now, now],
                 y: yrange,
+                hoverinfo: "none",
                 mode: "lines",
                 line: {
                   color: "rgb(205,205,205)"
@@ -47,11 +51,11 @@
               {
                 x: [now],
                 y: [yrange[0]],
+                hoverinfo: "none",
                 mode: "text",
                 text: [nowLabel],
                 textposition: "top right",
                 font: {
-                  family: "LatoLatinWeb",
                   color: "rgb(205,205,205)"
                 }
               },
@@ -59,7 +63,8 @@
 
             layout.yrange = yrange;
             layout.xrange = xrange;
-            layout.ylabel = "Temperatuur (&deg;C)";
+            layout.unit = "&deg;C";
+            layout.yaxistickformat = ".1f";
 
             rzvdaventriaPlot(element, plotdata, layout);
             $( "#caption-watertemperatuur" ).html(rzvdaventriaWaterdataCaption(lastValue, data.unit, lastTimestamp));
@@ -69,33 +74,33 @@
         once('graph-ijsselpeil', '#rzvdaventria-graph-ijsselpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/ijsselpeil_deventer.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
-            let now = new Date();
-            let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
-            let xmin = new Date(now.getTime() - 7*24*60*60*1000);
-            let xmax = new Date(now.getTime() + 2*24*60*60*1000);
-            let xrange = Array(xmin, xmax);
             let lastValue = data.historie.waarde[data.historie.waarde.length-1];
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-ijsselpeil');
             let plotdata = Array();
             let layout = {};
 
-            yrange[0] -= 50;
-            yrange[1] += 50;
+            yrange[0] -= 0.2;
+            yrange[1] += 0.2;
 
             plotdata = [
               {
                 x: data.historie.tijdstip,
-                y: data.historie.waarde
+                y: data.historie.waarde,
+                name: "",
+                hovertemplate: "<b>IJsselpeil Deventer:</b><br>Gemeten: <b>%{y}</b><br>%{x|%a %-d %b %-H:%M}"
               },
               {
                 x: data.verwacht.tijdstip,
-                y: data.verwacht.waarde
+                y: data.verwacht.waarde,
+                name: "",
+                hovertemplate: "<b>IJsselpeil Deventer:</b><br>Verwacht: <b>%{y}</b><br>%{x|%a %-d %b %-H:%M}"
               },
               {
                 x: [now, now],
                 y: yrange,
                 mode: "lines",
+                hoverinfo: "none",
                 line: {
                   color: "rgb(205,205,205)"
                 }
@@ -106,8 +111,8 @@
                 mode: "text",
                 text: [nowLabel],
                 textposition: "top right",
+                hoverinfo: "none",
                 font: {
-                  family: "LatoLatinWeb",
                   color: "rgb(205,205,205)"
                 }
               },
@@ -115,43 +120,44 @@
 
             layout.yrange = yrange;
             layout.xrange = xrange;
-            layout.ylabel = "Waterhoogte (m)";
+            layout.unit = "m";
+            layout.yaxistickformat = ".2f";
 
             rzvdaventriaPlot(element, plotdata, layout);
             $( "#caption-ijsselpeil" ).html(rzvdaventriaWaterdataCaption(lastValue, data.unit, lastTimestamp));
           });
         });
 
-        once('graph-ijsselpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
+        once('graph-rijnpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
           $.getJSON("http://192.168.2.6/~internetcie/webcam/data/rijnpeil_lobith.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
-            let now = new Date();
-            let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
-            let xmin = new Date(now.getTime() - 7*24*60*60*1000);
-            let xmax = new Date(now.getTime() + 2*24*60*60*1000);
-            let xrange = Array(xmin, xmax);
             let lastValue = data.historie.waarde[data.historie.waarde.length-1];
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
             let element = document.getElementById('rzvdaventria-graph-rijnpeil');
             let plotdata = Array();
             let layout = {};
 
-            yrange[0] -= 50;
-            yrange[1] += 50;
+            yrange[0] -= 0.2;
+            yrange[1] += 0.2;
 
             plotdata = [
               {
                 x: data.historie.tijdstip,
-                y: data.historie.waarde
+                y: data.historie.waarde,
+                name: "",
+                hovertemplate: "<b>Rijnpeil Lobith:</b><br>Gemeten: <b>%{y}</b><br>%{x|%a %-d %b %-H:%M}"
               },
               {
                 x: data.verwacht.tijdstip,
-                y: data.verwacht.waarde
+                y: data.verwacht.waarde,
+                name: "",
+                hovertemplate: "<b>Rijnpeil Lobith:</b><br>Verwacht: <b>%{y}</b><br>%{x|%a %-d %b %-H:%M}"
               },
               {
                 x: [now, now],
                 y: yrange,
                 mode: "lines",
+                hoverinfo: "none",
                 line: {
                   color: "rgb(205,205,205)"
                 }
@@ -162,8 +168,8 @@
                 mode: "text",
                 text: [nowLabel],
                 textposition: "top right",
+                hoverinfo: "none",
                 font: {
-                  family: "LatoLatinWeb",
                   color: "rgb(205,205,205)"
                 }
               },
@@ -171,7 +177,8 @@
 
             layout.yrange = yrange;
             layout.xrange = xrange;
-            layout.ylabel = "Waterhoogte (m)";
+            layout.unit = "m";
+            layout.yaxistickformat = ".2f";
 
             rzvdaventriaPlot(element, plotdata, layout);
             $( "#caption-rijnpeil" ).html(rzvdaventriaWaterdataCaption(lastValue, data.unit, lastTimestamp));
@@ -202,6 +209,12 @@
             element,
             data = data,
             layout = {
+              font: {
+                family: "LatoLatinWeb, Open Sans, verdana, arial, sans-serif"
+              },
+              hoverlabel: {
+                align: "left"
+              },
               margin: {
                 t: 0,
                 r: 0,
@@ -209,23 +222,25 @@
                 l: 80,
                 pad: 10
               },
+              showlegend: false,
               xaxis: {
                 autorange: false,
+                fixedrange: true,
                 type: "date",
                 range: layout.xrange
               },
               yaxis: {
                 autorange: false,
-                title: {
-                  text: layout.ylabel
-                },
+                fixedrange: true,
+                tickformat: layout.yaxistickformat,
+                ticksuffix: layout.unit,
                 range: layout.yrange
-              },
-              showlegend: false
+              }
             },
             config = {
               responsive: true,
-              staticPlot: true
+              scrollZoom: false,
+              modeBarButtonsToRemove: ["toImage", "zoom2d", "pan2d", "select2d", "lasso2d", "zoomIn2d", "zoomOut2d", "autoScale2d", "resetScale2d"]
             }
           );
 
@@ -287,7 +302,7 @@
 
           value = value.toString().replace(/\./, ",");
 
-          return "Laatste meting: <strong>" + value + unit + "</strong> (" + timestamp + ")";
+          return "Laatste meting: <strong>" + value + " " + unit + "</strong> (" + timestamp + ")";
         }
       }
     };
