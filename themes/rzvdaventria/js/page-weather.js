@@ -14,6 +14,22 @@
   (function ($, Drupal, once) {
     Drupal.behaviors.rzvdaventriaWeatherGraphsBehavior = {
       attach: function (context, settings) {
+        let locale={
+          moduleType:"locale",
+          name:"nl",
+          dictionary:{},
+          format:{
+            days: ["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"],
+            shortDays:["zo","ma","di","wo","do","vr","za"],
+            months:["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"],
+            shortMonths:["jan","feb","maa","apr","mei","jun","jul","aug","sep","okt","nov","dec"],
+            date:"%d-%m-%Y",
+            decimal: ",",
+            thousands: "."}
+        };
+        "undefined"==typeof Plotly ? (window.PlotlyLocales=window.PlotlyLocales || [],window.PlotlyLocales.push(locale)):Plotly.register(locale);
+        Plotly.setPlotConfig({locale: 'nl'});
+
         let now = new Date();
         let nowLabel = " " + now.getHours() + ":" + (now.getMinutes() < 10 ? 0 : "") + now.getMinutes();
         let xmin = new Date(now.getTime() - 7*24*60*60*1000);
