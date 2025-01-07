@@ -45,8 +45,8 @@
             let plotdata = Array();
             let layout = {};
 
-            yrange[0] -= 0.2;
-            yrange[1] += 0.2;
+            yrange[0] -= 1;
+            yrange[1] += 1;
 
             plotdata = [
               {
@@ -71,8 +71,8 @@
                 mode: "text",
                 text: [nowLabel],
                 textposition: "top right",
-                font: {
-                  color: "rgb(205,205,205)"
+                textfont: {
+                  color: "rgb(68,68,68)"
                 }
               },
             ];
@@ -128,11 +128,37 @@
                 text: [nowLabel],
                 textposition: "top right",
                 hoverinfo: "none",
-                font: {
-                  color: "rgb(205,205,205)"
+                textfont: {
+                  color: "rgb(68,68,68)"
                 }
               },
             ];
+
+            /* hoogwater */
+            if (yrange[0] < 4.85 & yrange[1] > 4.85) {
+              plotdata.push(
+                {
+                  x: [xmin, xmax],
+                  y: [4.85,4.85],
+                  mode: "lines",
+                  hoverinfo: "none",
+                  line: {
+                    color: "rgb(255,20,0)"
+                  }
+                },
+                {
+                  x: [xmin],
+                  y: [4.85],
+                  mode: "text",
+                  text: "Hoogwater",
+                  textposition: "top right",
+                  hoverinfo: "none",
+                  textfont: {
+                    color: "rgb(255,20,0)"
+                  }
+                },
+              );
+            }
 
             layout.yrange = yrange;
             layout.xrange = xrange;
@@ -185,8 +211,8 @@
                 text: [nowLabel],
                 textposition: "top right",
                 hoverinfo: "none",
-                font: {
-                  color: "rgb(205,205,205)"
+                textfont: {
+                  color: "rgb(68,68,68)"
                 }
               },
             ];
