@@ -1,19 +1,11 @@
 {
   "temperatuur": {
     "label": "Temperatuur",
-    "value": "12",
+    "value": "- 0",
     "unit": "°C",
-    "caption": "",
+    "caption": "Vorst",
     "timestamp": "15:30",
-    "expires": "2025-08-29 14:30:00 UTC"
-  },
-  "ijsselpeil": {
-    "label": "IJsselpeil",
-    "value": "4,13",
-    "unit": "m",
-    "caption": "",
-    "timestamp": "15:30",
-    "expires": "2025-08-29 19:30:00 UTC"
+    "expires": "2024-08-29 14:30:00 UTC"
   },
   "windkracht": {
     "label": "Windkracht",
