@@ -269,6 +269,7 @@
               xaxis: {
                 autorange: false,
                 fixedrange: true,
+                tickformat: "%a %-d %b",
                 type: "date",
                 range: layout.xrange
               },
@@ -283,7 +284,7 @@
             config = {
               responsive: true,
               scrollZoom: false,
-              modeBarButtonsToRemove: ["toImage", "zoom2d", "pan2d", "select2d", "lasso2d", "zoomIn2d", "zoomOut2d", "autoScale2d", "resetScale2d"]
+              displayModeBar: false
             }
           );
 
