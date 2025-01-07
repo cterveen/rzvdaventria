@@ -372,11 +372,11 @@ rechts van het menu geplaatst.
 
 **Body:**
 
-```
+````
 <img src="/~internetcie/webcam/weerdata.php?meting=temperatuur" width="80" height="80" id="temperatuur" title="Temperatuur botenhuis">
-<img src="/~internetcie/webcam/weerdata.php?meting=ijsselpeil" width="80" height="80" id="ijsselpeil" title="IJsselpeil Deventer">
+<img src="/~internetcie/webcam/waterdata.php" width="80" height="80" id="ijsselpeil" title="IJsselpeil Deventer">
 <img src="/~internetcie/webcam/weerdata.php?meting=windkracht" width="80" height="80" id="windkracht" title="Windkracht botenhuis">
-```
+````
 
 De alternatieve tekst van deze afbeeldingen wordt door middel van Javascript toegevoegd en laat de actuele waarden zien.
 
