@@ -142,8 +142,10 @@ Helptekst inschrijven:
 <ul>
 <li>Gebruik dit veld voor links waar deelnemers zich in kunnen schrijven.</li>
 <li>Voor links naar Mijn Daventria gebruik de linktekst "Mijn Daventria"</li>
-<li>Voor een inschrijfformulier gebruik de linktekst "Inschrijfformulier"</li>
-<li>Voor een e-mailadres gebruik de link "mailto:<adres>" en de omschrijving "E-mail".</li>
+<li>Voor een inschrijfformulier (b.v. wedstrijden) gebruik de linktekst "Inschrijfformulier"</li>
+<li>Voor een e-mailadres gebruik de link "mailto:<adres>" en de linktekst "E-mail".</li>
+<li>Voor een specifieke pagina (b.v. marathonroeien) gebruik een verwijzing naar de pagina als linktekst, bijvoorbeeld "Zie [Marathonroeien]".</li>
+<li>Voor een externe pagina gebruik als linktekst het (sub)domein zonder https of subpagina, bijvoorbeeld: "[www.elfstedenroeimarathon.nl]".</li>
 </ul>
 ````
 
@@ -152,7 +154,7 @@ Helptekst externe link:
 ````
 <ul>
 <li>Gebruik dit veld om een link naar andere websites toe te voegen, bijvoorbeeld naar de website van een wedstrijd.</li>
-<li>Als linktekst het domein van de website gebruiken.</li>
+<li>Gebruik als linktekst het (sub)domein zonder https of subpagina, bijvoorbeeld: "[www.elfstedenroeimarathon.nl]"</li>
 </ul>
 ````
 
