@@ -79,7 +79,7 @@
 
             layout.yrange = yrange;
             layout.xrange = xrange;
-            layout.unit = "&deg;C";
+            layout.unit =  data.unit;
             layout.yaxistickformat = ".1f";
 
             rzvdaventriaPlot(element, plotdata, layout);
