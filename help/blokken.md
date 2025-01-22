@@ -308,8 +308,7 @@ rechts van het menu geplaatst.
 #### Body
 
 ````
-<a href="https://rzvdaventria-site.e-captain.nl/afschrijfsysteem"><img src="/~internetcie/themes/rzvdaventria/images/icons/afschrijven.png" alt="Afschrijfsysteem" width="32" height="32" title="Afschrijfsysteem"></a>
-<a href="/~internetcie/search/node"><img src="/~internetcie/themes/rzvdaventria/images/icons/search.png" alt="Zoeken" width="31" height="32" title="Zoeken"></a>
+<a href="https://rzvdaventria-site.e-captain.nl/afschrijfsysteem"><img src="/~internetcie/themes/rzvdaventria/images/icons/afschrijfsysteem.svg" alt="Afschrijfsysteem" width="32" height="32" title="Afschrijfsysteem"></a><a href="/~internetcie/search"><img src="/~internetcie/themes/rzvdaventria/images/icons/search.svg" alt="Zoeken" width="32" height="32" title="Zoeken"></a>
 ````
 
 ## Secundaire tabs
