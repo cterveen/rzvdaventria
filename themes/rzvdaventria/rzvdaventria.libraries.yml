@@ -42,6 +42,8 @@ base:
         weight: -15
       css/components/block-webcam.css:
         weight: -15
+      css/components/book.css:
+        weight: -15
       css/components/bookindex.css:
         weight: -15
       css/components/breadcrumb.css:
@@ -99,6 +101,7 @@ base:
     js/plotly/plotly.js: {}
     js/block-weather.js: {}
     js/menu-main.js: {}
+    js/node.js: {}
     js/page-weather.js: {}
   dependencies:
     - core/drupal
