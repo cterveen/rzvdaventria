@@ -36,6 +36,17 @@
   font-weight: bold;
 }
 
+.node__content a.is-external-link::after {
+  content: "";
+  background-image: url('/~internetcie/themes/rzvdaventria/images/icons/link-out.svg');
+  background-position: 0.2em top;
+  background-size: 0.7em 0.7em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 .node__content td,
 .node__content th {
   padding-right: 1rem;
