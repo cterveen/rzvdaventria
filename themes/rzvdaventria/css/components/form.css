@@ -67,10 +67,32 @@ th.field-label {
   font-weight: bold;
 }
 
+.form-item-body-0-value a.is-external-link::after {
+  content: "";
+  background-image: url('/~internetcie/themes/rzvdaventria/images/icons/link-out.svg');
+  background-position: 0.2em top;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 .form-item-body-0-value td,
 .form-item-body-0-value th {
   padding-right: 1rem;
   text-align: left;
+}
+
+.form-item-body-0-value .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.form-item-body-0-value .tile img {
+  height: auto;
+  width: 100%;
 }
 
 /**
