@@ -204,7 +204,7 @@ Zie ook instellingen.md
 #### Blok instellen
 
 - Titel: Hoofdnavigatie
-- Systeemnaam: rzvdavenria_hoofdnavigatie
+- Systeemnaam: rzvdaventria_hoofdnavigatie
 - Titel weergeven: Nee
 - Menuniveaus
   - Initieel zichtbaarheidsniveau: 1
@@ -217,8 +217,8 @@ Zie ook instellingen.md
   - Drop shadows: Ja
   - Slide-in effect: Verticaal
 - Superfish plugins
-  - jQuiry Suppostition: Ja
-  - jQuiry hoverIntent: Ja
+  - jQuery Suppostition: Ja
+  - jQuery hoverIntent: Ja
 - sf-Touchscreen:
   - sf-Touchscreen: Enable jQuery sf-Touchscreen plugin for this menu.
   - Select behaviour: Hiding the sub-menu on the second tap.
