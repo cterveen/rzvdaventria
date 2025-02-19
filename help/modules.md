@@ -11,17 +11,17 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 - Block content: Om blokken aan te kunnen maken.
 - Breakpoint: nodig voor toolbar.
 - CKEditor5: WYSIWYG editor
-- Custum menu links: nodig voor Menu UI
+- Custom menu links: nodig voor Menu UI
 - Field UI: beheer van velden van inhoudstypen
 - Help
 - Media: beheer van afbeeldingen etc.
-- Media libarary: Beheer van afbeeldingen etc.
+- Media library: Beheer van afbeeldingen etc.
 - Menu UI: aanpassen van menu's.
 - Path: aanpassen van URL's naar nette URL's (aliassen).
 - Search: zoeken.
 - Taxonomy: taggen van nieuwsberichten.
 - Text Editor: nodig voor CKEditor5.
-- Toolbaar: admin menu toolbar.
+- Toolbar: admin menu toolbar.
 - Views: nodig voor Media Library en Views UI.
 - Views UI: aanmaken van lijsten vanuit inhoudstypen.
 
