@@ -308,7 +308,7 @@ rechts van het menu geplaatst.
 #### Body
 
 ````
-<a href="https://rzvdaventria-site.e-captain.nl/afschrijfsysteem"><img src="/~internetcie/themes/rzvdaventria/images/icons/afschrijfsysteem.svg" alt="Afschrijfsysteem" width="32" height="32" title="Afschrijfsysteem"></a><a href="/~internetcie/search"><img src="/~internetcie/themes/rzvdaventria/images/icons/search.svg" alt="Zoeken" width="32" height="32" title="Zoeken"></a>
+<a href="https://rzvdaventria-site.e-captain.nl/afschrijfsysteem"><img src="/themes/rzvdaventria/images/icons/afschrijfsysteem.svg" alt="Afschrijfsysteem" width="32" height="32" title="Afschrijfsysteem"></a><a href="/search"><img src="/themes/rzvdaventria/images/icons/search.svg" alt="Zoeken" width="32" height="32" title="Zoeken"></a>
 ````
 
 ## Secundaire tabs
@@ -344,7 +344,7 @@ rechts van het menu geplaatst.
 
 ```
 <p>
-    <img src="/~internetcie/webcam/webcam_jachthaven.jpg" width="640" height="368">
+    <img src="/webcam/webcam_jachthaven.jpg" width="640" height="368">
 </p>
 ```
 
@@ -372,9 +372,9 @@ rechts van het menu geplaatst.
 **Body:**
 
 ````
-<img src="/~internetcie/webcam/weerdata.php?meting=temperatuur" width="80" height="80" id="temperatuur" title="Temperatuur botenhuis">
-<img src="/~internetcie/webcam/waterdata.php" width="80" height="80" id="ijsselpeil" title="IJsselpeil Deventer">
-<img src="/~internetcie/webcam/weerdata.php?meting=windkracht" width="80" height="80" id="windkracht" title="Windkracht botenhuis">
+<img src="/webcam/weerdata.php?meting=temperatuur" width="80" height="80" id="temperatuur" title="Temperatuur botenhuis">
+<img src="/webcam/waterdata.php" width="80" height="80" id="ijsselpeil" title="IJsselpeil Deventer">
+<img src="/webcam/weerdata.php?meting=windkracht" width="80" height="80" id="windkracht" title="Windkracht botenhuis">
 ````
 
 De alternatieve tekst van deze afbeeldingen wordt door middel van Javascript toegevoegd en laat de actuele waarden zien.
