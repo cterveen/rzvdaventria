@@ -295,7 +295,7 @@ rechts van het menu geplaatst.
 #### Blok bewerken
 
 - Body: -zie onder-
-- Blokbeschrijving: Adres, contact- en bankgegevens
+- Blokbeschrijving: Quicknav
 
 #### Blok instellen
 
