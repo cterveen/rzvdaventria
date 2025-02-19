@@ -27,7 +27,7 @@ Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
   - Wie mag accounts aanmaken?: Enkel beheerders
   - E-mailverficatie verplichten: ja
   - Wachtwoordsterkteindicator inschakelen: ja
-  - Bij het opheffen vn een gebruikersaccount: Het account uitschakelen en de inhoud behouden
+  - Bij het opheffen van een gebruikersaccount: Het account uitschakelen en de inhoud behouden
 - E-mailadres kennisgeving: internetcie@daventria.com
 - E-mails: -standaard instellingen-
 
