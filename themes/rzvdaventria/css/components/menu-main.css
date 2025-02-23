@@ -116,3 +116,15 @@ ul.sf-has-clone-parent .sf-clone-parent a.sf-depth-1:hover,
 ul.sf-menu.sf-accordion a.sf-depth-2:hover {
   background-color: rgb(195,195,195);
 }
+
+/* state is external link */
+#block-rzvdaventria-hoofdnavigatie a.is-external-link::after {
+  content: "";
+  background-image: url('../../images/icons/link-out-black.svg');
+  background-position: 0.2em top;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
