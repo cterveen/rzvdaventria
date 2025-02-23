@@ -38,7 +38,7 @@
 
 .node__content a.is-external-link::after {
   content: "";
-  background-image: url('../../images/icons/link-out.svg');
+  background-image: url('../../images/icons/link-out-blue.svg');
   background-position: 0.2em top;
   background-size: 0.75em 0.75em;
   background-repeat: no-repeat;
