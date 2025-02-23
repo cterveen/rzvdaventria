@@ -6,7 +6,7 @@
     (function ($, Drupal, once) {
     Drupal.behaviors.rzvdaventriaMainMenuBehavior = {
       attach: function (context, settings) {
-        once('link-out', '.node__content').forEach(function (element) {
+        once('link-out', '.block-superfishmain').forEach(function (element) {
           $('a').each(function(){
             if ($(this).attr('href')) {
               if ($(this).attr('href').substring(0, 1) == "/") {
