@@ -50,3 +50,19 @@
   background-color: rgb(54, 54, 54);
   color: white;
 }
+
+/* state is external link */
+.region-footer .block-menu a.is-external-link::after {
+  content: "";
+  background-image: url('../../images/icons/link-out-grey-light.svg');
+  background-position: 0.2em top;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.region-footer .block-menu a.is-external-link:hover::after {
+  background-image: url('../../images/icons/link-out-grey-light-hover.svg');
+}
