@@ -11,7 +11,7 @@
 # --------------------------------------------------------------------
 
 # Basedir
-$data_file = './data/ijsselpeil_deventer.json';
+$data_file = './data/waterstandenDev.json';
 
 # Size (px)
 $size = 80;
@@ -74,13 +74,16 @@ imagefill($img, 0, 0, $black);
 
 if ($error == 0) {
   # Make the image
-  $filename = $meassure . "ijsselpeil_deventer.jpg";
+  $filename = "ijsselpeil_deventer.jpg";
 
   # Define color
   $color = $yellow;
   if ($data->{"actueel"}->{"caption"} != "") {
     $color = $red;
   }
+
+  # Format
+  $data->{"actueel"}->{"waarde"} = sprintf("%.2f", $data->{"actueel"}->{"waarde"});
 
   # Draw value
   $unit_size = getSize($unit_fontsize, $font, " " . $data->{"unit"});
@@ -167,7 +170,7 @@ else {
   # Draw unit
   $unit_x = $value_x + $value_size[0];
   $unit_y = imagesy($img)/2 - $value_size[1]/2 + $unit_size[1];
-  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " " . $data->{"actueel"}->{"unit"});
+  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " " . $data->{"unit"});
 }
 
 # --------------------------------------------------------------------
