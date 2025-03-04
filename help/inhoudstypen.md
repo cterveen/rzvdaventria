@@ -280,7 +280,7 @@ Helptekst interne link:
       - Beheertitel: Einddatum (maand)
     - Inhoud: Begindatum
       - Een label aanmaken: Nee
-      - Uitsluiten van weergave: Nee
+      - Uitsluiten van weergave: Ja
       - Opmaakhupmiddel: aangepast
       - Tijdzone overschrijven: - Niets geselecteerd -
       - Datum-/tijdnotatie: d
@@ -293,7 +293,7 @@ Helptekst interne link:
       - Uitsluiten van weergave: Nee
       - Opmaakhupmiddel: aangepast
       - Tijdzone overschrijven: - Niets geselecteerd -
-      - Datum-/tijdnotatie: d
+      - Datum-/tijdnotatie: M
       - Stijlinstellingen: Standaardklassen toevoegen
       - Resultaten herschijven: Ja, zie onder
       - Gedrag bij ontbreken van resultaten: Niet herschrijven indien leeg
