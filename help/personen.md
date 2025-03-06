@@ -71,9 +71,6 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
 - Block: -geen-
 - Block Content: -geen-
 - Book:
-  - Inhoud en sub-pagina's aan boeken toevoegen en de hiërarchie beheren.
-  - Boekstructuren beheren
-  - Nieuwe boeken aanmaken
   - Boeken printervriendelijk weergeven
 - Field UI: -geen-
 - File: -geen-
@@ -103,10 +100,14 @@ De lijst met toegangsrechten is erg lang. Daarom worden alleen de toegekende toe
 - Block Content:
   - Toegang tot de inhoudsblokkenoverzichtpagina
   - Inhoud van blokken beheren
-- Book: -controleren in Drupal 11-
+- Book: 
+  - Inhoud en sub-pagina's aan boeken toevoegen en de hiërarchie beheren.
+  - Boekstructuren beheren
+  - Nieuwe boeken aanmaken
+  - Boeken printervriendelijk weergeven
 - Field UI: -geen-
 - File:
-  - toegnag tot de bestandsoverzichtpagina
+  - Toegang tot de bestandsoverzichtpagina
   - Alle bestanden verwijderen
   - Eigen bestanden verwijderen
 - Filter:
