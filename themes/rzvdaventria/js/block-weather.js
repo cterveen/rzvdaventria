@@ -7,7 +7,7 @@
     Drupal.behaviors.rzvdaventriaWeatherBehavior = {
       attach: function (context, settings) {
         once('alt-weather', '#block-rzvdaventria-weerenwaterstanden').forEach(function (element) {
-          $.getJSON("http://192.168.2.6/~internetcie/webcam/data/weerdata.json", function(data) {
+          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/tempwind.json", function(data) {
             $.each(data, function(key, val) {
               if (key != "windkracht" & key != "temperatuur") {
                 return true;
@@ -20,25 +20,6 @@
               let timestamp = val.timestamp;
               let value = val.value;
               let caption = val.caption;
-
-              /* temporary workaround for wind and expiration date */
-              if (key == "windkracht") {
-                val.unit = "bft";
-                if (val.values[99][0].substr(-3, 3) == "UTC") {
-                  let expirydate = val.values[99][0];
-                  val.values[99][0] = expirydate.substr(6, 4) + "-" + expirydate.substr(3, 2) + "-" + expirydate.substr(0,2) + "T" + expirydate.substr(11, 8) + ".000Z";
-                }
-                expires = new Date(Date.parse(val.values[99][0]));
-                timestamp = val.values[99][1];
-                value = val.values[99][2].toFixed(1);
-              }
-              else {
-                if (val.expires.substr(-3, 3) == "UTC") {
-                  let expirydate = val.expires;
-                  val.expires = expirydate.substr(6, 4) + "-" + expirydate.substr(3, 2) + "-" + expirydate.substr(0,2) + "T" + expirydate.substr(11, 8) + ".000Z";
-                }
-                expires = new Date(Date.parse(val.expires));
-              }
 
               if (now.getTime() > expires.getTime()) {
                 value = "X";
@@ -58,7 +39,7 @@
             });
           });
 
-          $.getJSON("http://192.168.2.6/~internetcie/webcam/data/ijsselpeil_deventer.json", function(data) {
+          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/waterstandenDev.json", function(data) {
             let expires = new Date(Date.parse(data.actueel.expires));
             let id = "#ijsselpeil";
             let alt = "";
