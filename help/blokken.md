@@ -344,7 +344,7 @@ rechts van het menu geplaatst.
 
 ```
 <p>
-    <img src="/webcam/webcam_jachthaven.jpg" width="640" height="368">
+    <a href="/weer"><img src="/webcam/webcam.php?image=webcam_haven.jpg" alt="" width="640" height="344"></a>
 </p>
 ```
 
