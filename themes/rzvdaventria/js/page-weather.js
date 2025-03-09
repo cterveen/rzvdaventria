@@ -37,7 +37,7 @@
         let xrange = Array(xmin, xmax);
 
         once('graph-watertemperatuur', '#rzvdaventria-graph-watertemperatuur').forEach(function (element) {
-          $.getJSON("http://192.168.2.6/~internetcie/webcam/data/watertemperatuur_drielboven.json", function(data) {
+          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/tempDrielBoven.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde);
             let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(1);
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
@@ -88,7 +88,7 @@
         });
 
         once('graph-ijsselpeil', '#rzvdaventria-graph-ijsselpeil').forEach(function (element) {
-          $.getJSON("http://192.168.2.6/~internetcie/webcam/data/ijsselpeil_deventer.json", function(data) {
+          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/waterstandenDev.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
             let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(2);
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
@@ -171,7 +171,7 @@
         });
 
         once('graph-rijnpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
-          $.getJSON("http://192.168.2.6/~internetcie/webcam/data/rijnpeil_lobith.json", function(data) {
+          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/waterstandenLob.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
             let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(2);
             let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
