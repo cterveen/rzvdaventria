@@ -393,7 +393,7 @@ Twig code voor het herschrijven van begindatum (maand), de exacte namen van de v
     - Inhoud: Begindatum
       - Een label aanmaken: Nee
       - Uitsluiten van weergave: Ja
-      - Opmaakhupmiddel: aangepast
+      - Opmaakhulpmiddel: aangepast
       - Tijdzone overschrijven: - Niets geselecteerd -
       - Datum-/tijdnotatie: F
       - Stijlinstellingen: Standaardklassen toevoegen
@@ -404,14 +404,14 @@ Twig code voor het herschrijven van begindatum (maand), de exacte namen van de v
       - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
       - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
       - Inhoud: Begindatum (>=1 jan ), Groep 2 (EN)
-      - Inhoud: Begindatum (>=31 dec), Groep 2
+      - Inhoud: Begindatum (<=31 dec), Groep 2
     - (OF)
       - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
       - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
       - Inhoud: Einddatum (>=1 jan ), Groep 2 (EN)
-      - Inhoud: Einddatum (>=31 dec), Groep 2
+      - Inhoud: Einddatum (<=31 dec), Groep 2
    - Sorteercriteria
-     - Inhoud: Befindatum (oplopend)
+     - Inhoud: Begindatum (oplopend)
   - Pagnina-instellingen
     - Pad: /agenda
     - Menu: Geen menu
