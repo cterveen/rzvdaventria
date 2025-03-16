@@ -9,13 +9,22 @@
 }
 
 /* Jaarkalender */
+
+#block-rzvdaventria-content .view-activiteiten {
+  column-width: 340px;
+}
+
 #block-rzvdaventria-content .view-activiteiten h3 {
-  float: left;
   clear: left;
   margin-top: 1rem;
-  width: 50%;
+  width: 100%;
   font-size: 1.3rem;
   text-transform: capitalize;
+  page-break-after: avoid;
+}
+
+#block-rzvdaventria-content .view-activiteiten .views-row {
+  page-break-inside: avoid;
 }
 
 #block-rzvdaventria-content .view-activiteiten hr {
@@ -44,6 +53,7 @@
 #block-rzvdaventria-content .views-field-title {
   float: left;
   padding-left: 1rem;
+    width: calc(100% - 7rem);
 }
 
 @media all and (max-width: 37.5rem) {
