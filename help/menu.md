@@ -25,10 +25,8 @@ Het beheermenu bevat de volgende links:
 - Beheer /admin
   - Inhoud aanmaken /node/add 
     - Activiteit aanmaken /node/add/activiteit
-    - Boekpagina aanmaken /node/add/book
-    - Hub aanmaken /node/add/hub
-    - Nieuws aanmaken /node/add/nieuws
-    - Pagina aanmaken /node/add/pagina
+    - Artikel aanmaken /node/add/article
+    - Eenvoudige pagina aanmaken /node/add/page
   - Inhoud /admin/content
   - Structuur /admin/structure
     - Blokindeling /admin/structure/block
