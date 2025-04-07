@@ -4,9 +4,9 @@
  */
 (() => {
     (function ($, Drupal, once) {
-    Drupal.behaviors.rzvdaventriaMainMenuBehavior = {
+    Drupal.behaviors.rzvdaventriaLinkOutBehavior = {
       attach: function (context, settings) {
-        once('link-out', '.block-superfishmain').forEach(function (element) {
+        once('link-out', '#block-rzvdaventria-hoofdnavigatie').forEach(function (element) {
           $('a').each(function(){
             if ($(this).attr('href')) {
               if ($(this).attr('href').substring(0, 1) == "/") {
