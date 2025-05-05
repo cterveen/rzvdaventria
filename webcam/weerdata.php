@@ -11,7 +11,7 @@
 # --------------------------------------------------------------------
 
 # Basedir
-$data_file = './data/weerdata.json';
+$data_file = './data/temp.json';
 
 # Size (px)
 $size = 80;
@@ -66,8 +66,25 @@ if ($meassure == NULL) {
 elseif (!isset($data->{$meassure})) {
   $error = 1;
 }
-elseif (time() > strtotime($data->{$meassure}->{"expires"})) {
-  $error = 1;
+
+# Adjust data
+if ($error == 0) {
+  if ($meassure == "windkracht") {
+    $data->{$meassure}->{"unit"} = "bft";
+    $data->{$meassure}->{"expires"} = $data->{$meassure}->{"values"}[99][0];
+    $data->{$meassure}->{"value"} = sprintf("%.1f", $data->{$meassure}->{"values"}[99][2]);
+  }
+  else if ($meassure == "temperatuur") {
+    if ($data->{$meassure}->{"value"} >= -0.5 & $data->{$meassure}->{"value"} < 0) {
+      $data->{$meassure}->{"value"} = "-0";
+    }
+    else {
+      $data->{$meassure}->{"value"} = round($data->{$meassure}->{"value"});
+    }
+  }
+  if (time() > strtotime($data->{$meassure}->{"expires"})) {
+    $error = 1;
+  }
 }
 
 # --------------------------------------------------------------------
