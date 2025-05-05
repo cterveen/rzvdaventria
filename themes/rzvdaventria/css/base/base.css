@@ -30,17 +30,17 @@ body {
 }
 
 h1 {
-  margin: 0;
-  padding-top: 1.5rem;
-  padding-bottom: 0.8rem;
+  margin: 1.5rem 0 0.8rem 0;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 1.7rem;
   text-wrap: balance;
 }
 
 h2 {
-  margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
+  margin: 1rem 0 0.2rem 0;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 1.3rem;
   text-wrap: balance;
 }
