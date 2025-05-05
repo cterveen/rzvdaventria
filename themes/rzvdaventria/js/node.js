@@ -13,6 +13,9 @@
               }
               else if ($(this).attr('href').substring(0, 6).toLowerCase() == "mailto") {
               }
+              else if ($(this).attr('href').substring(0, 39).toLowerCase() == "https://rzvdaventria-site.e-captain.nl/") {
+                $(this).addClass("is-mijn-daventria-link");
+              }
               else {
                 $(this).addClass("is-external-link");
               }
