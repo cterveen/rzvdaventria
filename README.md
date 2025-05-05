@@ -50,7 +50,7 @@ Design by Niels den Boer https://hetvormburo.nl/
 Drupal base theme: Starterkit / Stable9  
 Font: Lato https://www.latofonts.com/  
 Graphs: Plotly JavaScript library https://plotly.com/javascript/  
-Reservation, search and link out icons: Arturo Wibaba https://akaricons.com/  
+Icons: Arturo Wibaba https://akaricons.com/  
 Map(s): OpenStreetMap: https://www.openstreetmap.org/  
 Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
 
