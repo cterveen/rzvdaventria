@@ -47,6 +47,17 @@
   height: 1em;
 }
 
+.node__content a.is-mijn-daventria-link::after {
+  content: "";
+  background-image: url('../../images/icons/link-md-blue.svg');
+  background-position: 0.2em top;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 .node__content td,
 .node__content th {
   padding-right: 1rem;
