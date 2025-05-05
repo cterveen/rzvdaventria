@@ -128,3 +128,14 @@ ul.sf-menu.sf-accordion a.sf-depth-2:hover {
   width: 1em;
   height: 1em;
 }
+
+#block-rzvdaventria-hoofdnavigatie a.is-mijn-daventria-link::after {
+  content: "";
+  background-image: url('../../images/icons/link-md-black.svg');
+  background-position: 0.2em top;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
