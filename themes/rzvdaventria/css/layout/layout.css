@@ -17,6 +17,7 @@
 .layout-container {
   max-width: 1200px;
   margin-left: max(calc(50% - 600px), 0px);
+  margin-right: 0;
 }
 
 .layout-footer {
@@ -30,4 +31,17 @@
   .layout-footer {
     height: 35rem;
   }
+}
+
+/* Maintenance page */
+
+.maintenance-page main {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  margin: 32px;
+  padding: 20px 10px;
+}
+
+.maintenance-page h1 {
+  margin-top: 0;
 }
