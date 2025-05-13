@@ -19,6 +19,13 @@
     width: 14rem;
   }
 }
+
+@media all and (min-width: 767.5px) {
+  .maintenance-page .block-system-branding-block {
+     width: 14rem;
+  }
+}
+
 .site-logo {
   float: left;
   height: 80px;
@@ -55,5 +62,12 @@
 @media all and (min-width: 767.5px) {
   .site-name {
     display: none;
+  }
+  
+  .maintenance-page .site-name {
+    display: block;
+    float: left;
+    padding: calc(40px - 0.55rem) 0px calc(40px - 0.55rem) 12px;
+    font-size: 1.1rem;
   }
 }
