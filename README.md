@@ -12,7 +12,8 @@ This project is under active development.
 
 ## Installation
 
-Make a minimal install of Drupal.  
+Make a minimal install of Drupal.
+Download plotly.js and add it to /libraries/plotly
 Copy all files to the Drupal main folder.  
 Go to Admin > Appearance (admin/appearance).  
 Find the rzvdaventria theme and click install and make default.  
