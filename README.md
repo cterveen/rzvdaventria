@@ -61,5 +61,3 @@ The rzvdaventria theme is licensed under the GNU General Public License, version
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Lato is redistributed under the SIL Open Font License 1.1
-
-Plotly JavaScript library is redistributed under the MIT License
