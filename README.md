@@ -6,7 +6,7 @@ Daventria Drupal 10.x Theme
 
 A Drupal 10.x or 11.x Theme for the Daventria website. The Theme is being developed as a theme for a new website of a rowing club in the Netherlands. The aims for the project is to build a theme (website) that is easy to maintain, responsive, accessible and privacy friendly.
 
-The project can be considered stable, it's in use on a live website. The core language for the documentation is Dutch. Some of the bug reports, and most of the programming will be in English though. Internationalisation and localisation are not available. The theme is made for left-to-right languages.
+The project can be considered stable, it's in use on a live website (https://www.daventria.com/). The core language for the documentation is Dutch. Some of the bug reports, and most of the programming will be in English though. Internationalisation and localisation are not available. The theme is made for left-to-right languages.
 
 This project is under active development.
 
