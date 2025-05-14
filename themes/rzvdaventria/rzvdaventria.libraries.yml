@@ -92,17 +92,13 @@ base:
         weight: -10
       css/components/vertical-tabs.css:
         weight: -10
-      css/components/weather.css:
-        weight: -10
     theme:
       css/theme/toolbar.icons.theme.css:
         weight: -10
   js:
-    js/plotly/plotly.js: {}
     js/block-weather.js: {}
     js/menu-main.js: {}
     js/node.js: {}
-    js/page-weather.js: {}
   dependencies:
     - core/drupal
     - core/jquery
@@ -147,6 +143,15 @@ node:
     component:
       css/components/node.css:
         weight: -10
+page-weather:
+  version: VERSION
+  css:
+    component:
+      css/components/weather.css:
+        weight: -10
+  js: 
+    /libraries/plotly/plotly.js: {}
+    js/page-weather.js: {}
 progress:
   version: VERSION
   css:
