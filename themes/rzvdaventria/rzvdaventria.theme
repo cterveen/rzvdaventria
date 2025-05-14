@@ -19,3 +19,14 @@ function rzvdaventria_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implements hook_preporcess_page()
+ */
+function rzvdaventria_preprocess_page(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  if ($path === "/weer") {
+    $variables['#attached']['library'][] = 'rzvdaventria/page-weather';
+  }
+}
