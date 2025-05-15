@@ -85,6 +85,15 @@
   padding-bottom: 0;
 }
 
+.field--name-field-image img {
+  float: right;
+  padding: 5px;
+  margin: 0 0 10px 10px;
+  border: 1px solid rgb(205, 205, 205);
+  height: auto;
+  width: 220px;
+}
+
 .node--sticky h2 {
   padding-left: 1.15em;
   background-image: url('../../images/icons/promoted.svg');
