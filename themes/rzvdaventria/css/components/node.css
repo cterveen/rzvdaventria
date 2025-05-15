@@ -93,6 +93,12 @@
   width: 220px;
 }
 
+@media all and (max-width: 600px) {
+  .field--name-field-image img {
+    width: 33%;
+  }
+}
+
 .node--sticky h2 {
   padding-left: 1.15em;
   background-image: url('../../images/icons/promoted.svg');
