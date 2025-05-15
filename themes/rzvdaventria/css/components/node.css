@@ -75,7 +75,6 @@
   width: 100%;
 }
 
-
 /* Teasers */
 .node--view-mode-teaser {
   border-bottom: 3px solid rgb(205, 205, 205)
@@ -119,8 +118,15 @@
   text-align: right;
 }
 
-/* nieuws */
+/* Nieuws */
 .node--type-nieuws .field--name-field-tags .field__item {
   float: left;
   margin-left: 10px;
+}
+
+/* Tables */
+@media all and (max-width: 600px) {
+  table.responsive td {
+    display: block;
+  }
 }
