@@ -91,7 +91,7 @@ ul.sf-menu.sf-horizontal .sf-sub-indicator {
 @media all and (min-width: 599.5px) and (max-width: 767.5px) {
   .sf-accordion-toggle a {
     height: 56px;
-    padding: 14px 16px 18px 0px;
+    padding: 14px 16px 10px 0px;
     font-size: 56px;
   }
 }
