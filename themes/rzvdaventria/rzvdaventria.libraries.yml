@@ -150,14 +150,19 @@ page-weather:
       css/components/weather.css:
         weight: -10
   js: 
-    /libraries/plotly/plotly.js: {}
     js/page-weather.js: {}
+  dependencies:
+    - rzvdaventria/plotly
 progress:
   version: VERSION
   css:
     component:
       css/components/progress.css:
         weight: -10
+plotly:
+  version: VERSION
+  js:
+    /libraries/plotly/plotly.js: { preprocess: false }
 search-results:
   version: VERSION
   css:
