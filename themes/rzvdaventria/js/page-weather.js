@@ -91,7 +91,7 @@
                 },
                 {
                   x: [xmin],
-                  y: [10],
+                  y: [10 - (yrange[1] - yrange[0]) / 50],
                   mode: "text",
                   text: "Skiff-/tweezonderverbod",
                   textposition: "bottom right",
