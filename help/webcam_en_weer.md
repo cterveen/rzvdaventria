@@ -12,7 +12,7 @@ De temperatuur wordt aan de achterkant van het botenhuis gemeten door een Raspbe
 
 Het json-bestand is als volgt samengesteld:
 
-- Bestandsnaam: weerdata.json
+- Bestandsnaam: tempwind.json
 - Locatie: /webcam/data
 - Per meting een object met:
   - label: de nette naam van de meting
@@ -31,15 +31,6 @@ Het json-bestand is als volgt samengesteld:
     - onderschrift:
       - temperatuur < 0°C: vorst
     - verloopt: na 1 uur
-  - ijsselpeil
-    - meting: rijkswaterstaat
-    - interval: 60 minuten
-    - eenheid: meter
-    - nauwkeurigheid: twee decimalen
-    - onderschrift:
-      - ijsselpeil ≥ 4,85 hoogwater
-      - ijsselpeil ≤ 1,35 laagwater
-    - verloopt: na 4 uur
   - windkracht
     - meting: mediaan van de laatste 10 metingen met 1 minuut interval  
     - interval: 1 minuut
@@ -49,9 +40,9 @@ Het json-bestand is als volgt samengesteld:
 
 Het json-bestand wordt gebruikt om zowel het plaatje met de meetgegevens te maken als de alt-tekst en titel. Het plaatje wordt gemaakt in php, de alt-tekst en titel in JavaScript. Omdat JavaScript in de browser draait en alles omzet naar lokale tijd of UTC wordt de timestamp zonder tijdszoneaanduiding gegeven en expires in UTC. De berekeningen worden door het script op de Raspberry Pi zodat deze maar op één plek te hoeven worden aangepast, dat script doet dus ook een groot deel van de datavalidatie.
 
-#### Voorbeeld weerdata.json
+#### Voorbeeld tempwind.json
 
-De samenstelling van weerdata.json is al volgt:
+De samenstelling van tempwind.json is al volgt:
 
 ````
 {
@@ -62,14 +53,6 @@ De samenstelling van weerdata.json is al volgt:
     "caption": "",
     "timestamp": "15:30",
     "expires": "2025-08-29 14:30:00 UTC"
-  },
-  "ijsselpeil": {
-    "label": "IJsselpeil",
-    "value": "4,13",
-    "unit": "m",
-    "caption": "",
-    "timestamp": "15:30",
-    "expires": "2025-08-29 19:30:00 UTC"
   },
   "windkracht": {
     "label": "Windkracht",
