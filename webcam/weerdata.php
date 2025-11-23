@@ -11,7 +11,7 @@
 # --------------------------------------------------------------------
 
 # Basedir
-$data_file = './data/temp.json';
+$data_file = './data/tempwind.json';
 
 # Size (px)
 $size = 80;
@@ -69,12 +69,7 @@ elseif (!isset($data->{$meassure})) {
 
 # Adjust data
 if ($error == 0) {
-  if ($meassure == "windkracht") {
-    $data->{$meassure}->{"unit"} = "bft";
-    $data->{$meassure}->{"expires"} = $data->{$meassure}->{"values"}[99][0];
-    $data->{$meassure}->{"value"} = sprintf("%.1f", $data->{$meassure}->{"values"}[99][2]);
-  }
-  else if ($meassure == "temperatuur") {
+  if ($meassure == "temperatuur") {
     if ($data->{$meassure}->{"value"} >= -0.5 & $data->{$meassure}->{"value"} < 0) {
       $data->{$meassure}->{"value"} = "-0";
     }
@@ -118,7 +113,7 @@ if ($error == 0) {
   $value_size = getSize($value_fontsize, $font, $value->{"value"});
   $value_x = imagesx($img)/2 - ($value_size[0] + $unit_size[0])/2;
   $value_y = imagesy($img)/2 + $value_size[1]/2;
-  imagettftext($img, $value_fontsize, 0, $value_x, $value_y, $color, $font, $value->{"value"});
+  imagettftext($img, $value_fontsize, 0, $value_x, $value_y, $color, $font, str_replace(".", ",", $value->{"value"}));
 
   # Draw unit
   $unit_x = $value_x + $value_size[0];
