@@ -1,0 +1,18 @@
+{
+  "temperatuur": {
+    "label": "Temperatuur",
+    "value": "- 0",
+    "unit": "°C",
+    "caption": "Vorst",
+    "timestamp": "15:30",
+    "expires": "2024-08-29 14:30:00 UTC"
+  },
+  "windkracht": {
+    "label": "Windkracht",
+    "value": "2",
+    "unit": "bft",
+    "caption": "",
+    "timestamp": "15:30",
+    "expires": "2025-08-29 14:30:00 UTC"
+  }
+}
