@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Styles for lay-out container and footer
+ *
+ * Breakpoints:
+ * - < 60 rem (~ 960px)
+ *   - all regions below each other
+ *   - sidebar compontents in double column
+ * - < 37.5 rem (~600px)
+ *   - sidebar compontents below each other
+ * - < 600px
+ *   - smaller background image
+ *   - main menu collapses
+ *   - site name visible
+ */
+ 
+.layout-container {
+  max-width: 1200px;
+  margin-left: max(calc(50% - 600px), 0px);
+  margin-right: 0;
+}
+
+.layout-footer {
+  display: inline-block;
+  height: 23rem;
+  width: 100%;
+  background-color: rgb(41,41,41);
+}
+
+@media all and  (max-width: 60rem) {
+  .layout-footer {
+    height: 35rem;
+  }
+}
+
+/* Maintenance page */
+
+.maintenance-page main {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  margin: 32px;
+  padding: 20px 10px;
+}
+
+.maintenance-page h1 {
+  margin-top: 0;
+}
