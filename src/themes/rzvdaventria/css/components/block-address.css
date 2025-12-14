@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Styles for the address block
+ */
+
+#block-rzvdaventria-adrescontactenbankgegevens p {
+  padding-bottom: 0.8rem;
+  color: rgb(64, 64, 64);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media all and (min-width: 37.5rem) and (max-width: 60rem) {
+  #block-rzvdaventria-adrescontactenbankgegevens {
+    float: right;
+    clear: right;
+  }
+}

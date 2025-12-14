@@ -1,0 +1,63 @@
+/**
+ * @file
+ * Visual styles for book.
+ */
+
+.node--type-book > .node__content > .node__links {
+  font-size: 0.9rem;
+}
+
+.node__content ul.book--pager {
+  float: left;
+  clear: both;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  height: 1.7rem;
+  margin: 0.6rem 0;
+  padding: 0.3rem 0;
+  border-top: 1px solid rgb(205, 205, 205);
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+@media all and (max-width: 37.5rem) {
+  .node__content ul.book--pager {
+    height: 5.1rem;
+  }
+}
+
+li.book--pager-previous {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+
+@media all and (max-width: 37.5rem) {
+  li.book--pager-previous {
+    width: 100%;
+  }
+}
+
+li.book--pager-up {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+@media all and (max-width: 37.5rem) {
+  li.book--pager-up {
+    width: 100%;
+  }
+}
+
+li.book--pager-next {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+@media all and (max-width: 37.5rem) {
+  li.book--pager-next {
+    width: 100%;
+  }
+}

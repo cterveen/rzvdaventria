@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Visual styles for bookindex.
+ */
+
+/**
+ * General
+ *
+ * All style regarding .node__content should be copied to the selector
+ * .form-item-body-0-value so the style in the FCKEditor is the same as on the
+ * page.
+ */
+
+.block-book-index-block {
+  color: #444;
+  line-height: 1.6;
+}
+
+.bookindex--index-item {
+  text-wrap: pretty;
+}
+
+.bookindex a,
+.bookindex a:visited,
+.bookindex a:hover,
+.bookindex a:visited:hover,
+.bookindex a:active {
+  color: rgb(3, 162, 255);
+  font-weight: bold;
+}
