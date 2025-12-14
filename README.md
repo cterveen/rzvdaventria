@@ -14,7 +14,7 @@ This project is under active development.
 
 Make a minimal install of Drupal.
 Download plotly.js and add it to /libraries/plotly
-Copy all files to the Drupal main folder.  
+Copy all files in /src to the Drupal main folder.  
 Go to Admin > Appearance (admin/appearance).  
 Find the rzvdaventria theme and click install and make default.  
 Select Claro as Administration theme.
@@ -36,7 +36,7 @@ Remove the following directories:
 - themes/rzvdaventria
 - webcam
 
-Copy all files to the Drupal main folder.
+Copy all files in /src to the Drupal main folder.
 Flush the cache (Admin > Configuration > Development > Performance (/admin/config/development/performance)
 
 ## Use
@@ -61,3 +61,4 @@ The rzvdaventria theme is licensed under the GNU General Public License, version
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Lato is redistributed under the SIL Open Font License 1.1
+
