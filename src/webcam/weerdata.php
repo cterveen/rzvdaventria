@@ -27,7 +27,7 @@ $value_fontsize = round($size/3/1.333);
 $unit_fontsize = round($value_fontsize/2);
 
 # Font size for the timestamp
-$time_fontsize = 10;
+$time_fontsize = round($value_fontsize/2);
 
 # Error
 $error = 0;
@@ -67,19 +67,13 @@ elseif (!isset($data->{$meassure})) {
   $error = 1;
 }
 
-# Adjust data
-if ($error == 0) {
-  if ($meassure == "temperatuur") {
-    if ($data->{$meassure}->{"value"} >= -0.5 & $data->{$meassure}->{"value"} < 0) {
-      $data->{$meassure}->{"value"} = "-0";
-    }
-    else {
-      $data->{$meassure}->{"value"} = round($data->{$meassure}->{"value"});
-    }
-  }
-  if (time() > strtotime($data->{$meassure}->{"expires"})) {
-    $error = 1;
-  }
+if (time() > strtotime($data->{$meassure}->{"expires"})) {
+  $error = 1;
+}
+
+# Workaround for frost warning
+if ($error == 0 && $meassure == "temperatuur" && $data->{$meassure}->{"value"} < 0) {
+  $data->{$meassure}->{"caption"} = "VORST";
 }
 
 # --------------------------------------------------------------------
