@@ -19,15 +19,14 @@ $size = 80;
 # Font
 $font = "../themes/rzvdaventria/fonts/Lato/Lato-Black.ttf";
 
-
 # Font size for the value
 $value_fontsize = round($size/3/1.333);
 
 # Font size for the unit
 $unit_fontsize = round($value_fontsize/2);
 
-# Font size for the timestamp
-$time_fontsize = round($value_fontsize/2);
+# Font size for the caption
+$caption_fontsize = round($value_fontsize/2);
 
 # Error
 $error = 0;
@@ -66,14 +65,8 @@ if ($meassure == NULL) {
 elseif (!isset($data->{$meassure})) {
   $error = 1;
 }
-
-if (time() > strtotime($data->{$meassure}->{"expires"})) {
+elseif (time() > strtotime($data->{$meassure}->{"expires"})) {
   $error = 1;
-}
-
-# Workaround for frost warning
-if ($error == 0 && $meassure == "temperatuur" && $data->{$meassure}->{"value"} < 0) {
-  $data->{$meassure}->{"caption"} = "VORST";
 }
 
 # --------------------------------------------------------------------
@@ -115,10 +108,10 @@ if ($error == 0) {
   imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $color, $font, " " . $value->{"unit"});
 
   # Draw caption
-  $time_size = getSize($time_fontsize, $font, $value->{"caption"});
+  $time_size = getSize($caption_fontsize, $font, $value->{"caption"});
   $time_x = imagesx($img) / 2 - $time_size[0] / 2;
   $time_y = imagesy($img) - 10;
-  imagettftext($img, $time_fontsize, 0, $time_x, $time_y, $color, $font, $value->{"caption"});
+  imagettftext($img, $caption_fontsize, 0, $time_x, $time_y, $color, $font, $value->{"caption"});
 }
 else {
   if ($meassure == "temperatuur" || $meassure == "ijsselpeil" || $meassure == "windkracht") {
