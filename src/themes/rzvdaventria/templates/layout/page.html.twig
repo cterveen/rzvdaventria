@@ -43,26 +43,26 @@
     {{ page.header }}
   </header>
 
+  {% if page.weather %}
+    <aside class="layout-weather" role="complementary">
+      {{ page.weather }}
+    </aside>
+  {% endif %}
+
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    {% if page.weather %}
-      <aside class="layout-weather" role="complementary">
-        {{ page.weather }}
-      </aside>
-    {% endif %}
 
     <div class="layout-content">
       {{ page.content }}
     </div>{# /.layout-content #}
 
-    {% if page.sidebar %}
-      <aside class="layout-sidebar" role="complementary">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
-
   </main>
+
+  {% if page.sidebar %}
+    <aside class="layout-sidebar" role="complementary">
+      {{ page.sidebar }}
+    </aside>
+  {% endif %}
 
 </div>{# /.layout-container #}
 
