@@ -69,6 +69,13 @@ elseif (time() > strtotime($data->{$meassure}->{"expires"})) {
   $error = 1;
 }
 
+# special occasion: -0
+if ($error == 0) {
+  if ($meassure == "temperatuur" && $data->{$meassure}->{"caption"} == "VORST" && $data->{$meassure}->{"value"} == 0) {
+    $data->{$meassure}->{"value"} = "-0";
+  }
+}
+
 # --------------------------------------------------------------------
 # Make the image canvas
 # --------------------------------------------------------------------
