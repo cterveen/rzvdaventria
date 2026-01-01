@@ -9,7 +9,7 @@
         once('link-out', '#block-rzvdaventria-hoofdnavigatie').forEach(function (element) {
           $('a').each(function(){
             if ($(this).attr('href')) {
-              if ($(this).attr('href').substring(0, 1) == "/") {
+              if ($(this).attr('href').substring(0, 1) == "/" || $(this).attr('href').substring(0, 26) == "https://www.daventria.com/") {
               }
               else if ($(this).attr('href').substring(0, 6).toLowerCase() == "mailto") {
               }
