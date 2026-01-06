@@ -99,6 +99,7 @@ base:
     js/block-weather.js: {}
     js/menu-main.js: {}
     js/node.js: {}
+    js/webcam.js: {}
   dependencies:
     - core/drupal
     - core/jquery
