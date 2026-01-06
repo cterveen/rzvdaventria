@@ -338,7 +338,7 @@ rechts van het menu geplaatst.
 #### Blok bewerken
 
 - Body: - zie onder -
-- Blokbeschrijving: Webcam met link naar weerpagina
+- Blokbeschrijving: Webcam met link naar de weerpagina
 
 **Body:**
 
