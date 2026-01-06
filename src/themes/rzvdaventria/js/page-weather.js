@@ -37,6 +37,20 @@
         let xrange = Array(xmin, xmax);
 
         once('graph-watertemperatuur', '#rzvdaventria-graph-watertemperatuur').forEach(function (element) {
+          $.get(window.location.origin + "/webcam/data/webcam_stobbenweerd.jpg", function( data, status, xhr) {
+            let id = "#webcam_stobbenweerd";
+            let lastModified = new Date(Date.parse(xhr.getResponseHeader('Last-Modified')));
+            let expires = new Date(lastModified.getTime() + (60 * 60 * 1000));
+            let label = "Webcam Stobbenweerd (--.--u)";
+
+            if (now.getTime() < expires.getTime()) {
+              label = "Webcam Stobbenweerd (" + String(lastModified.getHours()).padStart(2, "0") + ":" + String(lastModified.getMinutes()).padStart(2, "0") + "u)";
+            }
+
+            $( id ).attr( "alt", label );
+            $( id ).attr( "title", label );
+          });
+
           $.getJSON(window.location.origin + "/webcam/data/tempDrielBoven.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde);
             let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(1);
