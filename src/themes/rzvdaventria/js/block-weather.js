@@ -7,12 +7,12 @@
     Drupal.behaviors.rzvdaventriaWeatherBehavior = {
       attach: function (context, settings) {
         once('alt-weather', '#block-rzvdaventria-weerenwaterstanden').forEach(function (element) {
-          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/tempwind.json", function(data) {
+          $.getJSON(window.location.origin + "/webcam/data/tempwind.json", function(data) {
             $.each(data, function(key, val) {
               if (key != "windkracht" & key != "temperatuur") {
                 return true;
               }
-              let expires = new Date();
+              let expires = new Date(Date.parse(val.expires));
               let id = "#" + key;
               let alt = "";
               let title = "";
@@ -39,7 +39,7 @@
             });
           });
 
-          $.getJSON(drupalSettings.path.baseUrl + "/webcam/data/waterstandenDev.json", function(data) {
+          $.getJSON(window.location.origin + "/webcam/data/waterstandenDev.json", function(data) {
             let expires = new Date(Date.parse(data.actueel.expires));
             let id = "#ijsselpeil";
             let alt = "";
