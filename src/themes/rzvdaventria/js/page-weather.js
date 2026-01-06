@@ -1,12 +1,19 @@
 /**
  * @file
- * Graphs on the weather page
+ * Alt text/title and graphs on the weather page
+ *
+ * One alt text/title is made
+ * - Webcam Stobbenweerd
+ *
+ * (The alt text/title for the webcam haven is made by webcam.js as it is a
+ * copy of the webcam on each page.)
  *
  * Three graphs are made:
  * 1) Water temperature at Driel Boven
  * 2) Water height at Deventer
  * 3) Water height at Lobith
  *
+ * Uses JQuery to get the webcam Last Modified header
  * Uses JQuery to read the data in json format
  * Uses Plottly to make the graph
  */
