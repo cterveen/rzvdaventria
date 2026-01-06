@@ -1,6 +1,8 @@
 /**
  * @file
- * Alt text and title for the weather icons
+ * Alt text and title for the webcam
+ *
+ * Uses JQuery to get the webcam Last Modified header
  */
 (() => {
   (function ($, Drupal, once) {
