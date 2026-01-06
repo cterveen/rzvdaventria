@@ -344,14 +344,14 @@ rechts van het menu geplaatst.
 
 ```
 <p>
-    <a href="/weer"><img src="/webcam/webcam.php?image=webcam_haven.jpg" alt="" width="640" height="344"></a>
+    <a href="/weer"><img id="webcam_haven" src="/webcam/webcam.php?image=webcam_haven.jpg" alt="" width="640" height="368"></a>
 </p>
 ```
 
 #### Blok instellen
 
-- Titel: Webcam met link naar weerpagina
-- Systeemnaam: rzvdaventria_webcammetlinknaarweerpagina
+- Titel: Webcam met link naar de weerpagina
+- Systeemnaam: rzvdaventria_webcammetlinknaardeweerpagina
 - Titel weergeven: Nee
 - Zichtbaarheid: Geen beperking
 - Gebied: Zijbalk, 1
