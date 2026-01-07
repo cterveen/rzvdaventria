@@ -44,7 +44,7 @@
         let xrange = Array(xmin, xmax);
 
         once('graph-watertemperatuur', '#rzvdaventria-graph-watertemperatuur').forEach(function (element) {
-          $.get(window.location.origin + "/webcam/data/webcam_stobbenweerd.jpg", function( data, status, xhr) {
+          $.get({url: "/webcam/data/webcam_stobbenweerd.jpg", method: "HEAD", cache: false}, function( data, status, xhr) {
             let id = "#webcam_stobbenweerd";
             let lastModified = new Date(Date.parse(xhr.getResponseHeader('Last-Modified')));
             let expires = new Date(lastModified.getTime() + (60 * 60 * 1000));
