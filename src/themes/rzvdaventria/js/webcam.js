@@ -9,7 +9,7 @@
     Drupal.behaviors.rzvdaventriaWebcamBehavior = {
       attach: function (context, settings) {
         once('alt-webcam', '#block-rzvdaventria-webcammetlinknaardeweerpagina').forEach(function (element) {
-          $.get(window.location.origin + "/webcam/data/webcam_haven.jpg", function( data, status, xhr) {
+          $.get({url: "/webcam/data/webcam_haven.jpg", method: "HEAD", cache: false}, function( data, status, xhr) {
             let lastModified = new Date(Date.parse(xhr.getResponseHeader('Last-Modified')));
             let expires = new Date(lastModified.getTime() + (60 * 60 * 1000));
             let now = new Date();
