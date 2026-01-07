@@ -403,18 +403,18 @@ Twig code voor het herschrijven van begindatum (maand), de exacte namen van de v
    - Filtercriteria
       - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
       - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
-      - Inhoud: Begindatum (>=1 jan ), Groep 2 (EN)
-      - Inhoud: Begindatum (<=31 dec), Groep 2
-    - (OF)
-      - Inhoud: Gepubliceerd (=ja), Standaardgroep (EN)
-      - Inhoud: Inhoudstype (=Activiteit), Standaardgroep (EN)
-      - Inhoud: Einddatum (>=1 jan ), Groep 2 (EN)
-      - Inhoud: Einddatum (<=31 dec), Groep 2
    - Sorteercriteria
      - Inhoud: Begindatum (oplopend)
-  - Pagnina-instellingen
+  - Pagina-instellingen
     - Pad: /agenda
     - Menu: Geen menu
+ - Contextueel filter
+   - node.field_begindatum (year)
+   - Waneer de filter zich NIET in de URL bevind
+     - Standaard waarde opgeven
+       - Type: vast
+       - Vaste waarde: - huidige jaar -
+    - Titel overschrijven: Jaarkalender {{ arguments.field_begindatum_value_year }}
      
 Twig code voor het herschrijven van begindatum (maand), de exacte namen van de variabelen kunnen afwijken.
 
@@ -431,6 +431,7 @@ Twig code voor het herschrijven van begindatum (maand), de exacte namen van de v
 
 Voor zowel begindatum, einddatum, begintijd en eindtijd worden het veldtype "Datum en tijd, Datum" gebruikt. De twee andere veldtypen ("Datum en tijd, Datumbereik" en "Datum en tijd, tijd") slaan indien leeg de huidige datum en tijd op. Gebruik van losse velden maakt het invoeren van de gegevens flexibeler. Via de opmaak wordt alleen de datum of de tijd weergegeven.
 
+Het contextuele filter maakt het mogelijk om ook de jaarkalender van andere jaren weer te geven. Het lijkt helaas niet mogelijk om als standaardwaarde dynamisch het huidige jaar in te vullen. De standaardwaarde moet daarom elk jaar worden bijgewerkt.
 
 ## Boekpagina
 
