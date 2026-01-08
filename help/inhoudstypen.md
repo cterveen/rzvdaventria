@@ -9,7 +9,7 @@ Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenli
 - Activiteit
 - Artikel
 - Boekpagina
-- Pagina
+- Eenvoudige pagina
 
 De inhoudstypen kunnen worden aangemaakt in Admin > Structuur > Inhoudstypen (admin/structure/types).
 
@@ -670,12 +670,12 @@ Helptekst Inhoud:
 - Geverifieerde gebruiker: geen
 - Redacteur: -alle-
 
-## Pagina
+## Eenvoudige pagina
 
 #### Inhoudstype
 
-- Naam: Pagina
-- Systeemnaam: pagina
+- Naam: Eenvoudige pagina
+- Systeemnaam: page
 - Beschrijving: Een pagina bevat vaste inhoud.
 - Label van het titelveld: Titel
 - Voorbeeldweergave voor indienen: optioneel
@@ -684,17 +684,17 @@ naar wordt gelinkt.
 - Publicatieopties: Gepubliceerd, Nieuwe rivisie aanmaken
 - Taalinstellingen: Standaardtaal van de site (Dutch)
 - Weergave-instellingen: -geen-
-- Menu-instellingen: Hoofdnavigie
+- Menu-instellingen: Archief, Contact, Documenten, Hoofdnavigie, Op het web
 
 #### Velden
 
-- Body
-   - Label: Body
+- Inhoud
+   - Label: Inhoud
    - Toegestane aantal waarden: Beperkt, 1
    - Helptekst: -zie onder-
 opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
    - Verplicht veld: Nee
-   - Toegestane tekstopmaken: HTML
+   - Toegestane tekstopmaken: Volledige HTML
    - Samenvatting invoeren: Nee
    - Samenvatting vereisen: Nee
    - Standaardwaarde instellen: Nee
@@ -714,19 +714,19 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
  #### Formulierweergave beheren
 
  - Titel: -5
- - Taal: 20
- - Geschreven door: 11
- - Aangemaakt op: 12
- - Aangeraden op de voorpagina: hidden
- - Vastgeplakt boven aan de lijst: hidden
- - URL-alias: 10
- - Gepubliceerd: 5
- - Body: -4
+ - Taal: 2
+ - Geschreven door: 5
+ - Aangemaakt op: 10
+ - Aangeraden op de voorpagina: uitgeschakeld
+ - Vastgeplakt boven aan de lijst: uitgeschakeld
+ - URL-alias: 30
+ - Inhoud: 31
+ - Gepubliceerd: 120
 
 #### Weergave beheren
 
-- Links: 100
-- Body: 101
+- Inhoud: 100
+- Links: 101
 - Taal: Uitgeschakeld
 - Aangepaste weergave-instellingen: -geen-
  
@@ -734,12 +734,4 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 
 - Anonieme gebruiker: geen
 - Geverifieerde gebruiker: geen
-
-#### Automatische alias Pagina
-
-- Patroontype: Inhoud
-- Label: Nieuws
-- ID: nieuwsalias
-- Ingeschakeld: Ja
-- Pad-patroon: \[node:title\]
-- Inhoudstype: Pagina
+- Redacteur: - alle -
