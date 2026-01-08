@@ -28,8 +28,6 @@ base:
         weight: -15
       css/components/block-content.css:
         weight: -15
-      css/components/block-hub.css:
-        weight: -15
       css/components/block-messages.css:
         weight: -15
       css/components/block-powered.css:
