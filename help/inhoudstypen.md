@@ -7,8 +7,8 @@ Daventria Drupal 10.x Theme help - Datatypen
 Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenlijsten, automatische aliassen en views voor het daventria thema. Dit document bevat de volgende inhoudstypen:
 
 - Activiteit
+- Artikel
 - Boekpagina
-- Nieuws
 - Pagina
 
 De inhoudstypen kunnen worden aangemaakt in Admin > Structuur > Inhoudstypen (admin/structure/types).
@@ -432,6 +432,171 @@ Voor zowel begindatum, einddatum, begintijd en eindtijd worden het veldtype "Dat
 
 Het contextuele filter maakt het mogelijk om ook de jaarkalender van andere jaren weer te geven. Het lijkt helaas niet mogelijk om als standaardwaarde dynamisch het huidige jaar in te vullen. De standaardwaarde moet daarom elk jaar worden bijgewerkt.
 
+## Artikel
+
+#### Woordenlijst
+
+Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden aangemaakt om de tags op te kunnen slaan. 
+
+- Naam: Labels
+- Systeemnaam: tags
+- Beschrijving: Gebruik tags om artikelen over vergelijkbare onderwerpen in categorieën te groeperen.
+- Woordenlijst-taal: Dutch
+- Standaardtaal: Standaardtaal van de site (Dutch)
+
+#### Inhoudstype
+
+- Naam: Artikel
+- Systeemnaam: article
+- Beschrijving: Gebruik artikelen voor tijdsgebonden inhoud zoals nieuws.
+- Label van het titelveld: Titel
+- Voorbeeldweergave voor indienen: optioneel
+- Uitleg of indienrichtlijnen: Nieuws wordt op de voorpagina en in het archief weergegeven.
+- Publicatieopties: Gepubliceerd, Aangeraden op de voorpagina, Nieuwe revisie aanmaken.
+- Taalinstellingen: Standaardtaal van de site (Dutch)
+- Weergave-instellingen:
+  - Auteur en datum tonen: Ja
+- Menu-instellingen: -geen-
+
+#### Velden
+
+- Afbeelding
+  - Label: Afbeelding
+  - Uploadbestemming: Publieke bestanden
+  - Standaardafbeelding: - geen -
+  - Toegestane aantal waarden: Beperkt, 1
+  - Helptekst: De breedte van de afbeelding op de pagina is maximaal 220 pixels.
+  - Verplicht veld: nee
+  - Standaardafbeelding: - geen -
+  - Toegestane bestandsextensies: png, gif, jpg, jpeg, webp
+  - Map: [date:custom:Y]-[date:custom:m]
+  - Maximale afmetingen: - geen -
+  - Minimale afmetingen: - geen -
+  - Maximumgrootte per upload: - geen -
+  - Alt-veld inschakelen: ja
+  - Alt-velt verplicht: ja
+  - Titelveld inschakelen: nee
+- Bijlagen
+  - Label: Bijlagen
+  - Systeemnaam: field_bijlagen
+  - Type: Bestandsupload
+  - Type: Bestand
+  - Weergave veld inschakelen: Nee
+  - Bestanden standaard weergeven: Nee
+  - Uploadbestemming: Publieke bestanden
+  - Toegestaan aantal waarden: Onbeperkt
+  - Helptekst: Bijlagen kunnen onderaan het nieuwsbericht worden gedownload.
+  - Verplicht veld: Nee
+  - Toegestane bestandsextensies: doc, docx, jpg, jpeg, odf, ods, odx, pdf, png, txt, xls, xlsx
+  - Map: bijlagen
+  - Maximumgrootte per upload: -geen-
+  - Veld omschrijving inschakelen: Nee
+- Inhoud
+   - Label: Inhoud
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: - zie onder -
+   - Verplicht veld: Nee
+   - Toegestane tekstopmaken: Volledige HTML
+   - Samenvatting invoeren: Ja
+   - Samenvatting vereisen: Nee
+   - Standaardwaarde instellen: Nee
+- Labels
+  - Label: Labels
+  - Systeemnaam: tags
+  - Itemtype om naar te verwijzen: Taxonomieterm
+  - Toegestane aantal waarden: Onbeperkt
+  - Helptekst: - zie onder -
+  - Verplicht veld: Nee
+  - Referentiemethode: Standaard
+  - Maak de gerefereerde entiteiten aan als deze nog niet bestaan: Ja
+  - Woordenlijst: Labels
+  - Standaardwaarde instellen: Nee
+
+#### Helptekst Body ####
+
+````
+<ul>
+<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
+<li>Vervang paragraafeinden door een enkele enter</li>
+<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+</ul>
+````
+
+#### Helptekst Tags ####
+
+````
+<p>Labels worden gebruikt om vergelijkbaar nieuws te kunnen selecteren. Meerdere labels kunnen worden ingevoerd gescheiden door een komma. Voor een volledig overzicht van de labels zie de <a href="https://www.daventria.com/admin/structure/taxonomy/manage/tags/overview" target="_blank">Labels lijst</a></p>
+<p>Veelgebruikte labels zijn:
+<ul>
+<li>Algemene Vergadering</li>
+<li>Coaching en opleiding</li>
+<li>DavO</li>
+<li>In Memoriam</li>
+<li>Jeugdroeien</li>
+<li>Marathonroeien</li>
+<li>Midweekroeien</li>
+<li>Veiligheid</li>
+<li>Wedstrijdroeien</li>
+</ul>
+</p>
+````
+
+#### Formulierweergave beheren
+
+ - Titel: 0
+ - Afbeelding: 1
+ - Taal: 2
+ - Inhoud: 2
+ - Labels: 3
+ - Geschreven door: 5
+ - Aangemaakt op: 10
+ - Aangeraden op de voorpagina: 15
+ - Vastgeplakt boven aan de lijst: 16
+ - URL-alias: 30
+ - Gepubliceerd: 120
+ - Bijlage 121
+
+#### Weergave beheren
+
+- Links: 0
+- Abeelding: 1, Label: verborgen
+- Inhoud: 2, Label: verborgen
+- Labels: 3, Label: boven
+- Bijlage: 4, Label: boven
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: RSS, Teaser
+
+#### Weergave beheren: teaser
+- Afbeelding: 0
+- Inhoud: 1
+- Links: 2
+- Taal: Uitgeschakeld
+- Labels: uitgeschakeld
+- Bijlage: uitgeschakeld
+
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+
+#### Automatische alias Nieuws
+
+- Patroontype: Inhoud
+- Label: Nieuws
+- ID: nieuwsalias
+- Ingeschakeld: Ja
+- Pad-patroon: nieuws/\[node:created:custom:d-m-Y\]/\[node:title\]
+- Inhoudstype: Nieuws
+
+#### Automatische alias Label
+
+- Patroontype: Taxonomieterm
+- Label: Label
+- ID: labelalias
+- Ingeschakeld: Ja
+- Pad-patroon: nieuws/[term:name]
+- Woordenlijst: Labels
+
 ## Boekpagina
 
 #### Inhoudstype
@@ -504,177 +669,6 @@ Helptekst Inhoud:
 - Anonieme gebruiker: geen
 - Geverifieerde gebruiker: geen
 - Redacteur: -alle-
-
-## Nieuws
-
-#### Woordenlijst
-
-Voordat het inhoudstype aangemaakt kan worden moet eerst de woordenlijst worden aangemaakt om de tags op te kunnen slaan. 
-
-- Naam: Nieuws
-- Systeemnaam: nieuwstags
-- Beschrijving: Tags voor nieuwsberichten
-- Woordenlijst-taal: Dutch
-- Standaardtaal: Standaardtaal van de site (Dutch)
-
-#### Inhoudstype
-
-- Naam: Nieuws
-- Systeemnaam: nieuws
-- Beschrijving: Nieuws betreffen de nieuwsberichten die op de site te lezen zijn.
-- Label van het titelveld: Titel
-- Voorbeeldweergave voor indienen: optioneel
-- Uitleg of indienrichtlijnen: Nieuws wordt op de voorpagina en in het archief weergegeven.
-- Publicatieopties: Gepubliceerd, Aangeraden op de voorpagina.
-- Taalinstellingen: Standaardtaal van de site (Dutch)
-- Weergave-instellingen:
-  - Auteur en datum tonen: Ja
-- Menu-instellingen: -geen-
-
-#### Velden
-
-- Body
-   - Label: Body
-   - Toegestane aantal waarden: Beperkt, 1
-   - Helptekst: - zie onder -
-   - Verplicht veld: Nee
-   - Toegestane tekstopmaken: HTML
-   - Samenvatting invoeren: Nee
-   - Samenvatting vereisen: Nee
-   - Standaardwaarde instellen: Nee
-   - Samenvatting: -geen-
-   - Body: -geen-
-- Tags
-  - Label: Tags
-  - Systeemnaam: field_tags
-  - Type: Referentie
-  - Referentie: Taxonomieterm
-  - Toegestane aantal waarden: Onbeperkt
-  - Helptekst: - zie onder -
-  - Verplicht veld: Nee
-  - Referentiemethode: Standaard
-  - Woordenlijst: Nieuws
-  - Maak de gerefereerde entiteiten aan als deze nog niet bestaan: Ja
-  - Standaardwaarde instellen: Nee
-  - Standaardwaarde: -geen-
-- Bijlage
-  - Label: Bijlage
-  - Systeemnaam: field_bijlage
-  - Type: Bestandsupload
-  - Type: Bestand
-  - Weergave veld inschakelen: Nee
-  - Bestanden standaard weergeven: Nee
-  - Uploadbestemming: Publieke bestanden
-  - Toegestaan aantal waarden: Onbeperkt
-  - Helptekst: Bijlagen kunnen onderaan het nieuwsbericht worden gedownload.
-  - Verplicht veld: Nee
-  - Toegestane bestandsextensies: doc, docx, jpg, jpeg, odf, ods, odx, pdf, png, txt, xls, xlsx
-  - Map: bijlagen
-  - Maximumgrootte per upload: -geen-
-  - Veld omschrijving inschakelen: Nee
-
-#### Helptekst Body ####
-
-````
-<ul>
-<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
-<li>Vervang paragraafeinden door een enkele enter</li>
-<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
-</ul>
-````
-
-#### Helptekst Tags ####
-
-````
-<p>Tags worden gebruikt om vergelijkbaar nieuws te kunnen selecteren.</p>
-<p>Standaard termen zijn bijvoorbeeld:
-<ul>
-<li>Algemene Vergadering</li>
-<li>DavO</li>
-<li>In Memoriam</li>
-<li>Jeugd en Junioren</li>
-<li>Marathonroeien</li>
-<li>Midweekroeien</li>
-<li>Veiligheid</li>
-<li>Wedstrijdroeien</li>
-</ul>
-</p>
-````
-
-#### Formulierweergave beheren
-
- - Titel: -5
- - Taal: 20
- - Geschreven door: 11
- - Aangemaakt op: 12
- - Aangeraden op de voorpagina: 6
- - Vastgeplakt boven aan de lijst: 7
- - URL-alias: 10
- - Gepubliceerd: 5
- - Body: -4
- - Tags -3
- - Bijlage -2
-
-#### Weergave beheren
-
-- Links: 100
-- Body: 101, Label: verborgen
-- Tags: 102, Label: verborgen
-- Bijlage: 103, Label: boven
-- Taal: Uitgeschakeld
-- Aangepaste weergave-instellingen: Teaser
-
-#### Weergave beheren: teaser
-- Body: 100
-- Links: 101
-- Tags: uitgeschakeld
-- Bijlage: uitgeschakeld
-- Taal: Uitgeschakeld
-- Aangepaste weergave-instellingen: Teaser
-
-#### Toegangsrechten
-
-- Anonieme gebruiker: geen
-- Geverifieerde gebruiker: geen
-
-#### Automatische alias Nieuws
-
-- Patroontype: Inhoud
-- Label: Nieuws
-- ID: nieuwsalias
-- Ingeschakeld: Ja
-- Pad-patroon: nieuws/\[node:created:custom:d-m-Y\]/\[node:title\]
-- Inhoudstype: Nieuws
-
-#### Automatische alias Tags
-
-- Patroontype: Taxonomieterm
-- Label: Tags
-- ID: tagsalias
-- Ingeschakeld: Ja
-- Pad-patroon: tag/[term:name]
-- Woordenlijst: Nieuws
-
-#### Overzicht Nieuws - teasers
-
-- Naam voor weergave: Nieuws - teasers
-- Opmaak: Onopgemaakte lijst
-- Weergeven: Inhoud | Teaser
- - Velden: -geen-
- - Filtercriteria
-    - Inhoud: Gepubliceerd (= Ja), Standaardgroep (EN)
-    - Inhoud: Inhoudstype (= Nieuws), Standaardgroep (EN)
-    - Inhoud: Aangeraden op de voorpagina (= Ja), Standaardgroep
- - Sorteercriteria
-   - Inhoud: Vastgeplakt bovenaan de lijst (aflopend)
-   - Inhoud: Aangemaakt op (aflopend)
- - Pagina-instellingen
-   - Pad: /home
-   - Menu: Geen menu
-   - Beheerthema: Nee
-- Paginering
-  - Een bepaald aantal items weergeven | 5 items
-  - 'Meer'-link: nee
 
 ## Pagina
 
