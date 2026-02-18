@@ -123,7 +123,16 @@ if ($error == 0) {
 else {
   if ($meassure == "temperatuur" || $meassure == "ijsselpeil" || $meassure == "windkracht") {
     # Make an error image
-    $value = $data->{$meassure};
+    $unit = "";
+    if ($meassure == "temperatuur") {
+      $unit = "°C";
+    }
+    elseif ($meassure == "ijsselpeil") {
+      $unit = "m";
+    }
+    elseif ($meassure == "windkracht") {
+      $unit = "Bft";
+    }
     $filename = $meassure . ".jpg";
     $error_strings = [
       "000000111101110000010001101010011010",
@@ -167,7 +176,7 @@ else {
     $block_size = 4;
 
     $value_size = array($error_size, $error_size);
-    $unit_size = getSize($unit_fontsize, $font, " " . $value->{"unit"});
+    $unit_size = getSize($unit_fontsize, $font, " " . $unit);
 
     $value_x = imagesx($img)/2 - ($value_size[0] + $unit_size[0])/2;
     $value_y = imagesy($img)/2 + $value_size[1]/2;
@@ -188,7 +197,7 @@ else {
     # Draw unit
     $unit_x = $value_x + $value_size[0];
     $unit_y = imagesy($img)/2 - $value_size[1]/2 + $unit_size[1];
-    imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " " . $value->{"unit"});
+    imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " " . $unit);
   }
   else {
     # Something unexpected happened, draw something unexpected
