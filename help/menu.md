@@ -96,6 +96,7 @@ De hoofdnavigatie bevat de volgende links:
 - R&ZV Daventria /rzvdaventria
   - Vereniging /rzvdaventria
   - Bestuur & commissies /rzvdaventria/bestuur
+  - Lidmaatschap /lidmaatschap
   - Agenda /agenda
   - DavO /rzvdaventria/davo
   - Weer /weer
@@ -103,6 +104,7 @@ De hoofdnavigatie bevat de volgende links:
   - Vloot /rzvdaventria/vloot
   - Gele boekje /gele-boekje
   - Verenigingsblad Bellnote /rzvdaventria/bellnote
+  - Mijn Daventria https://rzvdaventria-site.e-captain.nl/
   - Contact /contact
 - Veiligheid
   - Roeiverbod /veiligheid
@@ -115,13 +117,8 @@ De hoofdnavigatie bevat de volgende links:
   - Midweekroeien /roeisport/midweekroeien
   - Wedstrijdroeien /roeisport/wedstrijdroeien
   - Marathonroeien /roeisport/marathonroeien
-- Lidmaatschap
-  - Info lidmaatschap /lidmaatschap
-  - Info beginnerscursus /lidmaatschap/basiscursus
-  - Info zij-instromers /lidmaatschap/zij-instromers
-  - Aanmelden (Mijn Daventria) https://rzvdaventria-site.e-captain.nl/belangstellingsformulier
-  - Bezoekers & introducées /lidmaatschap/bezoekers
-  - Toegang botenhuis /lidmaatschap/botenhuis
+- Tour d'Aventria
+  - Tour d'Aventria /tour
 - Bedrijfsroeien
   - Info Bedrijfsroeien /bedrijfsroeien
   - Inschrijven https://rzvdaventria-site.e-captain.nl/bedrijfsroeien/inschrijven
@@ -146,9 +143,13 @@ Het voetmenu bevat de volgende links:
   - Statuten en reglementen
   - Documenten & formulieren
   - Ledenlijst
-- Op het web
-  - Mijn Daventria
-  - Facebook
+- Lidmaatschap
+  - Info lidmaatschap /lidmaatschap
+  - Info beginnerscursus /lidmaatschap/basiscursus
+  - Info zij-instromers /lidmaatschap/zij-instromers
+  - Aanmelden (Mijn Daventria) https://rzvdaventria-site.e-captain.nl/belangstellingsformulier
+  - Bezoekers & introducées /lidmaatschap/bezoekers
+  - Toegang botenhuis /lidmaatschap/botenhuis
 - Contact
   - Adresgegevens
   - Contactformulier
