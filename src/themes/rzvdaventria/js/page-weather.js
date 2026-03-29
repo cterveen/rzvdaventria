@@ -137,8 +137,8 @@
         once('graph-ijsselpeil', '#rzvdaventria-graph-ijsselpeil').forEach(function (element) {
           $.getJSON(window.location.origin + "/webcam/data/waterstandenDev.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
-            let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(2);
-            let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
+            let lastValue = data.historie.waarde[0].toFixed(2);
+            let lastTimestamp = new Date(data.historie.tijdstip[0]);
             let element = document.getElementById('rzvdaventria-graph-ijsselpeil');
             let plotdata = Array();
             let layout = {};
@@ -220,8 +220,8 @@
         once('graph-rijnpeil', '#rzvdaventria-graph-rijnpeil').forEach(function (element) {
           $.getJSON(window.location.origin + "/webcam/data/waterstandenLob.json", function(data) {
             let yrange = rzvdaventriaMinMax(data.historie.waarde.concat(data.verwacht.waarde));
-            let lastValue = data.historie.waarde[data.historie.waarde.length-1].toFixed(2);
-            let lastTimestamp = new Date(data.historie.tijdstip[data.historie.tijdstip.length-1]);
+            let lastValue = data.historie.waarde[0].toFixed(2);
+            let lastTimestamp = new Date(data.historie.tijdstip[0]);
             let element = document.getElementById('rzvdaventria-graph-rijnpeil');
             let plotdata = Array();
             let layout = {};
