@@ -12,12 +12,13 @@ This project is under active development.
 
 ## Installation
 
-Make a minimal install of Drupal.
-Download plotly.js and add it to /libraries/plotly
+Make a minimal install of Drupal.  
+Download plotly.js and add it to /libraries/plotly.  
+Download jquery.colorbox-min.js and add it to /libraries/colorbox.  
 Copy all files in /src to the Drupal main folder.  
 Go to Admin > Appearance (admin/appearance).  
 Find the rzvdaventria theme and click install and make default.  
-Select Claro as Administration theme.
+Select Claro as Administration theme.  
 Flush the cache (Admin > Configuration > Development > Performance (/admin/config/development/performance)
 
 Configure the Drupal system according to the documents in help. The recommended order is:
@@ -48,9 +49,10 @@ Help for configuration of modules, data types, content types, views etc. is avai
 Written by Christiaan ter Veen https://www.rork.nl/  
 Design by Niels den Boer https://hetvormburo.nl/
 
-Drupal base theme: Starterkit / Stable9  
+Drupal base theme: Starterkit / Stable9 https://www.drupal.org/  
 Font: Lato https://www.latofonts.com/  
 Graphs: Plotly JavaScript library https://plotly.com/javascript/  
+Colorbox: Fork by TurbojetTechnology https://github.com/TurbojetTechnologies/colorbox/  
 Icons: Arturo Wibaba https://akaricons.com/  
 Map(s): OpenStreetMap: https://www.openstreetmap.org/  
 Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
@@ -61,4 +63,3 @@ The rzvdaventria theme is licensed under the GNU General Public License, version
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Lato is redistributed under the SIL Open Font License 1.1
-
