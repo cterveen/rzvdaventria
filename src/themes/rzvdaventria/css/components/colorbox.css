@@ -172,36 +172,41 @@
 
 #cboxPrevious {
   position: absolute;
-  top: 50%;
-  left: 0.75rem;
-  margin-top: -1rem;
-  background: url(../../images/icons/circle-chevron-left.svg) no-repeat;
+  bottom: 5px;
+  left: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-top-right-radius: 0.5rem;
+  background: url(../../images/icons/circle-chevron-left.svg) center no-repeat;
   background-size: 2rem;
-  width: 2rem;
-  height: 2rem;
+  background-color: white;
+  opacity: 50%;
   text-indent: -9999px;
 }
 
 #cboxNext {
   position: absolute;
-  top: 50%;
-  right: 0.75rem;
-  margin-top: -1rem;
-  background: url(../../images/icons/circle-chevron-right.svg) no-repeat;
+  bottom: 5px;
+  right: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../../images/icons/circle-chevron-right.svg) center no-repeat;
   background-size: 2rem;
-  width: 2rem;
-  height: 2rem;
+  background-color: white;
+  opacity: 50%;
   text-indent: -9999px;
 }
 
 #cboxClose {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  display: block;
-  background: url(../../images/icons/circle-x.svg) no-repeat;
+  bottom: 5px;
+  right: calc(5px + 2.5rem);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-top-left-radius: 0.5rem;
+  background: url(../../images/icons/circle-x.svg) center no-repeat;
   background-size: 2rem;
-  width: 2rem;
-  height: 2rem;
+  background-color: white;
+  opacity: 50%;
   text-indent: -9999px;
 }
