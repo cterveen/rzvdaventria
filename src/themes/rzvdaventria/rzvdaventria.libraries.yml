@@ -102,6 +102,18 @@ base:
     - core/drupal
     - core/jquery
     - core/once
+colorbox:
+  version: VERSION
+  css:
+    component:
+      css/components/colorbox.css:
+        weight: -10
+  js:
+    /libraries/colorbox/jquery.colorbox-min.js: { preprocess: false }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
 dialog:
   version: VERSION
   css:
@@ -120,6 +132,17 @@ file:
     component:
       css/components/file.css:
         weight: -10
+foto-album:
+  css:
+    component:
+      css/components/foto-album.css:
+        weight: -10
+  js:
+    js/foto-album.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
 image-widget:
   version: VERSION
   css:
