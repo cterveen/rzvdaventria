@@ -821,20 +821,11 @@ De foto albums maken gebruik van hetzelfde inhoudstype als Artikelen. Deze moet 
 - Geverifieerde gebruiker: geen
 - Redacteur: alle
 
-#### Automatische alias Nieuws
+#### Automatische alias Foto album
 
 - Patroontype: Inhoud
-- Label: Nieuws
-- ID: nieuwsalias
+- Label: Foto album
+- ID: foto_album_alias
 - Ingeschakeld: Ja
-- Pad-patroon: nieuws/\[node:created:custom:d-m-Y\]/\[node:title\]
-- Inhoudstype: Nieuws
-
-#### Automatische alias Label
-
-- Patroontype: Taxonomieterm
-- Label: Label
-- ID: labelalias
-- Ingeschakeld: Ja
-- Pad-patroon: nieuws/[term:name]
-- Woordenlijst: Labels
+- Pad-patroon: album/\[node:title\]
+- Inhoudstype: Foto album
