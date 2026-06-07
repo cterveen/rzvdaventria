@@ -3,12 +3,12 @@
  * Visual styles for foto albums
  */
 
-.field__items {
+.field--name-field-fotos .field__items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-.field__item img {
+.field--name-field-fotos .field__item img {
   width: 100%;
 }
