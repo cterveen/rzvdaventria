@@ -10,6 +10,7 @@ Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenli
 - Artikel
 - Boekpagina
 - Eenvoudige pagina
+- Foto album
 
 De inhoudstypen kunnen worden aangemaakt in Admin > Structuur > Inhoudstypen (admin/structure/types).
 
@@ -735,3 +736,105 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Anonieme gebruiker: geen
 - Geverifieerde gebruiker: geen
 - Redacteur: - alle -
+
+## Foto album
+
+#### Woordenlijst
+
+De foto albums maken gebruik van hetzelfde inhoudstype als Artikelen. Deze moet zijn aangemaakt voordat het inhoudstype wordt aangemaakt. Zie onder Artikel
+
+#### Inhoudstype
+
+- Naam: Foto Album
+- Systeemnaam: foto album
+- Beschrijving: Foto albums zijn vergelijkbaar met Artikelen, alleen worden de afbeeldingen als album gerangschikt kan de afbeelding worden vergroot tot het originele formaat. 
+- Label van het titelveld: Titel
+- Voorbeeldweergave voor indienen: optioneel
+- Uitleg of indienrichtlijnen: Foto albums worden op de voorpagina en in het archief weergegeven.
+- Publicatieopties: Gepubliceerd, Aangeraden op de voorpagina, Nieuwe revisie aanmaken.
+- Taalinstellingen: Standaardtaal van de site (Dutch)
+- Weergave-instellingen:
+  - Auteur en datum tonen: Ja
+- Menu-instellingen: -geen-
+
+#### Velden
+
+- Afbeelding
+  - Hergebruik field-image  (zie Artikel)
+- Inhoud
+   - Hergebruk body (zie Artikel)
+- Foto's
+  - Veldtype: Bestandupload > Afbeelding
+  - Label: Foto's
+  - Systeemnaam: field_fotos
+  - Uploadbestemming: Publieke bestanden
+  - Standaardafbeelding: -geen-
+  - Toegestane aantal waarden: Onbeperkt
+  - Helptekst: -geen-
+  - Verplicht veld: nee
+  - Toegestane bestandsextensies: png, gif, jpg, jpeg, webp
+  - Map: albums/[date:custom:Y]-[date:custom:m]-[date:custom:d]
+  - Maximale afmetingen van de afbeelding: -geen-
+  - Minimale afmetingen van de afbeelding: -geen-
+  - Maximumgrootte per upload: -geen-
+  - Alt-veld inschakelen: nee
+  - Titelveld inschakelen: nee
+- Labels
+  - Hergebruik field-tags (zie Artikel)
+
+#### Formulierweergave beheren
+
+ - Titel: 0
+ - Afbeelding: 1
+ - Taal: 2
+ - Inhoud: 2
+ - Foto's: 3
+ - Labels: 4
+ - Geschreven door: 5
+ - Aangemaakt op: 10
+ - Aangeraden op de voorpagina: 15
+ - Vastgeplakt boven aan de lijst: 16
+ - URL-alias: 30
+ - Gepubliceerd: 120
+
+#### Weergave beheren
+
+- Links: 0
+- Abeelding: 1, Label: verborgen
+- Inhoud: 2, Label: verborgen
+- Foto's: 3, Label: verborgen
+- Labels: 4, Label: boven
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: RSS, Teaser
+
+#### Weergave beheren: teaser
+- Afbeelding: 0
+- Inhoud: 1
+- Links: 2
+- Taal: Uitgeschakeld
+- Labels: uitgeschakeld
+- Bijlage: uitgeschakeld
+
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+- Redacteur: alle
+
+#### Automatische alias Nieuws
+
+- Patroontype: Inhoud
+- Label: Nieuws
+- ID: nieuwsalias
+- Ingeschakeld: Ja
+- Pad-patroon: nieuws/\[node:created:custom:d-m-Y\]/\[node:title\]
+- Inhoudstype: Nieuws
+
+#### Automatische alias Label
+
+- Patroontype: Taxonomieterm
+- Label: Label
+- ID: labelalias
+- Ingeschakeld: Ja
+- Pad-patroon: nieuws/[term:name]
+- Woordenlijst: Labels
