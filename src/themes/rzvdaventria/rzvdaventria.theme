@@ -29,4 +29,8 @@ function rzvdaventria_preprocess_page(&$variables) {
   if ($path === "/weer") {
     $variables['#attached']['library'][] = 'rzvdaventria/page-weather';
   }
+  if (substr($path,0, 7)  === "/album/") {
+    $variables['#attached']['library'][] = 'rzvdaventria/colorbox';
+    $variables['#attached']['library'][] = 'rzvdaventria/foto-album';
+  }
 }
