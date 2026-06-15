@@ -9,6 +9,7 @@ Een overzicht van de instellingen voor inhoudstypen en de bijbehorende woordenli
 - Activiteit
 - Artikel
 - Boekpagina
+- Boot
 - Eenvoudige pagina
 - Foto album
 
@@ -736,6 +737,228 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Anonieme gebruiker: geen
 - Geverifieerde gebruiker: geen
 - Redacteur: - alle -
+
+## Boot
+
+#### Inhoudstype
+- Naam: Boot
+- Beschrijving: Boten worden weergegeven in de vlootlijst en hebben een eigen pagina.
+- Instellingen van inzendingsformulier
+  - Label van het titelveld: Naam
+  - Voorbeeldweergave voor indien: Optioneel
+  - Uitleg of indienrichtlijnen: -geen-
+- Publicatie-opties:
+  - Gepubliceerd: ja
+  - Aangeraden op voorpagina: nee
+  - Vastgeplakt bovenaan de lijst: nee
+  - Nieuwe revisie aanmaken: ja
+- Taalinstellingen:
+  - Standaardtaal: Standaardtaal van de site (Dutch)
+  - Toon de taalselector op de aanmaken- en bewerkpagina: Nee
+- Weergave-instellingen
+  - Auter en datum tonen: nee
+- Menu-instellingen
+  - Beschikbare menu's: -geen-
+  - Standaard bovenliggende link: <main>
+
+#### Velden
+
+- Foto
+  - Field type: Bestand upload > Afbeelding
+  - Label: Foto
+  - Systeemnaam: field_boot_foto
+  - Uploadbestemming: Publieke bestanden
+  - Standaardafbeelding -geen-
+  - Veldopslag: Beperkt, 1
+  - Helptext: Grootte 800x267px. Bestanden worden automatische geschaald tot een breedte van 800px.
+  - Verplicht veld: nee
+  - Toegestane bestandextensies: png, gif, jpg, jpeg, webp
+  - Map: vloot
+  - Toegestane tekstopmaken: HTML
+  - Maximale afmetingen van de afbeelding: -geen-
+  - Minimale afmetingen van de afbeelding: -geen-
+  - Maximumgrootte per upload: -geen-
+  - Alt-veld inschakelen: ja
+  - Alt-veld verplicht: ja
+  - Titelveld inschakelen: nee
+- Type
+  - Field type: platte text > Tekst (plat)
+  - Label: Type
+  - Systeemnaam: field_boot_type
+  - Maximum lengte: 255
+  - Toegestane aantal waarden: beperkt, 1
+  - Helptekst: De code voor het aantal roeiplekken, de manier van opriggeren en gestuurd ongestuurd. Boordboten krijgen geen aanduiding voor de riggering, scullboten een x. Boten met een stuurplek krijgen een + of ++ voor wherries met twee stuurplekken, voetgestuurde boten een - en boten zonder stuurplek of voetstuur geen aanduiding. Boten die op meerdere manieren kunnen worden opgeriggerd krijgen meerdere aanduidingen. Bijvoorbeeld: 2x/2-.
+  - Verplicht veld: ja
+  - Standwaarde instellen: nee
+- Merk
+  - Field type: platte text > Tekst (plat)
+  - Label: Merk
+  - Systeemnaam: field_boot_merk
+  - Maximum lengte: 255
+  - Toegestane aantal waarden: beperkt, 1
+  - Helptekst: -geen-
+  - Verplicht veld: nee
+  - Standwaarde instellen: nee
+- Romp
+  - Field type: platte text > Tekst (plat)
+  - Label: Romp
+  - Systeemnaam: field_boot_romp
+  - Maximum lengte: 255
+  - Toegestane aantal waarden: beperkt, 1
+  - Helptekst: De uitvoering van de romp zoals genoemd door de fabrikant. Bijvoorbeeld Competitor of F42.
+  - Verplicht veld: nee
+  - Standwaarde instellen: nee
+- Bouwjaar
+  - Field type: getal > Getal (integer)
+  - Label: Bouwjaar
+  - Systeemnaam: field_boot_bouwjaar
+  - Toegestane aantal waarden: beperkt, 1
+  - Helptekst: -geen-
+  - Verplicht veld: nee
+  - Minimum: -geen-
+  - Maximum: -geen-
+  - Voorvoegsel: -geen-
+  - Achtervoegsel -geen-
+  - Standwaarde instellen: nee
+- Doopdatum
+  - Field type: Datum en tijd > Datum
+  - Label: Doopdatum
+  - Systeemnaam: field_boot_doopdatum
+  - Data type: Alleen datum
+  - Toegestane aantal waarden: beperkt, 1
+  - Helptekst: -geen-
+  - Verplicht veld: nee
+  - Standwaarde instellen: nee
+- Doopjaar
+  - Field type: getal > Getal (integer)
+  - Label: Doopjaar
+  - Systeemnaam: field_boot_doopjaar
+  - Toegestane aantal waarden: beperkt, 1
+  - Helptekst: Leeg laten indien doopdatum bekend.
+  - Verplicht veld: nee
+  - Minimum: -geen-
+  - Maximum: -geen-
+  - Voorvoegsel: -geen-
+  - Achtervoegsel -geen-
+  - Standwaarde instellen: nee
+- Categorie
+  - Keuzelijst > Lijst (integer)
+  - Systeemnaam: field_boot_categorie
+  - Toegestane waarde:
+    - Eerste klasse, 1
+    - Tweede klasse, 2
+    - Derde klasse, 3
+  - Toegestane aantal waarden: beperkt, 1
+
+#### Formulierweergave
+
+- Titel: -5
+- Taal: 20
+- Geschreven door: 11
+- Aangemaakt op: 12
+- Aangeraden op de voorpagina: uitgeschakeld
+- Vastgeplakt boven aan de lijst: uitgeschakeld
+- Inhoud: -4
+- URL-alias: 13
+- Gepubliceerd: 5
+- Foto -4
+- Type: -3
+- Merk: -2
+- Romp: -1
+- Bouwjaar: 0
+- Doopdatum: 1
+- Doopjaar: 2
+- Categorie: 3
+
+#### Weergave
+
+- Links: 101
+- Foto: 102
+  - Label: verborgen
+  - Afbeeldingstijl: Pagina
+  - Afbeelding laden: Lazy
+- Type: 103
+- Merk: 104
+- Romp: 105
+- Bouwjaar: 106
+- Doopdatum: 107
+- Doopjaar: 108
+- Categorie: 109
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: -geen-
+
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+- Redacteur: -alle-
+
+## Eenvoudige pagina
+
+#### Inhoudstype
+
+- Naam: Eenvoudige pagina
+- Systeemnaam: page
+- Beschrijving: Een pagina bevat vaste inhoud.
+- Label van het titelveld: Titel
+- Voorbeeldweergave voor indienen: optioneel
+- Uitleg of indienrichtlijnen: Elke pagina heeft een vaste url waar veelal vanuit het menu
+naar wordt gelinkt.
+- Publicatieopties: Gepubliceerd, Nieuwe rivisie aanmaken
+- Taalinstellingen: Standaardtaal van de site (Dutch)
+- Weergave-instellingen: -geen-
+- Menu-instellingen: Archief, Contact, Documenten, Hoofdnavigie, Op het web
+
+#### Velden
+
+- Inhoud
+   - Label: Inhoud
+   - Toegestane aantal waarden: Beperkt, 1
+   - Helptekst: -zie onder-
+opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het moment niet mogelijk.
+   - Verplicht veld: Nee
+   - Toegestane tekstopmaken: Volledige HTML
+   - Samenvatting invoeren: Nee
+   - Samenvatting vereisen: Nee
+   - Standaardwaarde instellen: Nee
+   - Samenvatting: -geen-
+   - Body: -geen-
+ 
+#### Helptekst body
+
+````
+<ul>
+<li>Gebruik bij plakken altijd plakken zonder opmaak (Ctrl-Shift-V).</li>
+<li>Vervang paragraafeinden door een enkele enter</li>
+<li>Plaatjes hoeven geen alt-tekst, tenzij het plaatje inhoudelijk van belang is.</li>
+</ul>
+````
+
+ #### Formulierweergave beheren
+
+ - Titel: -5
+ - Taal: 2
+ - Geschreven door: 5
+ - Aangemaakt op: 10
+ - Aangeraden op de voorpagina: uitgeschakeld
+ - Vastgeplakt boven aan de lijst: uitgeschakeld
+ - URL-alias: 30
+ - Inhoud: 31
+ - Gepubliceerd: 120
+
+#### Weergave beheren
+
+- Inhoud: 100
+- Links: 101
+- Taal: Uitgeschakeld
+- Aangepaste weergave-instellingen: -geen-
+ 
+#### Toegangsrechten
+
+- Anonieme gebruiker: geen
+- Geverifieerde gebruiker: geen
+- Redacteur: - alle -
+
 
 ## Foto album
 
