@@ -882,6 +882,8 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Romp: 105
 - Bouwjaar: 106
 - Doopdatum: 107
+  - Tijdzone overschrijven: - Niets geselecteerd -
+  - Datumnotatie: Olivero Medium (15 juni 2026)
 - Doopjaar: 108
 - Categorie: 109
 - Taal: Uitgeschakeld
@@ -892,6 +894,15 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Anonieme gebruiker: geen
 - Geverifieerde gebruiker: geen
 - Redacteur: -alle-
+
+#### Automatische alias Boot
+
+- Patroontype: Inhoud
+- Label: Boot
+- ID: boot_alias
+- Ingeschakeld: Ja
+- Pad-patroon: vloot/\[node:title\]
+- Inhoudstype: Boot
 
 ## Eenvoudige pagina
 
