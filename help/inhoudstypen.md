@@ -708,7 +708,6 @@ Helptekst Inhoud:
   - Verplicht veld: nee
   - Toegestane bestandextensies: png, gif, jpg, jpeg, webp
   - Map: vloot
-  - Toegestane tekstopmaken: HTML
   - Maximale afmetingen van de afbeelding: -geen-
   - Minimale afmetingen van de afbeelding: -geen-
   - Maximumgrootte per upload: -geen-
@@ -730,7 +729,7 @@ Helptekst Inhoud:
   - Systeemnaam: field_boot_merk
   - Maximum lengte: 255
   - Toegestane aantal waarden: beperkt, 1
-  - Helptekst: -geen-
+  - Helptekst: Veelgebruikte merken zijn: Filippi, Hudson, Swift, Wiersma, Wintech
   - Verplicht veld: nee
   - Standwaarde instellen: nee
 - Romp
@@ -760,7 +759,7 @@ Helptekst Inhoud:
   - Systeemnaam: field_boot_doopdatum
   - Data type: Alleen datum
   - Toegestane aantal waarden: beperkt, 1
-  - Helptekst: -geen-
+  - Helptekst: Indien alleen het doopjaar bekend is dit veld leeg laten en het andere veld gebruiken.
   - Verplicht veld: nee
   - Standwaarde instellen: nee
 - Doopjaar
@@ -768,7 +767,7 @@ Helptekst Inhoud:
   - Label: Doopjaar
   - Systeemnaam: field_boot_doopjaar
   - Toegestane aantal waarden: beperkt, 1
-  - Helptekst: Leeg laten indien doopdatum bekend.
+  - Helptekst: Leeg laten indien doopdatum is ingevuld.
   - Verplicht veld: nee
   - Minimum: -geen-
   - Maximum: -geen-
@@ -833,7 +832,7 @@ Helptekst Inhoud:
 
 - Patroontype: Inhoud
 - Label: Boot
-- ID: boot_alias
+- ID: alias_boot
 - Ingeschakeld: Ja
 - Pad-patroon: /rzvdaventria/vloot/\[node:title\]
 - Inhoudstype: Boot
@@ -858,8 +857,10 @@ Helptekst Inhoud:
   - Opmaak: Tabel
   - Velden:
     - Titel
+      - Label: Naam
     - Type
     - Merk
+    - Doopjaar
    - Filter criteria:
      - Inhoud: Gepubliceerd = Ja
      - Inhoud: Inhoudstype = Boot
