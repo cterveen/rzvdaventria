@@ -37,7 +37,7 @@
   }
 }
 
-#block-rzvdaventria-content .views-field-field-begindatum-1 {
+#block-rzvdaventria-content .view-activiteiten .views-field-field-begindatum-1 {
   display: inline-block;
   width: 6rem;
   text-align: right;
@@ -45,21 +45,28 @@
 }
 
 @media all and (max-width: 37.5rem) {
-  #block-rzvdaventria-content .views-field-field-begindatum-1 {
+  #block-rzvdaventria-content .view-activiteiten .views-field-field-begindatum-1 {
     display: block;
     text-align: left;
   }
 }
 
-#block-rzvdaventria-content .views-field-title {
+#block-rzvdaventria-content .view-activiteiten .views-field-title {
   display: inline-block;
   padding-left: 1rem;
   width: calc(100% - 7rem);
 }
 
 @media all and (max-width: 37.5rem) {
-  #block-rzvdaventria-content .views-field-title {
+  #block-rzvdaventria-content .view-activiteiten .views-field-title {
     display: block;
     padding-left: 0;
   }
+}
+
+/* Vloot */
+#block-rzvdaventria-content td,
+#block-rzvdaventria-content th {
+  text-align: left;
+  padding-right: 1rem;
 }
