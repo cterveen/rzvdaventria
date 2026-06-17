@@ -770,7 +770,7 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
   - Uploadbestemming: Publieke bestanden
   - Standaardafbeelding -geen-
   - Veldopslag: Beperkt, 1
-  - Helptext: Grootte 800x267px. Bestanden worden automatische geschaald tot een breedte van 800px.
+  - Helptext: Grootte 800x400px. Bestanden worden automatische geschaald tot een breedte van 800px.
   - Verplicht veld: nee
   - Toegestane bestandextensies: png, gif, jpg, jpeg, webp
   - Map: vloot
@@ -901,8 +901,41 @@ opmaak (Ctrl-Shift-V). Paragraafeinden zijn een dubbele enter. Opmaak is op het 
 - Label: Boot
 - ID: boot_alias
 - Ingeschakeld: Ja
-- Pad-patroon: vloot/\[node:title\]
+- Pad-patroon: /rzvdaventria/vloot/\[node:title\]
 - Inhoudstype: Boot
+
+#### Overzicht vloot
+
+- Overzichtsnaam: Vloot
+- Systeemnaam: overzicht_vloot
+- Weergeven: Inhoud
+- Type: Boot
+- Gesorteerd volgens: ongesorteerd
+- Een pagina maken: Ja
+  - Pagina titel: Vloot
+  - Pad: rzvdaventria/vloot
+  - Weergave-omstellingen: Tabel
+  - Weer te geven items: -negeren en later aanpassen naar alle items-
+  - Paginering gebruiken: nee
+  - Menulink aanmaken: Hoofdnavigatie > R&ZV Daventria
+- Een blok aanmaken: nee
+- Page
+  - Titel: Vloot
+  - Opmaak: Tabel
+  - Velden:
+    - Titel
+    - Type
+    - Merk
+   - Filter criteria:
+     - Inhoud: Gepubliceerd = Ja
+     - Inhoud: Inhoudstype = Boot
+   - Sorteercriteria
+     - Type: Oplopend
+     - Titel: Oplopend
+  - Paginering:
+    - Alle items weergeven
+    - Offset: 0
+ - Systeemnaam: page_vloot
 
 ## Eenvoudige pagina
 
