@@ -6,6 +6,8 @@ Daventria Drupal 10.x Theme help - instellingen
 
 Deze pagina bevat de algemene instellingen voor het daventria thema. Alleen de gewijzigde instellingen worden hierin beschreven. Dit betreft:
 
+- Media
+  - Afbeeldingsstijlen
 - Personen
   - Accountinstellingen
 - Systeem
@@ -16,6 +18,21 @@ Deze pagina bevat de algemene instellingen voor het daventria thema. Alleen de g
   - Datum- en tijdnotaties
 
 Aanpassen van de instellingen gaat via Beheer > Instellingen (/admin/config).
+
+## Media
+
+#### Afbeeldingstijlen
+
+- Groot (1920x1080)
+  - Schalen 1920x1080
+  - Converteren JPG
+- Pagina (800x*)
+  - Naam afbeeldingsstijl: Pagina (800x*)
+  - Schalen breedte 800
+  - Converteren JPG
+- Thumbnail (220x220)
+  - Naam afbeeldingsstijl: Thumbnail (220x220)
+  - Schalen: 220x220
 
 ## Personen
 
