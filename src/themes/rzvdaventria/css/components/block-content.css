@@ -8,6 +8,73 @@
   line-height: 1.6;
 }
 
+#block-rzvdaventria-content p {
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+#block-rzvdaventria-content ol,
+#block-rzvdaventria-content ul {
+  margin: 0;
+  padding-bottom: 0.8rem;
+  text-wrap: pretty;
+}
+
+#block-rzvdaventria-content a,
+#block-rzvdaventria-content a:visited,
+#block-rzvdaventria-content a:hover,
+#block-rzvdaventria-content a:visited:hover,
+#block-rzvdaventria-content a:active {
+  color: rgb(3, 162, 255);
+  font-weight: bold;
+}
+
+#block-rzvdaventria-content a.is-external-link::after {
+  content: "";
+  background-image: url('../../images/icons/link-out-blue.svg');
+  background-position: 0.2em bottom;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+#block-rzvdaventria-content a.is-mijn-daventria-link::after {
+  content: "";
+  background-image: url('../../images/icons/link-md-blue.svg');
+  background-position: 0.2em bottom;
+  background-size: 0.75em 0.75em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+#block-rzvdaventria-content td,
+#block-rzvdaventria-content th {
+  padding-right: 1rem;
+  text-align: left;
+}
+
+#block-rzvdaventria-content .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+#block-rzvdaventria-content .tile img {
+  height: auto;
+  width: 100%;
+}
+
+/* Tables */
+@media all and (max-width: 600px) {
+  table.responsive td {
+    display: block;
+  }
+}
+
 /* Jaarkalender */
 
 #block-rzvdaventria-content .view-activiteiten .view-content {
