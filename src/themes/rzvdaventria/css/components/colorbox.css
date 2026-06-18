@@ -173,10 +173,10 @@
 #cboxPrevious {
   position: absolute;
   bottom: 5px;
-  left: 5px;
+  left: calc(50% - 3.75rem);
   width: 2.5rem;
   height: 2.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   background: url(../../images/icons/circle-chevron-left.svg) center no-repeat;
   background-size: 2rem;
   background-color: white;
@@ -187,9 +187,10 @@
 #cboxNext {
   position: absolute;
   bottom: 5px;
-  right: 5px;
+  left: calc(50% + 1.25rem);
   width: 2.5rem;
   height: 2.5rem;
+  border-top-right-radius: 0.5rem;
   background: url(../../images/icons/circle-chevron-right.svg) center no-repeat;
   background-size: 2rem;
   background-color: white;
@@ -200,10 +201,9 @@
 #cboxClose {
   position: absolute;
   bottom: 5px;
-  right: calc(5px + 2.5rem);
+  left: calc(50% - 1.25rem);
   width: 2.5rem;
   height: 2.5rem;
-  border-top-left-radius: 0.5rem;
   background: url(../../images/icons/circle-x.svg) center no-repeat;
   background-size: 2rem;
   background-color: white;
