@@ -15,66 +15,6 @@
   background-color: #fff4f4;
 }
 
-.node__content p {
-  padding-bottom: 0.8rem;
-  text-wrap: pretty;
-}
-
-.node__content ol,
-.node__content ul {
-  margin: 0;
-  padding-bottom: 0.8rem;
-  text-wrap: pretty;
-}
-
-.node__content a,
-.node__content a:visited,
-.node__content a:hover,
-.node__content a:visited:hover,
-.node__content a:active {
-  color: rgb(3, 162, 255);
-  font-weight: bold;
-}
-
-.node__content a.is-external-link::after {
-  content: "";
-  background-image: url('../../images/icons/link-out-blue.svg');
-  background-position: 0.2em top;
-  background-size: 0.75em 0.75em;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-}
-
-.node__content a.is-mijn-daventria-link::after {
-  content: "";
-  background-image: url('../../images/icons/link-md-blue.svg');
-  background-position: 0.2em top;
-  background-size: 0.75em 0.75em;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-}
-
-.node__content td,
-.node__content th {
-  padding-right: 1rem;
-  text-align: left;
-}
-
-.node__content .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.node__content .tile img {
-  height: auto;
-  width: 100%;
-}
-
 /* Teasers */
 .node--view-mode-teaser {
   border-bottom: 3px solid rgb(205, 205, 205)
@@ -128,11 +68,4 @@
 .node--type-nieuws .field--name-field-tags .field__item {
   float: left;
   margin-left: 10px;
-}
-
-/* Tables */
-@media all and (max-width: 600px) {
-  table.responsive td {
-    display: block;
-  }
 }
