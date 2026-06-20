@@ -9,11 +9,12 @@
         once('link-out', '#block-rzvdaventria-hoofdnavigatie').forEach(function (element) {
           $('a').each(function(){
             if ($(this).attr('href')) {
-              if ($(this).attr('href').substring(0, 1) == "/" || $(this).attr('href').substring(0, 26) == "https://www.daventria.com/") {
+              let href = $(this).attr('href');
+              if (href.substring(0, 1) == "/" || href.substring(0, 1) == "?" || href.substring(0,1) == "#" || href.substring(0, 26) == "https://www.daventria.com/") {
               }
-              else if ($(this).attr('href').substring(0, 6).toLowerCase() == "mailto") {
+              else if (href.substring(0, 6).toLowerCase() == "mailto") {
               }
-              else if ($(this).attr('href').substring(0, 39).toLowerCase() == "https://rzvdaventria-site.e-captain.nl/") {
+              else if (href.substring(0, 39).toLowerCase() == "https://rzvdaventria-site.e-captain.nl/") {
                 $(this).addClass("is-mijn-daventria-link");
               }
               else {
