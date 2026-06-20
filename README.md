@@ -53,7 +53,7 @@ Drupal base theme: Starterkit / Stable9 https://www.drupal.org/
 Font: Lato https://www.latofonts.com/  
 Graphs: Plotly JavaScript library https://plotly.com/javascript/  
 Colorbox: Fork by TurbojetTechnologies https://github.com/TurbojetTechnologies/colorbox/  
-Icons: Arturo Wibaba https://akaricons.com/  
+Icons: Arturo Wibawa https://akaricons.com/  
 Map(s): OpenStreetMap: https://www.openstreetmap.org/  
 Favicon: derivative of Wikimedia commons https://commons.wikimedia.org/wiki/File:Daventriablad.jpg  
 
