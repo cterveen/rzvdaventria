@@ -20,7 +20,6 @@ Dit document beschrijft de volgende blokken:
 - Documenten
 - Gebouwd met Drupal
 - Hoofdnavigatie
-- Hub
 - Lid worden
 - Paginatitel
 - Primaire beheersacties
@@ -231,23 +230,6 @@ Zie ook instellingen.md
   - Accordion button type: Use parent menu items as buttons.
 - Supersubs
   - Enable Supersubs for this menu: Nee
-
-## Hub
-
-#### Blokindeling
-
-- Categorie: Lijsten (Overzichten)
-- Gebied: Inhoud
-- Gewicht: -8
-
-#### Blok instellen
-
-- Titel weergeven: Nee
-- Items per blok: 2 (standaardinstelling)
-- Titel overschrijven: Nee
-- Zichtbaarheid: -geen-
-- Systeemnaam: rzvdaventria_views_block__hub_block_1
-- Gebied: Boven inhoud, 0
 
 ## Lid worden
 
