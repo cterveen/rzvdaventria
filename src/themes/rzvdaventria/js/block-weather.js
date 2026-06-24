@@ -39,7 +39,7 @@
             });
           });
 
-          $.getJSON(window.location.origin + "/webcam/data/waterstandenDev.json", function(data) {
+          $.getJSON(window.location.origin + "/webcam/data/wathtedevactueel.json", function(data) {
             let expires = new Date(Date.parse(data.actueel.expires));
             let id = "#ijsselpeil";
             let alt = "";
