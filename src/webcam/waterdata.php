@@ -11,7 +11,7 @@
 # --------------------------------------------------------------------
 
 # Basedir
-$data_file = './data/waterstandenDev.json';
+$data_file = './data/wathtedevactueel.json';
 
 # Size (px)
 $size = 80;
