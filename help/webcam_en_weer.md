@@ -70,20 +70,26 @@ De samenstelling van tempwind.json is al volgt:
 De waterdata bestaat uit drie datasets:
 
 1. Watertemperatuur bij Driel Boven
-   https://waterinfo.rws.nl/#!/details/publiek/watertemperatuur/Driel-boven(DRIB)/Temperatuur___20Oppervlaktewater___20oC
+   https://waterinfo.rws.nl/publiek/watertemperatuur/driel.boven/details
 2. Waterhoogte bij Deventer
-   https://waterinfo.rws.nl/#/publiek/waterhoogte/Deventer%28DEVE%29/details?parameters=Waterhoogte___20Oppervlaktewater___20t.o.v.___20Normaal___20Amsterdams___20Peil___20in___20cm
+   https://waterinfo.rws.nl/publiek/waterhoogte/deventer/details
 3. Waterhoogte bij Lobith
-   https://waterinfo.rws.nl/#/publiek/waterhoogte/Lobith%28LOBI%29/details?parameters=Waterhoogte___20Oppervlaktewater___20t.o.v.___20Normaal___20Amsterdams___20Peil___20in___20cm
+   https://waterinfo.rws.nl/publiek/waterhoogte/lobith.bovenrijn.tolkamer/details
 
-De gegevens worden eenmaal per uur uitgelezen vanuit de Rijkswaterstaat Waterdata API, verwerkt en apart als json bestand geupload naar de webserver. De gegevens worden in JavaScript verwerkt op de weerpagina.
+De gegevens worden eenmaal per uur uitgelezen vanuit de Rijkswaterstaat Waterdata API, verwerkt als aparte json bestand geüpload naar de webserver. De gegevens worden in JavaScript verwerkt op de weerpagina. De actuele waterhoogte wordt ook in een los json bestandje verwerkt en geüpload om de waterstand op de voorpagina te laten zien. Zowel het php-script voor het plaatje als het javascript voor de alt-tekst en titel maken hier gebruik van. Het bestand met de actuele waterstand is veel kleiner (~0.1 kB in plaats van ~60 kB) en is daardoor sneller te laden en verwerken.
 
-Het json-bestand is als volgt samengesteld:
+Het json-bestand met historische en verwachte waterstanden is als volgt samengesteld:
 - Bestandsnaam: -zie metingen-
 - Locatie: /webcam/data
 - Per meting een object met:
   - label: de nette naam van de meting
   - unit: de eenheid voor de meting
+  - actueel: een opject met de gemeten waarden, een tijdstip en verlooptijd:
+    - waarde: de numerieke waarde van de laatste meting
+    - tijdstip: een string met de tijdstip van de meting
+    - caption: als het ijsselpeil hoger is dan 4.85m "hoogwater", anders leeg
+    - timestamp: het uur en minuten van de meting in de locale tijdzone
+    - expires: een string van datum en tijdstip dat de waarde verloopt, vier uur na de meting
   - historie: een object met de gemeten waarden:
     - waarde: een array met de meetresultaten
     - tijdstip: een array met de tijdstippen van de metingen
@@ -92,19 +98,41 @@ Het json-bestand is als volgt samengesteld:
     - tijdstip: een array met de tijdstippen van de metingen
 - Metingen:
   - Watertemperatuur Driel Boven
-    - Bestandsnaam: watertemperatuur_driel_boven.json
+    - Bestandsnaam: tempDrielBoven.json
+    - actueel: nee
     - historie: ja
     - verwacht: nee
-- Metingen:
+  - Actuele waterhoogte Deventer
+    - Bestandsnaam: wathtedevactueel.json
+    - actueel: ja
+    - historie: nee
+    - verwacht: nee
   - Waterhoogte Deventer
-    - Bestandsnaam: ijsselpeil_deventer.json
+    - Bestandsnaam: waterstandenDev.json
+    - actueel: nee
     - historie: ja
     - verwacht: ja
-- Metingen:
   - Watertemperatuur Driel Boven
-    - Bestandsnaam: rijnpeil_lobith.json
+    - Bestandsnaam: waterstandenLob.json
+    - actueel nee
     - historie: ja
     - verwacht: ja
+
+#### Voorbeeld wathtedevactueel.json
+
+````
+{
+  "label": "IJsselpeil Deventer",
+  "unit": "m",
+  "actueel": {
+    "waarde": 1.48,
+    "tijdstip": "2026-06-24T09:40:00.000+01:00",
+    "caption": "",
+    "timestamp": "10:40",
+    "expires": "2026-06-24T13:40:00.000+0100"
+  }
+}
+````
 
 #### Voorbeeld ijsselpeil_deventer.json
 
@@ -114,42 +142,6 @@ Het json-bestand is als volgt samengesteld:
   "unit": "m",
   "historie": {
     "waarde": [
-      4.02,
-      4.02,
-      4.00,
-      3.99,
-      3.98,
-      3.98,
-      3.97,
-      3.97,
-      3.96,
-      3.95,
-      3.94,
-      3.93,
-      3.93,
-      3.92,
-      3.91,
-      3.91,
-      3.9,
-      3.89,
-      3.88,
-      3.88,
-      3.87,
-      3.87,
-      3.86,
-      3.85,
-      3.84,
-      3.83,
-      3.82,
-      3.81,
-      3.81,
-      3.8,
-      3.8,
-      3.8,
-      3.8,
-      3.8,
-      3.79,
-      3.79,
       3.78,
       3.78,
       3.7,
@@ -162,42 +154,6 @@ Het json-bestand is als volgt samengesteld:
       3.75
     ],
     "tijdstip": [
-      "2024-10-16T21:00:00.000+01:00",
-      "2024-10-16T22:00:00.000+01:00",
-      "2024-10-16T23:00:00.000+01:00",
-      "2024-10-17T00:00:00.000+01:00",
-      "2024-10-17T01:00:00.000+01:00",
-      "2024-10-17T02:00:00.000+01:00",
-      "2024-10-17T03:00:00.000+01:00",
-      "2024-10-17T04:00:00.000+01:00",
-      "2024-10-17T05:00:00.000+01:00",
-      "2024-10-17T06:00:00.000+01:00",
-      "2024-10-17T07:00:00.000+01:00",
-      "2024-10-17T08:00:00.000+01:00",
-      "2024-10-17T09:00:00.000+01:00",
-      "2024-10-17T10:00:00.000+01:00",
-      "2024-10-17T11:00:00.000+01:00",
-      "2024-10-17T12:00:00.000+01:00",
-      "2024-10-17T13:00:00.000+01:00",
-      "2024-10-17T14:00:00.000+01:00",
-      "2024-10-17T15:00:00.000+01:00",
-      "2024-10-17T16:00:00.000+01:00",
-      "2024-10-17T17:00:00.000+01:00",
-      "2024-10-17T18:00:00.000+01:00",
-      "2024-10-17T19:00:00.000+01:00",
-      "2024-10-17T20:00:00.000+01:00",
-      "2024-10-17T21:00:00.000+01:00",
-      "2024-10-17T22:00:00.000+01:00",
-      "2024-10-17T23:00:00.000+01:00",
-      "2024-10-18T00:00:00.000+01:00",
-      "2024-10-18T01:00:00.000+01:00",
-      "2024-10-18T02:00:00.000+01:00",
-      "2024-10-18T03:00:00.000+01:00",
-      "2024-10-18T04:00:00.000+01:00",
-      "2024-10-18T05:00:00.000+01:00",
-      "2024-10-18T06:00:00.000+01:00",
-      "2024-10-18T07:00:00.000+01:00",
-      "2024-10-18T08:00:00.000+01:00",
       "2024-10-18T09:00:00.000+01:00",
       "2024-10-18T10:00:00.000+01:00",
       "2024-10-18T11:00:00.000+01:00",
@@ -221,46 +177,7 @@ Het json-bestand is als volgt samengesteld:
       3.78,
       3.78,
       3.78,
-      3.77,
-      3.77,
-      3.77,
-      3.77,
-      3.76,
-      3.76,
-      3.76,
-      3.76,
-      3.76,
-      3.76,
-      3.76,
-      3.75,
-      3.75,
-      3.75,
-      3.74,
-      3.73,
-      3.73,
-      3.72,
-      3.72,
-      3.71,
-      3.7,
-      3.7,
-      3.69,
-      3.69,
-      3.68,
-      3.68,
-      3.67,
-      3.67,
-      3.66,
-      3.66,
-      3.66,
-      3.65,
-      3.65,
-      3.64,
-      3.64,
-      3.64,
-      3.64,
-      3.64,
-      3.66,
-      3.67
+      3.77
     ],
     "tijdstip": [
       "2024-10-18T09:00:00.000+01:00",
@@ -272,46 +189,7 @@ Het json-bestand is als volgt samengesteld:
       "2024-10-18T15:00:00.000+01:00",
       "2024-10-18T16:00:00.000+01:00",
       "2024-10-18T17:00:00.000+01:00",
-      "2024-10-18T18:00:00.000+01:00",
-      "2024-10-18T19:00:00.000+01:00",
-      "2024-10-18T20:00:00.000+01:00",
-      "2024-10-18T21:00:00.000+01:00",
-      "2024-10-18T22:00:00.000+01:00",
-      "2024-10-18T23:00:00.000+01:00",
-      "2024-10-19T00:00:00.000+01:00",
-      "2024-10-19T01:00:00.000+01:00",
-      "2024-10-19T02:00:00.000+01:00",
-      "2024-10-19T03:00:00.000+01:00",
-      "2024-10-19T04:00:00.000+01:00",
-      "2024-10-19T05:00:00.000+01:00",
-      "2024-10-19T06:00:00.000+01:00",
-      "2024-10-19T07:00:00.000+01:00",
-      "2024-10-19T08:00:00.000+01:00",
-      "2024-10-19T09:00:00.000+01:00",
-      "2024-10-19T10:00:00.000+01:00",
-      "2024-10-19T11:00:00.000+01:00",
-      "2024-10-19T12:00:00.000+01:00",
-      "2024-10-19T13:00:00.000+01:00",
-      "2024-10-19T14:00:00.000+01:00",
-      "2024-10-19T15:00:00.000+01:00",
-      "2024-10-19T16:00:00.000+01:00",
-      "2024-10-19T17:00:00.000+01:00",
-      "2024-10-19T18:00:00.000+01:00",
-      "2024-10-19T19:00:00.000+01:00",
-      "2024-10-19T20:00:00.000+01:00",
-      "2024-10-19T21:00:00.000+01:00",
-      "2024-10-19T22:00:00.000+01:00",
-      "2024-10-19T23:00:00.000+01:00",
-      "2024-10-20T00:00:00.000+01:00",
-      "2024-10-20T01:00:00.000+01:00",
-      "2024-10-20T02:00:00.000+01:00",
-      "2024-10-20T03:00:00.000+01:00",
-      "2024-10-20T04:00:00.000+01:00",
-      "2024-10-20T05:00:00.000+01:00",
-      "2024-10-20T06:00:00.000+01:00",
-      "2024-10-20T07:00:00.000+01:00",
-      "2024-10-20T08:00:00.000+01:00",
-      "2024-10-20T09:00:00.000+01:00"
+      "2024-10-18T18:00:00.000+01:00"
     ]
   }
 }
