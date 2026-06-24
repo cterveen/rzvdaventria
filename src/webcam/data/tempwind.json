@@ -1,0 +1,26 @@
+{
+  "temperatuur": {
+    "label": "Temperatuur",
+    "value": 32,
+    "unit": "°C",
+    "caption": "",
+    "timestamp": "17:42",
+    "expires": "2026-06-24T18:42:00.000Z"
+  },
+  "windkracht": {
+    "label": "Windkracht",
+    "value": 1,
+    "unit": "Bft",
+    "caption": "",
+    "timestamp": "17:42",
+    "expires": "2026-06-24T18:42:00.000Z"
+  },
+  "windrichting": {
+    "label": "Windrichting",
+    "value": "ZZO",
+    "unit": "-",
+    "caption": "",
+    "timestamp": "17:42",
+    "expires": "2026-06-24T18:42:00.000Z"
+  } 
+}
