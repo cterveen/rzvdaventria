@@ -149,7 +149,7 @@ else {
   $block_size = 4;
 
   $value_size = array($error_size, $error_size);
-  $unit_size = getSize($unit_fontsize, $font, " " . $data->{"actueel"}->{"unit"});
+  $unit_size = getSize($unit_fontsize, $font, " m");
 
   $value_x = imagesx($img)/2 - ($value_size[0] + $unit_size[0])/2;
   $value_y = imagesy($img)/2 + $value_size[1]/2;
@@ -170,7 +170,7 @@ else {
   # Draw unit
   $unit_x = $value_x + $value_size[0];
   $unit_y = imagesy($img)/2 - $value_size[1]/2 + $unit_size[1];
-  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " " . $data->{"unit"});
+  imagettftext($img, $unit_fontsize, 0, $unit_x, $unit_y, $yellow, $font, " m");
 }
 
 # --------------------------------------------------------------------
