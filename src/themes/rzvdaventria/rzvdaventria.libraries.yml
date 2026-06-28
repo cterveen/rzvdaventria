@@ -95,8 +95,8 @@ base:
         weight: -10
   js:
     js/block-weather.js: {}
+    js/links.js: {}
     js/menu-main.js: {}
-    js/node.js: {}
     js/webcam.js: {}
   dependencies:
     - core/drupal
