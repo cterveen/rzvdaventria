@@ -10,14 +10,10 @@
           $('a').each(function(){
             if ($(this).attr('href')) {
               let href = $(this).attr('href');
-              if (href.substring(0, 1) == "/" || href.substring(0, 1) == "?" || href.substring(0,1) == "#" || href.substring(0, 26) == "https://www.daventria.com/") {
-              }
-              else if (href.substring(0, 6).toLowerCase() == "mailto") {
-              }
-              else if (href.substring(0, 39).toLowerCase() == "https://rzvdaventria-site.e-captain.nl/") {
+               if (href.substring(0, 39).toLowerCase() == "https://rzvdaventria-site.e-captain.nl/") {
                 $(this).addClass("is-mijn-daventria-link");
               }
-              else {
+              else if ((href.substr(0, 7).toLowerCase() == "http://" || href.substr(0, 8).toLowerCase() == "https://") & href.substring(0, 26).toLowerCase() != "https://www.daventria.com/") {
                 $(this).addClass("is-external-link");
               }
             }
