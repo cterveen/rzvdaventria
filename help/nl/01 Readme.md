@@ -32,7 +32,6 @@ Leeg de cache (Admin > Configuration > Development > Performance (/admin/config/
 
 Verwijder de volgende directories:
 
-- help
 - themes/rzvdaventria
 - webcam
 
