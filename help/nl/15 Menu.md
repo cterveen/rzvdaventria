@@ -119,6 +119,12 @@ De hoofdnavigatie bevat de volgende links:
   - Marathonroeien /roeisport/marathonroeien
 - Tour d'Aventria
   - Tour d'Aventria /tour
+  - Route /tour/route
+  - Inschrijven /tour/inschrijven
+  - Botentransport /tour/botentransport
+  - Stuurclinic /tour/stuurclinic
+  - Veilighied /tour/veiligheid
+  - Uitslagen en foto's /tour/uitslagen
 - Bedrijfsroeien
   - Info Bedrijfsroeien /bedrijfsroeien
   - Inschrijven https://rzvdaventria-site.e-captain.nl/bedrijfsroeien/inschrijven
