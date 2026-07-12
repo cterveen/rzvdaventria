@@ -15,7 +15,7 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 - Field UI: beheer van velden van inhoudstypen
 - Help
 - Media: beheer van afbeeldingen etc.
-- Media library: Beheer van afbeeldingen etc.
+- Media library: Beheer van afbeeldingen etc., wordt gebruikt voor de foto albums
 - Menu UI: aanpassen van menu's.
 - Path: aanpassen van URL's naar nette URL's (aliassen).
 - Search: zoeken.
@@ -40,7 +40,7 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
   
 ## Eigen modules
 
-## Core datatypen
+## Veldtypes
 
 - Datetime
 - Datetime Range
@@ -49,6 +49,10 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 
 ## Libraries
 
+- Colorbox (fork by TurbojetTechnologies)
+  - https://github.com/TurbojetTechnologies/colorbox/
+  - Oplaan in /libraries/colorbox
+  - Nodig voor de foto albums
 - Drupal Superfish
   - https://github.com/LOBsTerr/drupal-superfish/releases
   - Opslaan in /libaries/drupal-superfish
