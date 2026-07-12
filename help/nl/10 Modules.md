@@ -4,7 +4,7 @@ Daventria Drupal 10.x Theme help - modules
 
 ## Beschrijving
 
-Een overzicht van de te installeren modules, inhoudstypen en libraries voor de website
+Een overzicht van de te installeren modules, thema's, inhoudstypen en libraries voor de website
 
 ## Core modules
 
@@ -29,8 +29,6 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
 
 - Book: Boekstuctuur voor het Gele Boekje
   - https://www.drupal.org/project/book
-- Book Export RTF
-  - https://github.com/cterveen/bookexportrtf-9.x
 - Pathauto: automatisch aanmaken van alliassen voor nieuwe inhoud.
   - https://www.drupal.org/project/pathauto
 - Token: nodig voor Pathauto.
@@ -39,6 +37,16 @@ Een overzicht van de te installeren modules, inhoudstypen en libraries voor de w
   - https://www.drupal.org/project/superfish
   
 ## Eigen modules
+
+- Book Export RTF
+  - https://github.com/cterveen/bookexportrtf-9.x
+- Book Index
+  - https://github.com/cterveen/bookindex-9.x
+
+## Drupal thema's
+
+- Stable 9
+  - https://www.drupal.org/project/stable9
 
 ## Veldtypes
 
