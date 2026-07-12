@@ -4,7 +4,7 @@ Daventria Drupal 10.x Theme
 
 ## Description
 
-A Drupal 10.x or 11.x Theme for the Daventria website. The Theme was developed as a theme for a new website of a rowing club in the Netherlands. The aims for the project is to build a theme (website) that is easy to maintain, responsive, accessible and privacy friendly.
+A Drupal 10.x or 11.x Theme. The Theme was developed as a theme for a new website of rowing club R&ZV Daventria in the Netherlands. The aim for the project is to build a theme (website) that is easy to maintain, responsive, accessible and privacy friendly.
 
 The project can be considered stable, it's in use on a live website (https://www.daventria.com/). The core language for the documentation is Dutch. Some of the bug reports, and most of the programming will be in English but may be mixed with Dutch terminorlogy. Internationalisation and localisation are not available. The theme is made for left-to-right languages.
 
@@ -20,7 +20,8 @@ Configure the Drupal system according to the documents in /help/nl. The recommen
 - 13 Blokken.md
 - 14 Personen.md
 - 15 Menu.md
-The website is intended to show recent water and weather data. For the necessary files see 23 Water en weegegevens.md
+
+The website is intended to show recent water and weather data. For the necessary files see 23 Water en weegegevens.md.  
 Copy all files in /src to the Drupal main folder.  
 Go to Admin > Appearance (admin/appearance).  
 Find the rzvdaventria theme and click install and make default.  
@@ -31,7 +32,6 @@ Flush the cache (Admin > Configuration > Development > Performance (/admin/confi
 
 Remove the following directories:
 
-- help
 - themes/rzvdaventria
 - webcam
 
