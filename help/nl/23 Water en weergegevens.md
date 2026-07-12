@@ -1,14 +1,14 @@
 ## Titel
 
-Daventria Drupal 10.x Theme help - Webcam en Weer
+Daventria Drupal 10.x Theme help - Water- en weergegevens
 
 ## Beschrijving
 
-Hier worden de aanvullende gegevens die op de website weer worden gegeven beschreven. Met name de webcam, het weer en de waterstand.
+De Daventria website laat actuele water- en weergegevens zien. Hier wordt beschreven hoe de water- en weergegevens in het thema zijn verwerkt.
 
-## Weer en waterstand
+## Weergegevens
 
-De temperatuur wordt aan de achterkant van het botenhuis gemeten door een Raspberry Pi met temperatuursensor. Op de Raspberry Pi draait een script dat elke minuut de temperatuur afleest. Tevens wordt elke uur de waterstand in Deventer uitgelezen van rws.nl. Op dit moment wordt van deze gegevens een plaatje gemaakt en geupload. Deze werkwijze gaat veranderen waarbij de gegevens in een json-bestand worden vastgelegd en geupload.
+De weergegevens worden verzameld met behulp van een weerstation en een Raspberry Pi die de gegevens verwerkt tot een json bestand met de laatste waarnemingen en afbeeldingen waarin de gegevens van de laatste 24 uur worden weergegeven. De bestanden worden geüpload naar de webserver.
 
 Het json-bestand is als volgt samengesteld:
 
